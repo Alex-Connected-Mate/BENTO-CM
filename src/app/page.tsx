@@ -66,6 +66,20 @@ export default function HomePage() {
           }
         />
 
+        {/* Blog card */}
+        <BentoCard
+          title="Blog"
+          description="Articles, analyses et retours d'expérience sur la tech, l'IA et l'innovation."
+          size="1x1"
+          href="/blog"
+          gradient="bg-gradient-to-br from-fuchsia-500 to-pink-500"
+          icon={
+            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+            </svg>
+          }
+        />
+
         {/* Stats card */}
         <BentoCard
           title="En chiffres"

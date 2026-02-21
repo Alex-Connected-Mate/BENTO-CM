@@ -8,6 +8,7 @@ const links = [
   { href: "/keynote", label: "Keynote" },
   { href: "/podcasts", label: "Podcasts" },
   { href: "/apps", label: "Apps" },
+  { href: "/blog", label: "Blog" },
 ];
 
 export function Navigation() {
