@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Navigation } from "@/components/Navigation";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
   title: "Bento Connected Mate",
@@ -19,6 +20,7 @@ export default function RootLayout({
         <main className="mx-auto max-w-6xl px-4 pb-16 pt-8">
           {children}
         </main>
+        <WhatsAppButton />
       </body>
     </html>
   );
