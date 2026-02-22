@@ -6,42 +6,42 @@ const podcasts = [
   {
     title: "Connected Talks",
     description:
-      "Notre podcast phare : des conversations avec des leaders de la tech, des entrepreneurs et des penseurs qui fa\u00e7onnent le monde de demain.",
+      "Notre podcast phare : des conversations avec des leaders de la tech, des entrepreneurs et des penseurs qui façonnent le monde de demain.",
     size: "2x2" as const,
     gradient: "bg-gradient-to-br from-green-500 to-emerald-600",
-    episodes: "120+ \u00e9pisodes",
+    episodes: "120+ épisodes",
   },
   {
-    title: "Tech & Caf\u00e9",
+    title: "Tech & Café",
     description:
-      "L\u2019actualit\u00e9 tech d\u00e9crypt\u00e9e en 15 minutes, chaque matin. Le format id\u00e9al pour rester inform\u00e9.",
+      "L\u2019actualité tech décryptée en 15 minutes, chaque matin.",
     size: "2x1" as const,
     gradient: "bg-gradient-to-br from-amber-500 to-orange-600",
-    episodes: "300+ \u00e9pisodes",
+    episodes: "300+ épisodes",
   },
   {
     title: "Deep Dive",
     description:
-      "Des analyses approfondies sur les tendances technologiques et leur impact sur la soci\u00e9t\u00e9.",
+      "Analyses approfondies sur les tendances technologiques.",
     size: "1x1" as const,
     gradient: "bg-gradient-to-br from-indigo-500 to-violet-600",
-    episodes: "45 \u00e9pisodes",
+    episodes: "45 épisodes",
   },
   {
     title: "Startup Stories",
     description:
-      "Les coulisses de la cr\u00e9ation d\u2019entreprise : succ\u00e8s, \u00e9checs et le\u00e7ons apprises.",
+      "Les coulisses de la création d\u2019entreprise : succès, échecs et leçons.",
     size: "1x1" as const,
     gradient: "bg-gradient-to-br from-pink-500 to-rose-600",
-    episodes: "80 \u00e9pisodes",
+    episodes: "80 épisodes",
   },
   {
     title: "Code & Culture",
     description:
-      "Quand le code rencontre la culture : explorations \u00e0 l\u2019intersection de la technologie et des arts.",
+      "Quand le code rencontre la culture : technologie et arts.",
     size: "2x1" as const,
     gradient: "bg-gradient-to-br from-cyan-500 to-blue-600",
-    episodes: "35 \u00e9pisodes",
+    episodes: "35 épisodes",
   },
 ];
 
@@ -50,7 +50,7 @@ export default function PodcastsPage() {
     <div className="animate-fade-in">
       <PageHeader
         title="Podcasts"
-        subtitle="\u00c9coutez nos \u00e9missions et plongez dans des conversations inspirantes"
+        subtitle="Écoutez nos émissions et plongez dans des conversations inspirantes"
       />
 
       <BentoGrid>
@@ -60,6 +60,7 @@ export default function PodcastsPage() {
             title={podcast.title}
             description={podcast.description}
             size={podcast.size}
+            colored
             gradient={podcast.gradient}
             icon={
               <svg
@@ -78,14 +79,14 @@ export default function PodcastsPage() {
             }
           >
             <div className="flex items-center gap-2">
-              <span className="inline-block rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-600">
+              <span className="inline-block rounded-full bg-white/20 px-2.5 py-0.5 text-[11px] font-medium text-white sm:text-xs">
                 {podcast.episodes}
               </span>
-              <span className="inline-flex items-center gap-1 text-xs text-[var(--color-text-muted)]">
+              <span className="inline-flex items-center gap-1 text-[11px] text-white/70 sm:text-xs">
                 <svg className="h-3 w-3" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M8 5v14l11-7z" />
                 </svg>
-                \u00c9couter
+                Écouter
               </span>
             </div>
           </BentoCard>

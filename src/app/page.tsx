@@ -7,14 +7,15 @@ export default function HomePage() {
     <div className="animate-fade-in">
       <PageHeader
         title="Connected Mate"
-        subtitle="Explorez notre univers : conf\u00e9rences, podcasts et applications"
+        subtitle="Conf\u00e9rences, podcasts et applications"
       />
 
       <BentoGrid>
         <BentoCard
           title="Bienvenue chez Connected Mate"
-          description="Nous connectons les id\u00e9es, les personnes et les technologies pour cr\u00e9er des exp\u00e9riences uniques. D\u00e9couvrez nos conf\u00e9rences, podcasts et applications."
+          description="Nous connectons les id\u00e9es, les personnes et les technologies pour cr\u00e9er des exp\u00e9riences uniques."
           size="2x2"
+          colored
           gradient="bg-gradient-to-br from-indigo-500 to-purple-600"
           icon={
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -25,10 +26,11 @@ export default function HomePage() {
 
         <BentoCard
           title="Keynotes"
-          description="Nos conf\u00e9rences inspirantes sur l\u2019innovation, la tech et le futur du travail."
+          description="Nos conf\u00e9rences inspirantes sur l\u2019innovation et la tech."
           size="2x1"
           href="/keynote"
-          gradient="bg-gradient-to-br from-orange-500 to-red-500"
+          colored
+          gradient="bg-gradient-to-br from-orange-400 to-red-500"
           icon={
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
@@ -38,10 +40,11 @@ export default function HomePage() {
 
         <BentoCard
           title="Podcasts"
-          description="\u00c9coutez nos \u00e9pisodes et plongez dans des conversations passionnantes."
+          description="\u00c9coutez nos \u00e9pisodes passionnants."
           size="1x1"
           href="/podcasts"
-          gradient="bg-gradient-to-br from-green-500 to-emerald-500"
+          colored
+          gradient="bg-gradient-to-br from-green-400 to-emerald-500"
           icon={
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
@@ -51,10 +54,11 @@ export default function HomePage() {
 
         <BentoCard
           title="Nos Apps"
-          description="D\u00e9couvrez les applications que nous d\u00e9veloppons pour transformer votre quotidien."
+          description="Des outils pour transformer votre quotidien."
           size="1x1"
           href="/apps"
-          gradient="bg-gradient-to-br from-cyan-500 to-blue-500"
+          colored
+          gradient="bg-gradient-to-br from-cyan-400 to-blue-500"
           icon={
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
@@ -64,10 +68,11 @@ export default function HomePage() {
 
         <BentoCard
           title="Blog"
-          description="Articles, analyses et retours d\u2019exp\u00e9rience sur la tech, l\u2019IA et l\u2019innovation."
+          description="Articles et retours d\u2019exp\u00e9rience."
           size="1x1"
           href="/blog"
-          gradient="bg-gradient-to-br from-fuchsia-500 to-pink-500"
+          colored
+          gradient="bg-gradient-to-br from-fuchsia-400 to-pink-500"
           icon={
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
@@ -77,28 +82,28 @@ export default function HomePage() {
 
         <BentoCard
           title="En chiffres"
-          size="2x1"
+          size="1x1"
           gradient="bg-gradient-to-br from-violet-500 to-pink-500"
         >
-          <div className="grid grid-cols-3 gap-4 text-center">
+          <div className="grid grid-cols-3 gap-2 text-center">
             <div>
-              <div className="text-2xl font-bold text-[var(--color-accent)]">50+</div>
-              <div className="text-xs text-[var(--color-text-muted)]">Conf\u00e9rences</div>
+              <div className="text-xl font-bold text-[var(--color-accent)] sm:text-2xl">50+</div>
+              <div className="text-[11px] text-[var(--color-text-muted)]">Conf\u00e9rences</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-[var(--color-accent)]">100+</div>
-              <div className="text-xs text-[var(--color-text-muted)]">\u00c9pisodes</div>
+              <div className="text-xl font-bold text-[var(--color-accent)] sm:text-2xl">100+</div>
+              <div className="text-[11px] text-[var(--color-text-muted)]">\u00c9pisodes</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-[var(--color-accent)]">5</div>
-              <div className="text-xs text-[var(--color-text-muted)]">Applications</div>
+              <div className="text-xl font-bold text-[var(--color-accent)] sm:text-2xl">5</div>
+              <div className="text-[11px] text-[var(--color-text-muted)]">Apps</div>
             </div>
           </div>
         </BentoCard>
 
         <BentoCard
           title="Restons connect\u00e9s"
-          description="Suivez-nous sur les r\u00e9seaux sociaux et ne manquez rien de notre actualit\u00e9."
+          description="Suivez-nous sur les r\u00e9seaux."
           size="2x1"
           gradient="bg-gradient-to-br from-amber-500 to-yellow-500"
           icon={
@@ -107,10 +112,10 @@ export default function HomePage() {
             </svg>
           }
         >
-          <div className="flex gap-3">
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-200">\ud835\udd4f</span>
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-200">in</span>
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-200">YT</span>
+          <div className="flex gap-2">
+            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 text-xs font-medium text-gray-600 transition-colors hover:bg-gray-200">\ud835\udd4f</span>
+            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 text-xs font-medium text-gray-600 transition-colors hover:bg-gray-200">in</span>
+            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 text-xs font-medium text-gray-600 transition-colors hover:bg-gray-200">YT</span>
           </div>
         </BentoCard>
       </BentoGrid>

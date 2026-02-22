@@ -12,6 +12,7 @@ interface BentoCardProps {
   className?: string;
   children?: React.ReactNode;
   gradient?: string;
+  colored?: boolean;
 }
 
 const sizeClasses: Record<BentoSize, string> = {
@@ -30,44 +31,42 @@ export function BentoCard({
   className = "",
   children,
   gradient,
+  colored,
 }: BentoCardProps) {
-  const baseClasses = `group relative overflow-hidden rounded-3xl bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 ${sizeClasses[size]} ${className}`;
+  const coloredBg = colored && gradient
+    ? `${gradient} text-white`
+    : "bg-white";
+
+  const baseClasses = `group relative overflow-hidden rounded-[var(--radius)] ${coloredBg} p-5 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg ${sizeClasses[size]} ${className}`;
+
+  const textColor = colored ? "text-white" : "text-[var(--color-text)]";
+  const mutedColor = colored ? "text-white/70" : "text-[var(--color-text-muted)]";
+  const iconBg = colored ? "bg-white/20 text-white" : "bg-gray-100 text-[var(--color-accent)]";
+  const accentColor = colored ? "text-white/80" : "text-[var(--color-accent)]";
 
   const content = (
     <>
-      {gradient && (
-        <div
-          className={`absolute inset-0 opacity-[0.06] transition-opacity duration-300 group-hover:opacity-[0.1] ${gradient}`}
-        />
+      {!colored && gradient && (
+        <div className={`absolute inset-0 opacity-[0.05] ${gradient}`} />
       )}
       <div className="relative z-10 flex h-full flex-col">
         {icon && (
-          <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-2xl bg-gray-100 text-[var(--color-accent)]">
+          <div className={`mb-3 flex h-10 w-10 items-center justify-center rounded-2xl ${iconBg}`}>
             {icon}
           </div>
         )}
-        <h3 className="text-lg font-semibold text-[var(--color-text)]">{title}</h3>
+        <h3 className={`text-[15px] font-semibold leading-snug ${textColor} sm:text-base`}>{title}</h3>
         {description && (
-          <p className="mt-2 text-sm leading-relaxed text-[var(--color-text-muted)]">
+          <p className={`mt-1.5 text-[13px] leading-relaxed ${mutedColor} sm:text-sm`}>
             {description}
           </p>
         )}
-        {children && <div className="mt-4 flex-1">{children}</div>}
+        {children && <div className="mt-3 flex-1">{children}</div>}
         {href && (
-          <div className="mt-4 flex items-center gap-1 text-sm text-[var(--color-accent)] opacity-0 transition-opacity group-hover:opacity-100">
+          <div className={`mt-auto flex items-center gap-1 pt-3 text-[13px] ${accentColor} opacity-0 transition-opacity group-hover:opacity-100`}>
             Voir plus
-            <svg
-              className="h-4 w-4 transition-transform group-hover:translate-x-1"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
+            <svg className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </div>
         )}
