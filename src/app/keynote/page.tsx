@@ -25,7 +25,7 @@ export default function KeynotePage() {
       <PageHeader title="Keynotes" subtitle="Nos conférences sur l’innovation et la transformation digitale" />
       <BentoGrid>
         {keynotes.map((k) => (
-          <div key={k.title} className={`group relative overflow-hidden rounded-[var(--radius)] ${k.gradient} p-4 text-white transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_20px_40px_-12px_rgba(232,96,10,0.3)] sm:p-5 ${sizeClasses[k.size]}`}>
+          <div key={k.title} className={`group relative overflow-hidden rounded-[var(--radius)] ${k.gradient} p-4 text-white shadow-[0_4px_16px_-4px_rgba(232,96,10,0.25)] transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_20px_40px_-12px_rgba(232,96,10,0.3)] sm:p-5 ${sizeClasses[k.size]}`}>
             <div className="flex h-full flex-col">
               <span className="mb-2 inline-block self-start rounded-full bg-white/20 px-2.5 py-0.5 text-[11px] font-medium sm:text-xs">{k.tag}</span>
               <h3 className="font-[Space_Grotesk] text-[15px] font-semibold leading-snug sm:text-base">{k.title}</h3>

@@ -41,7 +41,11 @@ export function BentoCard({
     ? "hover:shadow-[0_20px_40px_-12px_rgba(232,96,10,0.3)]"
     : "hover:shadow-[0_12px_24px_-8px_rgba(45,27,6,0.12)]";
 
-  const baseClasses = `group relative overflow-hidden rounded-[var(--radius)] ${coloredBg} p-4 sm:p-5 transition-all duration-300 ease-out hover:scale-[1.02] ${hoverShadow} ${sizeClasses[size]} ${className}`;
+  const baseShadow = colored
+    ? "shadow-[0_4px_16px_-4px_rgba(232,96,10,0.25)]"
+    : "shadow-[0_2px_8px_-2px_rgba(45,27,6,0.08)]";
+
+  const baseClasses = `group relative overflow-hidden rounded-[var(--radius)] ${coloredBg} p-4 sm:p-5 ${baseShadow} transition-all duration-300 ease-out hover:scale-[1.02] ${hoverShadow} ${sizeClasses[size]} ${className}`;
 
   const textColor = colored ? "text-white" : "text-[var(--color-text)]";
   const mutedColor = colored ? "text-white/70" : "text-[var(--color-text-muted)]";
