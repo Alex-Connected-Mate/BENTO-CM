@@ -49,37 +49,54 @@ export function BentoCard({
       {!colored && gradient && (
         <div className={`absolute inset-0 opacity-[0.04] ${gradient}`} />
       )}
-      <div className="relative z-10 flex h-full flex-col">
+      <div style={{ position: "relative", zIndex: 10, display: "flex", height: "100%", flexDirection: "column" }}>
         {icon && (
           <div className={iconClass}>
             {icon}
           </div>
         )}
         <h3
-          className="text-[15px] font-semibold leading-snug sm:text-base"
           style={{
             fontFamily: "'Space Grotesk', 'Inter', system-ui, sans-serif",
             color: colored ? "white" : "var(--color-text)",
+            fontSize: 16,
+            fontWeight: 600,
+            lineHeight: 1.3,
           }}
         >
           {title}
         </h3>
         {description && (
           <p
-            className="mt-1.5 text-[13px] leading-relaxed sm:text-sm"
-            style={{ color: colored ? "rgba(255,255,255,0.70)" : "var(--color-text-muted)" }}
+            style={{
+              color: colored ? "rgba(255,255,255,0.75)" : "var(--color-text-muted)",
+              fontSize: 14,
+              lineHeight: 1.6,
+              marginTop: 6,
+            }}
           >
             {description}
           </p>
         )}
-        {children && <div className="mt-3 flex-1">{children}</div>}
+        {children && <div style={{ marginTop: 14, flex: 1 }}>{children}</div>}
         {href && (
           <div
-            className="mt-auto flex items-center gap-1 pt-3 text-[13px] font-medium opacity-0 transition-opacity group-hover:opacity-100"
-            style={{ color: colored ? "rgba(255,255,255,0.80)" : "var(--color-accent)" }}
+            style={{
+              marginTop: "auto",
+              paddingTop: 14,
+              display: "flex",
+              alignItems: "center",
+              gap: 4,
+              fontSize: 13,
+              fontWeight: 500,
+              color: colored ? "rgba(255,255,255,0.85)" : "var(--color-accent)",
+              opacity: 0,
+              transition: "opacity 0.2s",
+            }}
+            className="group-hover:opacity-100"
           >
             Voir plus
-            <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg style={{ width: 14, height: 14 }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </div>

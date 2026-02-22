@@ -9,13 +9,13 @@
   --color-accent-light: #F5A623;
   --color-accent-hover: #D4550A;
   --gap: 12px;
-  --radius: 18px;
+  --radius: 20px;
 }
 
 @media (min-width: 640px) {
   :root {
-    --gap: 16px;
-    --radius: 22px;
+    --gap: 18px;
+    --radius: 24px;
   }
 }
 
@@ -45,7 +45,7 @@ h1, h2, h3, h4 {
 .bento-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: minmax(150px, auto);
+  grid-auto-rows: minmax(160px, auto);
   grid-auto-flow: dense;
   gap: var(--gap);
 }
@@ -53,7 +53,7 @@ h1, h2, h3, h4 {
 @media (min-width: 640px) {
   .bento-grid {
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(170px, auto);
+    grid-auto-rows: minmax(190px, auto);
   }
 }
 
@@ -65,28 +65,30 @@ h1, h2, h3, h4 {
   position: relative;
   overflow: hidden;
   border-radius: var(--radius);
-  padding: 18px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
   background-color: var(--color-card);
-  border: 1.5px solid rgba(45, 27, 6, 0.10);
+  border: 1.5px solid rgba(45, 27, 6, 0.12);
   box-shadow:
-    0 1px 3px rgba(45, 27, 6, 0.06),
-    0 6px 16px rgba(45, 27, 6, 0.08);
+    0 2px 4px rgba(45, 27, 6, 0.05),
+    0 8px 24px rgba(45, 27, 6, 0.10);
   transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
               box-shadow 0.3s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 @media (min-width: 640px) {
   .bento-card {
-    padding: 24px;
+    padding: 28px;
   }
 }
 
 @media (hover: hover) {
   .bento-card:hover {
-    transform: scale(1.02);
+    transform: translateY(-3px) scale(1.01);
     box-shadow:
-      0 12px 32px rgba(45, 27, 6, 0.14),
-      0 4px 12px rgba(45, 27, 6, 0.08);
+      0 16px 40px rgba(45, 27, 6, 0.16),
+      0 6px 16px rgba(45, 27, 6, 0.10);
   }
 }
 
@@ -95,15 +97,15 @@ h1, h2, h3, h4 {
   border: none;
   color: white;
   box-shadow:
-    0 6px 20px -4px rgba(232, 96, 10, 0.35),
-    0 2px 8px rgba(232, 96, 10, 0.18);
+    0 8px 24px -4px rgba(232, 96, 10, 0.35),
+    0 4px 10px rgba(232, 96, 10, 0.18);
 }
 
 @media (hover: hover) {
   .bento-card--colored:hover {
     box-shadow:
-      0 20px 44px -12px rgba(232, 96, 10, 0.40),
-      0 6px 16px rgba(232, 96, 10, 0.22);
+      0 24px 50px -12px rgba(232, 96, 10, 0.42),
+      0 8px 20px rgba(232, 96, 10, 0.22);
   }
 }
 
@@ -121,16 +123,16 @@ h1, h2, h3, h4 {
   position: sticky;
   top: 0;
   z-index: 50;
-  background-color: rgba(245, 237, 224, 0.88);
+  background-color: rgba(245, 237, 224, 0.90);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(232, 96, 10, 0.10);
+  border-bottom: 1px solid rgba(232, 96, 10, 0.08);
 }
 
 .nav-link {
   display: inline-block;
   border-radius: 9999px;
-  padding: 6px 14px;
+  padding: 7px 16px;
   font-size: 13px;
   font-weight: 500;
   transition: background-color 0.15s, color 0.15s;
@@ -161,18 +163,18 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   border-radius: 14px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 @media (min-width: 640px) {
   .icon-box {
-    width: 44px;
-    height: 44px;
+    width: 48px;
+    height: 48px;
     border-radius: 16px;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
   }
 }
 
@@ -191,31 +193,31 @@ h1, h2, h3, h4 {
    ============================================= */
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(6px); }
+  from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
 .animate-fade-in {
-  animation: fadeIn 0.35s ease-out;
+  animation: fadeIn 0.4s ease-out;
 }
 
 @keyframes cardIn {
-  from { opacity: 0; transform: translateY(14px) scale(0.96); }
+  from { opacity: 0; transform: translateY(16px) scale(0.96); }
   to { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 .bento-grid > * {
-  animation: cardIn 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: cardIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .bento-grid > *:nth-child(1) { animation-delay: 0ms; }
-.bento-grid > *:nth-child(2) { animation-delay: 70ms; }
-.bento-grid > *:nth-child(3) { animation-delay: 140ms; }
-.bento-grid > *:nth-child(4) { animation-delay: 210ms; }
-.bento-grid > *:nth-child(5) { animation-delay: 280ms; }
-.bento-grid > *:nth-child(6) { animation-delay: 350ms; }
-.bento-grid > *:nth-child(7) { animation-delay: 420ms; }
-.bento-grid > *:nth-child(8) { animation-delay: 490ms; }
+.bento-grid > *:nth-child(2) { animation-delay: 60ms; }
+.bento-grid > *:nth-child(3) { animation-delay: 120ms; }
+.bento-grid > *:nth-child(4) { animation-delay: 180ms; }
+.bento-grid > *:nth-child(5) { animation-delay: 240ms; }
+.bento-grid > *:nth-child(6) { animation-delay: 300ms; }
+.bento-grid > *:nth-child(7) { animation-delay: 360ms; }
+.bento-grid > *:nth-child(8) { animation-delay: 420ms; }
 
 @media (prefers-reduced-motion: no-preference) {
   html { scroll-behavior: smooth; }
@@ -285,14 +287,14 @@ h1, h2, h3, h4 {
 .badge {
   display: inline-block;
   border-radius: 9999px;
-  padding: 3px 10px;
+  padding: 3px 12px;
   font-size: 11px;
   font-weight: 600;
   white-space: nowrap;
 }
 
 @media (min-width: 640px) {
-  .badge { font-size: 12px; }
+  .badge { font-size: 12px; padding: 4px 14px; }
 }
 
 .badge--accent {
@@ -328,12 +330,12 @@ h1, h2, h3, h4 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   border-radius: 9999px;
   background-color: rgba(232, 96, 10, 0.15);
   color: var(--color-accent);
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
   text-decoration: none;
   transition: background-color 0.15s, transform 0.15s;
@@ -341,9 +343,9 @@ h1, h2, h3, h4 {
 
 @media (min-width: 640px) {
   .social-circle {
-    width: 42px;
-    height: 42px;
-    font-size: 15px;
+    width: 46px;
+    height: 46px;
+    font-size: 16px;
   }
 }
 
@@ -361,25 +363,25 @@ h1, h2, h3, h4 {
   font-weight: 700;
   color: var(--color-accent);
   white-space: nowrap;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 1.1;
 }
 
 @media (min-width: 640px) {
   .stat-number {
-    font-size: 28px;
+    font-size: 32px;
   }
 }
 
 .stat-label {
   color: var(--color-text-muted);
-  font-size: 10px;
+  font-size: 11px;
   margin-top: 2px;
   white-space: nowrap;
 }
 
 @media (min-width: 640px) {
-  .stat-label { font-size: 11px; }
+  .stat-label { font-size: 12px; }
 }
 
 /* =============================================
@@ -391,10 +393,10 @@ h1, h2, h3, h4 {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   border-radius: 9999px;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   color: white;
   border: 2px solid rgba(255, 255, 255, 0.30);
@@ -402,9 +404,9 @@ h1, h2, h3, h4 {
 
 @media (min-width: 640px) {
   .speaker-avatar {
-    width: 34px;
-    height: 34px;
-    font-size: 11px;
+    width: 36px;
+    height: 36px;
+    font-size: 12px;
   }
 }
 
@@ -414,34 +416,34 @@ h1, h2, h3, h4 {
 
 .whatsapp-btn {
   position: fixed;
-  bottom: 20px;
-  right: 16px;
+  bottom: 24px;
+  right: 20px;
   z-index: 40;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  height: 48px;
-  padding: 0 14px;
+  height: 50px;
+  padding: 0 18px;
   border-radius: 9999px;
   background-color: var(--color-accent);
   color: white;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   white-space: nowrap;
   box-shadow:
-    0 6px 20px -4px rgba(232, 96, 10, 0.45),
-    0 2px 8px rgba(232, 96, 10, 0.22);
+    0 8px 24px -4px rgba(232, 96, 10, 0.45),
+    0 4px 10px rgba(232, 96, 10, 0.22);
   transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
 }
 
 @media (min-width: 640px) {
   .whatsapp-btn {
-    bottom: 24px;
-    right: 24px;
-    height: 50px;
-    padding: 0 20px;
+    bottom: 28px;
+    right: 28px;
+    height: 52px;
+    padding: 0 22px;
     font-size: 14px;
   }
 }
@@ -450,14 +452,13 @@ h1, h2, h3, h4 {
   transform: scale(1.05);
   background-color: var(--color-accent-hover);
   box-shadow:
-    0 10px 28px -4px rgba(232, 96, 10, 0.50),
-    0 4px 12px rgba(232, 96, 10, 0.25);
+    0 12px 32px -4px rgba(232, 96, 10, 0.50),
+    0 6px 14px rgba(232, 96, 10, 0.25);
 }
 
-/* Icon only on very small screens */
 @media (max-width: 400px) {
   .whatsapp-btn {
-    width: 48px;
+    width: 50px;
     padding: 0;
   }
   .whatsapp-btn .whatsapp-label {

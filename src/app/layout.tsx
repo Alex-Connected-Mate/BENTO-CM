@@ -28,7 +28,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen">
         <Navigation />
-        <main className="mx-auto max-w-3xl px-3 pb-20 pt-4 sm:px-4 sm:pb-24 sm:pt-8">
+        <main className="mx-auto max-w-6xl px-4 pb-24 pt-6 sm:px-6 sm:pb-32 sm:pt-10 lg:px-8">
           {children}
         </main>
         <WhatsAppButton />

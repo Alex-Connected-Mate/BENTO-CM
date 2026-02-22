@@ -5,24 +5,39 @@ interface PageHeaderProps {
 
 export function PageHeader({ title, subtitle }: PageHeaderProps) {
   return (
-    <div className="mb-4 sm:mb-8">
+    <div style={{ marginBottom: 24 }}>
       <h1
-        className="text-xl font-bold tracking-tight sm:text-3xl"
-        style={{ fontFamily: "'Space Grotesk', 'Inter', system-ui, sans-serif", color: "var(--color-text)" }}
+        style={{
+          fontFamily: "'Space Grotesk', 'Inter', system-ui, sans-serif",
+          color: "var(--color-text)",
+          fontSize: 28,
+          fontWeight: 700,
+          letterSpacing: "-0.02em",
+          lineHeight: 1.2,
+        }}
       >
         {title}
         <span
-          className="ml-2 inline-block"
           style={{
-            width: 8,
-            height: 8,
+            display: "inline-block",
+            width: 10,
+            height: 10,
             borderRadius: "50%",
             backgroundColor: "var(--color-accent)",
+            marginLeft: 8,
+            verticalAlign: "middle",
           }}
         />
       </h1>
       {subtitle && (
-        <p className="mt-1 text-[13px] sm:mt-2 sm:text-base" style={{ color: "var(--color-text-muted)" }}>
+        <p
+          style={{
+            color: "var(--color-text-muted)",
+            fontSize: 15,
+            marginTop: 8,
+            lineHeight: 1.5,
+          }}
+        >
           {subtitle}
         </p>
       )}
