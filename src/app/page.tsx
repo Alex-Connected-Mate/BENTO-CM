@@ -88,16 +88,16 @@ export default function HomePage() {
         >
           <div className="grid grid-cols-3 gap-1.5 text-center sm:gap-2">
             <div>
-              <div className="font-[Space_Grotesk] text-lg font-bold text-[var(--color-accent)] sm:text-2xl">50+</div>
-              <div className="text-[10px] text-[var(--color-text-muted)] sm:text-[11px]">Conférences</div>
+              <div className="text-lg font-bold sm:text-2xl" style={{ fontFamily: "'Space Grotesk', 'Inter', system-ui, sans-serif", color: "var(--color-accent)" }}>50+</div>
+              <div className="text-[10px] sm:text-[11px]" style={{ color: "var(--color-text-muted)" }}>Conférences</div>
             </div>
             <div>
-              <div className="font-[Space_Grotesk] text-lg font-bold text-[var(--color-accent)] sm:text-2xl">100+</div>
-              <div className="text-[10px] text-[var(--color-text-muted)] sm:text-[11px]">Épisodes</div>
+              <div className="text-lg font-bold sm:text-2xl" style={{ fontFamily: "'Space Grotesk', 'Inter', system-ui, sans-serif", color: "var(--color-accent)" }}>100+</div>
+              <div className="text-[10px] sm:text-[11px]" style={{ color: "var(--color-text-muted)" }}>Épisodes</div>
             </div>
             <div>
-              <div className="font-[Space_Grotesk] text-lg font-bold text-[var(--color-accent)] sm:text-2xl">5</div>
-              <div className="text-[10px] text-[var(--color-text-muted)] sm:text-[11px]">Apps</div>
+              <div className="text-lg font-bold sm:text-2xl" style={{ fontFamily: "'Space Grotesk', 'Inter', system-ui, sans-serif", color: "var(--color-accent)" }}>5</div>
+              <div className="text-[10px] sm:text-[11px]" style={{ color: "var(--color-text-muted)" }}>Apps</div>
             </div>
           </div>
         </BentoCard>
@@ -114,9 +114,9 @@ export default function HomePage() {
           }
         >
           <div className="flex gap-2">
-            <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[var(--color-accent)]/10 text-xs font-bold text-[var(--color-accent)] transition-colors hover:bg-[var(--color-accent)]/20 sm:h-8 sm:w-8">𝕏</span>
-            <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[var(--color-accent)]/10 text-xs font-bold text-[var(--color-accent)] transition-colors hover:bg-[var(--color-accent)]/20 sm:h-8 sm:w-8">in</span>
-            <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[var(--color-accent)]/10 text-xs font-bold text-[var(--color-accent)] transition-colors hover:bg-[var(--color-accent)]/20 sm:h-8 sm:w-8">YT</span>
+            <span className="social-circle">𝕏</span>
+            <span className="social-circle">in</span>
+            <span className="social-circle">YT</span>
           </div>
         </BentoCard>
       </BentoGrid>

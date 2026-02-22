@@ -37,20 +37,27 @@ export function AppModal({ app, onClose }: AppModalProps) {
     setOpenSection(openSection === key ? null : key);
   };
 
+  const statusBadge = (status: string) => {
+    if (status === "Disponible") return "badge badge--amber";
+    if (status === "Bêta") return "badge badge--orange";
+    return "badge badge--red";
+  };
+
   return (
     <div
       className="fixed inset-0 z-50 flex items-end sm:items-center sm:justify-center"
       onClick={onClose}
     >
-      <div className="absolute inset-0 bg-[var(--color-text)]/30 backdrop-blur-sm" />
+      <div className="modal-backdrop" />
 
       <div
-        className="relative max-h-[90vh] w-full overflow-y-auto rounded-t-3xl bg-[var(--color-card)] shadow-2xl sm:max-w-lg sm:rounded-[var(--radius)]"
+        className="modal-content relative w-full sm:max-w-lg"
+        style={{ borderTopLeftRadius: 24, borderTopRightRadius: 24 }}
         onClick={(e) => e.stopPropagation()}
       >
         {/* Mobile drag handle */}
         <div className="flex justify-center pt-3 sm:hidden">
-          <div className="h-1 w-10 rounded-full bg-[var(--color-accent)]/20" />
+          <div style={{ height: 4, width: 40, borderRadius: 9999, backgroundColor: "rgba(232, 96, 10, 0.20)" }} />
         </div>
 
         {/* Header */}
@@ -60,26 +67,17 @@ export function AppModal({ app, onClose }: AppModalProps) {
             <div className="flex items-start justify-between">
               <div className="min-w-0 flex-1">
                 <div className="mb-1.5 flex flex-wrap items-center gap-2">
-                  <h2 className="font-[Space_Grotesk] text-lg font-bold text-[var(--color-text)] sm:text-2xl">{app.title}</h2>
-                  <span
-                    className={`inline-block shrink-0 rounded-full px-2.5 py-0.5 text-[11px] font-medium sm:text-xs ${
-                      app.status === "Disponible"
-                        ? "bg-amber-100 text-amber-700"
-                        : app.status === "Bêta"
-                        ? "bg-orange-100 text-orange-700"
-                        : "bg-red-50 text-red-600"
-                    }`}
-                  >
-                    {app.status}
-                  </span>
+                  <h2 className="text-lg font-bold sm:text-2xl" style={{ fontFamily: "'Space Grotesk', 'Inter', system-ui, sans-serif", color: "var(--color-text)" }}>{app.title}</h2>
+                  <span className={`shrink-0 ${statusBadge(app.status)}`}>{app.status}</span>
                 </div>
-                <p className="text-[13px] text-[var(--color-text-muted)] sm:text-sm">
+                <p className="text-[13px] sm:text-sm" style={{ color: "var(--color-text-muted)" }}>
                   {app.platforms}
                 </p>
               </div>
               <button
                 onClick={onClose}
-                className="ml-3 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--color-accent)]/10 text-[var(--color-accent)] transition-colors hover:bg-[var(--color-accent)]/20"
+                className="icon-box icon-box--default ml-3 shrink-0"
+                style={{ width: 32, height: 32 }}
               >
                 <svg className="h-4 w-4 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -92,10 +90,10 @@ export function AppModal({ app, onClose }: AppModalProps) {
         {/* Body */}
         <div className="px-5 pb-6 pt-2 sm:px-8 sm:pb-8 sm:pt-4">
           <div className="mb-4 sm:mb-6">
-            <h3 className="mb-1.5 text-[11px] font-medium uppercase tracking-wider text-[var(--color-text-muted)] sm:mb-2 sm:text-xs">
+            <h3 className="mb-1.5 text-[11px] font-medium uppercase tracking-wider sm:mb-2 sm:text-xs" style={{ color: "var(--color-text-muted)" }}>
               Description
             </h3>
-            <p className="text-[13px] leading-relaxed text-[var(--color-text)] sm:text-sm">
+            <p className="text-[13px] leading-relaxed sm:text-sm" style={{ color: "var(--color-text)" }}>
               {app.fullDescription}
             </p>
           </div>
@@ -105,44 +103,56 @@ export function AppModal({ app, onClose }: AppModalProps) {
               href={app.appUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mb-4 flex items-center gap-3 rounded-2xl bg-[var(--color-accent)]/5 px-3.5 py-2.5 transition-all hover:bg-[var(--color-accent)]/10 sm:mb-6 sm:px-4 sm:py-3"
+              className="mb-4 flex items-center gap-3 sm:mb-6"
+              style={{
+                borderRadius: 16,
+                backgroundColor: "rgba(232, 96, 10, 0.05)",
+                padding: "10px 14px",
+                transition: "background-color 0.15s",
+              }}
             >
-              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[var(--color-accent)]/10 text-[var(--color-accent)] sm:h-10 sm:w-10">
+              <div className="icon-box icon-box--default shrink-0">
                 <svg className="h-4 w-4 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </div>
               <div className="min-w-0 flex-1">
-                <div className="text-[13px] font-medium text-[var(--color-text)] sm:text-sm">Ouvrir {app.title}</div>
-                <div className="truncate text-[11px] text-[var(--color-text-muted)] sm:text-xs">{app.appUrl}</div>
+                <div className="text-[13px] font-medium sm:text-sm" style={{ color: "var(--color-text)" }}>Ouvrir {app.title}</div>
+                <div className="truncate text-[11px] sm:text-xs" style={{ color: "var(--color-text-muted)" }}>{app.appUrl}</div>
               </div>
-              <svg className="h-4 w-4 shrink-0 text-[var(--color-accent)] sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="h-4 w-4 shrink-0 sm:h-5 sm:w-5" style={{ color: "var(--color-accent)" }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </a>
           )}
 
           <div className="space-y-1.5 sm:space-y-2">
-            <h3 className="mb-2 text-[11px] font-medium uppercase tracking-wider text-[var(--color-text-muted)] sm:mb-3 sm:text-xs">
+            <h3 className="mb-2 text-[11px] font-medium uppercase tracking-wider sm:mb-3 sm:text-xs" style={{ color: "var(--color-text-muted)" }}>
               Informations légales
             </h3>
             {legalSections.map((section) => (
               <div
                 key={section.key}
-                className="overflow-hidden rounded-xl bg-[var(--color-accent)]/5 sm:rounded-2xl"
+                className="overflow-hidden"
+                style={{
+                  borderRadius: 12,
+                  backgroundColor: "rgba(232, 96, 10, 0.05)",
+                }}
               >
                 <button
                   onClick={() => toggleSection(section.key)}
-                  className="flex w-full items-center gap-2.5 px-3.5 py-2.5 text-left transition-colors hover:bg-[var(--color-accent)]/10 sm:gap-3 sm:px-4 sm:py-3"
+                  className="flex w-full items-center gap-2.5 text-left sm:gap-3"
+                  style={{ padding: "10px 14px", transition: "background-color 0.15s" }}
                 >
-                  <svg className="h-4 w-4 shrink-0 text-[var(--color-accent)] sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="h-4 w-4 shrink-0 sm:h-5 sm:w-5" style={{ color: "var(--color-accent)" }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={section.icon} />
                   </svg>
-                  <span className="flex-1 text-[13px] font-medium text-[var(--color-text)] sm:text-sm">{section.label}</span>
+                  <span className="flex-1 text-[13px] font-medium sm:text-sm" style={{ color: "var(--color-text)" }}>{section.label}</span>
                   <svg
-                    className={`h-3.5 w-3.5 shrink-0 text-[var(--color-accent)] transition-transform duration-200 sm:h-4 sm:w-4 ${
+                    className={`h-3.5 w-3.5 shrink-0 transition-transform duration-200 sm:h-4 sm:w-4 ${
                       openSection === section.key ? "rotate-180" : ""
                     }`}
+                    style={{ color: "var(--color-accent)" }}
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -151,8 +161,8 @@ export function AppModal({ app, onClose }: AppModalProps) {
                   </svg>
                 </button>
                 {openSection === section.key && (
-                  <div className="border-t border-[var(--color-accent)]/10 px-3.5 py-2.5 sm:px-4 sm:py-3">
-                    <p className="text-[13px] leading-relaxed text-[var(--color-text-muted)] sm:text-sm">
+                  <div style={{ borderTop: "1px solid rgba(232, 96, 10, 0.10)", padding: "10px 14px" }}>
+                    <p className="text-[13px] leading-relaxed sm:text-sm" style={{ color: "var(--color-text-muted)" }}>
                       {app.legal[section.key]}
                     </p>
                   </div>

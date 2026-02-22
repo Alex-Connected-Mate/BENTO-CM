@@ -79,7 +79,7 @@ export default function PodcastsPage() {
             }
           >
             <div className="flex items-center gap-2">
-              <span className="inline-block rounded-full bg-white/20 px-2.5 py-0.5 text-[11px] font-medium text-white sm:text-xs">
+              <span className="badge badge--white">
                 {podcast.episodes}
               </span>
               <span className="inline-flex items-center gap-1 text-[11px] text-white/70 sm:text-xs">

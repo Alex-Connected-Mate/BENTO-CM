@@ -16,10 +16,10 @@ interface BentoCardProps {
 }
 
 const sizeClasses: Record<BentoSize, string> = {
-  "1x1": "col-span-1 row-span-1",
-  "2x1": "col-span-2 row-span-1",
-  "1x2": "col-span-1 row-span-2",
-  "2x2": "col-span-2 row-span-2",
+  "1x1": "bento-1x1",
+  "2x1": "bento-2x1",
+  "1x2": "bento-1x2",
+  "2x2": "bento-2x2",
 };
 
 export function BentoCard({
@@ -33,47 +33,53 @@ export function BentoCard({
   gradient,
   colored,
 }: BentoCardProps) {
-  const coloredBg = colored && gradient
-    ? `${gradient} text-white`
-    : "bg-[var(--color-card)]";
+  const cardClass = [
+    "bento-card",
+    colored ? "bento-card--colored" : "",
+    colored && gradient ? gradient : "",
+    sizeClasses[size],
+    className,
+  ].filter(Boolean).join(" ");
 
-  const hoverShadow = colored
-    ? "hover:shadow-[0_20px_40px_-12px_rgba(232,96,10,0.3)]"
-    : "hover:shadow-[0_12px_24px_-8px_rgba(45,27,6,0.12)]";
-
-  const baseShadow = colored
-    ? "shadow-[0_4px_16px_-4px_rgba(232,96,10,0.25)]"
-    : "shadow-[0_2px_8px_-2px_rgba(45,27,6,0.08)]";
-
-  const baseClasses = `group relative overflow-hidden rounded-[var(--radius)] ${coloredBg} p-4 sm:p-5 ${baseShadow} transition-all duration-300 ease-out hover:scale-[1.02] ${hoverShadow} ${sizeClasses[size]} ${className}`;
-
-  const textColor = colored ? "text-white" : "text-[var(--color-text)]";
-  const mutedColor = colored ? "text-white/70" : "text-[var(--color-text-muted)]";
-  const iconBg = colored ? "bg-white/20 text-white" : "bg-[var(--color-accent)]/10 text-[var(--color-accent)]";
-  const accentColor = colored ? "text-white/80" : "text-[var(--color-accent)]";
+  const iconClass = colored ? "icon-box icon-box--white" : "icon-box icon-box--default";
 
   const content = (
     <>
+      {/* Subtle gradient overlay for non-colored cards */}
       {!colored && gradient && (
         <div className={`absolute inset-0 opacity-[0.04] ${gradient}`} />
       )}
       <div className="relative z-10 flex h-full flex-col">
         {icon && (
-          <div className={`mb-2 flex h-9 w-9 items-center justify-center rounded-xl sm:mb-3 sm:h-10 sm:w-10 sm:rounded-2xl ${iconBg}`}>
+          <div className={iconClass}>
             {icon}
           </div>
         )}
-        <h3 className={`font-[Space_Grotesk] text-[15px] font-semibold leading-snug ${textColor} sm:text-base`}>{title}</h3>
+        <h3
+          className="text-[15px] font-semibold leading-snug sm:text-base"
+          style={{
+            fontFamily: "'Space Grotesk', 'Inter', system-ui, sans-serif",
+            color: colored ? "white" : "var(--color-text)",
+          }}
+        >
+          {title}
+        </h3>
         {description && (
-          <p className={`mt-1.5 text-[13px] leading-relaxed ${mutedColor} sm:text-sm`}>
+          <p
+            className="mt-1.5 text-[13px] leading-relaxed sm:text-sm"
+            style={{ color: colored ? "rgba(255,255,255,0.70)" : "var(--color-text-muted)" }}
+          >
             {description}
           </p>
         )}
         {children && <div className="mt-3 flex-1">{children}</div>}
         {href && (
-          <div className={`mt-auto flex items-center gap-1 pt-3 text-[13px] font-medium ${accentColor} opacity-0 transition-opacity group-hover:opacity-100`}>
+          <div
+            className="mt-auto flex items-center gap-1 pt-3 text-[13px] font-medium opacity-0 transition-opacity group-hover:opacity-100"
+            style={{ color: colored ? "rgba(255,255,255,0.80)" : "var(--color-accent)" }}
+          >
             Voir plus
-            <svg className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </div>
@@ -86,17 +92,17 @@ export function BentoCard({
     const isExternal = href.startsWith("http");
     if (isExternal) {
       return (
-        <a href={href} target="_blank" rel="noopener noreferrer" className={baseClasses}>
+        <a href={href} target="_blank" rel="noopener noreferrer" className={`group ${cardClass}`}>
           {content}
         </a>
       );
     }
     return (
-      <Link href={href} className={baseClasses}>
+      <Link href={href} className={`group ${cardClass}`}>
         {content}
       </Link>
     );
   }
 
-  return <div className={baseClasses}>{content}</div>;
+  return <div className={`group ${cardClass}`}>{content}</div>;
 }

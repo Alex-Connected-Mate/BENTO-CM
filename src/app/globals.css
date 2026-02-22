@@ -38,6 +38,156 @@ h1, h2, h3, h4 {
   font-family: "Space Grotesk", "Inter", system-ui, sans-serif;
 }
 
+/* =============================================
+   BENTO GRID
+   ============================================= */
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(130px, auto);
+  grid-auto-flow: dense;
+  gap: var(--gap);
+}
+
+@media (min-width: 640px) {
+  .bento-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+  }
+}
+
+/* =============================================
+   BENTO CARD – base styles (plain CSS, no Tailwind arbitrary values)
+   ============================================= */
+
+.bento-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+  padding: 16px;
+  background-color: var(--color-card);
+  border: 1px solid rgba(45, 27, 6, 0.06);
+  box-shadow:
+    0 1px 2px rgba(45, 27, 6, 0.04),
+    0 4px 12px rgba(45, 27, 6, 0.06);
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (min-width: 640px) {
+  .bento-card {
+    padding: 20px;
+  }
+}
+
+@media (hover: hover) {
+  .bento-card:hover {
+    transform: scale(1.02);
+    box-shadow:
+      0 8px 24px rgba(45, 27, 6, 0.10),
+      0 2px 8px rgba(45, 27, 6, 0.06);
+  }
+}
+
+/* Colored variant */
+.bento-card--colored {
+  border: none;
+  color: white;
+  box-shadow:
+    0 4px 16px -4px rgba(232, 96, 10, 0.30),
+    0 2px 6px rgba(232, 96, 10, 0.15);
+}
+
+@media (hover: hover) {
+  .bento-card--colored:hover {
+    box-shadow:
+      0 20px 40px -12px rgba(232, 96, 10, 0.35),
+      0 4px 12px rgba(232, 96, 10, 0.20);
+  }
+}
+
+/* Grid span helpers */
+.bento-1x1 { grid-column: span 1; grid-row: span 1; }
+.bento-2x1 { grid-column: span 2; grid-row: span 1; }
+.bento-1x2 { grid-column: span 1; grid-row: span 2; }
+.bento-2x2 { grid-column: span 2; grid-row: span 2; }
+
+/* =============================================
+   NAVIGATION
+   ============================================= */
+
+.nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: rgba(245, 237, 224, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(232, 96, 10, 0.10);
+}
+
+.nav-link {
+  border-radius: 9999px;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background-color 0.15s, color 0.15s;
+  color: var(--color-text-muted);
+}
+
+.nav-link:hover {
+  background-color: rgba(232, 96, 10, 0.10);
+  color: var(--color-accent);
+}
+
+.nav-link--active {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+.nav-link--active:hover {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+/* =============================================
+   ICON CONTAINER
+   ============================================= */
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+@media (min-width: 640px) {
+  .icon-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 16px;
+    margin-bottom: 12px;
+  }
+}
+
+.icon-box--default {
+  background-color: rgba(232, 96, 10, 0.10);
+  color: var(--color-accent);
+}
+
+.icon-box--white {
+  background-color: rgba(255, 255, 255, 0.20);
+  color: white;
+}
+
+/* =============================================
+   ANIMATIONS
+   ============================================= */
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(6px); }
   to { opacity: 1; transform: translateY(0); }
@@ -47,7 +197,6 @@ h1, h2, h3, h4 {
   animation: fadeIn 0.35s ease-out;
 }
 
-/* Staggered card entrance animation */
 @keyframes cardIn {
   from { opacity: 0; transform: translateY(12px) scale(0.97); }
   to { opacity: 1; transform: translateY(0) scale(1); }
@@ -75,13 +224,16 @@ h1, h2, h3, h4 {
 
 /* Better touch feedback on mobile */
 @media (hover: none) {
-  .bento-grid > *:active {
+  .bento-card:active {
     transform: scale(0.97) !important;
     transition: transform 0.1s ease;
   }
 }
 
-/* Vintage decorative circle */
+/* =============================================
+   DECORATIVE
+   ============================================= */
+
 .vintage-circle {
   position: absolute;
   border-radius: 50%;
@@ -103,4 +255,160 @@ h1, h2, h3, h4 {
   inset: 16px;
   border-radius: 50%;
   border: 2px solid rgba(232, 96, 10, 0.06);
+}
+
+/* =============================================
+   MODAL
+   ============================================= */
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background-color: rgba(45, 27, 6, 0.30);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.modal-content {
+  background-color: var(--color-card);
+  border-radius: var(--radius);
+  box-shadow:
+    0 25px 50px -12px rgba(45, 27, 6, 0.25),
+    0 8px 24px rgba(45, 27, 6, 0.08);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* =============================================
+   TAGS / BADGES
+   ============================================= */
+
+.badge {
+  display: inline-block;
+  border-radius: 9999px;
+  padding: 2px 10px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+@media (min-width: 640px) {
+  .badge {
+    font-size: 12px;
+  }
+}
+
+.badge--accent {
+  background-color: rgba(232, 96, 10, 0.10);
+  color: var(--color-accent);
+}
+
+.badge--white {
+  background-color: rgba(255, 255, 255, 0.20);
+  color: white;
+}
+
+.badge--amber {
+  background-color: #fef3c6;
+  color: #b75000;
+}
+
+.badge--orange {
+  background-color: #ffedd5;
+  color: #c53c00;
+}
+
+.badge--red {
+  background-color: #fef2f2;
+  color: #e40014;
+}
+
+/* =============================================
+   SOCIAL CIRCLES
+   ============================================= */
+
+.social-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+  background-color: rgba(232, 96, 10, 0.10);
+  color: var(--color-accent);
+  font-size: 12px;
+  font-weight: 700;
+  transition: background-color 0.15s;
+}
+
+@media (min-width: 640px) {
+  .social-circle {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.social-circle:hover {
+  background-color: rgba(232, 96, 10, 0.20);
+}
+
+/* =============================================
+   SPEAKER AVATAR
+   ============================================= */
+
+.speaker-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 9999px;
+  font-size: 10px;
+  font-weight: 700;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.30);
+}
+
+@media (min-width: 640px) {
+  .speaker-avatar {
+    width: 32px;
+    height: 32px;
+    font-size: 11px;
+  }
+}
+
+/* =============================================
+   WHATSAPP BUTTON
+   ============================================= */
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 12px;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 9999px;
+  background-color: var(--color-accent);
+  color: white;
+  box-shadow:
+    0 4px 16px -4px rgba(232, 96, 10, 0.40),
+    0 2px 6px rgba(232, 96, 10, 0.20);
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+@media (min-width: 640px) {
+  .whatsapp-btn {
+    bottom: 24px;
+    right: 24px;
+  }
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.10);
+  background-color: var(--color-accent-hover);
 }
