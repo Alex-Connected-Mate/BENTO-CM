@@ -1,11 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --color-bg: #e8e8e8;
-  --color-card: #ffffff;
-  --color-text: #1a1a1a;
-  --color-text-muted: #737373;
-  --color-accent: #6366f1;
+  --color-bg: #F5EDE0;
+  --color-card: #FFFBF5;
+  --color-text: #2D1B06;
+  --color-text-muted: #8B7355;
+  --color-accent: #E8600A;
+  --color-accent-light: #F5A623;
+  --color-accent-hover: #D4550A;
   --gap: 8px;
   --radius: 16px;
 }
@@ -30,6 +32,10 @@ body {
   -webkit-font-smoothing: antialiased;
   overflow-wrap: break-word;
   -webkit-text-size-adjust: 100%;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Space Grotesk", "Inter", system-ui, sans-serif;
 }
 
 @keyframes fadeIn {
@@ -73,4 +79,28 @@ body {
     transform: scale(0.97) !important;
     transition: transform 0.1s ease;
   }
+}
+
+/* Vintage decorative circle */
+.vintage-circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid rgba(232, 96, 10, 0.15);
+  pointer-events: none;
+}
+
+.vintage-circle::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border-radius: 50%;
+  border: 2px solid rgba(232, 96, 10, 0.1);
+}
+
+.vintage-circle::after {
+  content: "";
+  position: absolute;
+  inset: 16px;
+  border-radius: 50%;
+  border: 2px solid rgba(232, 96, 10, 0.06);
 }

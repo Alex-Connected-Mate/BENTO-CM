@@ -43,7 +43,7 @@ L'IA générative n'est pas une baguette magique, mais un outil puissant qui, bi
     date: "2026-02-15",
     readTime: "5 min",
     tag: "Intelligence Artificielle",
-    gradient: "bg-gradient-to-br from-violet-500 to-purple-600",
+    gradient: "bg-gradient-to-br from-orange-500 to-amber-600",
   },
   {
     slug: "travail-hybride-2026",
@@ -77,7 +77,7 @@ Le travail hybride n'est pas une mode passagère. C'est une transformation profo
     date: "2026-02-10",
     readTime: "6 min",
     tag: "Futur du travail",
-    gradient: "bg-gradient-to-br from-blue-500 to-indigo-600",
+    gradient: "bg-gradient-to-br from-amber-500 to-orange-600",
   },
   {
     slug: "green-it-guide-pratique",
@@ -111,7 +111,7 @@ La sobriété numérique n'est pas un frein à l'innovation. C'est une contraint
     date: "2026-02-05",
     readTime: "4 min",
     tag: "Green IT",
-    gradient: "bg-gradient-to-br from-emerald-500 to-green-600",
+    gradient: "bg-gradient-to-br from-yellow-500 to-amber-600",
   },
   {
     slug: "cybersecurite-pme",
@@ -145,7 +145,7 @@ La cybersécurité n'est pas qu'une affaire de technologie. C'est une culture à
     date: "2026-01-28",
     readTime: "5 min",
     tag: "Cybersécurité",
-    gradient: "bg-gradient-to-br from-slate-500 to-zinc-600",
+    gradient: "bg-gradient-to-br from-stone-500 to-amber-700",
   },
   {
     slug: "product-management-ia",
@@ -217,7 +217,7 @@ Une bonne API est invisible : elle fait exactement ce que le développeur attend
     date: "2026-01-12",
     readTime: "6 min",
     tag: "Développement",
-    gradient: "bg-gradient-to-br from-cyan-500 to-blue-600",
+    gradient: "bg-gradient-to-br from-red-500 to-orange-600",
   },
 ];
 

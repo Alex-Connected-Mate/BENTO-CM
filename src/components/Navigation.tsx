@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const links = [
-  { href: "/", label: "General" },
+  { href: "/", label: "Accueil" },
   { href: "/keynote", label: "Keynote" },
   { href: "/podcasts", label: "Podcasts" },
   { href: "/apps", label: "Apps" },
@@ -18,10 +18,16 @@ export function Navigation() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-[var(--color-bg)]/80 backdrop-blur-md">
+    <nav className="sticky top-0 z-50 border-b border-[var(--color-accent)]/10 bg-[var(--color-bg)]/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-3xl items-center justify-between px-3 py-2.5 sm:px-4 sm:py-4">
-        <Link href="/" className="text-base font-bold tracking-tight text-[var(--color-text)] sm:text-lg">
-          Connected<span className="text-[var(--color-accent)]">Mate</span>
+        <Link href="/" className="flex items-center gap-2">
+          {/* Vintage circle logo */}
+          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--color-accent)] text-xs font-bold text-white sm:h-9 sm:w-9">
+            CM
+          </div>
+          <span className="font-[Space_Grotesk] text-base font-bold tracking-tight text-[var(--color-text)] sm:text-lg">
+            Connected<span className="text-[var(--color-accent)]">Mate</span>
+          </span>
         </Link>
 
         {/* Desktop nav */}
@@ -34,8 +40,8 @@ export function Navigation() {
                 href={link.href}
                 className={`rounded-full px-3 py-1.5 text-[13px] font-medium transition-colors ${
                   isActive
-                    ? "bg-[var(--color-text)] text-white"
-                    : "text-[var(--color-text-muted)] hover:text-[var(--color-text)]"
+                    ? "bg-[var(--color-accent)] text-white"
+                    : "text-[var(--color-text-muted)] hover:bg-[var(--color-accent)]/10 hover:text-[var(--color-accent)]"
                 }`}
               >
                 {link.label}
@@ -47,7 +53,7 @@ export function Navigation() {
         {/* Mobile burger */}
         <button
           onClick={() => setOpen(!open)}
-          className="flex h-10 w-10 items-center justify-center rounded-full bg-white sm:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-full bg-[var(--color-card)] text-[var(--color-accent)] sm:hidden"
           aria-label="Menu"
         >
           {open ? (
@@ -64,7 +70,7 @@ export function Navigation() {
 
       {/* Mobile dropdown */}
       {open && (
-        <div className="border-t border-gray-200/50 px-3 pb-3 sm:hidden">
+        <div className="border-t border-[var(--color-accent)]/10 px-3 pb-3 sm:hidden">
           <div className="flex flex-col gap-0.5 pt-2">
             {links.map((link) => {
               const isActive = pathname === link.href;
@@ -75,8 +81,8 @@ export function Navigation() {
                   onClick={() => setOpen(false)}
                   className={`rounded-2xl px-4 py-3 text-sm font-medium transition-colors ${
                     isActive
-                      ? "bg-[var(--color-text)] text-white"
-                      : "text-[var(--color-text-muted)] hover:bg-white"
+                      ? "bg-[var(--color-accent)] text-white"
+                      : "text-[var(--color-text-muted)] hover:bg-[var(--color-card)]"
                   }`}
                 >
                   {link.label}
