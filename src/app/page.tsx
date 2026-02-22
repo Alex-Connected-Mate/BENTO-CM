@@ -85,18 +85,18 @@ export default function HomePage() {
           size="1x1"
           gradient="bg-gradient-to-br from-violet-500 to-pink-500"
         >
-          <div className="grid grid-cols-3 gap-2 text-center">
+          <div className="grid grid-cols-3 gap-1.5 text-center sm:gap-2">
             <div>
-              <div className="text-xl font-bold text-[var(--color-accent)] sm:text-2xl">50+</div>
-              <div className="text-[11px] text-[var(--color-text-muted)]">Conf\u00e9rences</div>
+              <div className="text-lg font-bold text-[var(--color-accent)] sm:text-2xl">50+</div>
+              <div className="text-[10px] text-[var(--color-text-muted)] sm:text-[11px]">Conf\u00e9rences</div>
             </div>
             <div>
-              <div className="text-xl font-bold text-[var(--color-accent)] sm:text-2xl">100+</div>
-              <div className="text-[11px] text-[var(--color-text-muted)]">\u00c9pisodes</div>
+              <div className="text-lg font-bold text-[var(--color-accent)] sm:text-2xl">100+</div>
+              <div className="text-[10px] text-[var(--color-text-muted)] sm:text-[11px]">\u00c9pisodes</div>
             </div>
             <div>
-              <div className="text-xl font-bold text-[var(--color-accent)] sm:text-2xl">5</div>
-              <div className="text-[11px] text-[var(--color-text-muted)]">Apps</div>
+              <div className="text-lg font-bold text-[var(--color-accent)] sm:text-2xl">5</div>
+              <div className="text-[10px] text-[var(--color-text-muted)] sm:text-[11px]">Apps</div>
             </div>
           </div>
         </BentoCard>
@@ -113,9 +113,9 @@ export default function HomePage() {
           }
         >
           <div className="flex gap-2">
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 text-xs font-medium text-gray-600 transition-colors hover:bg-gray-200">\ud835\udd4f</span>
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 text-xs font-medium text-gray-600 transition-colors hover:bg-gray-200">in</span>
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 text-xs font-medium text-gray-600 transition-colors hover:bg-gray-200">YT</span>
+            <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 text-xs font-medium text-gray-600 transition-colors hover:bg-gray-200 sm:h-8 sm:w-8">\ud835\udd4f</span>
+            <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 text-xs font-medium text-gray-600 transition-colors hover:bg-gray-200 sm:h-8 sm:w-8">in</span>
+            <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 text-xs font-medium text-gray-600 transition-colors hover:bg-gray-200 sm:h-8 sm:w-8">YT</span>
           </div>
         </BentoCard>
       </BentoGrid>

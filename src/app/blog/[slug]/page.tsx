@@ -18,13 +18,13 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         Retour au blog
       </Link>
 
-      <article className="rounded-[var(--radius)] bg-white p-5 sm:p-8">
+      <article className="overflow-hidden rounded-[var(--radius)] bg-white p-4 sm:p-8" style={{ overflowWrap: "break-word" }}>
         <div className="mb-6 sm:mb-8">
           <div className="mb-3 flex flex-wrap items-center gap-2">
             <span className="inline-block rounded-full bg-gray-100 px-2.5 py-0.5 text-[11px] font-medium text-gray-600 sm:text-xs">{article.tag}</span>
             <span className="text-[13px] text-[var(--color-text-muted)] sm:text-sm">{article.readTime} de lecture</span>
           </div>
-          <h1 className="text-2xl font-bold leading-tight text-[var(--color-text)] sm:text-3xl">{article.title}</h1>
+          <h1 className="text-xl font-bold leading-tight text-[var(--color-text)] sm:text-3xl">{article.title}</h1>
           <p className="mt-3 text-[15px] leading-relaxed text-[var(--color-text-muted)] sm:text-lg">{article.excerpt}</p>
           <div className="mt-4 flex items-center gap-2.5 border-b border-gray-100 pb-4 sm:mt-6 sm:pb-6">
             <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[var(--color-accent)]/10 text-xs font-bold text-[var(--color-accent)] sm:h-10 sm:w-10 sm:text-sm">

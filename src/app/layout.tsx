@@ -1,7 +1,13 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { Navigation } from "@/components/Navigation";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
 
 export const metadata: Metadata = {
   title: "Bento Connected Mate",
@@ -22,7 +28,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen">
         <Navigation />
-        <main className="mx-auto max-w-3xl px-4 pb-24 pt-4 sm:pt-8">
+        <main className="mx-auto max-w-3xl px-3 pb-20 pt-4 sm:px-4 sm:pb-24 sm:pt-8">
           {children}
         </main>
         <WhatsAppButton />

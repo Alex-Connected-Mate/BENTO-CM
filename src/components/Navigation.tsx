@@ -19,8 +19,8 @@ export function Navigation() {
 
   return (
     <nav className="sticky top-0 z-50 bg-[var(--color-bg)]/80 backdrop-blur-md">
-      <div className="mx-auto flex max-w-3xl items-center justify-between px-4 py-3 sm:py-4">
-        <Link href="/" className="text-lg font-bold tracking-tight text-[var(--color-text)]">
+      <div className="mx-auto flex max-w-3xl items-center justify-between px-3 py-2.5 sm:px-4 sm:py-4">
+        <Link href="/" className="text-base font-bold tracking-tight text-[var(--color-text)] sm:text-lg">
           Connected<span className="text-[var(--color-accent)]">Mate</span>
         </Link>
 
@@ -47,7 +47,7 @@ export function Navigation() {
         {/* Mobile burger */}
         <button
           onClick={() => setOpen(!open)}
-          className="flex h-9 w-9 items-center justify-center rounded-full bg-white sm:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-full bg-white sm:hidden"
           aria-label="Menu"
         >
           {open ? (
@@ -64,8 +64,8 @@ export function Navigation() {
 
       {/* Mobile dropdown */}
       {open && (
-        <div className="border-t border-gray-200/50 px-4 pb-4 sm:hidden">
-          <div className="flex flex-col gap-1 pt-2">
+        <div className="border-t border-gray-200/50 px-3 pb-3 sm:hidden">
+          <div className="flex flex-col gap-0.5 pt-2">
             {links.map((link) => {
               const isActive = pathname === link.href;
               return (
@@ -73,7 +73,7 @@ export function Navigation() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className={`rounded-2xl px-4 py-2.5 text-sm font-medium transition-colors ${
+                  className={`rounded-2xl px-4 py-3 text-sm font-medium transition-colors ${
                     isActive
                       ? "bg-[var(--color-text)] text-white"
                       : "text-[var(--color-text-muted)] hover:bg-white"

@@ -15,7 +15,7 @@ export default function BlogPage() {
           const sizeClass = size === "2x2" ? "col-span-2 row-span-2" : size === "2x1" ? "col-span-2 row-span-1" : "col-span-1 row-span-1";
 
           return (
-            <Link key={article.slug} href={`/blog/${article.slug}`} className={`group relative overflow-hidden rounded-[var(--radius)] bg-white p-5 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg ${sizeClass}`}>
+            <Link key={article.slug} href={`/blog/${article.slug}`} className={`group relative overflow-hidden rounded-[var(--radius)] bg-white p-4 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg sm:p-5 ${sizeClass}`}>
               <div className={`absolute inset-0 opacity-[0.05] ${article.gradient}`} />
               <div className="relative z-10 flex h-full flex-col">
                 <div className="mb-2 flex flex-wrap items-center gap-1.5">

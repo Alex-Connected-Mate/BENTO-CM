@@ -69,13 +69,13 @@ export default function LegalPage() {
       />
 
       {/* Tab navigation - horizontally scrollable on mobile */}
-      <div className="-mx-4 mb-6 overflow-x-auto px-4 sm:mx-0 sm:mb-8 sm:px-0">
+      <div className="-mx-3 mb-5 overflow-x-auto px-3 sm:-mx-4 sm:mb-8 sm:mx-0 sm:px-0">
         <div className="flex gap-1.5 sm:gap-2">
           {sections.map((section) => (
             <button
               key={section.id}
               onClick={() => setActiveSection(section.id)}
-              className={`shrink-0 rounded-full px-3 py-1.5 text-[13px] font-medium transition-all sm:px-4 sm:py-2 sm:text-sm ${
+              className={`shrink-0 rounded-full px-3 py-2 text-[13px] font-medium transition-all sm:px-4 sm:py-2 sm:text-sm ${
                 activeSection === section.id
                   ? "bg-[var(--color-text)] text-white shadow-sm"
                   : "bg-white text-[var(--color-text-muted)] hover:bg-gray-50 hover:text-[var(--color-text)]"
@@ -89,7 +89,7 @@ export default function LegalPage() {
       </div>
 
       {/* Content */}
-      <div className="rounded-[var(--radius)] bg-white p-5 sm:p-8">
+      <div className="rounded-[var(--radius)] bg-white p-4 sm:p-8">
         <h2 className="mb-4 text-xl font-bold text-[var(--color-text)] sm:mb-6 sm:text-2xl">
           {current.title}
         </h2>

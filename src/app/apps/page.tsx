@@ -25,10 +25,10 @@ export default function AppsPage() {
       <PageHeader title="Nos Applications" subtitle="Des outils pour transformer votre fa\u00e7on de travailler" />
       <BentoGrid>
         {apps.map((app) => (
-          <button key={app.id} onClick={() => setSelectedApp(app)} className={`group relative cursor-pointer overflow-hidden rounded-[var(--radius)] bg-white p-5 text-left transition-all duration-300 hover:scale-[1.02] hover:shadow-lg ${sizeClasses[app.size]}`}>
+          <button key={app.id} onClick={() => setSelectedApp(app)} className={`group relative cursor-pointer overflow-hidden rounded-[var(--radius)] bg-white p-4 text-left transition-all duration-300 hover:scale-[1.02] hover:shadow-lg sm:p-5 ${sizeClasses[app.size]}`}>
             <div className={`absolute inset-0 opacity-[0.05] ${app.gradient}`} />
             <div className="relative z-10 flex h-full flex-col">
-              <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-2xl bg-gray-100 text-[var(--color-accent)]">
+              <div className="mb-2 flex h-9 w-9 items-center justify-center rounded-xl bg-gray-100 text-[var(--color-accent)] sm:mb-3 sm:h-10 sm:w-10 sm:rounded-2xl">
                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
               </div>
               <h3 className="text-[15px] font-semibold text-[var(--color-text)] sm:text-base">{app.title}</h3>
