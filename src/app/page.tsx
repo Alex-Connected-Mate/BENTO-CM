@@ -86,18 +86,18 @@ export default function HomePage() {
           size="1x1"
           gradient="bg-gradient-to-br from-orange-500 to-amber-500"
         >
-          <div className="grid grid-cols-3 gap-1.5 text-center sm:gap-2">
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 8, textAlign: "center" }}>
             <div>
-              <div className="text-lg font-bold sm:text-2xl" style={{ fontFamily: "'Space Grotesk', 'Inter', system-ui, sans-serif", color: "var(--color-accent)" }}>50+</div>
-              <div className="text-[10px] sm:text-[11px]" style={{ color: "var(--color-text-muted)" }}>Conférences</div>
+              <div className="stat-number">50+</div>
+              <div className="stat-label">Conférences</div>
             </div>
             <div>
-              <div className="text-lg font-bold sm:text-2xl" style={{ fontFamily: "'Space Grotesk', 'Inter', system-ui, sans-serif", color: "var(--color-accent)" }}>100+</div>
-              <div className="text-[10px] sm:text-[11px]" style={{ color: "var(--color-text-muted)" }}>Épisodes</div>
+              <div className="stat-number">100+</div>
+              <div className="stat-label">Épisodes</div>
             </div>
             <div>
-              <div className="text-lg font-bold sm:text-2xl" style={{ fontFamily: "'Space Grotesk', 'Inter', system-ui, sans-serif", color: "var(--color-accent)" }}>5</div>
-              <div className="text-[10px] sm:text-[11px]" style={{ color: "var(--color-text-muted)" }}>Apps</div>
+              <div className="stat-number">5</div>
+              <div className="stat-label">Apps</div>
             </div>
           </div>
         </BentoCard>

@@ -8,14 +8,14 @@
   --color-accent: #E8600A;
   --color-accent-light: #F5A623;
   --color-accent-hover: #D4550A;
-  --gap: 10px;
-  --radius: 16px;
+  --gap: 12px;
+  --radius: 18px;
 }
 
 @media (min-width: 640px) {
   :root {
-    --gap: 14px;
-    --radius: 20px;
+    --gap: 16px;
+    --radius: 22px;
   }
 }
 
@@ -45,7 +45,7 @@ h1, h2, h3, h4 {
 .bento-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: minmax(130px, auto);
+  grid-auto-rows: minmax(150px, auto);
   grid-auto-flow: dense;
   gap: var(--gap);
 }
@@ -53,31 +53,31 @@ h1, h2, h3, h4 {
 @media (min-width: 640px) {
   .bento-grid {
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(150px, auto);
+    grid-auto-rows: minmax(170px, auto);
   }
 }
 
 /* =============================================
-   BENTO CARD – base styles (plain CSS, no Tailwind arbitrary values)
+   BENTO CARD
    ============================================= */
 
 .bento-card {
   position: relative;
   overflow: hidden;
   border-radius: var(--radius);
-  padding: 16px;
+  padding: 18px;
   background-color: var(--color-card);
-  border: 1px solid rgba(45, 27, 6, 0.06);
+  border: 1.5px solid rgba(45, 27, 6, 0.10);
   box-shadow:
-    0 1px 2px rgba(45, 27, 6, 0.04),
-    0 4px 12px rgba(45, 27, 6, 0.06);
+    0 1px 3px rgba(45, 27, 6, 0.06),
+    0 6px 16px rgba(45, 27, 6, 0.08);
   transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
               box-shadow 0.3s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 @media (min-width: 640px) {
   .bento-card {
-    padding: 20px;
+    padding: 24px;
   }
 }
 
@@ -85,8 +85,8 @@ h1, h2, h3, h4 {
   .bento-card:hover {
     transform: scale(1.02);
     box-shadow:
-      0 8px 24px rgba(45, 27, 6, 0.10),
-      0 2px 8px rgba(45, 27, 6, 0.06);
+      0 12px 32px rgba(45, 27, 6, 0.14),
+      0 4px 12px rgba(45, 27, 6, 0.08);
   }
 }
 
@@ -95,15 +95,15 @@ h1, h2, h3, h4 {
   border: none;
   color: white;
   box-shadow:
-    0 4px 16px -4px rgba(232, 96, 10, 0.30),
-    0 2px 6px rgba(232, 96, 10, 0.15);
+    0 6px 20px -4px rgba(232, 96, 10, 0.35),
+    0 2px 8px rgba(232, 96, 10, 0.18);
 }
 
 @media (hover: hover) {
   .bento-card--colored:hover {
     box-shadow:
-      0 20px 40px -12px rgba(232, 96, 10, 0.35),
-      0 4px 12px rgba(232, 96, 10, 0.20);
+      0 20px 44px -12px rgba(232, 96, 10, 0.40),
+      0 6px 16px rgba(232, 96, 10, 0.22);
   }
 }
 
@@ -121,19 +121,21 @@ h1, h2, h3, h4 {
   position: sticky;
   top: 0;
   z-index: 50;
-  background-color: rgba(245, 237, 224, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background-color: rgba(245, 237, 224, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(232, 96, 10, 0.10);
 }
 
 .nav-link {
+  display: inline-block;
   border-radius: 9999px;
-  padding: 6px 12px;
+  padding: 6px 14px;
   font-size: 13px;
   font-weight: 500;
   transition: background-color 0.15s, color 0.15s;
   color: var(--color-text-muted);
+  text-decoration: none;
 }
 
 .nav-link:hover {
@@ -159,28 +161,28 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 12px;
-  margin-bottom: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  margin-bottom: 10px;
 }
 
 @media (min-width: 640px) {
   .icon-box {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     border-radius: 16px;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
   }
 }
 
 .icon-box--default {
-  background-color: rgba(232, 96, 10, 0.10);
+  background-color: rgba(232, 96, 10, 0.12);
   color: var(--color-accent);
 }
 
 .icon-box--white {
-  background-color: rgba(255, 255, 255, 0.20);
+  background-color: rgba(255, 255, 255, 0.22);
   color: white;
 }
 
@@ -198,31 +200,27 @@ h1, h2, h3, h4 {
 }
 
 @keyframes cardIn {
-  from { opacity: 0; transform: translateY(12px) scale(0.97); }
+  from { opacity: 0; transform: translateY(14px) scale(0.96); }
   to { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 .bento-grid > * {
-  animation: cardIn 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: cardIn 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .bento-grid > *:nth-child(1) { animation-delay: 0ms; }
-.bento-grid > *:nth-child(2) { animation-delay: 60ms; }
-.bento-grid > *:nth-child(3) { animation-delay: 120ms; }
-.bento-grid > *:nth-child(4) { animation-delay: 180ms; }
-.bento-grid > *:nth-child(5) { animation-delay: 240ms; }
-.bento-grid > *:nth-child(6) { animation-delay: 300ms; }
-.bento-grid > *:nth-child(7) { animation-delay: 360ms; }
-.bento-grid > *:nth-child(8) { animation-delay: 420ms; }
+.bento-grid > *:nth-child(2) { animation-delay: 70ms; }
+.bento-grid > *:nth-child(3) { animation-delay: 140ms; }
+.bento-grid > *:nth-child(4) { animation-delay: 210ms; }
+.bento-grid > *:nth-child(5) { animation-delay: 280ms; }
+.bento-grid > *:nth-child(6) { animation-delay: 350ms; }
+.bento-grid > *:nth-child(7) { animation-delay: 420ms; }
+.bento-grid > *:nth-child(8) { animation-delay: 490ms; }
 
-/* Smooth scroll */
 @media (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
-  }
+  html { scroll-behavior: smooth; }
 }
 
-/* Better touch feedback on mobile */
 @media (hover: none) {
   .bento-card:active {
     transform: scale(0.97) !important;
@@ -237,7 +235,7 @@ h1, h2, h3, h4 {
 .vintage-circle {
   position: absolute;
   border-radius: 50%;
-  border: 2px solid rgba(232, 96, 10, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.18);
   pointer-events: none;
 }
 
@@ -246,7 +244,7 @@ h1, h2, h3, h4 {
   position: absolute;
   inset: 8px;
   border-radius: 50%;
-  border: 2px solid rgba(232, 96, 10, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.12);
 }
 
 .vintage-circle::after {
@@ -254,7 +252,7 @@ h1, h2, h3, h4 {
   position: absolute;
   inset: 16px;
   border-radius: 50%;
-  border: 2px solid rgba(232, 96, 10, 0.06);
+  border: 2px solid rgba(255, 255, 255, 0.07);
 }
 
 /* =============================================
@@ -265,17 +263,17 @@ h1, h2, h3, h4 {
   position: fixed;
   inset: 0;
   z-index: 40;
-  background-color: rgba(45, 27, 6, 0.30);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background-color: rgba(45, 27, 6, 0.35);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .modal-content {
   background-color: var(--color-card);
   border-radius: var(--radius);
   box-shadow:
-    0 25px 50px -12px rgba(45, 27, 6, 0.25),
-    0 8px 24px rgba(45, 27, 6, 0.08);
+    0 25px 50px -12px rgba(45, 27, 6, 0.30),
+    0 10px 30px rgba(45, 27, 6, 0.10);
   max-height: 90vh;
   overflow-y: auto;
 }
@@ -287,40 +285,39 @@ h1, h2, h3, h4 {
 .badge {
   display: inline-block;
   border-radius: 9999px;
-  padding: 2px 10px;
+  padding: 3px 10px;
   font-size: 11px;
-  font-weight: 500;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 @media (min-width: 640px) {
-  .badge {
-    font-size: 12px;
-  }
+  .badge { font-size: 12px; }
 }
 
 .badge--accent {
-  background-color: rgba(232, 96, 10, 0.10);
+  background-color: rgba(232, 96, 10, 0.12);
   color: var(--color-accent);
 }
 
 .badge--white {
-  background-color: rgba(255, 255, 255, 0.20);
+  background-color: rgba(255, 255, 255, 0.22);
   color: white;
 }
 
 .badge--amber {
   background-color: #fef3c6;
-  color: #b75000;
+  color: #92400e;
 }
 
 .badge--orange {
   background-color: #ffedd5;
-  color: #c53c00;
+  color: #9a3412;
 }
 
 .badge--red {
   background-color: #fef2f2;
-  color: #e40014;
+  color: #b91c1c;
 }
 
 /* =============================================
@@ -331,25 +328,58 @@ h1, h2, h3, h4 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   border-radius: 9999px;
-  background-color: rgba(232, 96, 10, 0.10);
+  background-color: rgba(232, 96, 10, 0.15);
   color: var(--color-accent);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
-  transition: background-color 0.15s;
+  text-decoration: none;
+  transition: background-color 0.15s, transform 0.15s;
 }
 
 @media (min-width: 640px) {
   .social-circle {
-    width: 32px;
-    height: 32px;
+    width: 42px;
+    height: 42px;
+    font-size: 15px;
   }
 }
 
 .social-circle:hover {
-  background-color: rgba(232, 96, 10, 0.20);
+  background-color: rgba(232, 96, 10, 0.25);
+  transform: scale(1.08);
+}
+
+/* =============================================
+   STAT NUMBER (En chiffres)
+   ============================================= */
+
+.stat-number {
+  font-family: "Space Grotesk", "Inter", system-ui, sans-serif;
+  font-weight: 700;
+  color: var(--color-accent);
+  white-space: nowrap;
+  font-size: 22px;
+  line-height: 1.1;
+}
+
+@media (min-width: 640px) {
+  .stat-number {
+    font-size: 28px;
+  }
+}
+
+.stat-label {
+  color: var(--color-text-muted);
+  font-size: 10px;
+  margin-top: 2px;
+  white-space: nowrap;
+}
+
+@media (min-width: 640px) {
+  .stat-label { font-size: 11px; }
 }
 
 /* =============================================
@@ -361,8 +391,8 @@ h1, h2, h3, h4 {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   border-radius: 9999px;
   font-size: 10px;
   font-weight: 700;
@@ -372,8 +402,8 @@ h1, h2, h3, h4 {
 
 @media (min-width: 640px) {
   .speaker-avatar {
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 34px;
     font-size: 11px;
   }
 }
@@ -385,30 +415,52 @@ h1, h2, h3, h4 {
 .whatsapp-btn {
   position: fixed;
   bottom: 20px;
-  right: 12px;
+  right: 16px;
   z-index: 40;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
+  gap: 8px;
   height: 48px;
+  padding: 0 14px;
   border-radius: 9999px;
   background-color: var(--color-accent);
   color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
   box-shadow:
-    0 4px 16px -4px rgba(232, 96, 10, 0.40),
-    0 2px 6px rgba(232, 96, 10, 0.20);
-  transition: transform 0.2s, background-color 0.2s;
+    0 6px 20px -4px rgba(232, 96, 10, 0.45),
+    0 2px 8px rgba(232, 96, 10, 0.22);
+  transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
 }
 
 @media (min-width: 640px) {
   .whatsapp-btn {
     bottom: 24px;
     right: 24px;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 14px;
   }
 }
 
 .whatsapp-btn:hover {
-  transform: scale(1.10);
+  transform: scale(1.05);
   background-color: var(--color-accent-hover);
+  box-shadow:
+    0 10px 28px -4px rgba(232, 96, 10, 0.50),
+    0 4px 12px rgba(232, 96, 10, 0.25);
+}
+
+/* Icon only on very small screens */
+@media (max-width: 400px) {
+  .whatsapp-btn {
+    width: 48px;
+    padding: 0;
+  }
+  .whatsapp-btn .whatsapp-label {
+    display: none;
+  }
 }
