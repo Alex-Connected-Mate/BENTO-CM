@@ -8,6 +8,7 @@ export default function HomePage() {
       <PageHeader
         title="Connected Mate"
         subtitle="Conférences, podcasts et applications"
+        showLogo
       />
 
       <BentoGrid>
@@ -18,23 +19,23 @@ export default function HomePage() {
           colored
           gradient="bg-gradient-to-br from-orange-500 to-amber-600"
           icon={
-            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg style={{ width: 24, height: 24 }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
           }
         >
-          <div className="vintage-circle absolute -bottom-8 -right-8 h-32 w-32 sm:-bottom-10 sm:-right-10 sm:h-44 sm:w-44" />
+          <div className="vintage-circle" style={{ position: "absolute", bottom: -32, right: -32, width: 140, height: 140 }} />
         </BentoCard>
 
         <BentoCard
           title="Keynotes"
-          description="Nos conférences inspirantes sur l’innovation et la tech."
+          description="Nos conférences inspirantes sur l'innovation et la tech."
           size="2x1"
           href="/keynote"
           colored
           gradient="bg-gradient-to-br from-red-500 to-orange-500"
           icon={
-            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg style={{ width: 24, height: 24 }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
             </svg>
           }
@@ -48,7 +49,7 @@ export default function HomePage() {
           colored
           gradient="bg-gradient-to-br from-amber-500 to-yellow-500"
           icon={
-            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg style={{ width: 24, height: 24 }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
             </svg>
           }
@@ -62,7 +63,7 @@ export default function HomePage() {
           colored
           gradient="bg-gradient-to-br from-orange-400 to-red-500"
           icon={
-            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg style={{ width: 24, height: 24 }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
             </svg>
           }
@@ -70,12 +71,12 @@ export default function HomePage() {
 
         <BentoCard
           title="Blog"
-          description="Articles et retours d’expérience."
+          description="Articles et retours d'expérience."
           size="1x1"
           href="/blog"
           gradient="bg-gradient-to-br from-amber-400 to-orange-500"
           icon={
-            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg style={{ width: 24, height: 24 }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
             </svg>
           }
@@ -108,12 +109,12 @@ export default function HomePage() {
           size="2x1"
           gradient="bg-gradient-to-br from-amber-600 to-orange-600"
           icon={
-            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg style={{ width: 24, height: 24 }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
             </svg>
           }
         >
-          <div className="flex gap-2">
+          <div style={{ display: "flex", gap: 10 }}>
             <a href="https://www.youtube.com/@ConnectedMate" target="_blank" rel="noopener noreferrer" className="social-circle" aria-label="YouTube">YT</a>
             <a href="https://smartlink.ausha.co/connectedmate" target="_blank" rel="noopener noreferrer" className="social-circle" aria-label="Podcast">🎙</a>
             <a href="https://open.spotify.com/show/0HE6b6ZfN3zeU4QikK7XFd" target="_blank" rel="noopener noreferrer" className="social-circle" aria-label="Spotify">♪</a>

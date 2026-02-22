@@ -26,9 +26,20 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
       </head>
-      <body className="min-h-screen">
+      <body style={{ minHeight: "100vh" }}>
         <Navigation />
-        <main className="mx-auto max-w-6xl px-4 pb-24 pt-6 sm:px-6 sm:pb-32 sm:pt-10 lg:px-8">
+        <main
+          style={{
+            width: "100%",
+            maxWidth: 1200,
+            marginLeft: "auto",
+            marginRight: "auto",
+            paddingLeft: 20,
+            paddingRight: 20,
+            paddingTop: 32,
+            paddingBottom: 100,
+          }}
+        >
           {children}
         </main>
         <WhatsAppButton />
