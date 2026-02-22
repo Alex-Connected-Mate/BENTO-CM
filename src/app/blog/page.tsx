@@ -8,7 +8,7 @@ const sizePattern = ["2x2", "2x1", "1x1", "1x1", "2x1", "2x2"] as const;
 export default function BlogPage() {
   return (
     <div className="animate-fade-in">
-      <PageHeader title="Blog" subtitle="Articles et retours d\u2019exp\u00e9rience de notre \u00e9quipe" />
+      <PageHeader title="Blog" subtitle="Articles et retours d’expérience de notre équipe" />
       <BentoGrid>
         {articles.map((article, index) => {
           const size = sizePattern[index % sizePattern.length];

@@ -7,13 +7,13 @@ export default function HomePage() {
     <div className="animate-fade-in">
       <PageHeader
         title="Connected Mate"
-        subtitle="Conf\u00e9rences, podcasts et applications"
+        subtitle="Conférences, podcasts et applications"
       />
 
       <BentoGrid>
         <BentoCard
           title="Bienvenue chez Connected Mate"
-          description="Nous connectons les id\u00e9es, les personnes et les technologies pour cr\u00e9er des exp\u00e9riences uniques."
+          description="Nous connectons les idées, les personnes et les technologies pour créer des expériences uniques."
           size="2x2"
           colored
           gradient="bg-gradient-to-br from-orange-500 to-amber-600"
@@ -28,7 +28,7 @@ export default function HomePage() {
 
         <BentoCard
           title="Keynotes"
-          description="Nos conf\u00e9rences inspirantes sur l\u2019innovation et la tech."
+          description="Nos conférences inspirantes sur l’innovation et la tech."
           size="2x1"
           href="/keynote"
           colored
@@ -42,7 +42,7 @@ export default function HomePage() {
 
         <BentoCard
           title="Podcasts"
-          description="\u00c9coutez nos \u00e9pisodes passionnants."
+          description="Écoutez nos épisodes passionnants."
           size="1x1"
           href="/podcasts"
           colored
@@ -70,7 +70,7 @@ export default function HomePage() {
 
         <BentoCard
           title="Blog"
-          description="Articles et retours d\u2019exp\u00e9rience."
+          description="Articles et retours d’expérience."
           size="1x1"
           href="/blog"
           gradient="bg-gradient-to-br from-amber-400 to-orange-500"
@@ -89,11 +89,11 @@ export default function HomePage() {
           <div className="grid grid-cols-3 gap-1.5 text-center sm:gap-2">
             <div>
               <div className="font-[Space_Grotesk] text-lg font-bold text-[var(--color-accent)] sm:text-2xl">50+</div>
-              <div className="text-[10px] text-[var(--color-text-muted)] sm:text-[11px]">Conf\u00e9rences</div>
+              <div className="text-[10px] text-[var(--color-text-muted)] sm:text-[11px]">Conférences</div>
             </div>
             <div>
               <div className="font-[Space_Grotesk] text-lg font-bold text-[var(--color-accent)] sm:text-2xl">100+</div>
-              <div className="text-[10px] text-[var(--color-text-muted)] sm:text-[11px]">\u00c9pisodes</div>
+              <div className="text-[10px] text-[var(--color-text-muted)] sm:text-[11px]">Épisodes</div>
             </div>
             <div>
               <div className="font-[Space_Grotesk] text-lg font-bold text-[var(--color-accent)] sm:text-2xl">5</div>
@@ -103,8 +103,8 @@ export default function HomePage() {
         </BentoCard>
 
         <BentoCard
-          title="Restons connect\u00e9s"
-          description="Suivez-nous sur les r\u00e9seaux."
+          title="Restons connectés"
+          description="Suivez-nous sur les réseaux."
           size="2x1"
           gradient="bg-gradient-to-br from-amber-600 to-orange-600"
           icon={
@@ -114,7 +114,7 @@ export default function HomePage() {
           }
         >
           <div className="flex gap-2">
-            <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[var(--color-accent)]/10 text-xs font-bold text-[var(--color-accent)] transition-colors hover:bg-[var(--color-accent)]/20 sm:h-8 sm:w-8">\ud835\udd4f</span>
+            <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[var(--color-accent)]/10 text-xs font-bold text-[var(--color-accent)] transition-colors hover:bg-[var(--color-accent)]/20 sm:h-8 sm:w-8">𝕏</span>
             <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[var(--color-accent)]/10 text-xs font-bold text-[var(--color-accent)] transition-colors hover:bg-[var(--color-accent)]/20 sm:h-8 sm:w-8">in</span>
             <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[var(--color-accent)]/10 text-xs font-bold text-[var(--color-accent)] transition-colors hover:bg-[var(--color-accent)]/20 sm:h-8 sm:w-8">YT</span>
           </div>

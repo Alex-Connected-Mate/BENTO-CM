@@ -11,7 +11,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: "Connected Mate - Vintage Tech",
-  description: "Connected Mate - Conf\u00e9rences, Podcasts, Apps & more",
+  description: "Connected Mate - Conférences, Podcasts, Apps & more",
 };
 
 export default function RootLayout({

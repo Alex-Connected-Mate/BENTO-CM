@@ -25,9 +25,9 @@ interface AppModalProps {
 }
 
 const legalSections = [
-  { key: "privacy" as const, label: "Confidentialit\u00e9", icon: "M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" },
+  { key: "privacy" as const, label: "Confidentialité", icon: "M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" },
   { key: "terms" as const, label: "Conditions", icon: "M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" },
-  { key: "dataProcessing" as const, label: "Donn\u00e9es", icon: "M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" },
+  { key: "dataProcessing" as const, label: "Données", icon: "M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" },
 ];
 
 export function AppModal({ app, onClose }: AppModalProps) {
@@ -65,7 +65,7 @@ export function AppModal({ app, onClose }: AppModalProps) {
                     className={`inline-block shrink-0 rounded-full px-2.5 py-0.5 text-[11px] font-medium sm:text-xs ${
                       app.status === "Disponible"
                         ? "bg-amber-100 text-amber-700"
-                        : app.status === "B\u00eata"
+                        : app.status === "Bêta"
                         ? "bg-orange-100 text-orange-700"
                         : "bg-red-50 text-red-600"
                     }`}
@@ -124,7 +124,7 @@ export function AppModal({ app, onClose }: AppModalProps) {
 
           <div className="space-y-1.5 sm:space-y-2">
             <h3 className="mb-2 text-[11px] font-medium uppercase tracking-wider text-[var(--color-text-muted)] sm:mb-3 sm:text-xs">
-              Informations l\u00e9gales
+              Informations légales
             </h3>
             {legalSections.map((section) => (
               <div
