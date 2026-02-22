@@ -25,7 +25,7 @@ export default function AppsPage() {
       <PageHeader title="Nos Applications" subtitle="Des outils pour transformer votre fa\u00e7on de travailler" />
       <BentoGrid>
         {apps.map((app) => (
-          <button key={app.id} onClick={() => setSelectedApp(app)} className={`group relative cursor-pointer overflow-hidden rounded-[var(--radius)] bg-white p-4 text-left transition-all duration-300 hover:scale-[1.02] hover:shadow-lg sm:p-5 ${sizeClasses[app.size]}`}>
+          <button key={app.id} onClick={() => setSelectedApp(app)} className={`group relative cursor-pointer overflow-hidden rounded-[var(--radius)] bg-white p-4 text-left transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-lg sm:p-5 ${sizeClasses[app.size]}`}>
             <div className={`absolute inset-0 opacity-[0.05] ${app.gradient}`} />
             <div className="relative z-10 flex h-full flex-col">
               <div className="mb-2 flex h-9 w-9 items-center justify-center rounded-xl bg-gray-100 text-[var(--color-accent)] sm:mb-3 sm:h-10 sm:w-10 sm:rounded-2xl">

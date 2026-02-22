@@ -37,7 +37,11 @@ export function BentoCard({
     ? `${gradient} text-white`
     : "bg-white";
 
-  const baseClasses = `group relative overflow-hidden rounded-[var(--radius)] ${coloredBg} p-4 sm:p-5 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg ${sizeClasses[size]} ${className}`;
+  const hoverShadow = colored
+    ? "hover:shadow-[0_20px_40px_-12px_rgba(0,0,0,0.25)]"
+    : "hover:shadow-lg";
+
+  const baseClasses = `group relative overflow-hidden rounded-[var(--radius)] ${coloredBg} p-4 sm:p-5 transition-all duration-300 ease-out hover:scale-[1.02] ${hoverShadow} ${sizeClasses[size]} ${className}`;
 
   const textColor = colored ? "text-white" : "text-[var(--color-text)]";
   const mutedColor = colored ? "text-white/70" : "text-[var(--color-text-muted)]";
