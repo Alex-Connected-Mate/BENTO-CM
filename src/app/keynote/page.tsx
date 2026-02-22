@@ -22,12 +22,12 @@ interface Keynote {
 
 const keynotes: Keynote[] = [
   {
-    title: "L'IA au service de l'humain",
+    title: "L\u2019IA au service de l\u2019humain",
     description:
-      "Comment l'intelligence artificielle transforme nos métiers et nos interactions. Une vision centrée sur l'augmentation des capacités humaines.",
+      "Comment l\u2019intelligence artificielle transforme nos m\u00e9tiers et nos interactions. Une vision centr\u00e9e sur l\u2019augmentation des capacit\u00e9s humaines.",
     size: "2x2",
     gradient: "bg-gradient-to-br from-orange-500 to-red-600",
-    tag: "Conférence phare",
+    tag: "Conf\u00e9rence phare",
     speakers: [
       { name: "Alexandre Martin", role: "CEO, Connected Mate", initials: "AM", color: "from-orange-400 to-red-500" },
       { name: "Sophie Durand", role: "Head of AI Research", initials: "SD", color: "from-pink-400 to-rose-500" },
@@ -36,29 +36,29 @@ const keynotes: Keynote[] = [
   {
     title: "Le futur du travail hybride",
     description:
-      "Les nouvelles formes de collaboration et d'organisation du travail à l'ère post-pandémie.",
+      "Les nouvelles formes de collaboration et d\u2019organisation du travail \u00e0 l\u2019\u00e8re post-pand\u00e9mie.",
     size: "2x1",
     gradient: "bg-gradient-to-br from-blue-500 to-indigo-600",
     tag: "Tendances",
     speakers: [
-      { name: "Marc Lefèvre", role: "Directeur Innovation", initials: "ML", color: "from-blue-400 to-indigo-500" },
+      { name: "Marc Lef\u00e8vre", role: "Directeur Innovation", initials: "ML", color: "from-blue-400 to-indigo-500" },
     ],
   },
   {
     title: "Innovation & Disruption",
     description:
-      "Comment les startups redéfinissent les industries traditionnelles avec des approches radicalement nouvelles.",
+      "Comment les startups red\u00e9finissent les industries traditionnelles avec des approches radicalement nouvelles.",
     size: "1x1",
     gradient: "bg-gradient-to-br from-emerald-500 to-teal-600",
     tag: "Startup",
     speakers: [
-      { name: "Léa Chen", role: "Startup Advisor", initials: "LC", color: "from-emerald-400 to-teal-500" },
+      { name: "L\u00e9a Chen", role: "Startup Advisor", initials: "LC", color: "from-emerald-400 to-teal-500" },
     ],
   },
   {
     title: "Leadership Digital",
     description:
-      "Les compétences essentielles du leader dans un monde numérique en constante évolution.",
+      "Les comp\u00e9tences essentielles du leader dans un monde num\u00e9rique en constante \u00e9volution.",
     size: "1x1",
     gradient: "bg-gradient-to-br from-purple-500 to-pink-600",
     tag: "Management",
@@ -68,12 +68,12 @@ const keynotes: Keynote[] = [
     ],
   },
   {
-    title: "Data & Éthique",
+    title: "Data & \u00c9thique",
     description:
-      "Concilier exploitation des données et respect de la vie privée : les enjeux d'aujourd'hui et de demain.",
+      "Concilier exploitation des donn\u00e9es et respect de la vie priv\u00e9e : les enjeux d\u2019aujourd\u2019hui et de demain.",
     size: "2x1",
     gradient: "bg-gradient-to-br from-rose-500 to-orange-500",
-    tag: "Éthique",
+    tag: "\u00c9thique",
     speakers: [
       { name: "Nicolas Roux", role: "Data Privacy Officer", initials: "NR", color: "from-rose-400 to-orange-500" },
       { name: "Amina Diallo", role: "Ethicist, AI Lab", initials: "AD", color: "from-amber-400 to-orange-500" },
@@ -81,12 +81,12 @@ const keynotes: Keynote[] = [
     ],
   },
   {
-    title: "Cybersécurité pour tous",
+    title: "Cybers\u00e9curit\u00e9 pour tous",
     description:
-      "Les bonnes pratiques de sécurité numérique accessibles à tous les publics.",
+      "Les bonnes pratiques de s\u00e9curit\u00e9 num\u00e9rique accessibles \u00e0 tous les publics.",
     size: "1x1",
     gradient: "bg-gradient-to-br from-slate-500 to-zinc-600",
-    tag: "Sécurité",
+    tag: "S\u00e9curit\u00e9",
     speakers: [
       { name: "Karim Benali", role: "CISO", initials: "KB", color: "from-slate-400 to-zinc-500" },
     ],
@@ -94,7 +94,7 @@ const keynotes: Keynote[] = [
   {
     title: "Green IT",
     description:
-      "Réduire l'empreinte carbone du numérique : solutions concrètes et retours d'expérience.",
+      "R\u00e9duire l\u2019empreinte carbone du num\u00e9rique : solutions concr\u00e8tes et retours d\u2019exp\u00e9rience.",
     size: "1x1",
     gradient: "bg-gradient-to-br from-lime-500 to-green-600",
     tag: "Environnement",
@@ -117,35 +117,31 @@ export default function KeynotePage() {
     <div className="animate-fade-in">
       <PageHeader
         title="Keynotes"
-        subtitle="Nos conférences et interventions sur l'innovation, la tech et la transformation digitale"
+        subtitle="Nos conf\u00e9rences et interventions sur l\u2019innovation, la tech et la transformation digitale"
       />
 
       <BentoGrid>
         {keynotes.map((keynote) => (
           <div
             key={keynote.title}
-            className={`group relative overflow-hidden rounded-2xl border border-[var(--color-border)] bg-[var(--color-card)] p-6 transition-all duration-300 hover:border-[var(--color-accent)]/40 hover:bg-[var(--color-card-hover)] hover:shadow-lg hover:shadow-[var(--color-accent)]/5 ${sizeClasses[keynote.size]}`}
+            className={`group relative overflow-hidden rounded-3xl bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 ${sizeClasses[keynote.size]}`}
           >
-            {/* Background gradient */}
             <div
-              className={`absolute inset-0 opacity-10 transition-opacity duration-300 group-hover:opacity-20 ${keynote.gradient}`}
+              className={`absolute inset-0 opacity-[0.06] transition-opacity duration-300 group-hover:opacity-[0.1] ${keynote.gradient}`}
             />
 
             <div className="relative z-10 flex h-full flex-col">
-              {/* Tag */}
               <div className="mb-3 flex items-center gap-2">
-                <span className="inline-block rounded-full bg-white/10 px-3 py-1 text-xs font-medium">
+                <span className="inline-block rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-600">
                   {keynote.tag}
                 </span>
               </div>
 
-              {/* Title & Description */}
-              <h3 className="text-lg font-semibold">{keynote.title}</h3>
+              <h3 className="text-lg font-semibold text-[var(--color-text)]">{keynote.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-[var(--color-text-muted)]">
                 {keynote.description}
               </p>
 
-              {/* Speakers */}
               <div className="mt-auto pt-4">
                 <div className="mb-2 text-xs font-medium uppercase tracking-wider text-[var(--color-text-muted)]">
                   {keynote.speakers.length > 1 ? "Speakers" : "Speaker"}
@@ -155,7 +151,7 @@ export default function KeynotePage() {
                     <div key={speaker.name} className="flex items-center gap-3">
                       <SpeakerAvatar initials={speaker.initials} gradient={speaker.color} />
                       <div className="min-w-0">
-                        <div className="truncate text-sm font-medium">
+                        <div className="truncate text-sm font-medium text-[var(--color-text)]">
                           {speaker.name}
                         </div>
                         <div className="truncate text-xs text-[var(--color-text-muted)]">

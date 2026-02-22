@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 type BentoSize = "1x1" | "2x1" | "1x2" | "2x2";
 
@@ -30,22 +31,22 @@ export function BentoCard({
   children,
   gradient,
 }: BentoCardProps) {
-  const baseClasses = `group relative overflow-hidden rounded-2xl border border-[var(--color-border)] bg-[var(--color-card)] p-6 transition-all duration-300 hover:border-[var(--color-accent)]/40 hover:bg-[var(--color-card-hover)] hover:shadow-lg hover:shadow-[var(--color-accent)]/5 ${sizeClasses[size]} ${className}`;
+  const baseClasses = `group relative overflow-hidden rounded-3xl bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 ${sizeClasses[size]} ${className}`;
 
   const content = (
     <>
       {gradient && (
         <div
-          className={`absolute inset-0 opacity-10 transition-opacity duration-300 group-hover:opacity-20 ${gradient}`}
+          className={`absolute inset-0 opacity-[0.06] transition-opacity duration-300 group-hover:opacity-[0.1] ${gradient}`}
         />
       )}
       <div className="relative z-10 flex h-full flex-col">
         {icon && (
-          <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--color-accent)]/10 text-[var(--color-accent-light)]">
+          <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-2xl bg-gray-100 text-[var(--color-accent)]">
             {icon}
           </div>
         )}
-        <h3 className="text-lg font-semibold">{title}</h3>
+        <h3 className="text-lg font-semibold text-[var(--color-text)]">{title}</h3>
         {description && (
           <p className="mt-2 text-sm leading-relaxed text-[var(--color-text-muted)]">
             {description}
@@ -53,7 +54,7 @@ export function BentoCard({
         )}
         {children && <div className="mt-4 flex-1">{children}</div>}
         {href && (
-          <div className="mt-4 flex items-center gap-1 text-sm text-[var(--color-accent-light)] opacity-0 transition-opacity group-hover:opacity-100">
+          <div className="mt-4 flex items-center gap-1 text-sm text-[var(--color-accent)] opacity-0 transition-opacity group-hover:opacity-100">
             Voir plus
             <svg
               className="h-4 w-4 transition-transform group-hover:translate-x-1"
@@ -75,15 +76,18 @@ export function BentoCard({
   );
 
   if (href) {
+    const isExternal = href.startsWith("http");
+    if (isExternal) {
+      return (
+        <a href={href} target="_blank" rel="noopener noreferrer" className={baseClasses}>
+          {content}
+        </a>
+      );
+    }
     return (
-      <a
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={baseClasses}
-      >
+      <Link href={href} className={baseClasses}>
         {content}
-      </a>
+      </Link>
     );
   }
 

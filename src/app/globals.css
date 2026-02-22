@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --color-bg: #0a0a0a;
-  --color-card: #141414;
-  --color-card-hover: #1a1a1a;
-  --color-border: #262626;
-  --color-text: #fafafa;
-  --color-text-muted: #a3a3a3;
+  --color-bg: #f0f0f0;
+  --color-card: #ffffff;
+  --color-card-hover: #fafafa;
+  --color-border: transparent;
+  --color-text: #1a1a1a;
+  --color-text-muted: #6b7280;
   --color-accent: #6366f1;
-  --color-accent-light: #818cf8;
+  --color-accent-light: #4f46e5;
 }
 
 * {
@@ -22,7 +22,6 @@ body {
     sans-serif;
 }
 
-/* Smooth page transitions */
 @keyframes fadeIn {
   from {
     opacity: 0;

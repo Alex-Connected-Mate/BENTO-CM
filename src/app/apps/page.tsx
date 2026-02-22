@@ -27,9 +27,9 @@ const apps: AppData[] = [
     id: "connected-hub",
     title: "Connected Hub",
     description:
-      "Notre plateforme centrale de collaboration. Gérez vos projets, communiquez avec votre équipe et suivez vos objectifs en temps réel.",
+      "Notre plateforme centrale de collaboration. G\u00e9rez vos projets, communiquez avec votre \u00e9quipe et suivez vos objectifs en temps r\u00e9el.",
     fullDescription:
-      "Connected Hub est la plateforme phare de Connected Mate. Elle centralise la gestion de projets, la communication d'équipe, le suivi des OKR et la gestion documentaire. Avec des intégrations natives vers Slack, Notion, Google Workspace et plus de 50 autres outils, Connected Hub s'intègre parfaitement dans votre écosystème existant. Fonctionnalités clés : tableaux Kanban, chat temps réel, visioconférence intégrée, reporting automatisé.",
+      "Connected Hub est la plateforme phare de Connected Mate. Elle centralise la gestion de projets, la communication d\u2019\u00e9quipe, le suivi des OKR et la gestion documentaire. Avec des int\u00e9grations natives vers Slack, Notion, Google Workspace et plus de 50 autres outils, Connected Hub s\u2019int\u00e8gre parfaitement dans votre \u00e9cosyst\u00e8me existant. Fonctionnalit\u00e9s cl\u00e9s : tableaux Kanban, chat temps r\u00e9el, visioconf\u00e9rence int\u00e9gr\u00e9e, reporting automatis\u00e9.",
     size: "2x2",
     gradient: "bg-gradient-to-br from-indigo-500 to-purple-600",
     status: "Disponible",
@@ -37,32 +37,29 @@ const apps: AppData[] = [
     appUrl: "https://hub.connectedmate.com",
     legal: {
       privacy:
-        "Connected Hub collecte et traite vos données conformément au RGPD. Les données sont hébergées en Europe (AWS eu-west-3). Nous ne partageons jamais vos données avec des tiers sans votre consentement explicite. Vous pouvez exercer vos droits d'accès, de rectification et de suppression à tout moment.",
+        "Connected Hub collecte et traite vos donn\u00e9es conform\u00e9ment au RGPD. Les donn\u00e9es sont h\u00e9berg\u00e9es en Europe (AWS eu-west-3). Nous ne partageons jamais vos donn\u00e9es avec des tiers sans votre consentement explicite. Vous pouvez exercer vos droits d\u2019acc\u00e8s, de rectification et de suppression \u00e0 tout moment.",
       terms:
-        "L'utilisation de Connected Hub est soumise à nos conditions générales d'utilisation. L'abonnement est mensuel ou annuel, résiliable à tout moment. Support technique inclus dans tous les plans. SLA de 99.9% garanti pour les plans Business et Enterprise.",
+        "L\u2019utilisation de Connected Hub est soumise \u00e0 nos conditions g\u00e9n\u00e9rales d\u2019utilisation. L\u2019abonnement est mensuel ou annuel, r\u00e9siliable \u00e0 tout moment. Support technique inclus dans tous les plans. SLA de 99.9% garanti pour les plans Business et Enterprise.",
       dataProcessing:
-        "Les données sont chiffrées en transit (TLS 1.3) et au repos (AES-256). Sauvegardes quotidiennes avec rétention de 30 jours. Audit de sécurité annuel par un tiers indépendant. Certifié SOC 2 Type II et ISO 27001.",
+        "Les donn\u00e9es sont chiffr\u00e9es en transit (TLS 1.3) et au repos (AES-256). Sauvegardes quotidiennes avec r\u00e9tention de 30 jours. Audit de s\u00e9curit\u00e9 annuel par un tiers ind\u00e9pendant. Certifi\u00e9 SOC 2 Type II et ISO 27001.",
     },
   },
   {
     id: "mate-analytics",
     title: "Mate Analytics",
     description:
-      "Tableau de bord intelligent pour visualiser vos données et prendre des décisions éclairées.",
+      "Tableau de bord intelligent pour visualiser vos donn\u00e9es et prendre des d\u00e9cisions \u00e9clair\u00e9es.",
     fullDescription:
-      "Mate Analytics transforme vos données brutes en insights actionnables grâce à des visualisations interactives et des algorithmes de machine learning. Connectez vos sources de données en quelques clics, créez des dashboards personnalisés et partagez-les avec votre équipe. Alertes intelligentes, prédictions et recommandations automatisées.",
+      "Mate Analytics transforme vos donn\u00e9es brutes en insights actionnables gr\u00e2ce \u00e0 des visualisations interactives et des algorithmes de machine learning. Connectez vos sources de donn\u00e9es en quelques clics, cr\u00e9ez des dashboards personnalis\u00e9s et partagez-les avec votre \u00e9quipe. Alertes intelligentes, pr\u00e9dictions et recommandations automatis\u00e9es.",
     size: "2x1",
     gradient: "bg-gradient-to-br from-cyan-500 to-blue-600",
     status: "Disponible",
     platforms: "Web",
     appUrl: "https://analytics.connectedmate.com",
     legal: {
-      privacy:
-        "Mate Analytics traite vos données analytiques de manière confidentielle. Aucune donnée n'est utilisée à des fins publicitaires. Conformité RGPD et CCPA.",
-      terms:
-        "Service disponible en SaaS avec facturation à l'usage. Essai gratuit de 14 jours. Annulation possible à tout moment sans frais.",
-      dataProcessing:
-        "Données hébergées en Europe. Chiffrement AES-256. Anonymisation possible des données sensibles. Export complet disponible sur demande.",
+      privacy: "Mate Analytics traite vos donn\u00e9es analytiques de mani\u00e8re confidentielle. Aucune donn\u00e9e n\u2019est utilis\u00e9e \u00e0 des fins publicitaires. Conformit\u00e9 RGPD et CCPA.",
+      terms: "Service disponible en SaaS avec facturation \u00e0 l\u2019usage. Essai gratuit de 14 jours. Annulation possible \u00e0 tout moment sans frais.",
+      dataProcessing: "Donn\u00e9es h\u00e9berg\u00e9es en Europe. Chiffrement AES-256. Anonymisation possible des donn\u00e9es sensibles. Export complet disponible sur demande.",
     },
   },
   {
@@ -71,61 +68,52 @@ const apps: AppData[] = [
     description:
       "Synchronisez vos fichiers et documents entre tous vos appareils en un instant.",
     fullDescription:
-      "QuickSync offre une synchronisation ultra-rapide de vos fichiers entre tous vos appareils. Grâce à notre technologie de synchronisation delta, seules les modifications sont transférées, garantissant des transferts instantanés même pour les fichiers volumineux. Versioning automatique, partage sécurisé et collaboration en temps réel.",
+      "QuickSync offre une synchronisation ultra-rapide de vos fichiers entre tous vos appareils. Gr\u00e2ce \u00e0 notre technologie de synchronisation delta, seules les modifications sont transf\u00e9r\u00e9es, garantissant des transferts instantan\u00e9s m\u00eame pour les fichiers volumineux. Versioning automatique, partage s\u00e9curis\u00e9 et collaboration en temps r\u00e9el.",
     size: "1x1",
     gradient: "bg-gradient-to-br from-emerald-500 to-green-600",
-    status: "Bêta",
+    status: "B\u00eata",
     platforms: "Toutes plateformes",
     appUrl: "https://sync.connectedmate.com",
     legal: {
-      privacy:
-        "QuickSync chiffre vos fichiers de bout en bout. Nous n'avons jamais accès au contenu de vos fichiers. Zero-knowledge encryption.",
-      terms:
-        "Programme bêta gratuit. Les conditions définitives seront communiquées au lancement officiel. Stockage limité à 50 Go pendant la bêta.",
-      dataProcessing:
-        "Chiffrement de bout en bout (E2EE). Stockage distribué multi-régions. Conformité RGPD native.",
+      privacy: "QuickSync chiffre vos fichiers de bout en bout. Nous n\u2019avons jamais acc\u00e8s au contenu de vos fichiers. Zero-knowledge encryption.",
+      terms: "Programme b\u00eata gratuit. Les conditions d\u00e9finitives seront communiqu\u00e9es au lancement officiel. Stockage limit\u00e9 \u00e0 50 Go pendant la b\u00eata.",
+      dataProcessing: "Chiffrement de bout en bout (E2EE). Stockage distribu\u00e9 multi-r\u00e9gions. Conformit\u00e9 RGPD native.",
     },
   },
   {
     id: "eventflow",
     title: "EventFlow",
     description:
-      "Organisez et gérez vos événements de A à Z : inscriptions, planning, networking.",
+      "Organisez et g\u00e9rez vos \u00e9v\u00e9nements de A \u00e0 Z : inscriptions, planning, networking.",
     fullDescription:
-      "EventFlow est votre solution complète pour l'organisation d'événements. Créez des pages d'inscription personnalisées, gérez les billets et les paiements, planifiez le programme, facilitez le networking entre participants et collectez les feedbacks post-événement. Intégration native avec les outils de streaming pour les événements hybrides.",
+      "EventFlow est votre solution compl\u00e8te pour l\u2019organisation d\u2019\u00e9v\u00e9nements. Cr\u00e9ez des pages d\u2019inscription personnalis\u00e9es, g\u00e9rez les billets et les paiements, planifiez le programme, facilitez le networking entre participants et collectez les feedbacks post-\u00e9v\u00e9nement. Int\u00e9gration native avec les outils de streaming pour les \u00e9v\u00e9nements hybrides.",
     size: "1x1",
     gradient: "bg-gradient-to-br from-orange-500 to-amber-600",
     status: "Disponible",
     platforms: "Web, iOS",
     appUrl: "https://events.connectedmate.com",
     legal: {
-      privacy:
-        "Les données des participants sont traitées uniquement pour l'organisation de l'événement. Suppression automatique 90 jours après l'événement sauf demande contraire.",
-      terms:
-        "Commission de 2% sur les billets payants. Gratuit pour les événements gratuits. Support prioritaire pour les événements de plus de 500 participants.",
-      dataProcessing:
-        "Paiements sécurisés via Stripe. Données hébergées en Europe. Conformité PCI DSS pour les transactions.",
+      privacy: "Les donn\u00e9es des participants sont trait\u00e9es uniquement pour l\u2019organisation de l\u2019\u00e9v\u00e9nement. Suppression automatique 90 jours apr\u00e8s l\u2019\u00e9v\u00e9nement sauf demande contraire.",
+      terms: "Commission de 2% sur les billets payants. Gratuit pour les \u00e9v\u00e9nements gratuits. Support prioritaire pour les \u00e9v\u00e9nements de plus de 500 participants.",
+      dataProcessing: "Paiements s\u00e9curis\u00e9s via Stripe. Donn\u00e9es h\u00e9berg\u00e9es en Europe. Conformit\u00e9 PCI DSS pour les transactions.",
     },
   },
   {
     id: "ai-assistant",
     title: "AI Assistant",
     description:
-      "Un assistant IA intégré à votre workflow pour automatiser les tâches répétitives et booster votre productivité.",
+      "Un assistant IA int\u00e9gr\u00e9 \u00e0 votre workflow pour automatiser les t\u00e2ches r\u00e9p\u00e9titives et booster votre productivit\u00e9.",
     fullDescription:
-      "AI Assistant est notre prochain produit phare. Alimenté par les derniers modèles de langage, il s'intègre directement dans vos outils quotidiens pour automatiser les tâches répétitives : rédaction d'emails, résumés de réunions, analyse de documents, génération de rapports. Personnalisable selon votre contexte d'entreprise.",
+      "AI Assistant est notre prochain produit phare. Aliment\u00e9 par les derniers mod\u00e8les de langage, il s\u2019int\u00e8gre directement dans vos outils quotidiens pour automatiser les t\u00e2ches r\u00e9p\u00e9titives : r\u00e9daction d\u2019emails, r\u00e9sum\u00e9s de r\u00e9unions, analyse de documents, g\u00e9n\u00e9ration de rapports. Personnalisable selon votre contexte d\u2019entreprise.",
     size: "2x1",
     gradient: "bg-gradient-to-br from-rose-500 to-pink-600",
-    status: "Bientôt",
+    status: "Bient\u00f4t",
     platforms: "Web",
     appUrl: "#",
     legal: {
-      privacy:
-        "Les données envoyées à l'IA sont traitées en temps réel et ne sont jamais stockées ni utilisées pour l'entraînement. Conformité totale avec le AI Act européen.",
-      terms:
-        "Conditions et tarifs seront communiqués au lancement. Programme early-access disponible sur inscription.",
-      dataProcessing:
-        "Traitement des données en Europe exclusivement. Aucune rétention des prompts ou des réponses. Modèles hébergés on-premise disponibles pour les entreprises.",
+      privacy: "Les donn\u00e9es envoy\u00e9es \u00e0 l\u2019IA sont trait\u00e9es en temps r\u00e9el et ne sont jamais stock\u00e9es ni utilis\u00e9es pour l\u2019entra\u00eenement. Conformit\u00e9 totale avec le AI Act europ\u00e9en.",
+      terms: "Conditions et tarifs seront communiqu\u00e9s au lancement. Programme early-access disponible sur inscription.",
+      dataProcessing: "Traitement des donn\u00e9es en Europe exclusivement. Aucune r\u00e9tention des prompts ou des r\u00e9ponses. Mod\u00e8les h\u00e9berg\u00e9s on-premise disponibles pour les entreprises.",
     },
   },
 ];
@@ -144,7 +132,7 @@ export default function AppsPage() {
     <div className="animate-fade-in">
       <PageHeader
         title="Nos Applications"
-        subtitle="Des outils conçus pour transformer votre façon de travailler"
+        subtitle="Des outils con\u00e7us pour transformer votre fa\u00e7on de travailler"
       />
 
       <BentoGrid>
@@ -152,21 +140,20 @@ export default function AppsPage() {
           <button
             key={app.id}
             onClick={() => setSelectedApp(app)}
-            className={`group relative cursor-pointer overflow-hidden rounded-2xl border border-[var(--color-border)] bg-[var(--color-card)] p-6 text-left transition-all duration-300 hover:border-[var(--color-accent)]/40 hover:bg-[var(--color-card-hover)] hover:shadow-lg hover:shadow-[var(--color-accent)]/5 ${sizeClasses[app.size]}`}
+            className={`group relative cursor-pointer overflow-hidden rounded-3xl bg-white p-6 text-left shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 ${sizeClasses[app.size]}`}
           >
-            {/* Background gradient */}
             <div
-              className={`absolute inset-0 opacity-10 transition-opacity duration-300 group-hover:opacity-20 ${app.gradient}`}
+              className={`absolute inset-0 opacity-[0.06] transition-opacity duration-300 group-hover:opacity-[0.1] ${app.gradient}`}
             />
 
             <div className="relative z-10 flex h-full flex-col">
-              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--color-accent)]/10 text-[var(--color-accent-light)]">
+              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-2xl bg-gray-100 text-[var(--color-accent)]">
                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </div>
 
-              <h3 className="text-lg font-semibold">{app.title}</h3>
+              <h3 className="text-lg font-semibold text-[var(--color-text)]">{app.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-[var(--color-text-muted)]">
                 {app.description}
               </p>
@@ -175,22 +162,21 @@ export default function AppsPage() {
                 <span
                   className={`inline-block rounded-full px-3 py-1 text-xs font-medium ${
                     app.status === "Disponible"
-                      ? "bg-green-500/20 text-green-400"
-                      : app.status === "Bêta"
-                      ? "bg-yellow-500/20 text-yellow-400"
-                      : "bg-blue-500/20 text-blue-400"
+                      ? "bg-green-100 text-green-700"
+                      : app.status === "B\u00eata"
+                      ? "bg-yellow-100 text-yellow-700"
+                      : "bg-blue-100 text-blue-700"
                   }`}
                 >
                   {app.status}
                 </span>
-                <span className="inline-block rounded-full bg-white/10 px-3 py-1 text-xs font-medium">
+                <span className="inline-block rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-600">
                   {app.platforms}
                 </span>
               </div>
 
-              {/* Click hint */}
-              <div className="mt-3 flex items-center gap-1 text-sm text-[var(--color-accent-light)] opacity-0 transition-opacity group-hover:opacity-100">
-                Voir les détails
+              <div className="mt-3 flex items-center gap-1 text-sm text-[var(--color-accent)] opacity-0 transition-opacity group-hover:opacity-100">
+                Voir les d\u00e9tails
                 <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
@@ -200,7 +186,6 @@ export default function AppsPage() {
         ))}
       </BentoGrid>
 
-      {/* App Detail Modal */}
       {selectedApp && (
         <AppModal app={selectedApp} onClose={() => setSelectedApp(null)} />
       )}

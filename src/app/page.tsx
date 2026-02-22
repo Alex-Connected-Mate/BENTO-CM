@@ -7,14 +7,13 @@ export default function HomePage() {
     <div className="animate-fade-in">
       <PageHeader
         title="Connected Mate"
-        subtitle="Explorez notre univers : conférences, podcasts et applications"
+        subtitle="Explorez notre univers : conf\u00e9rences, podcasts et applications"
       />
 
       <BentoGrid>
-        {/* Hero card */}
         <BentoCard
           title="Bienvenue chez Connected Mate"
-          description="Nous connectons les idées, les personnes et les technologies pour créer des expériences uniques. Découvrez nos conférences, podcasts et applications."
+          description="Nous connectons les id\u00e9es, les personnes et les technologies pour cr\u00e9er des exp\u00e9riences uniques. D\u00e9couvrez nos conf\u00e9rences, podcasts et applications."
           size="2x2"
           gradient="bg-gradient-to-br from-indigo-500 to-purple-600"
           icon={
@@ -24,24 +23,22 @@ export default function HomePage() {
           }
         />
 
-        {/* Keynote card */}
         <BentoCard
           title="Keynotes"
-          description="Nos conférences inspirantes sur l'innovation, la tech et le futur du travail."
+          description="Nos conf\u00e9rences inspirantes sur l\u2019innovation, la tech et le futur du travail."
           size="2x1"
           href="/keynote"
           gradient="bg-gradient-to-br from-orange-500 to-red-500"
           icon={
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2m-2 4h.01M12 14l-3-3m0 0l3-3m-3 3h12.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
             </svg>
           }
         />
 
-        {/* Podcasts card */}
         <BentoCard
           title="Podcasts"
-          description="Écoutez nos épisodes et plongez dans des conversations passionnantes."
+          description="\u00c9coutez nos \u00e9pisodes et plongez dans des conversations passionnantes."
           size="1x1"
           href="/podcasts"
           gradient="bg-gradient-to-br from-green-500 to-emerald-500"
@@ -52,10 +49,9 @@ export default function HomePage() {
           }
         />
 
-        {/* Apps card */}
         <BentoCard
           title="Nos Apps"
-          description="Découvrez les applications que nous développons pour transformer votre quotidien."
+          description="D\u00e9couvrez les applications que nous d\u00e9veloppons pour transformer votre quotidien."
           size="1x1"
           href="/apps"
           gradient="bg-gradient-to-br from-cyan-500 to-blue-500"
@@ -66,10 +62,9 @@ export default function HomePage() {
           }
         />
 
-        {/* Blog card */}
         <BentoCard
           title="Blog"
-          description="Articles, analyses et retours d'expérience sur la tech, l'IA et l'innovation."
+          description="Articles, analyses et retours d\u2019exp\u00e9rience sur la tech, l\u2019IA et l\u2019innovation."
           size="1x1"
           href="/blog"
           gradient="bg-gradient-to-br from-fuchsia-500 to-pink-500"
@@ -80,7 +75,6 @@ export default function HomePage() {
           }
         />
 
-        {/* Stats card */}
         <BentoCard
           title="En chiffres"
           size="2x1"
@@ -88,24 +82,23 @@ export default function HomePage() {
         >
           <div className="grid grid-cols-3 gap-4 text-center">
             <div>
-              <div className="text-2xl font-bold text-[var(--color-accent-light)]">50+</div>
-              <div className="text-xs text-[var(--color-text-muted)]">Conférences</div>
+              <div className="text-2xl font-bold text-[var(--color-accent)]">50+</div>
+              <div className="text-xs text-[var(--color-text-muted)]">Conf\u00e9rences</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-[var(--color-accent-light)]">100+</div>
-              <div className="text-xs text-[var(--color-text-muted)]">Épisodes</div>
+              <div className="text-2xl font-bold text-[var(--color-accent)]">100+</div>
+              <div className="text-xs text-[var(--color-text-muted)]">\u00c9pisodes</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-[var(--color-accent-light)]">5</div>
+              <div className="text-2xl font-bold text-[var(--color-accent)]">5</div>
               <div className="text-xs text-[var(--color-text-muted)]">Applications</div>
             </div>
           </div>
         </BentoCard>
 
-        {/* Social / Contact card */}
         <BentoCard
-          title="Restons connectés"
-          description="Suivez-nous sur les réseaux sociaux et ne manquez rien de notre actualité."
+          title="Restons connect\u00e9s"
+          description="Suivez-nous sur les r\u00e9seaux sociaux et ne manquez rien de notre actualit\u00e9."
           size="2x1"
           gradient="bg-gradient-to-br from-amber-500 to-yellow-500"
           icon={
@@ -115,9 +108,9 @@ export default function HomePage() {
           }
         >
           <div className="flex gap-3">
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-sm transition-colors hover:bg-white/20">𝕏</span>
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-sm transition-colors hover:bg-white/20">in</span>
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-sm transition-colors hover:bg-white/20">YT</span>
+            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-200">\ud835\udd4f</span>
+            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-200">in</span>
+            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-200">YT</span>
           </div>
         </BentoCard>
       </BentoGrid>
