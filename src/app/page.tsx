@@ -114,9 +114,9 @@ export default function HomePage() {
           }
         >
           <div className="flex gap-2">
-            <span className="social-circle">𝕏</span>
-            <span className="social-circle">in</span>
-            <span className="social-circle">YT</span>
+            <a href="https://www.youtube.com/@ConnectedMate" target="_blank" rel="noopener noreferrer" className="social-circle" aria-label="YouTube">YT</a>
+            <a href="https://smartlink.ausha.co/connectedmate" target="_blank" rel="noopener noreferrer" className="social-circle" aria-label="Podcast">🎙</a>
+            <a href="https://open.spotify.com/show/0HE6b6ZfN3zeU4QikK7XFd" target="_blank" rel="noopener noreferrer" className="social-circle" aria-label="Spotify">♪</a>
           </div>
         </BentoCard>
       </BentoGrid>

@@ -9,10 +9,10 @@ const sections = [
     title: "Mentions légales",
     short: "Mentions",
     content: [
-      { subtitle: "Éditeur du site", text: "Le site Bento Connected Mate est édité par la société Connected Mate SAS, société par actions simplifiée au capital de 10 000 €, immatriculée au Registre du Commerce et des Sociétés de Paris. Siège social : 42 rue de l'Innovation, 75001 Paris, France. Directeur de la publication : Alexandre Martin, Président." },
+      { subtitle: "Éditeur du site", text: "Le site Connected Mate est édité par la société CONNECTED MATE, société par actions simplifiée (SAS) au capital de 100 €, immatriculée au Registre National des Entreprises. SIREN : 937 888 717 — SIRET : 937 888 717 00017. Siège social : 74 avenue du Général Leclerc, 75014 Paris, France. Activité : Conseil pour les affaires et autres conseils de gestion (NAF 70.22Z). Date de création : 26 novembre 2024." },
       { subtitle: "Hébergement", text: "Le site est hébergé par Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis. Les données sont traitées conformément au RGPD avec des garanties appropriées pour les transferts internationaux de données." },
       { subtitle: "Propriété intellectuelle", text: "L'ensemble des contenus présents sur le site (textes, images, logos, vidéos, graphismes) sont protégés par le droit d'auteur et le droit des marques. Toute reproduction, représentation ou diffusion, totale ou partielle, est interdite sans autorisation préalable écrite de Connected Mate SAS." },
-      { subtitle: "Contact", text: "Pour toute question relative au site, vous pouvez nous contacter à l'adresse : legal@connectedmate.com ou par courrier à l'adresse du siège social." },
+      { subtitle: "Contact", text: "Pour toute question relative au site, vous pouvez nous contacter à l'adresse : legal@connectedmate.com ou par courrier au siège social : 74 avenue du Général Leclerc, 75014 Paris." },
     ],
   },
   {
