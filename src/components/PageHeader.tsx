@@ -1,67 +1,49 @@
-import Image from "next/image";
-
 interface PageHeaderProps {
   title: string;
   subtitle?: string;
-  showLogo?: boolean;
 }
 
-export function PageHeader({ title, subtitle, showLogo }: PageHeaderProps) {
+export function PageHeader({ title, subtitle }: PageHeaderProps) {
   return (
     <div
+      className="animate-fade-up"
       style={{
-        marginBottom: 32,
-        paddingBottom: 24,
-        borderBottom: "1px solid rgba(232, 96, 10, 0.08)",
+        position: "relative",
+        overflow: "hidden",
+        padding: "64px 24px 48px",
+        textAlign: "center",
       }}
     >
-      <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-        {showLogo && (
-          <Image
-            src="/logo.svg"
-            alt="Connected Mate"
-            width={56}
-            height={56}
-            style={{ borderRadius: 14, flexShrink: 0 }}
-          />
-        )}
-        <div>
-          <h1
+      <div className="gradient-blob--small" style={{ position: "absolute", top: "-40%", left: "50%", transform: "translateX(-50%)", opacity: 0.5 }} />
+      <div style={{ position: "relative", zIndex: 1 }}>
+        <h1
+          style={{
+            fontFamily: "'Playfair Display', serif",
+            fontSize: 48,
+            fontWeight: 700,
+            letterSpacing: "-0.03em",
+            lineHeight: 1.1,
+            color: "var(--color-text)",
+          }}
+        >
+          {title}
+          <span className="gradient-text" style={{ fontStyle: "italic" }}>.</span>
+        </h1>
+        {subtitle && (
+          <p
             style={{
-              fontFamily: "'Space Grotesk', 'Inter', system-ui, sans-serif",
-              color: "var(--color-text)",
-              fontSize: 32,
-              fontWeight: 700,
-              letterSpacing: "-0.03em",
-              lineHeight: 1.15,
+              fontSize: 17,
+              color: "var(--color-text-muted)",
+              marginTop: 16,
+              lineHeight: 1.6,
+              maxWidth: 560,
+              marginLeft: "auto",
+              marginRight: "auto",
             }}
           >
-            {title}
-            <span
-              style={{
-                display: "inline-block",
-                width: 10,
-                height: 10,
-                borderRadius: "50%",
-                background: "linear-gradient(135deg, #E8600A, #F5A623)",
-                marginLeft: 6,
-                verticalAlign: "super",
-              }}
-            />
-          </h1>
-          {subtitle && (
-            <p
-              style={{
-                color: "var(--color-text-muted)",
-                fontSize: 16,
-                marginTop: 6,
-                lineHeight: 1.5,
-              }}
-            >
-              {subtitle}
-            </p>
-          )}
-        </div>
+            {subtitle}
+          </p>
+        )}
       </div>
     </div>
   );

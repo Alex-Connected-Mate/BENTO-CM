@@ -20,7 +20,7 @@ const sections = [
     title: "Conditions générales d'utilisation",
     short: "CGU",
     content: [
-      { subtitle: "Objet", text: "Les présentes Conditions Générales d'Utilisation (CGU) ont pour objet de définir les modalités d'accès et d'utilisation du site Bento Connected Mate et de l'ensemble des services proposés par Connected Mate SAS." },
+      { subtitle: "Objet", text: "Les présentes Conditions Générales d'Utilisation (CGU) ont pour objet de définir les modalités d'accès et d'utilisation du site Connected Mate et de l'ensemble des services proposés par Connected Mate SAS." },
       { subtitle: "Accès au site", text: "L'accès au site est gratuit. L'utilisateur est responsable de son équipement informatique et de son accès à Internet. Connected Mate SAS se réserve le droit de suspendre ou d'interrompre l'accès au site pour des raisons de maintenance ou de mise à jour, sans préavis ni indemnité." },
       { subtitle: "Utilisation des services", text: "L'utilisateur s'engage à utiliser le site et les services de manière conforme à la loi et aux présentes CGU. Il est interdit d'utiliser le site à des fins illégales, de tenter d'accéder de manière non autorisée aux systèmes informatiques, ou de perturber le fonctionnement normal du site." },
       { subtitle: "Comptes utilisateurs", text: "Certains services nécessitent la création d'un compte. L'utilisateur est responsable de la confidentialité de ses identifiants et de toutes les activités réalisées sous son compte. En cas d'utilisation non autorisée, l'utilisateur doit en informer Connected Mate immédiatement." },
@@ -58,82 +58,91 @@ const sections = [
 
 export default function LegalPage() {
   const [activeSection, setActiveSection] = useState("mentions");
-
   const current = sections.find((s) => s.id === activeSection) ?? sections[0];
 
   return (
-    <div className="animate-fade-in">
+    <div style={{ maxWidth: 900, marginLeft: "auto", marginRight: "auto", paddingBottom: 80 }}>
       <PageHeader
         title="Informations légales"
         subtitle="Mentions légales, conditions d'utilisation et politique de confidentialité"
       />
 
-      {/* Tab navigation */}
-      <div className="-mx-3 mb-5 overflow-x-auto px-3 sm:mx-0 sm:mb-8 sm:px-0">
-        <div className="flex gap-1.5 sm:gap-2">
+      <div style={{ padding: "0 24px" }}>
+        {/* Tab navigation */}
+        <div className="animate-fade-up" style={{ display: "flex", gap: 8, marginBottom: 32, overflowX: "auto", paddingBottom: 4 }}>
           {sections.map((section) => (
             <button
               key={section.id}
               onClick={() => setActiveSection(section.id)}
-              className={`shrink-0 text-[13px] font-medium sm:text-sm ${
-                activeSection === section.id ? "nav-link--active" : ""
-              }`}
               style={{
+                flexShrink: 0,
                 borderRadius: 9999,
-                padding: "8px 12px",
-                transition: "background-color 0.15s, color 0.15s",
-                backgroundColor: activeSection === section.id
-                  ? "var(--color-accent)"
-                  : "var(--color-card)",
-                color: activeSection === section.id
-                  ? "white"
-                  : "var(--color-text-muted)",
+                padding: "10px 20px",
+                fontSize: 14,
+                fontWeight: 500,
+                border: "none",
+                cursor: "pointer",
+                transition: "all 0.2s",
+                background: activeSection === section.id
+                  ? "linear-gradient(135deg, #E8600A, #F5A623)"
+                  : "var(--color-bg-soft)",
+                color: activeSection === section.id ? "white" : "var(--color-text-muted)",
               }}
             >
-              <span className="sm:hidden">{section.short}</span>
-              <span className="hidden sm:inline">{section.title}</span>
+              {section.title}
             </button>
           ))}
         </div>
-      </div>
 
-      {/* Content */}
-      <div
-        className="p-4 sm:p-8"
-        style={{
-          borderRadius: "var(--radius)",
-          backgroundColor: "var(--color-card)",
-          boxShadow: "0 1px 2px rgba(45, 27, 6, 0.04), 0 4px 12px rgba(45, 27, 6, 0.06)",
-          border: "1px solid rgba(45, 27, 6, 0.06)",
-        }}
-      >
-        <h2
-          className="mb-4 text-xl font-bold sm:mb-6 sm:text-2xl"
-          style={{ fontFamily: "'Space Grotesk', 'Inter', system-ui, sans-serif", color: "var(--color-text)" }}
+        {/* Content */}
+        <div
+          className="card animate-fade-up animate-fade-up-d1"
+          style={{ border: "1px solid var(--color-border)" }}
         >
-          {current.title}
-        </h2>
+          <h2
+            style={{
+              fontFamily: "'Space Grotesk', sans-serif",
+              fontSize: 24,
+              fontWeight: 700,
+              color: "var(--color-text)",
+              marginBottom: 28,
+            }}
+          >
+            {current.title}
+          </h2>
 
-        <div className="space-y-4 sm:space-y-6">
-          {current.content.map((item, i) => (
-            <div key={i}>
-              <h3
-                className="mb-1.5 text-[15px] font-semibold sm:mb-2 sm:text-base"
-                style={{ fontFamily: "'Space Grotesk', 'Inter', system-ui, sans-serif", color: "var(--color-text)" }}
-              >
-                {item.subtitle}
-              </h3>
-              <p className="text-[13px] leading-relaxed sm:text-sm" style={{ color: "var(--color-text-muted)" }}>
-                {item.text}
-              </p>
-            </div>
-          ))}
-        </div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 28 }}>
+            {current.content.map((item, i) => (
+              <div key={i}>
+                <h3
+                  style={{
+                    fontFamily: "'Space Grotesk', sans-serif",
+                    fontSize: 16,
+                    fontWeight: 600,
+                    color: "var(--color-text)",
+                    marginBottom: 8,
+                  }}
+                >
+                  {item.subtitle}
+                </h3>
+                <p style={{ fontSize: 14, lineHeight: 1.7, color: "var(--color-text-muted)" }}>
+                  {item.text}
+                </p>
+              </div>
+            ))}
+          </div>
 
-        <div className="mt-6 pt-4 sm:mt-8 sm:pt-6" style={{ borderTop: "1px solid rgba(232, 96, 10, 0.10)" }}>
-          <p className="text-[11px] sm:text-xs" style={{ color: "var(--color-text-muted)", opacity: 0.6 }}>
-            Dernière mise à jour : février 2026 &middot; Connected Mate SAS &middot; Tous droits réservés
-          </p>
+          <div
+            style={{
+              marginTop: 36,
+              paddingTop: 20,
+              borderTop: "1px solid var(--color-border)",
+            }}
+          >
+            <p style={{ fontSize: 12, color: "var(--color-text-light)" }}>
+              Dernière mise à jour : février 2026 · Connected Mate SAS · Tous droits réservés
+            </p>
+          </div>
         </div>
       </div>
     </div>

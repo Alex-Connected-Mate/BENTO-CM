@@ -12,51 +12,80 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   if (!article) notFound();
 
   return (
-    <div className="animate-fade-in">
+    <div
+      className="animate-fade-up"
+      style={{ maxWidth: 760, marginLeft: "auto", marginRight: "auto", padding: "40px 24px 80px" }}
+    >
       <Link
         href="/blog"
-        className="mb-4 inline-flex items-center gap-1.5 text-[13px] transition-colors sm:mb-6 sm:text-sm"
-        style={{ color: "var(--color-text-muted)" }}
+        style={{
+          display: "inline-flex",
+          alignItems: "center",
+          gap: 6,
+          fontSize: 14,
+          color: "var(--color-text-muted)",
+          textDecoration: "none",
+          marginBottom: 32,
+          transition: "color 0.2s",
+        }}
       >
-        <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
+        <svg style={{ width: 16, height: 16 }} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
         Retour au blog
       </Link>
 
-      <article
-        className="overflow-hidden p-4 sm:p-8"
-        style={{
-          borderRadius: "var(--radius)",
-          backgroundColor: "var(--color-card)",
-          boxShadow: "0 1px 2px rgba(45, 27, 6, 0.04), 0 4px 12px rgba(45, 27, 6, 0.06)",
-          border: "1px solid rgba(45, 27, 6, 0.06)",
-          overflowWrap: "break-word",
-        }}
-      >
-        <div className="mb-6 sm:mb-8">
-          <div className="mb-3 flex flex-wrap items-center gap-2">
+      <article>
+        <div style={{ marginBottom: 40 }}>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 10, marginBottom: 16 }}>
             <span className="badge badge--accent">{article.tag}</span>
-            <span className="text-[13px] sm:text-sm" style={{ color: "var(--color-text-muted)" }}>{article.readTime} de lecture</span>
+            <span style={{ fontSize: 13, color: "var(--color-text-light)", padding: "5px 0" }}>{article.readTime} de lecture</span>
           </div>
+
           <h1
-            className="text-xl font-bold leading-tight sm:text-3xl"
-            style={{ fontFamily: "'Space Grotesk', 'Inter', system-ui, sans-serif", color: "var(--color-text)" }}
+            style={{
+              fontFamily: "'Playfair Display', serif",
+              fontSize: 40,
+              fontWeight: 700,
+              letterSpacing: "-0.03em",
+              lineHeight: 1.15,
+              color: "var(--color-text)",
+            }}
           >
             {article.title}
           </h1>
-          <p className="mt-3 text-[15px] leading-relaxed sm:text-lg" style={{ color: "var(--color-text-muted)" }}>{article.excerpt}</p>
+
+          <p style={{ fontSize: 18, color: "var(--color-text-muted)", marginTop: 16, lineHeight: 1.7 }}>
+            {article.excerpt}
+          </p>
+
           <div
-            className="mt-4 flex items-center gap-2.5 pb-4 sm:mt-6 sm:pb-6"
-            style={{ borderBottom: "1px solid rgba(232, 96, 10, 0.10)" }}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: 12,
+              marginTop: 28,
+              paddingBottom: 28,
+              borderBottom: "1px solid var(--color-border)",
+            }}
           >
             <div
-              className="flex h-9 w-9 items-center justify-center text-xs font-bold sm:h-10 sm:w-10 sm:text-sm"
-              style={{ borderRadius: "50%", backgroundColor: "rgba(232, 96, 10, 0.10)", color: "var(--color-accent)" }}
+              style={{
+                width: 40,
+                height: 40,
+                borderRadius: "50%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: 13,
+                fontWeight: 700,
+                background: "linear-gradient(135deg, #E8600A, #F5A623)",
+                color: "white",
+              }}
             >
               {article.author.split(" ").map((n) => n[0]).join("")}
             </div>
             <div>
-              <div className="text-sm font-medium" style={{ color: "var(--color-text)" }}>{article.author}</div>
-              <div className="text-[13px]" style={{ color: "var(--color-text-muted)" }}>{formatDate(article.date)}</div>
+              <div style={{ fontSize: 15, fontWeight: 600, color: "var(--color-text)" }}>{article.author}</div>
+              <div style={{ fontSize: 13, color: "var(--color-text-light)" }}>{formatDate(article.date)}</div>
             </div>
           </div>
         </div>
@@ -67,29 +96,30 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               return (
                 <h2
                   key={i}
-                  className="mb-3 mt-6 text-lg font-bold sm:mb-4 sm:mt-8 sm:text-xl"
-                  style={{ fontFamily: "'Space Grotesk', 'Inter', system-ui, sans-serif", color: "var(--color-text)" }}
+                  style={{
+                    fontFamily: "'Space Grotesk', sans-serif",
+                    fontSize: 24,
+                    fontWeight: 700,
+                    color: "var(--color-text)",
+                    marginTop: 40,
+                    marginBottom: 16,
+                  }}
                 >
                   {block.replace("## ", "")}
                 </h2>
               );
             }
-            return <p key={i} className="mb-3 text-[15px] leading-relaxed sm:mb-4" style={{ color: "var(--color-text-muted)" }}>{block}</p>;
+            return (
+              <p key={i} style={{ fontSize: 16, lineHeight: 1.8, color: "var(--color-text-muted)", marginBottom: 20 }}>
+                {block}
+              </p>
+            );
           })}
         </div>
 
-        <div className="mt-8 pt-6 sm:mt-12 sm:pt-8" style={{ borderTop: "1px solid rgba(232, 96, 10, 0.10)" }}>
-          <Link
-            href="/blog"
-            className="inline-flex items-center gap-2 text-[13px] font-medium text-white sm:text-sm"
-            style={{
-              borderRadius: "var(--radius)",
-              backgroundColor: "var(--color-accent)",
-              padding: "10px 16px",
-              transition: "background-color 0.15s",
-            }}
-          >
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
+        <div style={{ marginTop: 48, paddingTop: 32, borderTop: "1px solid var(--color-border)" }}>
+          <Link href="/blog" className="btn-gradient">
+            <svg style={{ width: 16, height: 16 }} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
             Tous les articles
           </Link>
         </div>

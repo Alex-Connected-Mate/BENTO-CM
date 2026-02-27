@@ -7,11 +7,11 @@ import { usePathname } from "next/navigation";
 
 const links = [
   { href: "/", label: "Accueil" },
-  { href: "/keynote", label: "Keynote" },
+  { href: "/keynote", label: "Keynotes" },
   { href: "/podcasts", label: "Podcasts" },
   { href: "/apps", label: "Apps" },
   { href: "/blog", label: "Blog" },
-  { href: "/legal", label: "Legal" },
+  { href: "/legal", label: "Légal" },
 ];
 
 export function Navigation() {
@@ -26,37 +26,29 @@ export function Navigation() {
           maxWidth: 1200,
           marginLeft: "auto",
           marginRight: "auto",
-          paddingLeft: 20,
-          paddingRight: 20,
-          paddingTop: 12,
-          paddingBottom: 12,
+          paddingLeft: 24,
+          paddingRight: 24,
+          height: 72,
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
         }}
       >
-        <Link href="/" style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none" }}>
-          <Image
-            src="/logo.svg"
-            alt="Connected Mate"
-            width={38}
-            height={38}
-            style={{ borderRadius: 10 }}
-          />
+        <Link href="/" style={{ display: "flex", alignItems: "center", gap: 12, textDecoration: "none" }}>
+          <Image src="/logo.svg" alt="Connected Mate" width={36} height={36} style={{ borderRadius: 10 }} />
           <span
             style={{
-              fontFamily: "'Space Grotesk', 'Inter', system-ui, sans-serif",
+              fontFamily: "'Space Grotesk', system-ui, sans-serif",
               color: "var(--color-text)",
               fontSize: 18,
               fontWeight: 700,
               letterSpacing: "-0.02em",
             }}
           >
-            Connected<span style={{ color: "var(--color-accent)" }}>Mate</span>
+            Connected<span className="gradient-text">Mate</span>
           </span>
         </Link>
 
-        {/* Desktop nav */}
         <div className="nav-desktop">
           {links.map((link) => {
             const isActive = pathname === link.href;
@@ -72,7 +64,6 @@ export function Navigation() {
           })}
         </div>
 
-        {/* Mobile burger */}
         <button
           onClick={() => setOpen(!open)}
           className="nav-mobile-burger"
@@ -90,16 +81,16 @@ export function Navigation() {
         </button>
       </div>
 
-      {/* Mobile dropdown */}
       {open && (
         <div
           className="nav-mobile-menu"
           style={{
-            borderTop: "1px solid rgba(232, 96, 10, 0.10)",
-            padding: "8px 16px 16px",
+            borderTop: "1px solid var(--color-border)",
+            padding: "12px 24px 24px",
+            backgroundColor: "white",
           }}
         >
-          <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
             {links.map((link) => {
               const isActive = pathname === link.href;
               return (
@@ -109,13 +100,13 @@ export function Navigation() {
                   onClick={() => setOpen(false)}
                   style={{
                     display: "block",
-                    borderRadius: 14,
-                    padding: "12px 16px",
-                    fontSize: 14,
+                    borderRadius: 16,
+                    padding: "14px 18px",
+                    fontSize: 15,
                     fontWeight: 500,
                     textDecoration: "none",
                     transition: "background-color 0.15s, color 0.15s",
-                    backgroundColor: isActive ? "var(--color-accent)" : "transparent",
+                    background: isActive ? "linear-gradient(135deg, #E8600A, #F5A623)" : "transparent",
                     color: isActive ? "white" : "var(--color-text-muted)",
                   }}
                 >

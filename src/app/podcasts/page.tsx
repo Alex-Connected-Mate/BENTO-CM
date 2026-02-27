@@ -1,113 +1,85 @@
-import { BentoCard } from "@/components/BentoCard";
-import { BentoGrid } from "@/components/BentoGrid";
 import { PageHeader } from "@/components/PageHeader";
 
-const podcast = {
-  title: "Connected Mate",
-  description:
-    "Le podcast qui connecte les idées, les personnes et les technologies. Retrouvez nos conversations avec des leaders de la tech, des entrepreneurs et des penseurs qui façonnent le monde de demain.",
-  gradient: "bg-gradient-to-br from-orange-500 to-amber-600",
-  episodes: "250+ abonnés",
-};
-
 const platforms = [
-  {
-    name: "Apple Podcasts",
-    url: "https://podcasts.apple.com/fr/podcast/connected-mate/id1439013021",
-    gradient: "bg-gradient-to-br from-purple-500 to-pink-500",
-    icon: "M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 3a7 7 0 110 14 7 7 0 010-14zm0 2a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z",
-  },
-  {
-    name: "Spotify",
-    url: "https://open.spotify.com/show/0HE6b6ZfN3zeU4QikK7XFd",
-    gradient: "bg-gradient-to-br from-green-500 to-green-600",
-    icon: "M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.586 14.424a.622.622 0 01-.857.207c-2.348-1.435-5.304-1.76-8.785-.964a.622.622 0 11-.277-1.215c3.809-.87 7.076-.496 9.712 1.115a.622.622 0 01.207.857zm1.224-2.719a.78.78 0 01-1.072.257c-2.687-1.652-6.785-2.131-9.965-1.166a.78.78 0 01-.452-1.493c3.632-1.102 8.147-.568 11.232 1.33a.78.78 0 01.257 1.072zm.105-2.835C14.692 8.95 9.375 8.775 6.297 9.71a.935.935 0 11-.543-1.79c3.533-1.072 9.405-.865 13.115 1.338a.935.935 0 01-1.954 1.612z",
-  },
-  {
-    name: "Deezer",
-    url: "https://www.deezer.com/show/377322",
-    gradient: "bg-gradient-to-br from-purple-600 to-indigo-600",
-    icon: "M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1 14H8v-2h3v2zm0-3H8v-2h3v2zm0-3H8V8h3v2zm5 6h-3v-2h3v2zm0-3h-3v-2h3v2zm0-3h-3V8h3v2z",
-  },
-  {
-    name: "Tous les épisodes",
-    url: "https://smartlink.ausha.co/connectedmate",
-    gradient: "bg-gradient-to-br from-amber-500 to-orange-600",
-    icon: "M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1",
-  },
+  { name: "Apple Podcasts", url: "https://podcasts.apple.com/fr/podcast/connected-mate/id1439013021", gradient: "linear-gradient(135deg, #a855f7, #ec4899)" },
+  { name: "Spotify", url: "https://open.spotify.com/show/0HE6b6ZfN3zeU4QikK7XFd", gradient: "linear-gradient(135deg, #22c55e, #16a34a)" },
+  { name: "Deezer", url: "https://www.deezer.com/show/377322", gradient: "linear-gradient(135deg, #7c3aed, #4f46e5)" },
+  { name: "Tous les épisodes", url: "https://smartlink.ausha.co/connectedmate", gradient: "linear-gradient(135deg, #E8600A, #F5A623)" },
 ];
 
 export default function PodcastsPage() {
   return (
-    <div className="animate-fade-in">
-      <PageHeader
-        title="Podcasts"
-        subtitle="Écoutez nos émissions et plongez dans des conversations inspirantes"
-      />
+    <div style={{ maxWidth: 1200, marginLeft: "auto", marginRight: "auto", paddingBottom: 80 }}>
+      <PageHeader title="Podcasts" subtitle="Écoutez nos émissions et plongez dans des conversations inspirantes" />
 
-      <BentoGrid>
-        {/* Main podcast card */}
-        <BentoCard
-          title={podcast.title}
-          description={podcast.description}
-          size="2x2"
-          colored
-          gradient={podcast.gradient}
-          icon={
-            <svg
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"
-              />
-            </svg>
-          }
+      <div style={{ padding: "0 24px" }}>
+        {/* Hero podcast card */}
+        <div
+          className="card card--gradient animate-fade-up"
+          style={{
+            background: "linear-gradient(135deg, #E8600A, #F5A623)",
+            minHeight: 260,
+            marginBottom: 32,
+          }}
         >
-          <div className="flex items-center gap-2">
-            <span className="badge badge--white">
-              {podcast.episodes}
-            </span>
+          <div className="icon-box icon-box--white" style={{ marginBottom: 20 }}>
+            <svg style={{ width: 24, height: 24 }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+            </svg>
           </div>
-        </BentoCard>
+          <h2 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 28, fontWeight: 700 }}>Connected Mate</h2>
+          <p style={{ fontSize: 16, color: "rgba(255,255,255,0.80)", marginTop: 12, lineHeight: 1.6, maxWidth: 600 }}>
+            Le podcast qui connecte les idées, les personnes et les technologies. Retrouvez nos conversations avec des leaders de la tech, des entrepreneurs et des penseurs qui façonnent le monde de demain.
+          </p>
+          <div style={{ marginTop: 20 }}>
+            <span className="badge badge--white">250+ abonnés</span>
+          </div>
+        </div>
 
         {/* Platform cards */}
-        {platforms.map((platform) => (
-          <BentoCard
-            key={platform.name}
-            title={platform.name}
-            size="1x1"
-            href={platform.url}
-            colored
-            gradient={platform.gradient}
-            icon={
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={platform.icon} />
-              </svg>
-            }
-          />
-        ))}
+        <h3
+          className="animate-fade-up animate-fade-up-d1"
+          style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 20, fontWeight: 700, color: "var(--color-text)", marginBottom: 20 }}
+        >
+          Écouter sur
+        </h3>
 
-        {/* YouTube card */}
-        <BentoCard
-          title="YouTube"
-          description="Retrouvez nos épisodes en vidéo sur notre chaîne YouTube."
-          size="2x1"
+        <div className="grid-cards--2col animate-fade-up animate-fade-up-d2" style={{ display: "grid", gap: 16 }}>
+          {platforms.map((p) => (
+            <a
+              key={p.name}
+              href={p.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card card--gradient"
+              style={{ background: p.gradient, textDecoration: "none", minHeight: 120, justifyContent: "center" }}
+            >
+              <h3 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 18, fontWeight: 700 }}>{p.name}</h3>
+              <div style={{ marginTop: 8, display: "flex", alignItems: "center", gap: 4, fontSize: 13, color: "rgba(255,255,255,0.80)" }}>
+                Écouter
+                <svg style={{ width: 14, height: 14 }} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+              </div>
+            </a>
+          ))}
+        </div>
+
+        {/* YouTube */}
+        <a
           href="https://www.youtube.com/@ConnectedMate"
-          colored
-          gradient="bg-gradient-to-br from-red-500 to-red-600"
-          icon={
-            <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+          target="_blank"
+          rel="noopener noreferrer"
+          className="card card--gradient animate-fade-up animate-fade-up-d3"
+          style={{ background: "linear-gradient(135deg, #ef4444, #dc2626)", textDecoration: "none", marginTop: 24, display: "block" }}
+        >
+          <div className="icon-box icon-box--white" style={{ marginBottom: 16 }}>
+            <svg style={{ width: 24, height: 24 }} fill="currentColor" viewBox="0 0 24 24">
               <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
             </svg>
-          }
-        />
-      </BentoGrid>
+          </div>
+          <h3 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 20, fontWeight: 700 }}>YouTube</h3>
+          <p style={{ fontSize: 14, color: "rgba(255,255,255,0.80)", marginTop: 6 }}>Retrouvez nos épisodes en vidéo sur notre chaîne YouTube.</p>
+        </a>
+      </div>
     </div>
   );
 }

@@ -10,8 +10,8 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Connected Mate - Vintage Tech",
-  description: "Connected Mate - Conférences, Podcasts, Apps & more",
+  title: "Connected Mate — Conférences, Podcasts & Apps",
+  description: "Connected Mate connecte les idées, les personnes et les technologies pour créer des expériences uniques.",
 };
 
 export default function RootLayout({
@@ -24,22 +24,14 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap"
+          rel="stylesheet"
+        />
       </head>
-      <body style={{ minHeight: "100vh" }}>
+      <body>
         <Navigation />
-        <main
-          style={{
-            width: "100%",
-            maxWidth: 1200,
-            marginLeft: "auto",
-            marginRight: "auto",
-            paddingLeft: 20,
-            paddingRight: 20,
-            paddingTop: 32,
-            paddingBottom: 100,
-          }}
-        >
+        <main style={{ paddingTop: 72 }}>
           {children}
         </main>
         <WhatsAppButton />
