@@ -508,7 +508,7 @@ html { scroll-behavior: smooth; }
 }
 
 .modal-content {
-  background-color: white;
+  background-color: var(--color-surface, #ffffff);
   border-radius: var(--radius);
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   max-height: 90vh;

@@ -37,138 +37,261 @@ export function AppModal({ app, onClose }: AppModalProps) {
     setOpenSection(openSection === key ? null : key);
   };
 
-  const statusBadge = (status: string) => {
-    if (status === "Disponible") return "badge badge--amber";
-    if (status === "Bêta") return "badge badge--orange";
-    return "badge badge--red";
+  const statusColor = (status: string) => {
+    if (status === "Disponible") return "#16a34a";
+    if (status === "Bêta") return "#d97706";
+    return "#dc2626";
   };
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-end sm:items-center sm:justify-center"
+      style={{
+        position: "fixed",
+        inset: 0,
+        zIndex: 9999,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: 16,
+      }}
       onClick={onClose}
     >
-      <div className="modal-backdrop" />
-
+      {/* Backdrop */}
       <div
-        className="modal-content relative w-full sm:max-w-lg"
-        style={{ borderTopLeftRadius: 24, borderTopRightRadius: 24 }}
+        style={{
+          position: "fixed",
+          inset: 0,
+          backgroundColor: "rgba(0, 0, 0, 0.5)",
+          backdropFilter: "blur(8px)",
+          WebkitBackdropFilter: "blur(8px)",
+        }}
+      />
+
+      {/* Modal */}
+      <div
+        style={{
+          position: "relative",
+          zIndex: 10,
+          width: "100%",
+          maxWidth: 520,
+          maxHeight: "85vh",
+          overflowY: "auto",
+          backgroundColor: "var(--color-surface, #ffffff)",
+          borderRadius: 20,
+          boxShadow: "0 25px 60px rgba(0, 0, 0, 0.3)",
+          border: "1px solid var(--color-border, rgba(0,0,0,0.1))",
+        }}
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Mobile drag handle */}
-        <div className="flex justify-center pt-3 sm:hidden">
-          <div style={{ height: 4, width: 40, borderRadius: 9999, backgroundColor: "rgba(232, 96, 10, 0.20)" }} />
-        </div>
-
-        {/* Header */}
-        <div className="relative overflow-hidden px-5 pb-4 pt-4 sm:px-8 sm:pb-6 sm:pt-8">
-          <div className={`absolute inset-0 opacity-[0.06] ${app.gradient}`} />
-          <div className="relative z-10">
-            <div className="flex items-start justify-between">
-              <div className="min-w-0 flex-1">
-                <div className="mb-1.5 flex flex-wrap items-center gap-2">
-                  <h2 className="text-lg font-bold sm:text-2xl" style={{ fontFamily: "'Space Grotesk', 'Inter', system-ui, sans-serif", color: "var(--color-text)" }}>{app.title}</h2>
-                  <span className={`shrink-0 ${statusBadge(app.status)}`}>{app.status}</span>
+        {/* Header with gradient bar */}
+        <div
+          style={{
+            padding: "24px 24px 16px",
+            borderBottom: "1px solid var(--color-border, rgba(0,0,0,0.08))",
+          }}
+        >
+          <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: 12 }}>
+            <div style={{ flex: 1, minWidth: 0 }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 6, flexWrap: "wrap" }}>
+                {/* App icon circle */}
+                <div
+                  style={{
+                    width: 40,
+                    height: 40,
+                    borderRadius: 10,
+                    background: app.gradient,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    flexShrink: 0,
+                  }}
+                >
+                  <svg style={{ width: 20, height: 20, color: "#fff" }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
                 </div>
-                <p className="text-[13px] sm:text-sm" style={{ color: "var(--color-text-muted)" }}>
-                  {app.platforms}
-                </p>
+                <div>
+                  <h2 style={{
+                    fontFamily: "'Space Grotesk', 'Inter', system-ui, sans-serif",
+                    fontSize: 22,
+                    fontWeight: 700,
+                    color: "var(--color-text)",
+                    margin: 0,
+                    lineHeight: 1.2,
+                  }}>
+                    {app.title}
+                  </h2>
+                  <p style={{ fontSize: 13, color: "var(--color-text-muted)", margin: "2px 0 0" }}>
+                    {app.platforms}
+                  </p>
+                </div>
               </div>
-              <button
-                onClick={onClose}
-                className="icon-box icon-box--default ml-3 shrink-0"
-                style={{ width: 32, height: 32 }}
-              >
-                <svg className="h-4 w-4 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
+              <div style={{ marginTop: 8, display: "flex", gap: 8 }}>
+                <span style={{
+                  display: "inline-block",
+                  padding: "3px 10px",
+                  borderRadius: 9999,
+                  fontSize: 12,
+                  fontWeight: 600,
+                  backgroundColor: `${statusColor(app.status)}18`,
+                  color: statusColor(app.status),
+                }}>
+                  {app.status}
+                </span>
+              </div>
             </div>
+            {/* Close button */}
+            <button
+              onClick={onClose}
+              style={{
+                width: 32,
+                height: 32,
+                borderRadius: 9999,
+                border: "1px solid var(--color-border, rgba(0,0,0,0.1))",
+                backgroundColor: "var(--color-surface, #fff)",
+                cursor: "pointer",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                flexShrink: 0,
+                color: "var(--color-text-muted)",
+              }}
+            >
+              <svg style={{ width: 16, height: 16 }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
           </div>
         </div>
 
         {/* Body */}
-        <div className="px-5 pb-6 pt-2 sm:px-8 sm:pb-8 sm:pt-4">
-          <div className="mb-4 sm:mb-6">
-            <h3 className="mb-1.5 text-[11px] font-medium uppercase tracking-wider sm:mb-2 sm:text-xs" style={{ color: "var(--color-text-muted)" }}>
+        <div style={{ padding: "20px 24px 24px" }}>
+          {/* Description */}
+          <div style={{ marginBottom: 20 }}>
+            <h3 style={{
+              fontSize: 11,
+              fontWeight: 600,
+              textTransform: "uppercase",
+              letterSpacing: "0.05em",
+              color: "var(--color-text-muted)",
+              marginBottom: 8,
+            }}>
               Description
             </h3>
-            <p className="text-[13px] leading-relaxed sm:text-sm" style={{ color: "var(--color-text)" }}>
+            <div style={{ fontSize: 14, lineHeight: 1.7, color: "var(--color-text)", whiteSpace: "pre-line" }}>
               {app.fullDescription}
-            </p>
+            </div>
           </div>
 
+          {/* App link */}
           {app.appUrl !== "#" && (
             <a
               href={app.appUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mb-4 flex items-center gap-3 sm:mb-6"
               style={{
-                borderRadius: 16,
-                backgroundColor: "rgba(232, 96, 10, 0.05)",
-                padding: "10px 14px",
-                transition: "background-color 0.15s",
+                display: "flex",
+                alignItems: "center",
+                gap: 12,
+                padding: "12px 16px",
+                borderRadius: 14,
+                backgroundColor: "var(--color-accent, #E8600A)",
+                color: "#fff",
+                textDecoration: "none",
+                marginBottom: 20,
+                transition: "opacity 0.15s",
               }}
             >
-              <div className="icon-box icon-box--default shrink-0">
-                <svg className="h-4 w-4 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
+              <svg style={{ width: 20, height: 20, flexShrink: 0 }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+              <div style={{ flex: 1, minWidth: 0 }}>
+                <div style={{ fontSize: 14, fontWeight: 600 }}>Ouvrir {app.title}</div>
+                <div style={{ fontSize: 11, opacity: 0.8, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{app.appUrl}</div>
               </div>
-              <div className="min-w-0 flex-1">
-                <div className="text-[13px] font-medium sm:text-sm" style={{ color: "var(--color-text)" }}>Ouvrir {app.title}</div>
-                <div className="truncate text-[11px] sm:text-xs" style={{ color: "var(--color-text-muted)" }}>{app.appUrl}</div>
-              </div>
-              <svg className="h-4 w-4 shrink-0 sm:h-5 sm:w-5" style={{ color: "var(--color-accent)" }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg style={{ width: 18, height: 18, flexShrink: 0, opacity: 0.7 }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </a>
           )}
 
-          <div className="space-y-1.5 sm:space-y-2">
-            <h3 className="mb-2 text-[11px] font-medium uppercase tracking-wider sm:mb-3 sm:text-xs" style={{ color: "var(--color-text-muted)" }}>
+          {/* Legal sections */}
+          <div>
+            <h3 style={{
+              fontSize: 11,
+              fontWeight: 600,
+              textTransform: "uppercase",
+              letterSpacing: "0.05em",
+              color: "var(--color-text-muted)",
+              marginBottom: 10,
+            }}>
               Informations légales
             </h3>
-            {legalSections.map((section) => (
-              <div
-                key={section.key}
-                className="overflow-hidden"
-                style={{
-                  borderRadius: 12,
-                  backgroundColor: "rgba(232, 96, 10, 0.05)",
-                }}
-              >
-                <button
-                  onClick={() => toggleSection(section.key)}
-                  className="flex w-full items-center gap-2.5 text-left sm:gap-3"
-                  style={{ padding: "10px 14px", transition: "background-color 0.15s" }}
+            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+              {legalSections.map((section) => (
+                <div
+                  key={section.key}
+                  style={{
+                    borderRadius: 12,
+                    border: "1px solid var(--color-border, rgba(0,0,0,0.08))",
+                    overflow: "hidden",
+                  }}
                 >
-                  <svg className="h-4 w-4 shrink-0 sm:h-5 sm:w-5" style={{ color: "var(--color-accent)" }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={section.icon} />
-                  </svg>
-                  <span className="flex-1 text-[13px] font-medium sm:text-sm" style={{ color: "var(--color-text)" }}>{section.label}</span>
-                  <svg
-                    className={`h-3.5 w-3.5 shrink-0 transition-transform duration-200 sm:h-4 sm:w-4 ${
-                      openSection === section.key ? "rotate-180" : ""
-                    }`}
-                    style={{ color: "var(--color-accent)" }}
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
+                  <button
+                    onClick={() => toggleSection(section.key)}
+                    style={{
+                      width: "100%",
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 10,
+                      padding: "12px 14px",
+                      backgroundColor: "transparent",
+                      border: "none",
+                      cursor: "pointer",
+                      textAlign: "left",
+                      color: "var(--color-text)",
+                    }}
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-                {openSection === section.key && (
-                  <div style={{ borderTop: "1px solid rgba(232, 96, 10, 0.10)", padding: "10px 14px" }}>
-                    <p className="text-[13px] leading-relaxed sm:text-sm" style={{ color: "var(--color-text-muted)" }}>
-                      {app.legal[section.key]}
-                    </p>
-                  </div>
-                )}
-              </div>
-            ))}
+                    <svg style={{ width: 18, height: 18, flexShrink: 0, color: "var(--color-accent, #E8600A)" }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={section.icon} />
+                    </svg>
+                    <span style={{ flex: 1, fontSize: 14, fontWeight: 500 }}>{section.label}</span>
+                    <svg
+                      style={{
+                        width: 16,
+                        height: 16,
+                        flexShrink: 0,
+                        color: "var(--color-accent, #E8600A)",
+                        transition: "transform 0.2s",
+                        transform: openSection === section.key ? "rotate(180deg)" : "rotate(0deg)",
+                      }}
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  {openSection === section.key && (
+                    <div style={{
+                      padding: "0 14px 14px",
+                      borderTop: "1px solid var(--color-border, rgba(0,0,0,0.06))",
+                      paddingTop: 12,
+                    }}>
+                      <p style={{
+                        fontSize: 13,
+                        lineHeight: 1.7,
+                        color: "var(--color-text-muted)",
+                        margin: 0,
+                        whiteSpace: "pre-line",
+                      }}>
+                        {app.legal[section.key]}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
