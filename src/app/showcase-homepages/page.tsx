@@ -5,6 +5,11 @@ import { designs as designs2 } from "./designs-2";
 import { designs as designs3 } from "./designs-3";
 import { designs as designs4 } from "./designs-4";
 import { designs as designs5 } from "./designs-5";
+import { designs as designs6 } from "./designs-6";
+import { designs as designs7 } from "./designs-7";
+import { designs as designs8 } from "./designs-8";
+import { designs as designs9 } from "./designs-9";
+import { designs as designs10 } from "./designs-10";
 import type { HomepageDesign } from "./designs-1";
 
 const allDesigns: HomepageDesign[] = [
@@ -13,6 +18,11 @@ const allDesigns: HomepageDesign[] = [
   ...designs3,
   ...designs4,
   ...designs5,
+  ...designs6,
+  ...designs7,
+  ...designs8,
+  ...designs9,
+  ...designs10,
 ];
 
 const categories = Array.from(new Set(allDesigns.map((d) => d.category)));
@@ -59,7 +69,7 @@ export default function ShowcaseHomepages() {
             gap: 8,
           }}
         >
-          <span style={{ fontSize: 18 }}>&larr;</span> Retour aux 50 designs
+          <span style={{ fontSize: 18 }}>&larr;</span> Retour aux 100 designs
         </button>
         {/* Design number badge */}
         <div
@@ -134,19 +144,19 @@ export default function ShowcaseHomepages() {
               fontWeight: 700,
             }}
           >
-            {selected.id} / 50
+            {selected.id} / {allDesigns.length}
           </span>
           <button
-            onClick={() => setSelectedId(Math.min(50, selected.id + 1))}
-            disabled={selected.id === 50}
+            onClick={() => setSelectedId(Math.min(allDesigns.length, selected.id + 1))}
+            disabled={selected.id === allDesigns.length}
             style={{
-              background: selected.id === 50 ? "rgba(255,255,255,0.1)" : "rgba(255,255,255,0.2)",
+              background: selected.id === allDesigns.length ? "rgba(255,255,255,0.1)" : "rgba(255,255,255,0.2)",
               color: "#fff",
               border: "none",
               borderRadius: 8,
               padding: "8px 16px",
-              cursor: selected.id === 50 ? "default" : "pointer",
-              opacity: selected.id === 50 ? 0.4 : 1,
+              cursor: selected.id === allDesigns.length ? "default" : "pointer",
+              opacity: selected.id === allDesigns.length ? 0.4 : 1,
               fontSize: 14,
               fontWeight: 600,
             }}
@@ -188,7 +198,7 @@ export default function ShowcaseHomepages() {
             margin: 0,
           }}
         >
-          50 Directions{" "}
+          100 Directions{" "}
           <span
             style={{
               background: "linear-gradient(135deg, #E8600A, #F5A623)",
