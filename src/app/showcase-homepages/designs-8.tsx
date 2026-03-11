@@ -4,343 +4,328 @@ import React from "react";
 import type { HomepageDesign } from "./designs-1";
 
 /* ============================================================
-   DESIGN 71 — Pixel Art Retro (Gaming/Nostalgia)
+   DESIGN 63 — Japanese Zen (Wabi-sabi, whitespace, delicate)
    ============================================================ */
-const PixelArtRetro: React.FC = () => {
-  const green = "#4ADE80";
-  const purple = "#A855F7";
+const JapaneseZen: React.FC = () => {
+  const orange = "#E8600A";
+  const amber = "#F5A623";
+  const stone = "#A8A08E";
+  const id = "d63";
   return (
-    <div style={{ minHeight: "100vh", background: "#111827", color: "#fff", fontFamily: "'Courier New', monospace", margin: 0, imageRendering: "pixelated" }}>
-      <nav style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "20px 48px", borderBottom: `2px solid ${green}33` }}>
-        <span style={{ fontSize: "16px", fontWeight: 700, color: green }}>▶ CM_PIXEL</span>
-        <div style={{ display: "flex", gap: "24px", fontSize: "12px", color: "#666" }}>
-          {["PLAY", "SCORES", "OPTIONS", "CREDITS"].map((t) => (
-            <span key={t} style={{ cursor: "pointer" }}>{t}</span>
-          ))}
-        </div>
-      </nav>
+    <div style={{ minHeight: "100vh", background: "#FAFAF7", color: "#2D2D2D", fontFamily: "'Playfair Display', Georgia, serif", margin: 0 }}>
+      <style dangerouslySetInnerHTML={{ __html: `
+        @keyframes ${id}-fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes ${id}-lineGrow { from { height: 0; } to { height: 60px; } }
+        @keyframes ${id}-breathe { 0%, 100% { opacity: 0.5; } 50% { opacity: 1; } }
+        .${id}-link { transition: color 0.4s ease; }
+        .${id}-link:hover { color: ${orange} !important; }
+        .${id}-card { transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+        .${id}-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.06) !important; }
+      `}} />
 
-      <section style={{ padding: "100px 48px 60px", textAlign: "center" }}>
-        <div style={{ fontSize: "12px", letterSpacing: "0.3em", color: purple, marginBottom: "24px" }}>★ PRESS START ★</div>
-        <h1 style={{ fontSize: "clamp(48px, 8vw, 100px)", fontWeight: 700, lineHeight: 1.0, margin: 0 }}>
-          8-BIT
-          <br />
-          <span style={{ color: green }}>WORLD</span>
-        </h1>
-        <p style={{ fontSize: "14px", color: "#555", maxWidth: "500px", margin: "24px auto 0", lineHeight: 1.8 }}>
-          Retour aux sources pixelisées. Chaque idée est un sprite, chaque projet un level complet.
-        </p>
-        <div style={{ marginTop: "32px", display: "inline-flex", gap: "8px" }}>
-          {["[A] START", "[B] ABOUT"].map((btn, i) => (
-            <button key={btn} style={{ padding: "12px 28px", background: i === 0 ? green : "transparent", color: i === 0 ? "#000" : green, border: i === 0 ? "none" : `2px solid ${green}`, fontSize: "14px", fontWeight: 700, fontFamily: "monospace", cursor: "pointer" }}>{btn}</button>
-          ))}
-        </div>
-      </section>
-
-      <section style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "2px", padding: "40px 48px", maxWidth: "800px", margin: "0 auto" }}>
-        {[{ v: "LV.50", l: "Keynotes" }, { v: "LV.100", l: "Podcasts" }, { v: "LV.5", l: "Apps" }, { v: "LV.∞", l: "Ideas" }].map((s, i) => (
-          <div key={s.l} style={{ background: "#1F2937", padding: "28px 16px", textAlign: "center", border: `1px solid ${i % 2 === 0 ? green : purple}22` }}>
-            <div style={{ fontSize: "20px", fontWeight: 700, color: i % 2 === 0 ? green : purple }}>{s.v}</div>
-            <div style={{ fontSize: "10px", color: "#555", marginTop: "8px" }}>{s.l}</div>
-          </div>
+      <nav style={{ display: "flex", justifyContent: "center", padding: "48px 60px", gap: "48px", fontSize: "12px", letterSpacing: "0.2em", textTransform: "uppercase", color: stone, fontFamily: "'Inter', sans-serif" }}>
+        {["Keynotes", "Podcasts", "Apps", "Blog"].map((t) => (
+          <span key={t} className={`${id}-link`} style={{ cursor: "pointer" }}>{t}</span>
         ))}
-      </section>
-
-      <footer style={{ padding: "32px 48px", textAlign: "center", fontSize: "11px", color: "#444", marginTop: "40px" }}>
-        <span>© 2024 CM — INSERT COIN TO CONTINUE</span>
-      </footer>
-    </div>
-  );
-};
-
-/* ============================================================
-   DESIGN 72 — Ocean Wave (Marine/Travel)
-   ============================================================ */
-const OceanWave: React.FC = () => {
-  const ocean = "#0077B6";
-  const sand = "#FFF1DB";
-  return (
-    <div style={{ minHeight: "100vh", background: `linear-gradient(180deg, ${sand} 0%, #CAF0F8 60%, ${ocean} 100%)`, color: "#2D3748", fontFamily: "'Georgia', serif", margin: 0 }}>
-      <nav style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "28px 48px" }}>
-        <span style={{ fontSize: "18px", fontStyle: "italic", color: ocean }}>Connected Mate</span>
-        <div style={{ display: "flex", gap: "28px", fontSize: "12px", color: "#999", fontFamily: "sans-serif" }}>
-          {["Horizons", "Voyages", "Phare", "Ancre"].map((t) => (
-            <span key={t} style={{ cursor: "pointer" }}>{t}</span>
-          ))}
-        </div>
       </nav>
 
-      <section style={{ padding: "100px 48px 80px", maxWidth: "750px" }}>
-        <h1 style={{ fontSize: "clamp(48px, 7vw, 96px)", fontWeight: 400, lineHeight: 1.15, margin: 0, fontStyle: "italic" }}>
-          Naviguer vers
+      <section style={{ textAlign: "center", maxWidth: "700px", margin: "0 auto", padding: "60px 48px 80px", animation: `${id}-fadeUp 1s ease-out` }}>
+        <div style={{ width: "1px", height: "60px", background: stone, margin: "0 auto 40px", opacity: 0.4, animation: `${id}-lineGrow 1s ease-out` }} />
+        <h1 style={{ fontSize: "clamp(40px, 6vw, 72px)", fontWeight: 400, lineHeight: 1.25, margin: 0, letterSpacing: "0.03em" }}>
+          Connecter
           <br />
-          l&apos;<span style={{ color: ocean }}>horizon</span>
+          les <span style={{ fontStyle: "italic", color: orange }}>idées</span>
         </h1>
-        <p style={{ fontSize: "16px", color: "#888", maxWidth: "440px", marginTop: "28px", lineHeight: 2, fontFamily: "sans-serif", fontWeight: 300 }}>
-          Comme les vagues façonnent le rivage, nos idées sculptent le futur. Embarquez pour une traversée créative.
+        <div style={{ width: "1px", height: "40px", background: stone, margin: "36px auto", opacity: 0.3 }} />
+        <p style={{ fontSize: "16px", color: stone, lineHeight: 2.2, maxWidth: "440px", margin: "0 auto 40px", fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+          Dans le calme naît la clarté. Keynotes inspirantes, podcasts captivants et applications de productivité — chaque geste est intentionnel.
         </p>
-        <button style={{ marginTop: "36px", padding: "14px 40px", background: ocean, color: "#fff", border: "none", fontSize: "13px", fontWeight: 600, letterSpacing: "0.1em", cursor: "pointer", borderRadius: "4px" }}>
-          Lever l&apos;ancre
+        <button style={{ padding: "14px 40px", border: `1px solid ${stone}66`, color: stone, background: "transparent", fontSize: "12px", letterSpacing: "0.2em", textTransform: "uppercase", fontFamily: "'Inter', sans-serif", cursor: "pointer", transition: "all 0.4s ease" }}>
+          Découvrir
         </button>
       </section>
 
-      <section style={{ display: "flex", justifyContent: "center", gap: "60px", padding: "40px 48px" }}>
-        {[{ v: "50+", l: "Traversées" }, { v: "100+", l: "Récits de mer" }, { v: "5", l: "Îles" }].map((s) => (
-          <div key={s.l} style={{ textAlign: "center" }}>
-            <div style={{ fontSize: "32px", fontWeight: 400, fontStyle: "italic", color: ocean }}>{s.v}</div>
-            <div style={{ fontSize: "11px", color: "#999", marginTop: "4px", fontFamily: "sans-serif" }}>{s.l}</div>
+      <section style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1px", background: "#e5e0d5", maxWidth: "800px", margin: "0 auto" }}>
+        {[{ v: "50+", l: "Keynotes" }, { v: "100+", l: "Podcasts" }, { v: "5", l: "Applications" }].map((s, i) => (
+          <div key={s.l} className={`${id}-card`} style={{ background: "#FAFAF7", padding: "48px 32px", textAlign: "center", animation: `${id}-fadeUp 0.8s ease-out ${0.3 + i * 0.15}s both` }}>
+            <div style={{ fontSize: "36px", fontWeight: 300, color: orange, fontStyle: "italic", animation: `${id}-breathe 4s ease-in-out ${i}s infinite` }}>{s.v}</div>
+            <div style={{ fontSize: "11px", color: stone, marginTop: "8px", fontFamily: "'Inter', sans-serif", letterSpacing: "0.15em", textTransform: "uppercase" }}>{s.l}</div>
           </div>
         ))}
       </section>
 
-      <footer style={{ padding: "24px 48px", textAlign: "center", fontSize: "12px", color: "rgba(255,255,255,0.6)", fontFamily: "sans-serif", marginTop: "40px" }}>
-        <span>© 2024 Connected Mate — Bon vent</span>
+      <section style={{ padding: "80px 60px", maxWidth: "700px", margin: "0 auto", animation: `${id}-fadeUp 0.8s ease-out 0.6s both` }}>
+        <div style={{ width: "40px", height: "1px", background: orange, marginBottom: "32px" }} />
+        <blockquote style={{ fontSize: "24px", fontStyle: "italic", lineHeight: 1.6, color: orange, margin: 0 }}>
+          &ldquo;La technologie n&apos;a de sens que si elle connecte les humains entre eux.&rdquo;
+        </blockquote>
+        <div style={{ fontSize: "13px", color: stone, marginTop: "20px", fontFamily: "'Inter', sans-serif" }}>— Alexander Martin, CEO</div>
+      </section>
+
+      <section style={{ display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gap: "1px", background: "#e5e0d5", maxWidth: "900px", margin: "40px auto 0" }}>
+        {["Connected Hub", "Mate Analytics", "QuickSync", "EventFlow", "AI Assistant"].map((app, i) => (
+          <div key={app} className={`${id}-card`} style={{ background: "#FAFAF7", padding: "28px 16px", textAlign: "center", animation: `${id}-fadeUp 0.6s ease-out ${0.8 + i * 0.08}s both` }}>
+            <div style={{ fontSize: "13px", fontWeight: 600, fontFamily: "'Inter', sans-serif" }}>{app}</div>
+          </div>
+        ))}
+      </section>
+
+      <footer style={{ padding: "48px 60px", textAlign: "center", fontSize: "12px", color: "#ddd", fontFamily: "'Inter', sans-serif", marginTop: "60px" }}>
+        <span>© 2026 Connected Mate SAS — Paris</span>
       </footer>
     </div>
   );
 };
 
 /* ============================================================
-   DESIGN 73 — Startup Pitch (Business/Startup)
+   DESIGN 64 — Dashboard Overview (Dark analytics, data-rich)
    ============================================================ */
-const StartupPitch: React.FC = () => {
-  const blue = "#2563EB";
+const DashboardOverview: React.FC = () => {
+  const blue = "#3B82F6";
+  const green = "#10B981";
+  const orange = "#E8600A";
+  const id = "d64";
   return (
-    <div style={{ minHeight: "100vh", background: "#fff", color: "#111", fontFamily: "'Inter', 'Helvetica Neue', sans-serif", margin: 0 }}>
-      <nav style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "20px 48px", borderBottom: "1px solid #f0f0f0" }}>
-        <span style={{ fontSize: "18px", fontWeight: 800, letterSpacing: "-0.02em" }}>Connected<span style={{ color: blue }}>Mate</span></span>
-        <div style={{ display: "flex", gap: "24px", fontSize: "13px", color: "#888", alignItems: "center" }}>
-          {["Product", "About", "Blog"].map((t) => (
-            <span key={t} style={{ cursor: "pointer" }}>{t}</span>
+    <div style={{ minHeight: "100vh", background: "#0F172A", color: "#E2E8F0", fontFamily: "'Inter', sans-serif", margin: 0 }}>
+      <style dangerouslySetInnerHTML={{ __html: `
+        @keyframes ${id}-fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes ${id}-pulse { 0%, 100% { opacity: 0.6; } 50% { opacity: 1; } }
+        @keyframes ${id}-grow { from { width: 0; } to { width: var(--target-width); } }
+        .${id}-card { transition: all 0.3s ease; border: 1px solid #334155; }
+        .${id}-card:hover { border-color: ${blue} !important; box-shadow: 0 8px 32px rgba(59,130,246,0.1) !important; }
+        .${id}-row { transition: background 0.2s ease; }
+        .${id}-row:hover { background: rgba(59,130,246,0.05) !important; }
+      `}} />
+
+      <nav style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "12px 24px", background: "#1E293B", borderBottom: "1px solid #334155" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+          <div style={{ width: "24px", height: "24px", borderRadius: "6px", background: `linear-gradient(135deg, ${orange}, #F5A623)` }} />
+          <span style={{ fontSize: "14px", fontWeight: 700 }}>CM <span style={{ color: blue }}>Analytics</span></span>
+        </div>
+        <div style={{ display: "flex", gap: "16px", fontSize: "13px", color: "#64748B", alignItems: "center" }}>
+          {["Dashboard", "Keynotes", "Podcasts", "Apps", "Blog"].map((t) => (
+            <span key={t} style={{ cursor: "pointer", transition: "color 0.2s" }}>{t}</span>
           ))}
-          <button style={{ padding: "8px 20px", background: blue, color: "#fff", border: "none", fontSize: "13px", fontWeight: 600, borderRadius: "8px", cursor: "pointer" }}>Get Started</button>
+          <div style={{ width: "8px", height: "8px", borderRadius: "50%", background: green, animation: `${id}-pulse 2s infinite` }} />
         </div>
       </nav>
 
-      <section style={{ padding: "100px 48px 60px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
-        <div style={{ display: "inline-block", padding: "6px 16px", background: `${blue}10`, color: blue, fontSize: "13px", fontWeight: 600, borderRadius: "100px", marginBottom: "24px" }}>Backed by Y Combinator</div>
-        <h1 style={{ fontSize: "clamp(40px, 6vw, 72px)", fontWeight: 800, lineHeight: 1.1, margin: 0, letterSpacing: "-0.03em" }}>
-          The platform that
-          <br />
-          <span style={{ color: blue }}>connects everything</span>
-        </h1>
-        <p style={{ fontSize: "18px", color: "#888", maxWidth: "520px", margin: "20px auto 0", lineHeight: 1.7, fontWeight: 400 }}>
-          Keynotes, podcasts, apps — tout dans un seul endroit. Rejoignez les 10,000+ visionnaires qui changent le monde.
-        </p>
-        <div style={{ marginTop: "36px", display: "inline-flex", gap: "12px" }}>
-          <button style={{ padding: "14px 32px", background: blue, color: "#fff", border: "none", fontSize: "15px", fontWeight: 700, borderRadius: "10px", cursor: "pointer" }}>Start Free Trial</button>
-          <button style={{ padding: "14px 32px", background: "#f5f5f5", color: "#333", border: "none", fontSize: "15px", fontWeight: 600, borderRadius: "10px", cursor: "pointer" }}>Watch Demo →</button>
+      <section style={{ padding: "24px", animation: `${id}-fadeUp 0.6s ease-out` }}>
+        <div style={{ marginBottom: "20px" }}>
+          <h1 style={{ fontSize: "24px", fontWeight: 700, margin: "0 0 4px" }}>Dashboard Connected Mate</h1>
+          <p style={{ fontSize: "13px", color: "#64748B", margin: 0 }}>Vue d&apos;ensemble de la plateforme — Mars 2026</p>
         </div>
-      </section>
 
-      <section style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "24px", padding: "60px 48px", maxWidth: "900px", margin: "0 auto" }}>
-        {[{ v: "50+", l: "Keynotes", d: "Des conférences qui inspirent" }, { v: "100+", l: "Podcasts", d: "Des conversations profondes" }, { v: "5", l: "Apps", d: "Des outils qui transforment" }].map((item) => (
-          <div key={item.l} style={{ padding: "32px", borderRadius: "16px", border: "1px solid #eee" }}>
-            <div style={{ fontSize: "36px", fontWeight: 800, color: blue }}>{item.v}</div>
-            <div style={{ fontSize: "16px", fontWeight: 700, marginTop: "8px" }}>{item.l}</div>
-            <div style={{ fontSize: "14px", color: "#999", marginTop: "4px" }}>{item.d}</div>
-          </div>
-        ))}
-      </section>
-
-      <section style={{ padding: "40px 48px 60px", textAlign: "center" }}>
-        <div style={{ fontSize: "13px", color: "#ccc", letterSpacing: "0.1em" }}>TRUSTED BY 10,000+ INNOVATORS WORLDWIDE</div>
-      </section>
-
-      <footer style={{ padding: "20px 48px", borderTop: "1px solid #f0f0f0", fontSize: "12px", color: "#ccc", textAlign: "center" }}>
-        <span>© 2024 Connected Mate Inc.</span>
-      </footer>
-    </div>
-  );
-};
-
-/* ============================================================
-   DESIGN 74 — Gothic Cathedral (Dark/Dramatic)
-   ============================================================ */
-const GothicCathedral: React.FC = () => {
-  const crimson = "#8B0000";
-  return (
-    <div style={{ minHeight: "100vh", background: "#0A0A0A", color: "#D4C5A9", fontFamily: "'Palatino', 'Book Antiqua', serif", margin: 0 }}>
-      <nav style={{ display: "flex", justifyContent: "center", padding: "40px 48px", gap: "48px", fontSize: "11px", letterSpacing: "0.3em", textTransform: "uppercase", fontFamily: "sans-serif", color: "#555" }}>
-        {["Nef", "Chapelle", "Crypte", "Vitraux"].map((t) => (
-          <span key={t} style={{ cursor: "pointer" }}>{t}</span>
-        ))}
-      </nav>
-
-      <section style={{ padding: "80px 48px", textAlign: "center", maxWidth: "700px", margin: "0 auto" }}>
-        <div style={{ fontSize: "60px", color: crimson, marginBottom: "24px" }}>✦</div>
-        <h1 style={{ fontSize: "clamp(44px, 6vw, 80px)", fontWeight: 400, lineHeight: 1.2, margin: 0, letterSpacing: "0.05em" }}>
-          <span style={{ color: crimson }}>Cathédrale</span>
-          <br />
-          des idées
-        </h1>
-        <p style={{ fontSize: "16px", color: "#777", maxWidth: "420px", margin: "32px auto 0", lineHeight: 2, fontFamily: "sans-serif", fontWeight: 300 }}>
-          Sous les voûtes de l&apos;innovation, chaque pensée résonne comme un chant grégorien. Élevons nos esprits ensemble.
-        </p>
-        <div style={{ fontSize: "60px", color: crimson, marginTop: "32px" }}>✦</div>
-      </section>
-
-      <section style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1px", background: "#222", maxWidth: "800px", margin: "0 auto" }}>
-        {[{ v: "L", l: "Keynotes" }, { v: "C", l: "Podcasts" }, { v: "V", l: "Apps" }].map((s) => (
-          <div key={s.l} style={{ background: "#0A0A0A", padding: "48px 24px", textAlign: "center" }}>
-            <div style={{ fontSize: "48px", fontStyle: "italic", color: crimson }}>{s.v}</div>
-            <div style={{ fontSize: "11px", color: "#555", marginTop: "12px", fontFamily: "sans-serif", letterSpacing: "0.15em", textTransform: "uppercase" }}>{s.l}</div>
-          </div>
-        ))}
-      </section>
-
-      <footer style={{ padding: "48px", textAlign: "center", fontSize: "12px", color: "#444", fontFamily: "sans-serif", marginTop: "60px" }}>
-        <span>© 2024 Connected Mate — Ad maiorem gloriam</span>
-      </footer>
-    </div>
-  );
-};
-
-/* ============================================================
-   DESIGN 75 — Candy Shop (Fun/Colorful)
-   ============================================================ */
-const CandyShop: React.FC = () => {
-  const candy = "#FF6699";
-  const mint = "#00CC99";
-  const lemon = "#FFD700";
-  return (
-    <div style={{ minHeight: "100vh", background: "#FFF5F9", color: "#333", fontFamily: "'Trebuchet MS', sans-serif", margin: 0 }}>
-      <nav style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "20px 48px", background: "#fff", boxShadow: "0 2px 8px rgba(0,0,0,0.04)" }}>
-        <span style={{ fontSize: "20px", fontWeight: 700, color: candy }}>CM Candy</span>
-        <div style={{ display: "flex", gap: "20px", fontSize: "13px", color: "#aaa" }}>
-          {["Bonbons", "Saveurs", "Box", "Panier"].map((t) => (
-            <span key={t} style={{ cursor: "pointer" }}>{t}</span>
+        {/* Metric cards */}
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "12px", marginBottom: "20px" }}>
+          {[
+            { v: "50+", l: "Keynotes", d: "+8 ce trimestre", c: green },
+            { v: "100+", l: "Podcasts", d: "+12 ce mois", c: green },
+            { v: "5", l: "Apps SaaS", d: "4 live, 1 beta", c: blue },
+            { v: "10.2K", l: "Utilisateurs actifs", d: "+18% MoM", c: green },
+          ].map((stat, i) => (
+            <div key={stat.l} className={`${id}-card`} style={{ background: "#1E293B", borderRadius: "12px", padding: "16px", animation: `${id}-fadeUp 0.5s ease-out ${i * 0.08}s both` }}>
+              <div style={{ fontSize: "11px", color: "#64748B", marginBottom: "6px" }}>{stat.l}</div>
+              <div style={{ fontSize: "28px", fontWeight: 800, letterSpacing: "-0.02em" }}>{stat.v}</div>
+              <div style={{ fontSize: "11px", color: stat.c, marginTop: "4px", fontWeight: 600 }}>{stat.d}</div>
+            </div>
           ))}
         </div>
-      </nav>
 
-      <section style={{ padding: "80px 48px 40px", textAlign: "center" }}>
-        <h1 style={{ fontSize: "clamp(48px, 7vw, 96px)", fontWeight: 800, lineHeight: 1.05, margin: 0 }}>
-          <span style={{ color: candy }}>Sweet</span>
-          <br />
-          <span style={{ color: mint }}>ideas</span> only
-        </h1>
-        <p style={{ fontSize: "16px", color: "#aaa", maxWidth: "440px", margin: "20px auto 0", lineHeight: 1.8 }}>
-          Des idées aussi délicieuses qu&apos;un bonbon. Croquantes, colorées, et addictives.
-        </p>
-        <button style={{ marginTop: "28px", padding: "14px 36px", background: `linear-gradient(135deg, ${candy}, ${mint})`, color: "#fff", border: "none", fontSize: "14px", fontWeight: 700, borderRadius: "100px", cursor: "pointer" }}>
-          Ouvrir la box
-        </button>
-      </section>
-
-      <section style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "16px", padding: "40px 48px", maxWidth: "800px", margin: "0 auto" }}>
-        {[{ n: "Keynotes", c: candy, v: "50+" }, { n: "Podcasts", c: mint, v: "100+" }, { n: "Apps", c: lemon, v: "5" }].map((item) => (
-          <div key={item.n} style={{ background: "#fff", borderRadius: "20px", padding: "36px 24px", textAlign: "center", boxShadow: "0 4px 16px rgba(0,0,0,0.04)", border: `2px solid ${item.c}22` }}>
-            <div style={{ fontSize: "36px", fontWeight: 800, color: item.c }}>{item.v}</div>
-            <div style={{ fontSize: "14px", fontWeight: 700, marginTop: "8px", color: "#555" }}>{item.n}</div>
+        <div style={{ display: "grid", gridTemplateColumns: "1.5fr 1fr", gap: "12px" }}>
+          {/* Activity feed */}
+          <div className={`${id}-card`} style={{ background: "#1E293B", borderRadius: "12px", padding: "16px", animation: `${id}-fadeUp 0.5s ease-out 0.3s both` }}>
+            <div style={{ fontSize: "14px", fontWeight: 600, marginBottom: "12px" }}>Activité récente</div>
+            {[
+              { t: "Keynote : L'IA en entreprise — publiée", time: "Il y a 2h" },
+              { t: "Podcast #104 : Future of Work — en ligne", time: "Il y a 5h" },
+              { t: "Connected Hub v3.1 — déployée", time: "Hier" },
+              { t: "AI Assistant — beta ouverte à 500 users", time: "Il y a 2j" },
+              { t: "Blog : Green IT et responsabilité — publié", time: "Il y a 3j" },
+              { t: "EventFlow : 2 000 inscrits au prochain event", time: "Il y a 5j" },
+            ].map((item, i) => (
+              <div key={i} className={`${id}-row`} style={{ padding: "10px 0", borderTop: i > 0 ? "1px solid #334155" : "none", fontSize: "13px", color: "#94A3B8", display: "flex", justifyContent: "space-between" }}>
+                <span>{item.t}</span>
+                <span style={{ color: "#475569", fontSize: "12px", flexShrink: 0, marginLeft: "12px" }}>{item.time}</span>
+              </div>
+            ))}
           </div>
-        ))}
-      </section>
 
-      <footer style={{ padding: "24px 48px", textAlign: "center", fontSize: "12px", color: "#ddd", marginTop: "40px" }}>
-        <span>© 2024 Connected Mate — Life is sweet</span>
-      </footer>
+          {/* Apps status + topics */}
+          <div style={{ display: "grid", gap: "12px" }}>
+            <div className={`${id}-card`} style={{ background: "#1E293B", borderRadius: "12px", padding: "16px", animation: `${id}-fadeUp 0.5s ease-out 0.4s both` }}>
+              <div style={{ fontSize: "14px", fontWeight: 600, marginBottom: "12px" }}>Apps — Status</div>
+              {[
+                { n: "Connected Hub", s: "Live", p: 100 },
+                { n: "Mate Analytics", s: "Live", p: 100 },
+                { n: "QuickSync", s: "Beta", p: 75 },
+                { n: "EventFlow", s: "Live", p: 100 },
+                { n: "AI Assistant", s: "Beta", p: 40 },
+              ].map((app) => (
+                <div key={app.n} style={{ marginBottom: "10px" }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", fontSize: "12px", marginBottom: "4px" }}>
+                    <span style={{ color: "#94A3B8" }}>{app.n}</span>
+                    <span style={{ color: app.s === "Live" ? green : orange, fontWeight: 600 }}>{app.s}</span>
+                  </div>
+                  <div style={{ height: "3px", background: "#334155", borderRadius: "2px" }}>
+                    <div style={{ height: "100%", width: `${app.p}%`, background: app.s === "Live" ? green : orange, borderRadius: "2px", transition: "width 1s ease" }} />
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className={`${id}-card`} style={{ background: "#1E293B", borderRadius: "12px", padding: "16px", animation: `${id}-fadeUp 0.5s ease-out 0.5s both` }}>
+              <div style={{ fontSize: "14px", fontWeight: 600, marginBottom: "12px" }}>Top Expertises</div>
+              {[{ n: "IA / ML", p: 92 }, { n: "Digital Transform.", p: 78 }, { n: "Future of Work", p: 65 }].map((cat) => (
+                <div key={cat.n} style={{ marginBottom: "10px" }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", fontSize: "12px", marginBottom: "4px" }}>
+                    <span style={{ color: "#94A3B8" }}>{cat.n}</span>
+                    <span style={{ color: blue }}>{cat.p}%</span>
+                  </div>
+                  <div style={{ height: "3px", background: "#334155", borderRadius: "2px" }}>
+                    <div style={{ height: "100%", width: `${cat.p}%`, background: blue, borderRadius: "2px" }} />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
 
 /* ============================================================
-   DESIGN 76 — Steampunk Workshop (Retro-Futuristic)
+   DESIGN 65 — Gradient Maximalism (Bold, colorful, energetic)
    ============================================================ */
-const SteampunkWorkshop: React.FC = () => {
-  const brass = "#B8860B";
-  const copper = "#B87333";
+const GradientMaximalism: React.FC = () => {
+  const orange = "#E8600A";
+  const amber = "#F5A623";
+  const id = "d65";
   return (
-    <div style={{ minHeight: "100vh", background: "#1C1410", color: "#D4C5A0", fontFamily: "'Georgia', serif", margin: 0 }}>
-      <nav style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "24px 48px", borderBottom: `1px solid ${brass}33` }}>
-        <span style={{ fontSize: "16px", letterSpacing: "0.15em", textTransform: "uppercase", color: brass }}>CM Works</span>
-        <div style={{ display: "flex", gap: "24px", fontSize: "12px", letterSpacing: "0.1em", color: "#776", fontFamily: "sans-serif" }}>
-          {["Atelier", "Machines", "Plans", "Telegraph"].map((t) => (
-            <span key={t} style={{ cursor: "pointer" }}>{t}</span>
+    <div style={{ minHeight: "100vh", background: "#fff", color: "#111", fontFamily: "'Space Grotesk', sans-serif", margin: 0 }}>
+      <style dangerouslySetInnerHTML={{ __html: `
+        @keyframes ${id}-fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes ${id}-gradientShift { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+        @keyframes ${id}-bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+        @keyframes ${id}-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+        .${id}-card { transition: all 0.4s ease; }
+        .${id}-card:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 24px 64px rgba(232,96,10,0.2) !important; }
+      `}} />
+
+      <nav style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "20px 48px" }}>
+        <span style={{ fontSize: "20px", fontWeight: 800, background: `linear-gradient(135deg, ${orange}, #FF6B6B, #845EC2, ${amber})`, backgroundSize: "200% 200%", animation: `${id}-gradientShift 4s ease infinite`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Connected Mate</span>
+        <div style={{ display: "flex", gap: "24px", alignItems: "center", fontSize: "14px", fontWeight: 600 }}>
+          {["Keynotes", "Podcasts", "Apps", "Blog"].map((t) => (
+            <span key={t} style={{ cursor: "pointer", color: "#888", transition: "color 0.3s" }}>{t}</span>
+          ))}
+          <button style={{ padding: "10px 24px", background: `linear-gradient(135deg, ${orange}, #FF6B6B, #845EC2)`, backgroundSize: "200% 200%", animation: `${id}-gradientShift 4s ease infinite`, color: "#fff", border: "none", borderRadius: "100px", fontSize: "14px", fontWeight: 700, cursor: "pointer", boxShadow: `0 4px 20px ${orange}33` }}>Rejoindre</button>
+        </div>
+      </nav>
+
+      <section style={{ padding: "80px 48px 40px", textAlign: "center", animation: `${id}-fadeUp 0.8s ease-out` }}>
+        <div style={{ display: "inline-block", padding: "8px 24px", background: `linear-gradient(135deg, ${orange}15, #845EC215)`, borderRadius: "100px", fontSize: "13px", fontWeight: 700, color: orange, marginBottom: "28px" }}>AI Assistant en beta — Rejoignez 500 early adopters</div>
+        <h1 style={{ fontSize: "clamp(52px, 8vw, 100px)", fontWeight: 800, lineHeight: 1.0, margin: "0 0 20px", letterSpacing: "-0.04em" }}>
+          <span style={{ background: `linear-gradient(135deg, ${orange}, #FF6B6B, #845EC2, ${amber})`, backgroundSize: "200% 200%", animation: `${id}-gradientShift 6s ease infinite`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Connecter les idées,</span>
+          <br />
+          inspirer le futur
+        </h1>
+        <p style={{ fontSize: "18px", color: "#888", maxWidth: "540px", margin: "0 auto 36px", lineHeight: 1.7 }}>
+          50+ keynotes, 100+ podcasts et 5 apps SaaS — la plateforme complète pour les leaders tech qui construisent demain.
+        </p>
+        <div style={{ display: "inline-flex", gap: "12px" }}>
+          <button style={{ padding: "16px 40px", background: `linear-gradient(135deg, ${orange}, #FF6B6B, #845EC2)`, backgroundSize: "200% 200%", animation: `${id}-gradientShift 4s ease infinite`, color: "#fff", border: "none", borderRadius: "16px", fontSize: "16px", fontWeight: 800, cursor: "pointer", boxShadow: `0 8px 32px ${orange}33` }}>Explorer</button>
+          <button style={{ padding: "16px 40px", background: "#f5f5f5", color: "#555", border: "none", borderRadius: "16px", fontSize: "16px", fontWeight: 700, cursor: "pointer" }}>Écouter →</button>
+        </div>
+      </section>
+
+      {/* Colored stats */}
+      <section style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "16px", padding: "40px 48px", maxWidth: "1000px", margin: "0 auto" }}>
+        {[
+          { v: "50+", l: "Keynotes", bg: `linear-gradient(135deg, ${orange}, #FF6B6B)` },
+          { v: "100+", l: "Podcasts", bg: "linear-gradient(135deg, #FF6B6B, #845EC2)" },
+          { v: "5", l: "Apps SaaS", bg: `linear-gradient(135deg, #845EC2, ${amber})` },
+          { v: "10K+", l: "Users", bg: `linear-gradient(135deg, ${amber}, ${orange})` },
+        ].map((s, i) => (
+          <div key={s.l} className={`${id}-card`} style={{ background: s.bg, borderRadius: "20px", padding: "32px 24px", color: "#fff", textAlign: "center", boxShadow: "0 4px 16px rgba(0,0,0,0.1)", animation: `${id}-fadeUp 0.6s ease-out ${0.2 + i * 0.1}s both` }}>
+            <div style={{ fontSize: "40px", fontWeight: 900 }}>{s.v}</div>
+            <div style={{ fontSize: "13px", opacity: 0.9, marginTop: "4px", fontWeight: 600 }}>{s.l}</div>
+          </div>
+        ))}
+      </section>
+
+      {/* Apps */}
+      <section style={{ display: "flex", justifyContent: "center", gap: "12px", padding: "40px 48px", flexWrap: "wrap" }}>
+        {["Connected Hub", "Mate Analytics", "QuickSync", "EventFlow", "AI Assistant"].map((app, i) => (
+          <div key={app} className={`${id}-card`} style={{ padding: "16px 28px", background: "#fff", borderRadius: "16px", boxShadow: "0 2px 8px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.06)", fontSize: "14px", fontWeight: 700, cursor: "pointer", animation: `${id}-bounce 2s ease-in-out ${i * 0.3}s infinite` }}>{app}</div>
+        ))}
+      </section>
+
+      {/* Marquee */}
+      <section style={{ overflow: "hidden", padding: "24px 0", margin: "20px 0" }}>
+        <div style={{ display: "flex", gap: "40px", animation: `${id}-marquee 20s linear infinite`, whiteSpace: "nowrap" }}>
+          {["IA Générative", "Digital Transform.", "Future of Work", "Green IT", "Cybersécurité", "Product Mgmt", "API Design", "Leadership", "Data Ethics", "IA Générative", "Digital Transform.", "Future of Work", "Green IT"].map((t, i) => (
+            <span key={i} style={{ fontSize: "32px", fontWeight: 900, background: `linear-gradient(135deg, ${orange}22, #845EC222)`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", letterSpacing: "-0.02em" }}>{t}</span>
           ))}
         </div>
-      </nav>
-
-      <section style={{ padding: "100px 48px 60px" }}>
-        <div style={{ fontSize: "11px", letterSpacing: "0.3em", textTransform: "uppercase", color: copper, marginBottom: "24px", fontFamily: "sans-serif" }}>ANNO DOMINI MMXXIV</div>
-        <h1 style={{ fontSize: "clamp(48px, 7vw, 96px)", fontWeight: 400, lineHeight: 1.1, margin: 0 }}>
-          L&apos;Atelier des
-          <br />
-          <span style={{ color: brass, fontStyle: "italic" }}>Inventions</span>
-        </h1>
-        <p style={{ fontSize: "16px", color: "#776", maxWidth: "460px", marginTop: "28px", lineHeight: 2, fontFamily: "sans-serif", fontWeight: 300 }}>
-          Rouages, engrenages et vapeur d&apos;innovation. Notre atelier forge les idées de demain avec les outils d&apos;hier.
-        </p>
-        <div style={{ marginTop: "36px", padding: "14px 36px", border: `2px solid ${brass}`, display: "inline-block", color: brass, fontSize: "12px", letterSpacing: "0.2em", textTransform: "uppercase", fontFamily: "sans-serif", cursor: "pointer" }}>
-          Actionner la machine
-        </div>
       </section>
 
-      <section style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1px", background: `${brass}22`, margin: "40px 48px" }}>
-        {[{ v: "⚙ 50+", l: "Mécanismes" }, { v: "⚙ 100+", l: "Transmissions" }, { v: "⚙ 5", l: "Machines" }].map((s) => (
-          <div key={s.l} style={{ background: "#1C1410", padding: "40px 24px", textAlign: "center" }}>
-            <div style={{ fontSize: "24px", color: brass }}>{s.v}</div>
-            <div style={{ fontSize: "11px", color: "#665", marginTop: "8px", fontFamily: "sans-serif" }}>{s.l}</div>
-          </div>
-        ))}
-      </section>
-
-      <footer style={{ padding: "32px 48px", textAlign: "center", fontSize: "12px", color: "#554", fontFamily: "sans-serif" }}>
-        <span>© MMXXIV Connected Mate — Propulsé par la vapeur</span>
+      <footer style={{ padding: "24px 48px", borderTop: "1px solid #eee", display: "flex", justifyContent: "space-between", fontSize: "12px", color: "#ccc" }}>
+        <span>© 2026 Connected Mate SAS</span>
+        <span>Paris — Made with love</span>
       </footer>
     </div>
   );
 };
 
 /* ============================================================
-   DESIGN 77 — Minimalist Swiss (International Typographic)
+   DESIGN 66 — Swiss Grid (International Typographic style)
    ============================================================ */
-const MinimalistSwiss: React.FC = () => {
-  const red = "#FF0000";
+const SwissGrid: React.FC = () => {
+  const red = "#E8600A";
+  const id = "d66";
   return (
     <div style={{ minHeight: "100vh", background: "#fff", color: "#000", fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif", margin: 0 }}>
-      <nav style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", padding: "32px 48px" }}>
+      <style dangerouslySetInnerHTML={{ __html: `
+        @keyframes ${id}-fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+        .${id}-row { transition: background 0.2s ease; }
+        .${id}-row:hover { background: #f5f5f5 !important; }
+      `}} />
+
+      <nav style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", padding: "32px 48px", borderBottom: "1px solid #eee" }}>
         <div>
           <span style={{ fontSize: "14px", fontWeight: 700 }}>Connected Mate</span>
-          <div style={{ fontSize: "11px", color: "#999", marginTop: "4px" }}>Design & Innovation Studio</div>
+          <div style={{ fontSize: "11px", color: "#999", marginTop: "4px" }}>Keynotes · Podcasts · SaaS</div>
         </div>
         <div style={{ display: "flex", gap: "24px", fontSize: "12px", color: "#999" }}>
-          {["Work", "Info", "Contact"].map((t) => (
+          {["Keynotes", "Podcasts", "Apps", "Blog"].map((t) => (
             <span key={t} style={{ cursor: "pointer" }}>{t}</span>
           ))}
         </div>
       </nav>
 
-      <section style={{ padding: "60px 48px 40px" }}>
+      <section style={{ padding: "60px 48px 40px", animation: `${id}-fadeUp 0.6s ease-out` }}>
         <div style={{ display: "grid", gridTemplateColumns: "120px 1fr", gap: "40px", alignItems: "start" }}>
+          <div style={{ width: "80px", height: "80px", background: red, borderRadius: "4px" }} />
           <div>
-            <div style={{ width: "80px", height: "80px", background: red }} />
-          </div>
-          <div>
-            <h1 style={{ fontSize: "clamp(48px, 7vw, 96px)", fontWeight: 700, lineHeight: 1.0, margin: 0, letterSpacing: "-0.03em" }}>
-              Connecter
+            <h1 style={{ fontSize: "clamp(44px, 6vw, 80px)", fontWeight: 700, lineHeight: 1.0, margin: "0 0 20px", letterSpacing: "-0.03em" }}>
+              Connecter les idées,
               <br />
-              les idées
+              inspirer le futur
             </h1>
+            <p style={{ fontSize: "16px", lineHeight: 1.7, color: "#666", maxWidth: "500px", margin: 0 }}>
+              La plateforme qui connecte keynotes tech, podcasts visionnaires et applications SaaS de productivité.
+            </p>
           </div>
         </div>
       </section>
 
-      <section style={{ padding: "40px 48px", borderTop: "1px solid #eee" }}>
+      <section style={{ padding: "32px 48px", borderTop: "1px solid #eee" }}>
         <div style={{ display: "grid", gridTemplateColumns: "120px 1fr", gap: "40px" }}>
-          <div style={{ fontSize: "11px", color: "#999", fontWeight: 500, paddingTop: "4px" }}>About</div>
-          <p style={{ fontSize: "18px", lineHeight: 1.7, color: "#555", maxWidth: "600px", margin: 0, fontWeight: 300 }}>
-            Nous créons des expériences numériques avec la rigueur suisse et la passion française. Chaque projet est mesuré, calibré, précis.
-          </p>
-        </div>
-      </section>
-
-      <section style={{ padding: "40px 48px", borderTop: "1px solid #eee" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "120px 1fr", gap: "40px" }}>
-          <div style={{ fontSize: "11px", color: "#999", fontWeight: 500, paddingTop: "4px" }}>Numbers</div>
+          <div style={{ fontSize: "11px", color: "#999", fontWeight: 500, paddingTop: "4px" }}>Chiffres</div>
           <div style={{ display: "flex", gap: "60px" }}>
-            {[{ v: "50+", l: "Keynotes" }, { v: "100+", l: "Podcasts" }, { v: "5", l: "Apps" }].map((s) => (
-              <div key={s.l}>
+            {[{ v: "50+", l: "Keynotes" }, { v: "100+", l: "Podcasts" }, { v: "5", l: "Apps" }, { v: "10K+", l: "Users" }].map((s, i) => (
+              <div key={s.l} style={{ animation: `${id}-fadeUp 0.5s ease-out ${0.1 + i * 0.08}s both` }}>
                 <div style={{ fontSize: "32px", fontWeight: 700 }}>{s.v}</div>
                 <div style={{ fontSize: "12px", color: "#999", marginTop: "4px" }}>{s.l}</div>
               </div>
@@ -349,155 +334,44 @@ const MinimalistSwiss: React.FC = () => {
         </div>
       </section>
 
-      <footer style={{ padding: "32px 48px", borderTop: "1px solid #eee", fontSize: "11px", color: "#ccc", display: "flex", justifyContent: "space-between" }}>
-        <span>© 2024 Connected Mate</span>
+      <section style={{ padding: "32px 48px", borderTop: "1px solid #eee" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "120px 1fr", gap: "40px" }}>
+          <div style={{ fontSize: "11px", color: "#999", fontWeight: 500, paddingTop: "4px" }}>Applications</div>
+          <div>
+            {["Connected Hub — Collaboration & OKR", "Mate Analytics — Business Intelligence", "QuickSync — File Sync E2E", "EventFlow — Event Management", "AI Assistant — IA Générative"].map((app, i) => (
+              <div key={app} className={`${id}-row`} style={{ padding: "14px 0", borderBottom: "1px solid #eee", fontSize: "15px", fontWeight: 500, display: "flex", justifyContent: "space-between", cursor: "pointer", animation: `${id}-fadeUp 0.5s ease-out ${0.3 + i * 0.06}s both` }}>
+                <span>{app}</span>
+                <span style={{ color: "#ccc" }}>→</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section style={{ padding: "32px 48px", borderTop: "1px solid #eee" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "120px 1fr", gap: "40px" }}>
+          <div style={{ fontSize: "11px", color: "#999", fontWeight: 500, paddingTop: "4px" }}>Expertises</div>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+            {["IA", "Transformation Digitale", "Future of Work", "Green IT", "Cybersécurité", "Product", "API Design", "Leadership", "Data Ethics"].map((t) => (
+              <span key={t} style={{ padding: "6px 16px", border: "1px solid #ddd", fontSize: "12px", color: "#666" }}>{t}</span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section style={{ padding: "40px 48px", borderTop: "1px solid #eee" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "120px 1fr", gap: "40px" }}>
+          <div style={{ fontSize: "11px", color: "#999", fontWeight: 500 }}>Citation</div>
+          <blockquote style={{ fontSize: "22px", lineHeight: 1.5, fontWeight: 300, margin: 0, color: "#333" }}>
+            &ldquo;La technologie n&apos;a de sens que si elle connecte les humains entre eux. Le reste, c&apos;est du bruit.&rdquo;
+            <div style={{ fontSize: "13px", color: "#999", marginTop: "12px" }}>— Alexander Martin, CEO</div>
+          </blockquote>
+        </div>
+      </section>
+
+      <footer style={{ padding: "28px 48px", borderTop: "1px solid #eee", display: "flex", justifyContent: "space-between", fontSize: "11px", color: "#ccc" }}>
+        <span>© 2026 Connected Mate SAS</span>
         <span>Zürich — Paris</span>
-      </footer>
-    </div>
-  );
-};
-
-/* ============================================================
-   DESIGN 78 — Tropical Paradise (Vacation/Colorful)
-   ============================================================ */
-const TropicalParadise: React.FC = () => {
-  const coral = "#FF6F61";
-  const turquoise = "#40E0D0";
-  return (
-    <div style={{ minHeight: "100vh", background: "linear-gradient(180deg, #87CEEB 0%, #E0F7FA 40%, #FFF8E1 100%)", color: "#2D3748", fontFamily: "'Georgia', serif", margin: 0 }}>
-      <nav style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "24px 48px" }}>
-        <span style={{ fontSize: "20px", fontWeight: 400, fontStyle: "italic", color: coral }}>Connected Mate</span>
-        <div style={{ display: "flex", gap: "24px", fontSize: "12px", color: "#999", fontFamily: "sans-serif" }}>
-          {["Plage", "Lagon", "Jungle", "Sunset"].map((t) => (
-            <span key={t} style={{ cursor: "pointer" }}>{t}</span>
-          ))}
-        </div>
-      </nav>
-
-      <section style={{ padding: "80px 48px 60px", textAlign: "center" }}>
-        <h1 style={{ fontSize: "clamp(48px, 7vw, 96px)", fontWeight: 400, lineHeight: 1.1, margin: 0, fontStyle: "italic" }}>
-          Bienvenue au
-          <br />
-          <span style={{ color: coral }}>paradis</span>
-        </h1>
-        <p style={{ fontSize: "16px", color: "#999", maxWidth: "440px", margin: "24px auto 0", lineHeight: 1.9, fontFamily: "sans-serif", fontWeight: 300 }}>
-          Un océan d&apos;idées, un soleil de créativité. Plongez dans l&apos;univers Connected Mate.
-        </p>
-        <button style={{ marginTop: "32px", padding: "14px 36px", background: coral, color: "#fff", border: "none", fontSize: "13px", fontWeight: 600, borderRadius: "100px", cursor: "pointer" }}>
-          Plonger
-        </button>
-      </section>
-
-      <section style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "16px", padding: "40px 48px", maxWidth: "800px", margin: "0 auto" }}>
-        {[{ n: "Keynotes", c: coral }, { n: "Podcasts", c: turquoise }, { n: "Apps", c: coral }].map((item) => (
-          <div key={item.n} style={{ background: "rgba(255,255,255,0.7)", borderRadius: "16px", padding: "36px 24px", textAlign: "center", backdropFilter: "blur(10px)" }}>
-            <div style={{ fontSize: "20px", fontStyle: "italic", color: item.c }}>{item.n}</div>
-            <div style={{ fontSize: "12px", color: "#aaa", marginTop: "8px", fontFamily: "sans-serif" }}>Découvrir</div>
-          </div>
-        ))}
-      </section>
-
-      <footer style={{ padding: "32px 48px", textAlign: "center", fontSize: "12px", color: "#bbb", fontFamily: "sans-serif", marginTop: "40px" }}>
-        <span>© 2024 Connected Mate — Aloha</span>
-      </footer>
-    </div>
-  );
-};
-
-/* ============================================================
-   DESIGN 79 — Concrete Jungle (Industrial/Urban)
-   ============================================================ */
-const ConcreteJungle: React.FC = () => {
-  const yellow = "#FFD600";
-  return (
-    <div style={{ minHeight: "100vh", background: "#2C2C2C", color: "#E0E0E0", fontFamily: "'Arial', sans-serif", margin: 0 }}>
-      <nav style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "20px 48px", borderBottom: `2px solid ${yellow}` }}>
-        <span style={{ fontSize: "16px", fontWeight: 900, textTransform: "uppercase", letterSpacing: "0.1em" }}>CM<span style={{ color: yellow }}>.</span></span>
-        <div style={{ display: "flex", gap: "24px", fontSize: "12px", fontWeight: 700, textTransform: "uppercase", color: "#888" }}>
-          {["Build", "Projects", "Team", "Contact"].map((t) => (
-            <span key={t} style={{ cursor: "pointer" }}>{t}</span>
-          ))}
-        </div>
-      </nav>
-
-      <section style={{ padding: "100px 48px 60px" }}>
-        <div style={{ display: "inline-block", padding: "4px 12px", background: yellow, color: "#000", fontSize: "11px", fontWeight: 900, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "24px" }}>UNDER CONSTRUCTION</div>
-        <h1 style={{ fontSize: "clamp(52px, 8vw, 110px)", fontWeight: 900, lineHeight: 0.95, margin: 0, textTransform: "uppercase", letterSpacing: "-0.02em" }}>
-          WE BUILD
-          <br />
-          <span style={{ color: yellow }}>IDEAS</span>
-        </h1>
-        <p style={{ fontSize: "15px", color: "#888", maxWidth: "460px", marginTop: "24px", lineHeight: 1.8 }}>
-          Du béton brut et de l&apos;acier. Nos idées sont construites pour durer, comme les gratte-ciels qui touchent les nuages.
-        </p>
-        <button style={{ marginTop: "32px", padding: "14px 40px", background: yellow, color: "#000", border: "none", fontSize: "14px", fontWeight: 900, textTransform: "uppercase", cursor: "pointer" }}>
-          START PROJECT
-        </button>
-      </section>
-
-      <section style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "2px", margin: "40px 48px" }}>
-        {[{ v: "50+", l: "Structures" }, { v: "100+", l: "Modules" }, { v: "5", l: "Tours" }, { v: "24/7", l: "Chantier" }].map((s) => (
-          <div key={s.l} style={{ background: "#333", padding: "32px 20px", textAlign: "center" }}>
-            <div style={{ fontSize: "28px", fontWeight: 900, color: yellow }}>{s.v}</div>
-            <div style={{ fontSize: "10px", color: "#666", marginTop: "8px", letterSpacing: "0.15em", textTransform: "uppercase" }}>{s.l}</div>
-          </div>
-        ))}
-      </section>
-
-      <footer style={{ padding: "24px 48px", borderTop: `2px solid ${yellow}`, fontSize: "11px", color: "#666", display: "flex", justifyContent: "space-between", marginTop: "40px" }}>
-        <span>© 2024 CM Construction</span>
-        <span style={{ color: yellow }}>HARD HAT AREA</span>
-      </footer>
-    </div>
-  );
-};
-
-/* ============================================================
-   DESIGN 80 — Library Archive (Academic/Scholarly)
-   ============================================================ */
-const LibraryArchive: React.FC = () => {
-  const burgundy = "#722F37";
-  const ivory = "#FFFFF0";
-  return (
-    <div style={{ minHeight: "100vh", background: ivory, color: "#2C2C2C", fontFamily: "'Palatino', 'Book Antiqua', serif", margin: 0 }}>
-      <nav style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "28px 48px", borderBottom: `1px solid ${burgundy}22` }}>
-        <span style={{ fontSize: "16px", fontWeight: 400, color: burgundy, letterSpacing: "0.05em" }}>Bibliothèque CM</span>
-        <div style={{ display: "flex", gap: "28px", fontSize: "12px", color: "#999", fontFamily: "sans-serif" }}>
-          {["Catalogue", "Rayons", "Lecture", "Carte"].map((t) => (
-            <span key={t} style={{ cursor: "pointer" }}>{t}</span>
-          ))}
-        </div>
-      </nav>
-
-      <section style={{ padding: "80px 48px 60px", maxWidth: "700px" }}>
-        <div style={{ fontSize: "11px", letterSpacing: "0.3em", textTransform: "uppercase", color: burgundy, fontFamily: "sans-serif", marginBottom: "24px" }}>TOME I — ÉDITION ORIGINALE</div>
-        <h1 style={{ fontSize: "clamp(44px, 6vw, 80px)", fontWeight: 400, lineHeight: 1.2, margin: 0, fontStyle: "italic" }}>
-          Les Archives
-          <br />
-          du <span style={{ color: burgundy }}>Savoir</span>
-        </h1>
-        <p style={{ fontSize: "16px", lineHeight: 2, color: "#888", maxWidth: "460px", marginTop: "28px", fontFamily: "sans-serif", fontWeight: 300 }}>
-          Dans ces rayonnages numériques repose la somme de notre savoir collectif. Chaque page est une découverte.
-        </p>
-      </section>
-
-      <section style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1px", background: `${burgundy}11`, margin: "0 48px", maxWidth: "700px" }}>
-        {[{ v: "Tome I", l: "50+ Keynotes" }, { v: "Tome II", l: "100+ Podcasts" }, { v: "Tome III", l: "5 Applications" }].map((s) => (
-          <div key={s.v} style={{ background: ivory, padding: "40px 24px", textAlign: "center" }}>
-            <div style={{ fontSize: "24px", fontStyle: "italic", color: burgundy }}>{s.v}</div>
-            <div style={{ fontSize: "12px", color: "#aaa", marginTop: "8px", fontFamily: "sans-serif" }}>{s.l}</div>
-          </div>
-        ))}
-      </section>
-
-      <section style={{ padding: "60px 48px", maxWidth: "600px" }}>
-        <p style={{ fontSize: "22px", fontStyle: "italic", lineHeight: 1.7, color: burgundy }}>
-          &ldquo;Un bon livre, comme une bonne idée, ne se ferme jamais vraiment.&rdquo;
-        </p>
-      </section>
-
-      <footer style={{ padding: "24px 48px", borderTop: `1px solid ${burgundy}22`, fontSize: "12px", color: "#ccc", fontFamily: "sans-serif" }}>
-        <span>© 2024 Bibliothèque Connected Mate — Silence, on pense</span>
       </footer>
     </div>
   );
@@ -507,14 +381,8 @@ const LibraryArchive: React.FC = () => {
    EXPORTS
    ============================================================ */
 export const designs: HomepageDesign[] = [
-  { id: 71, name: "Pixel Art Retro", category: "Gaming", description: "8-bit pixel art with green/purple, game levels, retro buttons, nostalgia feel", component: PixelArtRetro },
-  { id: 72, name: "Ocean Wave", category: "Nature", description: "Ocean gradient from sand to deep blue, maritime vocabulary, serene flow", component: OceanWave },
-  { id: 73, name: "Startup Pitch", category: "Business", description: "Clean SaaS pitch with blue CTA, YC badge, trust bar, metric cards", component: StartupPitch },
-  { id: 74, name: "Gothic Cathedral", category: "Dark", description: "Dark gothic with crimson accents, cathedral symbols, ornamental dividers", component: GothicCathedral },
-  { id: 75, name: "Candy Shop", category: "Playful", description: "Sweet colors with pink/mint/gold, rounded cards, gradient CTA, fun copy", component: CandyShop },
-  { id: 76, name: "Steampunk Workshop", category: "Retro", description: "Brass and copper on dark leather, gear symbols, Victorian typography", component: SteampunkWorkshop },
-  { id: 77, name: "Minimalist Swiss", category: "Minimal", description: "Swiss International style with grid layout, red square, Helvetica, precise", component: MinimalistSwiss },
-  { id: 78, name: "Tropical Paradise", category: "Lifestyle", description: "Sky-to-sand gradient, coral/turquoise, frosted glass cards, vacation vibes", component: TropicalParadise },
-  { id: 79, name: "Concrete Jungle", category: "Industrial", description: "Urban construction with yellow caution tape, dark concrete, hard hat area", component: ConcreteJungle },
-  { id: 80, name: "Library Archive", category: "Academic", description: "Scholarly library with ivory/burgundy, tome numbering, literary quotes", component: LibraryArchive },
+  { id: 63, name: "Japanese Zen", category: "Minimal", description: "Wabi-sabi aesthetic, vertical lines, breathing animations, stone colors, centered layout with Playfair serif", component: JapaneseZen },
+  { id: 64, name: "Dashboard Overview", category: "Dashboard", description: "Dark analytics with metric cards, progress bars, activity feed, app status, real CM data", component: DashboardOverview },
+  { id: 65, name: "Gradient Maximalism", category: "Bold", description: "Multi-color gradients everywhere, animated background-shift, bouncing apps, large marquee", component: GradientMaximalism },
+  { id: 66, name: "Swiss Grid", category: "Swiss", description: "International Typographic style, strict 120px/1fr grid, red accent, Helvetica, precise rows", component: SwissGrid },
 ];
