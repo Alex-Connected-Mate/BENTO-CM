@@ -21,7 +21,7 @@
   </nav>
 
   <!-- APP HERO -->
-  <section class="app-hero">
+  <section class="app-hero app-hero-purple">
     <div class="container">
       <div class="app-hero-inner">
         <div class="app-hero-icon">
@@ -243,15 +243,13 @@
     var navLinks = document.querySelectorAll('.doc-nav-list a');
     function highlightNav() {
       var scrollPos = window.scrollY + 120;
+      var active = -1;
       sections.forEach(function(section, i) {
-        if (section.offsetTop <= scrollPos && section.offsetTop + section.offsetHeight > scrollPos) {
-          navLinks.forEach(function(link) { link.style.color = ''; link.style.background = ''; link.style.borderLeftColor = 'transparent'; });
-          if (navLinks[i]) {
-            navLinks[i].style.color = 'var(--accent)';
-            navLinks[i].style.background = 'var(--accent-bg)';
-            navLinks[i].style.borderLeftColor = 'var(--accent)';
-          }
-        }
+        if (section.offsetTop <= scrollPos) active = i;
+      });
+      navLinks.forEach(function(link, i) {
+        if (i === active) link.classList.add('active-link');
+        else link.classList.remove('active-link');
       });
     }
     window.addEventListener('scroll', highlightNav);
