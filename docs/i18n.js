@@ -18,6 +18,8 @@
     mission_open_title: "Gratuit & ouvert",
     mission_open_desc: "Des apps 100% gratuites sans co\u00fbts cach\u00e9s. Approche transparente, communication ouverte, d\u00e9veloppement collaboratif.",
     home_apps_title: "Nos applications",
+    home_label: "Apps \u00b7 Podcast \u00b7 Communaut\u00e9",
+    home_podcast_desc_short: "Tech, digital, data & IA \u2014 d\u00e9crypt\u00e9s simplement. 8 saisons, 5+ plateformes.",
     home_podcast_badge: "Podcast",
     home_podcast_title: "Podcast Connected Mate",
     home_podcast_desc: "Plus de 1 100 \u00e9pisodes pour d\u00e9crypter la tech, le digital, la data & l'IA \u2014 en toute simplicit\u00e9. Anim\u00e9 par PPC.",
