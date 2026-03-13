@@ -2,8 +2,52 @@
 (function() {
   var fr = {
     // Nav
-    nav_apps: "Applications",
+    nav_apps: "Apps",
+    nav_podcast: "Podcast",
+    nav_about: "\u00C0 propos",
     nav_contact: "Contact",
+
+    // Podcast page
+    podcast_title: "Podcast Connected Mate",
+    podcast_sub: "Tech, digital, data & IA \u2014 expliqu\u00e9s simplement. Plus de 1 100 \u00e9pisodes sur 8 saisons pour d\u00e9crypter la technologie, ses enjeux, ses codes et ses opportunit\u00e9s.",
+    podcast_listen: "\u00c9couter",
+    podcast_watch: "Regarder les \u00e9pisodes",
+    podcast_all_platforms: "Toutes les plateformes",
+    podcast_find: "Trouvez votre app",
+    podcast_stat_episodes: "\u00c9pisodes",
+    podcast_stat_seasons: "Saisons",
+    podcast_stat_platforms: "Plateformes",
+    podcast_about_title: "\u00C0 propos du podcast",
+    podcast_about_desc: "Connected Mate d\u00e9crypte la tech, le digital, la data et l'IA \u2014 en toute simplicit\u00e9. Chaque \u00e9pisode vous aide \u00e0 comprendre la technologie, la transformation num\u00e9rique, ses enjeux, ses codes et ses opportunit\u00e9s. Anim\u00e9 par PPC, auteur de \u00ab R\u00e9inventez votre entreprise \u00e0 l'\u00e8re de l'IA \u00bb.",
+    podcast_topic_ai: "Intelligence Artificielle",
+    podcast_topic_data: "Data",
+    podcast_topic_digital: "Digital",
+    podcast_topic_tech: "Tech",
+    podcast_topic_business: "Business",
+    podcast_topic_transform: "Transformation",
+    podcast_latest_badge: "Dernier \u00e9pisode",
+    podcast_latest_title: "IA et Politique",
+    podcast_latest_desc: "Le dernier \u00e9pisode explore l'intersection entre intelligence artificielle et politique.",
+    podcast_latest_listen: "\u00c9couter maintenant",
+
+    // About page
+    about_title: "\u00C0 propos de Connected Mate",
+    about_sub: "Cr\u00e9er des outils IA priv\u00e9s et d\u00e9crypter la technologie \u2014 pour tous.",
+    about_alex_role: "Fondateur & D\u00e9veloppeur",
+    about_alex_bio: "Fondateur de Connected Mate. D\u00e9veloppe des applications IA gratuites et priv\u00e9es pour iPhone et Mac \u2014 dont Get Calls (premier enregistreur d'appels IA local) et Better Dictate (dict\u00e9e vocale hors ligne). Passionn\u00e9 par la technologie respectueuse de la vie priv\u00e9e et l'IA embarqu\u00e9e.",
+    about_ppc_role: "Animateur du podcast & Auteur",
+    about_ppc_bio: "Animateur du podcast Connected Mate (1 100+ \u00e9pisodes, 8 saisons). Auteur de \u00ab R\u00e9inventez votre entreprise \u00e0 l'\u00e8re de l'IA \u00bb. D\u00e9crypte la tech, le digital, la data et l'IA \u2014 en toute simplicit\u00e9.",
+    about_company_title: "L'entreprise",
+    about_company_info: "Informations",
+    about_legal_name: "Raison sociale :",
+    about_status: "Statut :",
+    about_active: "Active",
+    about_see_registry: "Voir le registre complet \u2192",
+    about_what_we_do: "Ce que nous faisons",
+    about_do_apps: "Apps IA gratuites et priv\u00e9es (iOS & macOS)",
+    about_do_podcast: "Podcast tech & IA (1 100+ \u00e9pisodes)",
+    about_do_privacy: "Solutions IA embarqu\u00e9es, respect de la vie priv\u00e9e",
+    about_do_open: "Approche ouverte et transparente",
 
     // Index hero
     hero_title: "Applications",
