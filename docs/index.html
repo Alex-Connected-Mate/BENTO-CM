@@ -3,7 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Connected Mate — Applications</title>
+  <title>Connected Mate — Free AI Apps for iPhone & Mac | Offline Voice AI, Call Recorder</title>
+  <meta name="description" content="Connected Mate develops free, private AI apps. Get Calls: first local AI call recorder for iPhone. Better Dictate: offline voice-to-text for Mac powered by Whisper AI. No data collected.">
+  <meta name="keywords" content="AI call recorder iPhone, offline voice to text Mac, Whisper AI dictation, local AI recorder, private call recording app, Apple Watch recorder, free AI apps, Connected Mate">
+  <meta name="author" content="Connected Mate — Alexandre Cormeraie">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://alex-connected-mate.github.io/BENTO-CM/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Connected Mate — Free AI Apps for iPhone & Mac">
+  <meta property="og:description" content="Private AI tools: Get Calls (local AI call recorder for iPhone) and Better Dictate (offline voice dictation for Mac). 100% offline. No data collected.">
+  <meta property="og:url" content="https://alex-connected-mate.github.io/BENTO-CM/">
+  <meta property="og:site_name" content="Connected Mate">
+  <meta property="og:image" content="https://alex-connected-mate.github.io/BENTO-CM/get-calls-logo.svg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Connected Mate — Free AI Apps for iPhone & Mac">
+  <meta name="twitter:description" content="Get Calls: first local AI call recorder for iPhone. Better Dictate: offline voice-to-text for Mac. Free, private, no data collected.">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Connected Mate",
+    "url": "https://alex-connected-mate.github.io/BENTO-CM/",
+    "description": "Developer of free, private AI applications for iPhone and Mac",
+    "founder": {
+      "@type": "Person",
+      "name": "Alexandre Cormeraie"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "alex.connectedmate@gmail.com",
+      "contactType": "customer support"
+    }
+  }
+  </script>
+
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -14,8 +53,8 @@
     <div class="nav-container">
       <a href="index.html" class="nav-logo">Connected Mate</a>
       <div class="nav-links">
-        <a href="index.html" class="active">Applications</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" class="active" data-i18n="nav_apps">Applications</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
       </div>
     </div>
   </nav>
@@ -23,8 +62,8 @@
   <!-- HERO -->
   <section class="hero">
     <div class="container">
-      <h1><span class="highlight">Connected Mate</span> Applications</h1>
-      <p class="hero-sub">Smart, private tools designed for your productivity.</p>
+      <h1><span class="highlight">Connected Mate</span> <span data-i18n="hero_title">Applications</span></h1>
+      <p class="hero-sub" data-i18n="hero_sub">Smart, private AI tools — designed for your productivity. No data collected. Ever.</p>
     </div>
   </section>
 
@@ -33,47 +72,36 @@
     <div class="container">
       <div class="apps-grid">
 
-        <!-- BETTER DICTATE -->
-        <a href="better-dictate.html" class="app-card">
+        <!-- GET CALLS -->
+        <a href="get-calls.html" class="app-card">
           <div class="app-icon">
-            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="64" height="64" rx="14" fill="#6366f1"/>
-              <path d="M32 12c-3.3 0-6 2.7-6 6v14c0 3.3 2.7 6 6 6s6-2.7 6-6V18c0-3.3-2.7-6-6-6z" fill="#fff"/>
-              <path d="M42 30c0 5.5-4.5 10-10 10s-10-4.5-10-10h-3c0 6.9 5.2 12.6 12 13.4V48h-5v3h13v-3h-5v-4.6c6.8-.8 12-6.5 12-13.4h-3z" fill="#fff" opacity=".85"/>
-            </svg>
+            <img src="get-calls-logo.svg" alt="Get Calls — AI Call Recorder for iPhone" width="72" height="72">
           </div>
-          <h2 class="app-name">Better Dictate</h2>
-          <p class="app-tagline">Offline Voice-to-Text AI</p>
-          <p class="app-desc">100% offline voice dictation for Mac. Speak, and the text writes itself. Powered by Whisper AI, your voice never leaves your computer.</p>
-          <div class="app-badges">
-            <span class="badge">macOS</span>
-            <span class="badge">Offline</span>
-            <span class="badge">Free</span>
-          </div>
-          <span class="app-cta">Learn more &rarr;</span>
-        </a>
-
-        <!-- NOTETAKER AI -->
-        <a href="notetaker-ai.html" class="app-card">
-          <div class="app-icon">
-            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="64" height="64" rx="14" fill="#10b981"/>
-              <path d="M18 16h28v32H18z" fill="#fff" opacity=".15"/>
-              <path d="M20 18h24c1.1 0 2 .9 2 2v24c0 1.1-.9 2-2 2H20c-1.1 0-2-.9-2-2V20c0-1.1.9-2 2-2z" fill="#fff"/>
-              <path d="M24 26h16M24 31h16M24 36h10" stroke="#10b981" stroke-width="2" stroke-linecap="round"/>
-              <circle cx="44" cy="42" r="8" fill="#0d9668"/>
-              <path d="M41 42h6M44 39v6" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h2 class="app-name">NoteTaker AI</h2>
-          <p class="app-tagline">Record, transcribe, analyze.</p>
-          <p class="app-desc">Turn every conversation into smart notes. Record via iPhone or Apple Watch, with transcription and AI analysis — 100% on your device.</p>
+          <h2 class="app-name">Get Calls</h2>
+          <p class="app-tagline" data-i18n="gc_tagline">AI Call Recorder & Transcriber</p>
+          <p class="app-desc" data-i18n="gc_desc">The first local AI call recorder for iPhone. Record, transcribe, and analyze your calls and meetings — 100% on your device. Your conversations stay yours.</p>
           <div class="app-badges">
             <span class="badge">iOS</span>
             <span class="badge">Apple Watch</span>
-            <span class="badge">Free</span>
+            <span class="badge" data-i18n="badge_free">Free</span>
           </div>
-          <span class="app-cta">Learn more &rarr;</span>
+          <span class="app-cta" data-i18n="cta_learn">Learn more &rarr;</span>
+        </a>
+
+        <!-- BETTER DICTATE -->
+        <a href="better-dictate.html" class="app-card">
+          <div class="app-icon">
+            <img src="better-dictate-logo.svg" alt="Better Dictate — Offline Voice-to-Text for Mac" width="72" height="72">
+          </div>
+          <h2 class="app-name">Better Dictate</h2>
+          <p class="app-tagline" data-i18n="bd_tagline">Offline Voice-to-Text AI</p>
+          <p class="app-desc" data-i18n="bd_desc">100% offline voice dictation for Mac. Speak, and the text writes itself. Powered by Whisper AI, your voice never leaves your computer.</p>
+          <div class="app-badges">
+            <span class="badge">macOS</span>
+            <span class="badge">Offline</span>
+            <span class="badge" data-i18n="badge_free">Free</span>
+          </div>
+          <span class="app-cta" data-i18n="cta_learn">Learn more &rarr;</span>
         </a>
 
       </div>
@@ -83,14 +111,14 @@
   <!-- CONTACT TEASER -->
   <section class="contact-teaser reveal">
     <div class="container">
-      <h2>Have a question? A project?</h2>
-      <p>Reach out to us via WhatsApp or email.</p>
+      <h2 data-i18n="teaser_title">Have a question? A project?</h2>
+      <p data-i18n="teaser_sub">Reach out to us via WhatsApp or email.</p>
       <div class="teaser-buttons">
         <a href="https://wa.me/33782150438?text=Hello%2C%20I'm%20contacting%20you%20via%20Connected%20Mate!" class="btn btn-whatsapp" target="_blank" rel="noopener">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           WhatsApp
         </a>
-        <a href="contact.html" class="btn btn-email">Write to us</a>
+        <a href="contact.html" class="btn btn-email" data-i18n="btn_write">Write to us</a>
       </div>
     </div>
   </section>
@@ -98,19 +126,18 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">
-      <p>&copy; 2026 Connected Mate. All rights reserved.</p>
+      <p>&copy; 2026 Connected Mate. <span data-i18n="footer_rights">All rights reserved.</span></p>
       <p>Contact: <a href="mailto:alex.connectedmate@gmail.com">alex.connectedmate@gmail.com</a></p>
     </div>
   </footer>
 
+  <script src="i18n.js"></script>
   <script>
     var reveals = document.querySelectorAll('.reveal');
     function checkReveal() {
       for (var i = 0; i < reveals.length; i++) {
         var top = reveals[i].getBoundingClientRect().top;
-        if (top < window.innerHeight - 60) {
-          reveals[i].classList.add('visible');
-        }
+        if (top < window.innerHeight - 60) reveals[i].classList.add('visible');
       }
     }
     window.addEventListener('scroll', checkReveal);

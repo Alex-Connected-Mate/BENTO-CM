@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2196F3"/>
+      <stop offset="100%" stop-color="#1565C0"/>
+    </linearGradient>
+    <linearGradient id="phone-grad" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#bbdefb"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+  <!-- Phone handset -->
+  <g transform="translate(120, 100) scale(0.65)">
+    <path d="M160 20C120 20 80 40 60 80L30 150C20 175 30 200 55 210L100 230C115 237 135 230 142 215L165 165C170 155 185 155 190 165L230 260C235 270 250 270 255 260L295 165C300 155 315 155 320 165L343 215C350 230 370 237 385 230L430 210C455 200 465 175 455 150L425 80C405 40 365 20 325 20Z" fill="url(#phone-grad)" opacity="0.95"/>
+    <!-- Play triangle -->
+    <path d="M215 130L250 155L215 180Z" fill="#1976D2" opacity="0.7"/>
+  </g>
+  <!-- Sound waves -->
+  <g stroke="#ffffff" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.9">
+    <path d="M320 140 Q335 120 340 140 Q345 160 360 140 Q375 120 380 140"/>
+    <path d="M310 160 Q330 130 338 160 Q346 190 365 160 Q384 130 392 160" opacity="0.6"/>
+  </g>
+  <!-- Text -->
+  <text x="256" y="420" font-family="Helvetica,Arial,sans-serif" font-weight="800" font-size="80" fill="#ffffff" text-anchor="middle">Get Calls</text>
+</svg>
