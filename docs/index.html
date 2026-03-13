@@ -12,10 +12,7 @@
   <!-- NAV -->
   <nav class="navbar">
     <div class="nav-container">
-      <a href="index.html" class="nav-logo">
-        <span class="logo-icon">CM</span>
-        <span>Connected Mate</span>
-      </a>
+      <a href="index.html" class="nav-logo">Connected Mate</a>
       <div class="nav-links">
         <a href="index.html" class="active">Applications</a>
         <a href="contact.html">Contact</a>
@@ -32,7 +29,7 @@
   </section>
 
   <!-- APPS GRID -->
-  <section class="apps-section">
+  <section class="apps-section reveal">
     <div class="container">
       <div class="apps-grid">
 
@@ -84,7 +81,7 @@
   </section>
 
   <!-- CONTACT TEASER -->
-  <section class="contact-teaser">
+  <section class="contact-teaser reveal">
     <div class="container">
       <h2>Have a question? A project?</h2>
       <p>Reach out to us via WhatsApp or email.</p>
@@ -105,6 +102,20 @@
       <p>Contact: <a href="mailto:alex.connectedmate@gmail.com">alex.connectedmate@gmail.com</a></p>
     </div>
   </footer>
+
+  <script>
+    var reveals = document.querySelectorAll('.reveal');
+    function checkReveal() {
+      for (var i = 0; i < reveals.length; i++) {
+        var top = reveals[i].getBoundingClientRect().top;
+        if (top < window.innerHeight - 60) {
+          reveals[i].classList.add('visible');
+        }
+      }
+    }
+    window.addEventListener('scroll', checkReveal);
+    window.addEventListener('load', checkReveal);
+  </script>
 
 </body>
 </html>

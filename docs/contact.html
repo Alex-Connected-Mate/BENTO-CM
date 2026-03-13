@@ -12,10 +12,7 @@
   <!-- NAV -->
   <nav class="navbar">
     <div class="nav-container">
-      <a href="index.html" class="nav-logo">
-        <span class="logo-icon">CM</span>
-        <span>Connected Mate</span>
-      </a>
+      <a href="index.html" class="nav-logo">Connected Mate</a>
       <div class="nav-links">
         <a href="index.html">Applications</a>
         <a href="contact.html" class="active">Contact</a>
@@ -24,7 +21,7 @@
   </nav>
 
   <!-- CONTACT -->
-  <section class="contact-section">
+  <section class="contact-section reveal">
     <div class="container">
       <h1>Contact us</h1>
       <p class="subtitle">A question, feedback, or a project? We're here.</p>
@@ -51,7 +48,7 @@
   </section>
 
   <!-- CONTACT FORM -->
-  <section class="contact-form-section">
+  <section class="contact-form-section reveal">
     <div class="container">
       <div class="form-card">
         <h2>Contact form</h2>
@@ -94,6 +91,19 @@
   </footer>
 
   <script>
+    // Scroll reveal
+    var reveals = document.querySelectorAll('.reveal');
+    function checkReveal() {
+      for (var i = 0; i < reveals.length; i++) {
+        var top = reveals[i].getBoundingClientRect().top;
+        if (top < window.innerHeight - 60) {
+          reveals[i].classList.add('visible');
+        }
+      }
+    }
+    window.addEventListener('scroll', checkReveal);
+    window.addEventListener('load', checkReveal);
+
     function sendEmail(e) {
       e.preventDefault();
       var name = document.getElementById('name').value;

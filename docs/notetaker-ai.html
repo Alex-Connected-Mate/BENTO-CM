@@ -12,10 +12,7 @@
   <!-- NAV -->
   <nav class="navbar">
     <div class="nav-container">
-      <a href="index.html" class="nav-logo">
-        <span class="logo-icon">CM</span>
-        <span>Connected Mate</span>
-      </a>
+      <a href="index.html" class="nav-logo">Connected Mate</a>
       <div class="nav-links">
         <a href="index.html">Applications</a>
         <a href="contact.html">Contact</a>
@@ -53,46 +50,62 @@
     </div>
   </section>
 
-  <!-- FEATURES -->
-  <section class="features-section">
-    <div class="container">
-      <h2>Key features</h2>
-      <div class="features-grid">
-        <div class="feature-card">
-          <h3>Smart recording</h3>
-          <p>Record with one tap from iPhone or Apple Watch. Dynamic Island with real-time animated waveform. Automatic call detection with post-call notification.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Automatic transcription</h3>
-          <p>High accuracy powered by Apple Speech engine. Multilingual support: French, English, Spanish, German, and more. Works 100% offline.</p>
-        </div>
-        <div class="feature-card">
-          <h3>On-device AI analysis</h3>
-          <p>Automatic summary, key topic extraction, next steps identified. Powered by Apple Intelligence — everything stays on your device.</p>
-        </div>
-        <div class="feature-card">
-          <h3>AI Chat</h3>
-          <p>Ask questions about your recordings. "What were the action items?" "What was said about the budget?" The AI answers based on the content.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Apple Watch</h3>
-          <p>Control recording from your wrist. During a speakerphone call, the Watch records via its microphone. Automatic transfer to iPhone.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Organization & productivity</h3>
-          <p>Add action items to Apple Reminders. Calendar integration. Filter by favorites, search by title or content. Quick access widget.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- DOC LAYOUT: SIDEBAR + CONTENT -->
+  <div class="container">
+    <div class="doc-layout">
 
-  <!-- SECURITY & PRIVACY -->
-  <section class="info-section">
-    <div class="container">
-      <div class="info-columns">
-        <div class="info-block">
-          <h3>Security & privacy</h3>
-          <ul>
+      <!-- SIDEBAR NAV -->
+      <aside class="doc-sidebar">
+        <nav class="doc-nav">
+          <div class="doc-nav-title">On this page</div>
+          <ul class="doc-nav-list">
+            <li><a href="#features"><span class="nav-number">01</span> Features</a></li>
+            <li><a href="#security"><span class="nav-number">02</span> Security & Privacy</a></li>
+            <li><a href="#compatibility"><span class="nav-number">03</span> Compatibility</a></li>
+            <li><a href="#languages"><span class="nav-number">04</span> Languages</a></li>
+            <li><a href="#privacy-policy"><span class="nav-number">05</span> Privacy Policy</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <div class="doc-content">
+
+        <!-- FEATURES -->
+        <section class="features-section section-anchor reveal" id="features">
+          <h2>Key features</h2>
+          <div class="features-grid">
+            <div class="feature-card">
+              <h3>Smart recording</h3>
+              <p>Record with one tap from iPhone or Apple Watch. Dynamic Island with real-time animated waveform. Automatic call detection with post-call notification.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Automatic transcription</h3>
+              <p>High accuracy powered by Apple Speech engine. Multilingual support: French, English, Spanish, German, and more. Works 100% offline.</p>
+            </div>
+            <div class="feature-card">
+              <h3>On-device AI analysis</h3>
+              <p>Automatic summary, key topic extraction, next steps identified. Powered by Apple Intelligence — everything stays on your device.</p>
+            </div>
+            <div class="feature-card">
+              <h3>AI Chat</h3>
+              <p>Ask questions about your recordings. "What were the action items?" "What was said about the budget?" The AI answers based on the content.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Apple Watch</h3>
+              <p>Control recording from your wrist. During a speakerphone call, the Watch records via its microphone. Automatic transfer to iPhone.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Organization & productivity</h3>
+              <p>Add action items to Apple Reminders. Calendar integration. Filter by favorites, search by title or content. Quick access widget.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECURITY & COMPATIBILITY -->
+        <section class="info-section section-anchor reveal" id="security">
+          <h2>Security & privacy</h2>
+          <ul style="margin-top: 16px;">
             <li>Face ID and 4-digit code lock</li>
             <li>No data sent to any server</li>
             <li>Everything is processed on-device</li>
@@ -100,10 +113,11 @@
             <li>No tracking, no third-party analytics</li>
             <li>App Store label: "No Data Collected"</li>
           </ul>
-        </div>
-        <div class="info-block">
-          <h3>Compatibility</h3>
-          <ul>
+        </section>
+
+        <section class="info-section section-anchor reveal" id="compatibility">
+          <h2>Compatibility</h2>
+          <ul style="margin-top: 16px;">
             <li>iPhone (iOS 26+)</li>
             <li>Apple Watch (watchOS 26+)</li>
             <li>Requires Apple Intelligence enabled</li>
@@ -111,81 +125,78 @@
             <li>Age: 4+</li>
             <li>Price: Free</li>
           </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+        </section>
 
-  <!-- LANGUAGES -->
-  <section class="info-section">
-    <div class="container">
-      <h3>Supported languages</h3>
-      <div class="languages-list">
-        <span class="lang-tag">French</span>
-        <span class="lang-tag">English</span>
-        <span class="lang-tag">Spanish</span>
-        <span class="lang-tag">German</span>
-        <span class="lang-tag">Italian</span>
-        <span class="lang-tag">Portuguese</span>
-        <span class="lang-tag">Arabic</span>
-        <span class="lang-tag">Japanese</span>
-        <span class="lang-tag">Chinese</span>
-        <span class="lang-tag">+ more</span>
-      </div>
-    </div>
-  </section>
+        <!-- LANGUAGES -->
+        <section class="info-section section-anchor reveal" id="languages">
+          <h2>Supported languages</h2>
+          <div class="languages-list" style="margin-top: 16px;">
+            <span class="lang-tag">French</span>
+            <span class="lang-tag">English</span>
+            <span class="lang-tag">Spanish</span>
+            <span class="lang-tag">German</span>
+            <span class="lang-tag">Italian</span>
+            <span class="lang-tag">Portuguese</span>
+            <span class="lang-tag">Arabic</span>
+            <span class="lang-tag">Japanese</span>
+            <span class="lang-tag">Chinese</span>
+            <span class="lang-tag">+ more</span>
+          </div>
+        </section>
 
-  <!-- PRIVACY POLICY -->
-  <section class="info-section" id="privacy-policy">
-    <div class="container">
-      <h2>Privacy Policy — NoteTaker AI</h2>
-      <p style="margin-bottom: 16px;"><strong>Last updated:</strong> March 13, 2026</p>
+        <!-- PRIVACY POLICY -->
+        <section class="info-section section-anchor reveal" id="privacy-policy">
+          <h2>Privacy Policy</h2>
+          <p style="margin-bottom: 16px;"><strong>Last updated:</strong> March 13, 2026</p>
 
-      <h3 style="margin-top: 24px; margin-bottom: 8px;">1. Overview</h3>
-      <p>NoteTaker AI is developed by Connected Mate (Alexandre Cormeraie). We are committed to protecting your privacy. This policy explains how the application handles your data.</p>
+          <h3>1. Overview</h3>
+          <p>NoteTaker AI is developed by Connected Mate (Alexandre Cormeraie). We are committed to protecting your privacy. This policy explains how the application handles your data.</p>
 
-      <h3 style="margin-top: 24px; margin-bottom: 8px;">2. Data collection</h3>
-      <p>NoteTaker AI does <strong>not</strong> collect, transmit, or share any personal data with external servers. All processing happens locally on your device.</p>
-      <ul>
-        <li>No account creation required</li>
-        <li>No cloud services used</li>
-        <li>No analytics or tracking SDKs</li>
-        <li>No cookies</li>
-        <li>No telemetry</li>
-      </ul>
+          <h3>2. Data collection</h3>
+          <p>NoteTaker AI does <strong>not</strong> collect, transmit, or share any personal data with external servers. All processing happens locally on your device.</p>
+          <ul>
+            <li>No account creation required</li>
+            <li>No cloud services used</li>
+            <li>No analytics or tracking SDKs</li>
+            <li>No cookies</li>
+            <li>No telemetry</li>
+          </ul>
 
-      <h3 style="margin-top: 24px; margin-bottom: 8px;">3. Recordings and transcriptions</h3>
-      <p>All audio recordings and transcriptions are stored <strong>exclusively on your device</strong> in local storage. They are never uploaded, synced, or shared with any server or third party. You have full control over your data and can delete recordings at any time from within the app.</p>
+          <h3>3. Recordings and transcriptions</h3>
+          <p>All audio recordings and transcriptions are stored <strong>exclusively on your device</strong> in local storage. They are never uploaded, synced, or shared with any server or third party. You have full control over your data and can delete recordings at any time from within the app.</p>
 
-      <h3 style="margin-top: 24px; margin-bottom: 8px;">4. AI analysis</h3>
-      <p>AI-powered features (summaries, topic extraction, chat) are processed entirely on-device using Apple Intelligence. No audio, text, or analysis results are sent to external servers.</p>
+          <h3>4. AI analysis</h3>
+          <p>AI-powered features (summaries, topic extraction, chat) are processed entirely on-device using Apple Intelligence. No audio, text, or analysis results are sent to external servers.</p>
 
-      <h3 style="margin-top: 24px; margin-bottom: 8px;">5. Microphone access</h3>
-      <p>NoteTaker AI requires microphone access to record audio. This permission is requested through the standard iOS permission system. The microphone is only active when you explicitly start a recording.</p>
+          <h3>5. Microphone access</h3>
+          <p>NoteTaker AI requires microphone access to record audio. This permission is requested through the standard iOS permission system. The microphone is only active when you explicitly start a recording.</p>
 
-      <h3 style="margin-top: 24px; margin-bottom: 8px;">6. Third-party services</h3>
-      <p>NoteTaker AI does not integrate any third-party services, advertising frameworks, or analytics platforms. The App Store privacy label states: "No Data Collected."</p>
+          <h3>6. Third-party services</h3>
+          <p>NoteTaker AI does not integrate any third-party services, advertising frameworks, or analytics platforms. The App Store privacy label states: "No Data Collected."</p>
 
-      <h3 style="margin-top: 24px; margin-bottom: 8px;">7. GDPR & CCPA compliance</h3>
-      <p>Since NoteTaker AI does not collect or transmit any personal data, it is compliant with GDPR (General Data Protection Regulation) and CCPA (California Consumer Privacy Act) by design. There is no data to access, delete, or port because no data is ever sent externally.</p>
+          <h3>7. GDPR & CCPA compliance</h3>
+          <p>Since NoteTaker AI does not collect or transmit any personal data, it is compliant with GDPR (General Data Protection Regulation) and CCPA (California Consumer Privacy Act) by design. There is no data to access, delete, or port because no data is ever sent externally.</p>
 
-      <h3 style="margin-top: 24px; margin-bottom: 8px;">8. Children's privacy</h3>
-      <p>NoteTaker AI does not collect any data from anyone, including children under 13. The app is rated 4+ and is safe for users of all ages.</p>
+          <h3>8. Children's privacy</h3>
+          <p>NoteTaker AI does not collect any data from anyone, including children under 13. The app is rated 4+ and is safe for users of all ages.</p>
 
-      <h3 style="margin-top: 24px; margin-bottom: 8px;">9. Changes to this policy</h3>
-      <p>We may update this privacy policy from time to time. Any changes will be reflected on this page with an updated date.</p>
+          <h3>9. Changes to this policy</h3>
+          <p>We may update this privacy policy from time to time. Any changes will be reflected on this page with an updated date.</p>
 
-      <h3 style="margin-top: 24px; margin-bottom: 8px;">10. Contact</h3>
-      <p>If you have any questions about this privacy policy, please contact us:</p>
-      <ul>
-        <li>Email: <a href="mailto:alex.connectedmate@gmail.com">alex.connectedmate@gmail.com</a></li>
-        <li>WhatsApp: <a href="https://wa.me/33782150438" target="_blank" rel="noopener">+33 7 82 15 04 38</a></li>
-      </ul>
-    </div>
-  </section>
+          <h3>10. Contact</h3>
+          <p>If you have any questions about this privacy policy, please contact us:</p>
+          <ul>
+            <li>Email: <a href="mailto:alex.connectedmate@gmail.com">alex.connectedmate@gmail.com</a></li>
+            <li>WhatsApp: <a href="https://wa.me/33782150438" target="_blank" rel="noopener">+33 7 82 15 04 38</a></li>
+          </ul>
+        </section>
+
+      </div><!-- /doc-content -->
+    </div><!-- /doc-layout -->
+  </div><!-- /container -->
 
   <!-- CONTACT CTA -->
-  <section class="contact-teaser">
+  <section class="contact-teaser reveal">
     <div class="container">
       <h2>Interested in NoteTaker AI?</h2>
       <p>Contact us to learn more.</p>
@@ -206,6 +217,40 @@
       <p>Developed by Alexandre Cormeraie — <a href="mailto:alex.connectedmate@gmail.com">alex.connectedmate@gmail.com</a></p>
     </div>
   </footer>
+
+  <script>
+    // Scroll reveal animation
+    var reveals = document.querySelectorAll('.reveal');
+    function checkReveal() {
+      for (var i = 0; i < reveals.length; i++) {
+        var top = reveals[i].getBoundingClientRect().top;
+        if (top < window.innerHeight - 60) {
+          reveals[i].classList.add('visible');
+        }
+      }
+    }
+    window.addEventListener('scroll', checkReveal);
+    window.addEventListener('load', checkReveal);
+
+    // Active nav link highlight on scroll
+    var sections = document.querySelectorAll('.section-anchor');
+    var navLinks = document.querySelectorAll('.doc-nav-list a');
+    function highlightNav() {
+      var scrollPos = window.scrollY + 120;
+      sections.forEach(function(section, i) {
+        if (section.offsetTop <= scrollPos && section.offsetTop + section.offsetHeight > scrollPos) {
+          navLinks.forEach(function(link) { link.style.color = ''; link.style.background = ''; link.style.borderLeftColor = 'transparent'; });
+          if (navLinks[i]) {
+            navLinks[i].style.color = 'var(--accent)';
+            navLinks[i].style.background = 'var(--accent-bg)';
+            navLinks[i].style.borderLeftColor = 'var(--accent)';
+          }
+        }
+      });
+    }
+    window.addEventListener('scroll', highlightNav);
+    window.addEventListener('load', highlightNav);
+  </script>
 
 </body>
 </html>
