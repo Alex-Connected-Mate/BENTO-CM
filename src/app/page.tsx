@@ -1,6 +1,19 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
+
+const footerQuotes = [
+  "Fait avec du ☕ et des bugs corrigés à 3h du mat'",
+  "Aucun stagiaire n'a été maltraité durant la création de ce site",
+  "On a oublié d'écouter pendant le cours de business canvas… 🥲",
+  "Ce footer a plus de personnalité que notre business plan",
+  "Powered by ctrl+z",
+];
 
 export default function HomePage() {
+  const [quoteIndex, setQuoteIndex] = useState(0);
+
   return (
     <>
       {/* ============ HERO ============ */}
@@ -22,7 +35,7 @@ export default function HomePage() {
 
         <div style={{ position: "relative", zIndex: 1, maxWidth: 800 }}>
           <div className="animate-fade-up" style={{ marginBottom: 24 }}>
-            <span className="badge badge--accent" style={{ fontSize: 13, padding: "6px 18px" }}>
+            <span className="badge badge--accent" style={{ fontSize: 13, padding: "6px 18px" }} title="Et beaucoup trop de post-its 📝">
               Conférences · Podcasts · Apps
             </span>
           </div>
@@ -103,15 +116,15 @@ export default function HomePage() {
             borderBottom: "1px solid var(--color-border)",
           }}
         >
-          <div>
+          <div title="Dont 3 où le projecteur a lâché 😅" style={{ cursor: "default" }}>
             <div className="stat-number gradient-text">50+</div>
             <div className="stat-label">Conférences données</div>
           </div>
-          <div>
+          <div title="Et toujours pas de jingle officiel 🎵" style={{ cursor: "default" }}>
             <div className="stat-number gradient-text">100+</div>
             <div className="stat-label">Épisodes de podcast</div>
           </div>
-          <div>
+          <div title="6 si on compte celle qu'on a abandonnée un vendredi soir 🫠" style={{ cursor: "default" }}>
             <div className="stat-number gradient-text">5</div>
             <div className="stat-label">Applications</div>
           </div>
@@ -295,6 +308,22 @@ export default function HomePage() {
           <Link href="/legal" style={{ color: "var(--color-text-muted)", textDecoration: "none" }}>
             Mentions légales
           </Link>
+        </p>
+        <p
+          onClick={() => setQuoteIndex((prev) => (prev + 1) % footerQuotes.length)}
+          style={{
+            fontSize: 11,
+            color: "var(--color-text-light)",
+            marginTop: 8,
+            opacity: 0.5,
+            cursor: "pointer",
+            fontStyle: "italic",
+            transition: "opacity 0.2s",
+            userSelect: "none",
+          }}
+          title="Clique pour plus de sagesse ✨"
+        >
+          {footerQuotes[quoteIndex]}
         </p>
       </footer>
     </>

@@ -1,9 +1,16 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+
+const LOGO_SECRETS = [
+  "🤫 Psst… tu as trouvé un secret !",
+  "👀 Tu cliques beaucoup sur ce logo…",
+  "🎉 GG ! Tu es officiellement un power user.",
+  "🐣 Easter egg trouvé ! Il en reste d'autres…",
+];
 
 const links = [
   { href: "/", label: "Accueil" },
@@ -17,6 +24,20 @@ const links = [
 export function Navigation() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [clickCount, setClickCount] = useState(0);
+  const [logoSecret, setLogoSecret] = useState<string | null>(null);
+
+  const handleLogoClick = useCallback((e: React.MouseEvent) => {
+    const next = clickCount + 1;
+    setClickCount(next);
+    if (next >= 5) {
+      e.preventDefault();
+      const msg = LOGO_SECRETS[Math.floor(Math.random() * LOGO_SECRETS.length)];
+      setLogoSecret(msg);
+      setClickCount(0);
+      setTimeout(() => setLogoSecret(null), 2500);
+    }
+  }, [clickCount]);
 
   return (
     <nav className="nav-bar">
@@ -34,7 +55,7 @@ export function Navigation() {
           justifyContent: "space-between",
         }}
       >
-        <Link href="/" style={{ display: "flex", alignItems: "center", gap: 12, textDecoration: "none" }}>
+        <Link href="/" onClick={handleLogoClick} style={{ display: "flex", alignItems: "center", gap: 12, textDecoration: "none" }}>
           <Image src="/logo.svg" alt="Connected Mate" width={36} height={36} style={{ borderRadius: 10 }} />
           <span
             style={{
@@ -115,6 +136,28 @@ export function Navigation() {
               );
             })}
           </div>
+        </div>
+      )}
+      {logoSecret && (
+        <div
+          style={{
+            position: "absolute",
+            top: 80,
+            left: "50%",
+            transform: "translateX(-50%)",
+            background: "rgba(0,0,0,0.85)",
+            color: "#fff",
+            padding: "10px 20px",
+            borderRadius: 12,
+            fontSize: 13,
+            fontWeight: 600,
+            whiteSpace: "nowrap",
+            zIndex: 1000,
+            animation: "fadeInUp 0.3s ease-out",
+            boxShadow: "0 8px 30px rgba(0,0,0,0.2)",
+          }}
+        >
+          {logoSecret}
         </div>
       )}
     </nav>

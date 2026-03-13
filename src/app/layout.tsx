@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { Navigation } from "@/components/Navigation";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { EasterEggs } from "@/components/EasterEggs";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -35,6 +36,7 @@ export default function RootLayout({
           {children}
         </main>
         <WhatsAppButton />
+        <EasterEggs />
       </body>
     </html>
   );
