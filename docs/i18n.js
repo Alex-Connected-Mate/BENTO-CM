@@ -8,7 +8,9 @@
     nav_contact: "Contact",
 
     // Homepage
-    hero_sub_main: "Nous cr\u00e9ons des outils IA gratuits et priv\u00e9s, et d\u00e9cryptons la technologie pour tous. Intelligence embarqu\u00e9e, z\u00e9ro collecte de donn\u00e9es, transparence totale.",
+    hero_sub_main: "Apps IA, podcast tech et communaut\u00e9 \u2014 tout est gratuit, tout est priv\u00e9.",
+    home_community_short: "Testez les b\u00eatas, partagez vos retours, fa\u00e7onnez nos apps.",
+    home_contact_short: "WhatsApp ou email \u2014 on r\u00e9pond vite.",
     mission_privacy_title: "Vie priv\u00e9e d'abord",
     mission_privacy_desc: "Toutes nos apps traitent les donn\u00e9es sur votre appareil. Pas de cloud, pas de serveur, pas de tracking. Vos donn\u00e9es restent les v\u00f4tres.",
     mission_ai_title: "IA embarqu\u00e9e",
