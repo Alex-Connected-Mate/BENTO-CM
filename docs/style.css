@@ -901,6 +901,264 @@ a:hover { opacity: 0.7; }
   justify-content: center;
 }
 
+/* ═══════ SECTION TITLE ═══════ */
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* ═══════ MISSION SECTION (homepage) ═══════ */
+.mission-section { padding: 0 0 48px; }
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.mission-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 20px;
+  text-align: center;
+  transition: all 0.25s ease;
+}
+
+.mission-card:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.mission-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin: 0 auto 16px;
+}
+
+.mission-card h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.mission-card p {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* ═══════ PODCAST TEASER (homepage) ═══════ */
+.podcast-teaser-section { padding: 24px 0 48px; }
+
+.podcast-teaser-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 48px 32px;
+  text-align: center;
+}
+
+.podcast-teaser-content h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.podcast-teaser-content p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 500px;
+  margin: 0 auto 20px;
+  text-wrap: pretty;
+}
+
+.podcast-teaser-stats {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.podcast-teaser-stat {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.podcast-teaser-stat strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
+/* ═══════ PODCAST PAGE — STATS ═══════ */
+.podcast-stats-section { padding: 0 0 48px; }
+
+.podcast-stats-grid {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+}
+
+.stat-card {
+  text-align: center;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 36px;
+  min-width: 140px;
+}
+
+/* ═══════ PODCAST PAGE — HOST ═══════ */
+.podcast-host-section { padding: 0 0 48px; }
+
+.podcast-host-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 40px 32px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.podcast-host-content h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.podcast-host-content p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  text-wrap: pretty;
+}
+
+/* ═══════ PODCAST PAGE — TOPICS ═══════ */
+.podcast-topics-section { padding: 0 0 48px; }
+
+.podcast-topics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.podcast-topic-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 20px;
+  text-align: center;
+  transition: all 0.25s ease;
+}
+
+.podcast-topic-card:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.podcast-topic-card h3 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-top: 8px;
+}
+
+/* ═══════ ABOUT PAGE — MISSION ═══════ */
+.about-mission-section { padding: 0 0 48px; }
+
+.about-mission-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 48px 32px;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about-mission-card h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.about-mission-card p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  text-wrap: pretty;
+}
+
+/* ═══════ ABOUT PAGE — ACTIVITIES ═══════ */
+.about-activities-section { padding: 0 0 48px; }
+
+.about-activities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.about-activity-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 20px;
+  text-align: center;
+  transition: all 0.25s ease;
+}
+
+.about-activity-card:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.about-activity-card h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.about-activity-card p {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* ═══════ AVATAR PLACEHOLDER ═══════ */
+.avatar-placeholder {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 auto;
+  border: 2px solid var(--border);
+}
+
 /* ═══════ ABOUT PAGE ═══════ */
 .team-grid {
   display: grid;
@@ -1129,6 +1387,11 @@ a:hover { opacity: 0.7; }
   .contact-grid { grid-template-columns: 1fr; }
   .team-grid { grid-template-columns: 1fr; }
   .platforms-grid { grid-template-columns: 1fr; }
+  .mission-grid { grid-template-columns: 1fr; }
+  .podcast-topics-grid { grid-template-columns: repeat(2, 1fr); }
+  .about-activities-grid { grid-template-columns: 1fr; }
+  .podcast-stats-grid { gap: 24px; }
+  .podcast-teaser-stats { gap: 16px; flex-wrap: wrap; }
   .podcast-stats { gap: 24px; }
   .stat-number { font-size: 1.5rem; }
   .footer-inner { flex-direction: column; text-align: center; }
@@ -1144,4 +1407,9 @@ a:hover { opacity: 0.7; }
   .app-hero-text h1 { font-size: 1.3rem; }
   .form-card { padding: 28px 20px; }
   .community-card { padding: 36px 20px; }
+  .podcast-topics-grid { grid-template-columns: 1fr; }
+  .podcast-stats-grid { flex-direction: column; align-items: center; gap: 12px; }
+  .stat-card { width: 100%; }
+  .podcast-teaser-card { padding: 36px 20px; }
+  .about-mission-card { padding: 36px 20px; }
 }
