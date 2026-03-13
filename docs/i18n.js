@@ -27,6 +27,12 @@
     btn_whatsapp: "Contacter sur WhatsApp",
     btn_write: "Nous ecrire",
 
+    // Community / Beta
+    community_badge: "Programme Beta",
+    community_title: "Rejoignez la communaut\u00e9",
+    community_desc: "Rejoignez notre groupe WhatsApp pour tester les versions b\u00eata, partager vos retours, proposer des id\u00e9es et fa\u00e7onner l'avenir de nos apps — directement avec le d\u00e9veloppeur.",
+    community_btn: "Rejoindre le groupe Beta",
+
     // Teaser
     teaser_title: "Une question ? Un projet ?",
     teaser_sub: "Contactez-nous par WhatsApp ou par email.",
