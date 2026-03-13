@@ -2,36 +2,38 @@
    CONNECTED MATE — CLEAN MINIMAL DESIGN (self.so inspired)
    ═══════════════════════════════════════════════════════════ */
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap');
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
-  --bg: #ffffff;
-  --bg-secondary: #fafafa;
-  --bg-card: #ffffff;
-  --text: #0a0a0a;
-  --text-secondary: #525252;
-  --text-muted: #a3a3a3;
-  --accent: #171717;
-  --accent-hover: #404040;
+  /* self.so color system — HSL-based blue-slate neutrals */
+  --bg: hsl(0, 0%, 100%);
+  --bg-secondary: hsl(210, 40%, 96.1%);
+  --bg-card: hsl(0, 0%, 100%);
+  --text: hsl(222.2, 84%, 4.9%);
+  --text-secondary: hsl(215.4, 16.3%, 46.9%);
+  --text-muted: hsl(215, 20.2%, 65.1%);
+  --accent: #1f1f1f;
+  --accent-hover: rgba(31, 31, 31, 0.95);
   --green: #16a34a;
-  --border: #e5e5e5;
-  --border-hover: #d4d4d4;
+  --border: hsl(214.3, 31.8%, 91.4%);
+  --border-hover: hsl(214, 32%, 85%);
+  --ring: hsl(222.2, 84%, 4.9%);
   --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
   --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
   --shadow-md: 0 4px 6px rgba(0,0,0,0.04), 0 2px 4px rgba(0,0,0,0.03);
-  --radius: 12px;
-  --radius-sm: 8px;
-  --radius-xs: 6px;
-  --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --radius: 8px;
+  --radius-sm: 6px;
+  --radius-xs: 4px;
+  --radius-lg: 24px;
   --font-mono: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
 }
 
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: var(--font-sans);
+  font-family: var(--font-mono);
   background-color: var(--bg);
   color: var(--text);
   line-height: 1.6;
@@ -98,7 +100,6 @@ a { color: inherit; text-decoration: none; }
 }
 
 .nav-logo {
-  font-family: var(--font-mono);
   font-weight: 600;
   font-size: 0.95rem;
   color: var(--text);
@@ -137,11 +138,11 @@ a { color: inherit; text-decoration: none; }
 }
 
 .hero h1 {
-  font-size: 2.8rem;
-  font-weight: 800;
+  font-size: 2rem;
+  font-weight: 700;
   color: var(--text);
-  line-height: 1.1;
-  letter-spacing: -1.5px;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
   animation: fadeInUp 0.6s ease-out both;
 }
 
@@ -151,12 +152,13 @@ a { color: inherit; text-decoration: none; }
 
 .hero-sub {
   margin-top: 16px;
-  font-size: 1.05rem;
+  font-size: 0.875rem;
   color: var(--text-secondary);
   font-weight: 400;
-  max-width: 520px;
+  max-width: 500px;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.6;
   animation: fadeInUp 0.6s ease-out 0.1s both;
 }
 
@@ -174,7 +176,7 @@ a { color: inherit; text-decoration: none; }
   flex-direction: column;
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border-radius: var(--radius-lg);
   padding: 32px 28px 28px;
   box-shadow: var(--shadow-sm);
   transition: all 0.25s ease;
@@ -196,7 +198,6 @@ a { color: inherit; text-decoration: none; }
 }
 
 .app-tagline {
-  font-family: var(--font-mono);
   font-size: 0.8rem;
   color: var(--text-muted);
   font-weight: 400;
@@ -219,13 +220,12 @@ a { color: inherit; text-decoration: none; }
 }
 
 .badge {
-  font-family: var(--font-mono);
   font-size: 0.68rem;
   font-weight: 500;
   letter-spacing: 0.3px;
   padding: 4px 10px;
-  border-radius: 6px;
-  background: var(--bg-secondary);
+  border-radius: var(--radius-sm);
+  background: rgba(0, 0, 0, 0.05);
   color: var(--text-secondary);
   border: 1px solid var(--border);
 }
@@ -274,10 +274,10 @@ a { color: inherit; text-decoration: none; }
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 10px 24px;
+  padding: 10px 20px;
   border-radius: var(--radius-sm);
-  font-family: var(--font-sans);
-  font-weight: 600;
+  font-family: var(--font-mono);
+  font-weight: 500;
   font-size: 0.85rem;
   border: none;
   cursor: pointer;
@@ -369,17 +369,16 @@ a { color: inherit; text-decoration: none; }
 }
 
 .app-hero-text h1 {
-  font-size: 2.6rem;
-  font-weight: 800;
+  font-size: 2rem;
+  font-weight: 700;
   color: var(--text);
-  line-height: 1.1;
-  letter-spacing: -1.5px;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
   animation: fadeInUp 0.5s ease-out both;
 }
 
 .app-hero-text .tagline {
-  font-family: var(--font-mono);
-  font-size: 1rem;
+  font-size: 0.875rem;
   color: var(--text-secondary);
   margin-top: 10px;
   font-weight: 400;
@@ -427,7 +426,6 @@ a { color: inherit; text-decoration: none; }
 }
 
 .doc-nav-title {
-  font-family: var(--font-mono);
   font-size: 0.65rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -466,7 +464,6 @@ a { color: inherit; text-decoration: none; }
 }
 
 .doc-nav-list .nav-number {
-  font-family: var(--font-mono);
   font-size: 0.65rem;
   font-weight: 500;
   color: var(--text-muted);
@@ -616,7 +613,6 @@ a { color: inherit; text-decoration: none; }
 }
 
 .lang-tag {
-  font-family: var(--font-mono);
   font-size: 0.72rem;
   font-weight: 500;
   padding: 4px 12px;
@@ -721,7 +717,6 @@ a { color: inherit; text-decoration: none; }
 
 .form-group label {
   display: block;
-  font-family: var(--font-mono);
   font-size: 0.72rem;
   font-weight: 500;
   color: var(--text-secondary);
@@ -736,8 +731,8 @@ a { color: inherit; text-decoration: none; }
   padding: 10px 14px;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  font-family: var(--font-sans);
-  font-size: 0.88rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
   color: var(--text);
   background: var(--bg);
   transition: all 0.2s ease;
@@ -793,11 +788,11 @@ a { color: inherit; text-decoration: none; }
 }
 
 @media (max-width: 768px) {
-  .hero h1 { font-size: 2rem; }
-  .hero-sub { font-size: 0.95rem; }
+  .hero h1 { font-size: 1.5rem; }
+  .hero-sub { font-size: 0.8rem; }
   .apps-grid { grid-template-columns: 1fr; }
   .app-hero-text .promo { max-width: 100%; }
-  .app-hero-text h1 { font-size: 2rem; }
+  .app-hero-text h1 { font-size: 1.5rem; }
   .info-columns { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .footer-inner { flex-direction: column; text-align: center; }
@@ -807,9 +802,9 @@ a { color: inherit; text-decoration: none; }
 
 @media (max-width: 480px) {
   .hero { padding: 72px 0 36px; }
-  .hero h1 { font-size: 1.7rem; }
+  .hero h1 { font-size: 1.3rem; }
   .app-card { padding: 24px 20px; }
   .features-grid { grid-template-columns: 1fr; }
-  .app-hero-text h1 { font-size: 1.8rem; }
+  .app-hero-text h1 { font-size: 1.3rem; }
   .form-card { padding: 28px 20px; }
 }
