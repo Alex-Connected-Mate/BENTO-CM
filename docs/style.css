@@ -72,13 +72,15 @@ a:hover { opacity: 0.7; }
 
 .reveal {
   opacity: 0;
-  transform: translateY(24px);
-  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(6px);
+  filter: blur(6px);
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out, filter 0.4s ease-out;
 }
 
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
+  filter: blur(0);
 }
 
 .reveal.visible .app-card:nth-child(1) { animation: fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.05s both; }
