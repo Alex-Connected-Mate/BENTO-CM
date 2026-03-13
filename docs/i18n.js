@@ -9,7 +9,13 @@
 
     // Homepage
     hero_sub_main: "Apps IA, podcast tech et communaut\u00e9 \u2014 tout est gratuit, tout est priv\u00e9.",
+    home_beta_title: "Beta Testing",
+    home_beta_desc: "Rejoignez nos groupes WhatsApp beta. Testez les nouvelles fonctionnalit\u00e9s avant tout le monde.",
     home_community_short: "Testez les b\u00eatas, partagez vos retours, fa\u00e7onnez nos apps.",
+    beta_modal_title: "Choisissez votre b\u00eata",
+    beta_modal_desc: "Quelle application voulez-vous tester ?",
+    beta_modal_gc: "iPhone \u00b7 Apple Watch",
+    beta_modal_bd: "macOS \u00b7 Offline",
     home_contact_short: "WhatsApp ou email \u2014 on r\u00e9pond vite.",
     mission_privacy_title: "Vie priv\u00e9e d'abord",
     mission_privacy_desc: "Toutes nos apps traitent les donn\u00e9es sur votre appareil. Pas de cloud, pas de serveur, pas de tracking. Vos donn\u00e9es restent les v\u00f4tres.",
