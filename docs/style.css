@@ -934,24 +934,17 @@ a:hover { opacity: 0.7; }
   animation: fadeIn 0.4s ease-out both;
 }
 
-/* ═══════ HOME GRID ═══════ */
+/* ═══════ HOME BENTO ═══════ */
 .home-grid-section { padding: 24px 0 96px; }
 
-.home-grid {
+.home-bento {
   display: grid;
-  grid-template-columns: 3fr 2fr;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr 1fr;
   gap: 12px;
 }
 
-/* Row 1: full width hero */
-.hcard-hero { grid-column: 1 / -1; min-height: 240px; }
-/* Row 2: tall left, compact right */
-.hcard-tall { grid-row: span 1; min-height: 260px; }
-.hcard-compact { min-height: 260px; }
-/* Row 3: wide left, narrow right */
-.hcard-wide { grid-column: 1; }
-.hcard-narrow { grid-column: 2; }
+/* Row 2: podcast takes more space */
+.hcard-r2-wide { grid-column: span 1; }
 
 /* Staggered fade-in */
 @keyframes cardUp {
@@ -969,7 +962,7 @@ a:hover { opacity: 0.7; }
   display: flex;
   flex-direction: column;
   border-radius: var(--radius-lg);
-  padding: 28px 26px;
+  padding: 22px 22px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   position: relative;
@@ -984,38 +977,37 @@ a:hover { opacity: 0.7; }
 }
 
 .hcard h2 {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: inherit;
-  margin-bottom: 8px;
-  letter-spacing: -0.4px;
+  margin-bottom: 6px;
+  letter-spacing: -0.3px;
 }
 
 .hcard p {
-  font-size: 0.8rem;
-  line-height: 1.7;
-  margin-bottom: 12px;
+  font-size: 0.78rem;
+  line-height: 1.65;
+  margin-bottom: 8px;
   text-wrap: pretty;
   flex: 1;
 }
 
-.hcard-top {
-  margin-bottom: 14px;
-}
-
 .hcard-chip {
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   font-weight: 500;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  opacity: 0.6;
+  opacity: 0.55;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .hcard-arrow {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
   transition: transform 0.2s ease;
   align-self: flex-start;
+  margin-top: auto;
 }
 
 .hcard:hover .hcard-arrow {
@@ -1023,21 +1015,68 @@ a:hover { opacity: 0.7; }
 }
 
 .hcard-icon {
-  margin-bottom: 14px;
-  opacity: 0.8;
+  margin-bottom: 10px;
+  opacity: 0.7;
 }
 
 .hcard-big-number {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 800;
   letter-spacing: -2px;
   line-height: 1;
-  margin-bottom: 8px;
-  opacity: 0.12;
+  opacity: 0.1;
   position: absolute;
-  top: 20px;
-  right: 24px;
+  top: 16px;
+  right: 18px;
   font-variant-numeric: tabular-nums;
+}
+
+/* ─── About card ─── */
+.hcard-about {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  color: var(--text);
+  align-items: center;
+  text-align: center;
+}
+
+.hcard-about:hover {
+  border-color: var(--border-hover);
+}
+
+.hcard-faces {
+  display: flex;
+  gap: 0;
+  margin-bottom: 10px;
+}
+
+.hcard-face {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  font-weight: 700;
+  border: 2px solid var(--bg-secondary);
+}
+
+.hcard-face:nth-child(1) {
+  background: var(--accent);
+  color: #fff;
+  z-index: 1;
+}
+
+.hcard-face:nth-child(2) {
+  background: var(--bg-card);
+  color: var(--text);
+  border: 2px solid var(--border);
+  margin-left: -10px;
+}
+
+.hcard-about .hcard-arrow {
+  align-self: center;
 }
 
 /* ─── Dark card (NoteTaker AI) ─── */
@@ -1730,11 +1769,7 @@ a:hover { opacity: 0.7; }
   .info-columns { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .team-grid { grid-template-columns: 1fr; }
-  .home-grid { grid-template-columns: 1fr; }
-  .hcard-hero,
-  .hcard-wide { grid-column: span 1; }
-  .hcard-tall,
-  .hcard-compact { min-height: 200px; }
+  .home-bento { grid-template-columns: 1fr; }
   .home-hero h1 { font-size: 1.8rem; }
   .platforms-grid { grid-template-columns: 1fr; }
   .mission-grid { grid-template-columns: 1fr; }

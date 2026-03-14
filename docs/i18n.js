@@ -17,6 +17,8 @@
     beta_modal_gc: "iPhone \u00b7 Apple Watch",
     beta_modal_bd: "macOS \u00b7 Offline",
     home_contact_short: "WhatsApp ou email \u2014 on r\u00e9pond vite.",
+    home_gc_short: "Enregistrez, transcrivez et analysez vos appels \u2014 100% sur l'appareil.",
+    home_bd_short: "Dict\u00e9e vocale hors ligne pour Mac. Propuls\u00e9 par Whisper AI.",
     mission_privacy_title: "Vie priv\u00e9e d'abord",
     mission_privacy_desc: "Toutes nos apps traitent les donn\u00e9es sur votre appareil. Pas de cloud, pas de serveur, pas de tracking. Vos donn\u00e9es restent les v\u00f4tres.",
     mission_ai_title: "IA embarqu\u00e9e",
