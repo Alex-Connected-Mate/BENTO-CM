@@ -1046,32 +1046,22 @@ a:hover { opacity: 0.7; }
 
 .hcard-faces {
   display: flex;
-  gap: 0;
   margin-bottom: 10px;
 }
 
-.hcard-face {
+.hcard-face-img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.65rem;
-  font-weight: 700;
+  object-fit: cover;
   border: 2px solid var(--bg-secondary);
 }
 
-.hcard-face:nth-child(1) {
-  background: var(--accent);
-  color: #fff;
+.hcard-face-img:first-child {
   z-index: 1;
 }
 
-.hcard-face:nth-child(2) {
-  background: var(--bg-card);
-  color: var(--text);
-  border: 2px solid var(--border);
+.hcard-face-overlap {
   margin-left: -10px;
 }
 
