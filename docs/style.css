@@ -943,8 +943,17 @@ a:hover { opacity: 0.7; }
   gap: 12px;
 }
 
-/* Row 2: podcast takes more space */
-.hcard-r2-wide { grid-column: span 1; }
+/* Apps row: always side by side, never stacks */
+.apps-row {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 12px;
+}
+
+.apps-row .hcard {
+  flex: 1;
+  min-width: 0;
+}
 
 /* Staggered fade-in */
 @keyframes cardUp {
