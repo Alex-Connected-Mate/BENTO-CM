@@ -70,11 +70,32 @@ a:hover { opacity: 0.7; }
   to { left: 150%; }
 }
 
+@keyframes subtlePulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(10px) scale(0.8); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(6px);
   filter: blur(6px);
-  transition: opacity 0.4s ease-out, transform 0.4s ease-out, filter 0.4s ease-out;
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .reveal.visible {
@@ -93,6 +114,151 @@ a:hover { opacity: 0.7; }
 .reveal.visible .feature-card:nth-child(5) { animation: fadeInUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both; }
 .reveal.visible .feature-card:nth-child(6) { animation: fadeInUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both; }
 
+/* Stagger for stat cards */
+.reveal.visible .stat-card:nth-child(1) { animation: countUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both; }
+.reveal.visible .stat-card:nth-child(2) { animation: countUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both; }
+.reveal.visible .stat-card:nth-child(3) { animation: countUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both; }
+
+/* Stagger for platform cards */
+.reveal.visible .platform-card:nth-child(1) { animation: slideInLeft 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.05s both; }
+.reveal.visible .platform-card:nth-child(2) { animation: slideInLeft 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both; }
+.reveal.visible .platform-card:nth-child(3) { animation: slideInLeft 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both; }
+.reveal.visible .platform-card:nth-child(4) { animation: slideInLeft 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both; }
+.reveal.visible .platform-card:nth-child(5) { animation: slideInLeft 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both; }
+
+/* Stagger for topic cards */
+.reveal.visible .podcast-topic-card:nth-child(1) { animation: fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.05s both; }
+.reveal.visible .podcast-topic-card:nth-child(2) { animation: fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both; }
+.reveal.visible .podcast-topic-card:nth-child(3) { animation: fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both; }
+.reveal.visible .podcast-topic-card:nth-child(4) { animation: fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both; }
+.reveal.visible .podcast-topic-card:nth-child(5) { animation: fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both; }
+.reveal.visible .podcast-topic-card:nth-child(6) { animation: fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both; }
+
+/* Stagger for activity cards */
+.reveal.visible .about-activity-card:nth-child(1) { animation: fadeInUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.05s both; }
+.reveal.visible .about-activity-card:nth-child(2) { animation: fadeInUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both; }
+.reveal.visible .about-activity-card:nth-child(3) { animation: fadeInUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both; }
+
+/* Stagger for contact cards */
+.reveal.visible .contact-card:nth-child(1) { animation: fadeInUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.05s both; }
+.reveal.visible .contact-card:nth-child(2) { animation: fadeInUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both; }
+
+/* Stagger for person cards */
+.reveal.visible .person-card:nth-child(1) { animation: fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.05s both; }
+.reveal.visible .person-card:nth-child(2) { animation: fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both; }
+
+/* Stagger for mission cards */
+.reveal.visible .mission-card:nth-child(1) { animation: fadeInUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.05s both; }
+.reveal.visible .mission-card:nth-child(2) { animation: fadeInUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both; }
+.reveal.visible .mission-card:nth-child(3) { animation: fadeInUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both; }
+
+/* Community card pop-in */
+.reveal.visible .community-card { animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both; }
+.reveal.visible .about-mission-card { animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both; }
+.reveal.visible .form-card { animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both; }
+
+/* ═══════ ENHANCED INTERACTIONS ═══════ */
+
+/* Mission/topic icon pulse on card hover */
+.mission-card:hover .mission-icon,
+.podcast-topic-card:hover .mission-icon,
+.about-activity-card:hover .mission-icon {
+  animation: subtlePulse 0.6s ease;
+}
+
+/* Platform card icon lift on hover */
+.platform-card:hover .platform-icon {
+  transform: scale(1.1);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.platform-icon {
+  transition: transform 0.3s ease;
+}
+
+/* Feature card left-border accent on hover */
+.feature-card {
+  border-left: 3px solid transparent;
+}
+
+.feature-card:hover {
+  border-left-color: var(--text);
+}
+
+/* Smooth lang tag scale */
+.lang-tag {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.lang-tag:hover {
+  transform: scale(1.08);
+}
+
+/* Badge hover scale */
+.badge {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.badge:hover {
+  transform: scale(1.05);
+}
+
+/* Person card avatar hover */
+.person-avatar img {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+}
+
+.person-card:hover .person-avatar img {
+  transform: scale(1.1);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+/* Smooth button hover with subtle glow */
+.btn {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-accent:hover {
+  box-shadow: 0 4px 16px rgba(31,31,31,0.2);
+}
+
+.btn-whatsapp:hover {
+  box-shadow: 0 4px 16px rgba(37,211,102,0.3);
+}
+
+/* Community card badge animation */
+.community-badge {
+  transition: transform 0.3s ease;
+}
+
+.community-card:hover .community-badge {
+  transform: scale(1.05);
+}
+
+/* Contact card icon entrance */
+.contact-card h3 {
+  transition: color 0.3s ease;
+}
+
+.contact-card:hover h3 {
+  color: var(--accent);
+}
+
+/* Stat number scale on reveal */
+.stat-card:hover .stat-number {
+  transform: scale(1.1);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.stat-number {
+  transition: transform 0.3s ease;
+}
+
+/* Smooth page load */
+body {
+  animation: fadeIn 0.4s ease-out both;
+}
+
 /* ═══════ NAVBAR ═══════ */
 .navbar {
   position: sticky;
@@ -102,6 +268,12 @@ a:hover { opacity: 0.7; }
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
+  animation: slideDown 0.4s ease-out both;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-100%); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .nav-container {
@@ -482,6 +654,26 @@ a:hover { opacity: 0.7; }
 }
 
 .footer p { font-size: 0.75rem; color: var(--text-muted); }
+
+.footer-nav {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-nav a {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  opacity: 1;
+}
+
+.footer-nav a:hover {
+  color: var(--text);
+  opacity: 1;
+}
 
 .footer a {
   color: var(--text-secondary);
@@ -919,9 +1111,14 @@ a:hover { opacity: 0.7; }
 .home-hero h1 {
   font-size: 2.4rem;
   font-weight: 800;
-  color: var(--text);
   letter-spacing: -1px;
   animation: fadeInUp 0.5s ease-out both;
+  background: linear-gradient(135deg, #050914 0%, #333 40%, #050914 80%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeInUp 0.5s ease-out both, gradientShift 6s ease infinite;
 }
 
 .home-hero-label {
@@ -977,6 +1174,29 @@ a:hover { opacity: 0.7; }
   position: relative;
   overflow: hidden;
   opacity: 1;
+}
+
+.hcard::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    -45deg,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0.06) 40%,
+    rgba(255,255,255,0.15) 50%,
+    rgba(255,255,255,0.06) 60%,
+    rgba(255,255,255,0) 100%
+  );
+  pointer-events: none;
+  transition: none;
+}
+
+.hcard:hover::after {
+  animation: shine 0.6s ease-in-out;
 }
 
 .hcard:hover {

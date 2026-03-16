@@ -18,6 +18,11 @@
   <meta property="og:image" content="https://alex-connected-mate.github.io/BENTO-CM/better-dictate-logo.svg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Better Dictate — Best Offline Voice-to-Text for Mac">
+  <meta name="twitter:description" content="Whisper AI powered dictation. 100% offline, 100% private. Live translation. Free for Apple Silicon Macs.">
+  <meta name="theme-color" content="#050914">
+  <link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/better-dictate.html">
+  <link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/better-dictate.html">
+  <link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/better-dictate.html">
 
   <script type="application/ld+json">
   {
@@ -28,7 +33,32 @@
     "operatingSystem": "macOS 13.0+",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
     "description": "Best offline voice-to-text for Mac. Powered by Whisper AI with live translation. 100% private — your voice never leaves your computer.",
-    "author": { "@type": "Organization", "name": "Connected Mate" }
+    "author": { "@type": "Organization", "name": "Connected Mate" },
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "ratingCount": "1" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is Better Dictate free?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, Better Dictate is 100% free with no subscriptions or hidden costs." }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Better Dictate work offline?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. After the initial Whisper AI model download, Better Dictate works 100% offline. Your voice never leaves your Mac." }
+      },
+      {
+        "@type": "Question",
+        "name": "What Macs are compatible with Better Dictate?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Better Dictate requires a Mac with Apple Silicon (M1, M2, M3, or M4) running macOS 13.0 Ventura or later." }
+      }
+    ]
   }
   </script>
 
@@ -37,7 +67,7 @@
 </head>
 <body>
 
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Main navigation">
     <div class="nav-container">
       <a href="index.html" class="nav-logo">Connected Mate</a>
       <div class="nav-links">
@@ -49,6 +79,7 @@
     </div>
   </nav>
 
+  <main>
   <section class="app-hero app-hero-purple">
     <div class="container">
       <div class="app-hero-inner">
@@ -216,9 +247,18 @@
     </div>
   </section>
 
+  </main>
+
   <footer class="footer">
     <div class="container footer-inner">
       <p>&copy; 2026 Connected Mate. <span data-i18n="footer_rights">All rights reserved.</span></p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html" data-i18n="nav_apps">Apps</a>
+        <a href="notetaker-ai.html">NoteTaker AI</a>
+        <a href="podcast.html" data-i18n="nav_podcast">Podcast</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+      </nav>
       <p>Developed by Alexandre Cormeraie — <a href="mailto:alex.connectedmate@gmail.com">alex.connectedmate@gmail.com</a></p>
     </div>
   </footer>

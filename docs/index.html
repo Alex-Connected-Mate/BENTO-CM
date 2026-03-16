@@ -16,6 +16,10 @@
   <meta property="og:url" content="https://alex-connected-mate.github.io/BENTO-CM/">
   <meta property="og:site_name" content="Connected Mate">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#050914">
+  <link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/">
+  <link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/">
+  <link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/">
 
   <script type="application/ld+json">
   {
@@ -25,9 +29,30 @@
     "url": "https://alex-connected-mate.github.io/BENTO-CM/",
     "description": "AI apps, tech podcast, and beta community. All free, all private.",
     "founder": [
-      { "@type": "Person", "name": "Alexandre Cormeraie" },
-      { "@type": "Person", "name": "PPC" }
+      { "@type": "Person", "name": "Alexandre Cormeraie", "sameAs": "https://fr.linkedin.com/in/alex-cormeraie" },
+      { "@type": "Person", "name": "PPC", "sameAs": "https://fr.linkedin.com/in/bonjourppc" }
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "alex.connectedmate@gmail.com",
+      "contactType": "customer support"
+    },
+    "sameAs": [
+      "https://fr.linkedin.com/in/alex-cormeraie",
+      "https://www.youtube.com/@connectedmate",
+      "https://open.spotify.com/show/0HE6b6ZfN3zeU4QikK7XFd"
     ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Connected Mate",
+    "url": "https://alex-connected-mate.github.io/BENTO-CM/",
+    "description": "AI apps, tech podcast, and beta community by Connected Mate.",
+    "publisher": { "@type": "Organization", "name": "Connected Mate" }
   }
   </script>
 
@@ -36,7 +61,7 @@
 </head>
 <body>
 
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Main navigation">
     <div class="nav-container">
       <a href="index.html" class="nav-logo">Connected Mate</a>
       <div class="nav-links">
@@ -48,6 +73,7 @@
     </div>
   </nav>
 
+  <main>
   <section class="home-hero">
     <div class="container">
       <p class="home-hero-label" data-i18n="home_label">Apps &middot; Podcast &middot; Community</p>
@@ -136,9 +162,18 @@
     </div>
   </div>
 
+  </main>
+
   <footer class="footer">
     <div class="container footer-inner">
       <p>&copy; 2026 Connected Mate. <span data-i18n="footer_rights">All rights reserved.</span></p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="notetaker-ai.html">NoteTaker AI</a>
+        <a href="better-dictate.html">Better Dictate</a>
+        <a href="podcast.html" data-i18n="nav_podcast">Podcast</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+      </nav>
       <p>Contact: <a href="mailto:alex.connectedmate@gmail.com">alex.connectedmate@gmail.com</a></p>
     </div>
   </footer>
