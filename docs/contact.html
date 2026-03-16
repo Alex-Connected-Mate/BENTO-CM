@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,6 +58,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a href="#main-content" class="skip-to-content">Skip to content</a>
 
   <nav class="navbar" aria-label="Main navigation">
     <div class="nav-container">
@@ -74,7 +75,7 @@
     </div>
   </nav>
 
-  <main>
+  <main id="main-content">
   <section class="contact-section reveal">
     <div class="container">
       <h1 data-i18n="contact_title">Contact us</h1>
@@ -152,7 +153,7 @@
     </div>
   </footer>
 
-  <script src="i18n.js"></script>
+  <script src="i18n.js" defer></script>
   <script>
     var reveals = document.querySelectorAll('.reveal');
     function checkReveal() { for (var i = 0; i < reveals.length; i++) { if (reveals[i].getBoundingClientRect().top < window.innerHeight - 60) reveals[i].classList.add('visible'); } }

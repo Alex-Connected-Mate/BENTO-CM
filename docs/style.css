@@ -2,6 +2,25 @@
    CONNECTED MATE — CLEAN MINIMAL DESIGN (self.so inspired)
    ═══════════════════════════════════════════════════════════ */
 
+/* Skip-to-content accessibility link */
+.skip-to-content {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent, #4a80ff);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0 0 8px 8px;
+  z-index: 9999;
+  font-weight: 600;
+  text-decoration: none;
+  transition: top 0.2s;
+}
+.skip-to-content:focus {
+  top: 0;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap');
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -2542,4 +2561,204 @@ body {
   .stat-card { width: 100%; }
   .podcast-teaser-card { padding: 36px 20px; }
   .about-mission-card { padding: 36px 20px; }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   DARK MODE — prefers-color-scheme
+   ═══════════════════════════════════════════════════════════ */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #050914;
+    --bg-secondary: #0d1222;
+    --bg-card: #0b1020;
+    --text: #e8eaed;
+    --text-secondary: #9ca0a8;
+    --text-muted: #6c737f;
+    --text-social: #6c737f;
+    --accent: #e8eaed;
+    --accent-hover: rgba(232, 234, 237, 0.9);
+    --green: #22c55e;
+    --tag-bg: #161d2e;
+    --border: hsl(220, 20%, 18%);
+    --border-hover: hsl(220, 20%, 28%);
+    --ring: hsl(220, 60%, 70%);
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Navbar glass effect */
+  .navbar {
+    background: rgba(5, 9, 20, 0.85);
+  }
+
+  /* Mobile nav dropdown */
+  .nav-links {
+    background: rgba(5, 9, 20, 0.97);
+  }
+
+  /* Sticky install bar */
+  .sticky-install {
+    background: rgba(5, 9, 20, 0.92);
+  }
+
+  /* Home hero gradient text */
+  .home-hero h1 {
+    background: linear-gradient(135deg, #e8eaed 0%, #9ca0a8 40%, #e8eaed 80%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Dark card variant — lighten slightly to stand out from dark bg */
+  .hcard-dark {
+    background: #1a1f2e;
+  }
+
+  .hcard-dark:hover {
+    background: #222840;
+  }
+
+  /* Outline card in dark mode */
+  .hcard-outline {
+    border-color: var(--text);
+  }
+
+  /* Badge hover */
+  .badge:hover {
+    background: #1e2536;
+  }
+
+  /* Form input focus ring */
+  .form-group input:focus,
+  .form-group textarea:focus {
+    box-shadow: 0 0 0 2px rgba(232, 234, 237, 0.1);
+  }
+
+  /* Modal overlay */
+  .modal-overlay {
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  /* Modal card shadow */
+  .modal-card {
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Modal choice icon — dark variant */
+  .modal-choice-dark {
+    background: #1a1f2e;
+  }
+
+  /* Modal choice icon — outline variant */
+  .modal-choice-outline {
+    border-color: var(--text);
+  }
+
+  /* Sticky install icon variants */
+  .sticky-install-icon-dark {
+    background: #1a1f2e;
+  }
+
+  .sticky-install-icon-outline {
+    border-color: var(--text);
+  }
+
+  /* Sticky install button */
+  .sticky-install-btn {
+    background: var(--accent);
+    color: #050914;
+  }
+
+  .sticky-install-btn:hover {
+    background: var(--accent-hover);
+    box-shadow: 0 4px 16px rgba(232, 234, 237, 0.15);
+  }
+
+  /* Button adjustments — accent buttons need dark text on light bg */
+  .btn-accent {
+    color: #050914;
+  }
+
+  .btn-accent:hover {
+    box-shadow: 0 4px 16px rgba(232, 234, 237, 0.15);
+  }
+
+  /* Green card — keep green brand color */
+  .hcard-green {
+    background: #16a34a;
+  }
+
+  .hcard-green:hover {
+    background: #15803d;
+  }
+
+  /* Community badge */
+  .community-badge {
+    background: var(--accent);
+    color: #050914;
+  }
+
+  /* Blog article tag */
+  .blog-article-tag {
+    background: var(--accent);
+    color: #050914;
+  }
+
+  /* Blog filter tag active/hover */
+  .blog-filter-tag:hover,
+  .blog-filter-tag.active {
+    background: var(--accent);
+    color: #050914;
+    border-color: var(--accent);
+  }
+
+  /* Lang tag hover */
+  .lang-tag:hover {
+    background: var(--accent);
+    color: #050914;
+  }
+
+  /* Person avatar border */
+  .person-avatar img {
+    border-color: var(--border);
+  }
+
+  /* Face images border */
+  .hcard-face-img {
+    border-color: var(--bg-secondary);
+  }
+
+  /* Avatar placeholder */
+  .avatar-placeholder {
+    background: #1a1f2e;
+    border-color: var(--border);
+  }
+
+  /* Hover card shadow */
+  .hcard:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Person card hover avatar shadow */
+  .person-card:hover .person-avatar img {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Shine effect — subtler in dark mode */
+  .app-card::after,
+  .hcard::after,
+  .btn-accent::after,
+  .btn-whatsapp::after,
+  .sticky-install-btn::after {
+    background: linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.03) 40%,
+      rgba(255, 255, 255, 0.08) 50%,
+      rgba(255, 255, 255, 0.03) 60%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
 }

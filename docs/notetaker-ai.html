@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="has-sticky-install">
+<html lang="fr" class="has-sticky-install">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -113,6 +113,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a href="#main-content" class="skip-to-content">Skip to content</a>
 
   <nav class="navbar" aria-label="Main navigation">
     <div class="nav-container">
@@ -129,7 +130,7 @@
     </div>
   </nav>
 
-  <main>
+  <main id="main-content">
   <section class="app-hero app-hero-blue">
     <div class="container">
       <div class="app-hero-inner">
@@ -328,7 +329,7 @@
     </div>
   </div>
 
-  <script src="i18n.js"></script>
+  <script src="i18n.js" defer></script>
   <script>
     var reveals = document.querySelectorAll('.reveal');
     function checkReveal() { for (var i = 0; i < reveals.length; i++) { if (reveals[i].getBoundingClientRect().top < window.innerHeight - 60) reveals[i].classList.add('visible'); } }
