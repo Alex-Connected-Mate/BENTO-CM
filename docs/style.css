@@ -1953,6 +1953,131 @@ body {
   color: var(--text-muted);
 }
 
+/* ═══════ STICKY INSTALL BAR ═══════ */
+.sticky-install {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 90;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-top: 1px solid var(--border);
+  padding: 12px 0;
+  transform: translateY(100%);
+  animation: stickySlideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.8s forwards;
+}
+
+@keyframes stickySlideUp {
+  to { transform: translateY(0); }
+}
+
+.sticky-install-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.sticky-install-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.sticky-install-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.sticky-install-icon-dark {
+  background: var(--accent);
+  color: #fff;
+}
+
+.sticky-install-icon-outline {
+  background: var(--bg-card);
+  color: var(--text);
+  border: 2px solid var(--text);
+}
+
+.sticky-install-text h3 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.sticky-install-text span {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.sticky-install-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 0.82rem;
+  white-space: nowrap;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+  opacity: 1;
+  flex-shrink: 0;
+}
+
+.sticky-install-btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(31,31,31,0.2);
+  opacity: 1;
+}
+
+.sticky-install-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    -45deg,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0.1) 40%,
+    rgba(255,255,255,0.4) 50%,
+    rgba(255,255,255,0.1) 60%,
+    rgba(255,255,255,0) 100%
+  );
+  pointer-events: none;
+}
+
+.sticky-install-btn:hover::after {
+  animation: shine 0.5s ease-in-out;
+}
+
+/* Add bottom padding to footer so sticky bar doesn't overlap */
+.has-sticky-install .footer {
+  padding-bottom: 80px;
+}
+
 /* ═══════ RESPONSIVE ═══════ */
 @media (max-width: 960px) {
   .doc-layout { grid-template-columns: 1fr; gap: 0; }
@@ -2001,6 +2126,13 @@ body {
   .footer-inner { flex-direction: column; text-align: center; }
   .nav-links { gap: 2px; }
   #privacy-policy { padding: 24px 20px; }
+}
+
+@media (max-width: 520px) {
+  .sticky-install-text h3 { font-size: 0.78rem; }
+  .sticky-install-text span { font-size: 0.65rem; }
+  .sticky-install-btn { padding: 8px 14px; font-size: 0.75rem; }
+  .sticky-install-icon { width: 34px; height: 34px; font-size: 0.85rem; }
 }
 
 @media (max-width: 480px) {

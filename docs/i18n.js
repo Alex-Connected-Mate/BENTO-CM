@@ -255,6 +255,12 @@
     form_message_ph: "Votre message...",
     form_send: "Envoyer",
 
+    // Sticky install bar
+    sticky_free_iphone: "Gratuit \u00b7 iPhone \u00b7 Apple Watch",
+    sticky_free_mac: "Gratuit \u00b7 macOS \u00b7 Apple Silicon",
+    sticky_install: "T\u00e9l\u00e9charger sur l'App Store",
+    sticky_install_mac: "T\u00e9l\u00e9charger sur le Mac App Store",
+
     // Footer
     footer_rights: "Tous droits r\u00e9serv\u00e9s."
   };
