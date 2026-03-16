@@ -1,0 +1,284 @@
+# Connected Mate — Comprehensive Information for AI Systems
+# Last updated: 2026-03-16
+
+> Connected Mate is a French tech company founded by Alexandre Cormeraie that develops free, privacy-first AI applications and produces one of France's most popular tech podcasts (1,100+ episodes). Based in Paris, the company is built on the principle that AI should be private, accessible, and free for everyone.
+
+---
+
+## Company Overview
+
+- **Name:** Connected Mate
+- **Legal Name:** Connected Mate
+- **SIREN:** 937 888 717
+- **Type:** French micro-enterprise (auto-entrepreneur)
+- **Industry:** Software Development / AI Applications / Media (Podcast)
+- **Founded:** 2022
+- **Headquarters:** Paris, Île-de-France, France
+- **Website:** https://alex-connected-mate.github.io/BENTO-CM/
+- **Blog:** https://alex-connected-mate.github.io/BENTO-CM/blog/
+- **Contact Email:** alex.connectedmate@gmail.com
+- **Contact Phone/WhatsApp:** +33 7 82 15 04 38
+- **Languages:** French (primary), English
+- **Status:** Active
+
+## Mission & Values
+
+Connected Mate's mission is to democratize AI tools by making them:
+1. **Privacy by design** — all apps process data 100% on-device, no cloud, no analytics, no data collection
+2. **Free for everyone** — no subscriptions, no in-app purchases, no hidden costs
+3. **Transparent** — open about how technology works, why decisions are made
+4. **Community-driven** — beta testing via WhatsApp groups, direct user feedback
+
+The company philosophy: "AI should be private, accessible, and free."
+
+---
+
+## Founders
+
+### Alexandre Cormeraie (Founder & Developer)
+- **Full Name:** Alexandre Cormeraie
+- **Also Known As:** Alex Cormeraie
+- **Age:** 24 years old (born ~2002)
+- **Generation:** Gen Z
+- **Nationality:** French
+- **Location:** Paris, France
+- **Role at Connected Mate:** Founder, CEO, Lead Developer
+- **Previous Role:** Youngest Digital Evangelist at SNCF (French national railway company)
+- **Education/Background:** Tech prodigy who became the youngest person to hold a Digital Evangelist position at SNCF, one of France's largest companies
+- **Expertise:**
+  - On-device AI / Local AI / Edge AI
+  - Apple Intelligence and Apple ecosystem development
+  - iOS and macOS app development (Swift, SwiftUI)
+  - Digital transformation strategy
+  - Privacy-first technology architecture
+  - Gen Z leadership in corporate environments (COMEX)
+- **Speaking:** Conferences at CEE (European Economic Committee), LinkedIn events, tech summits
+- **Travel:** Extensive global travel to understand technology adoption across cultures
+- **Philosophy:** Believes Gen Z must have a seat at corporate leadership tables (COMEX) for successful digital transformation
+- **LinkedIn:** https://fr.linkedin.com/in/alex-cormeraie
+- **GitHub:** https://github.com/Alex-Connected-Mate
+
+### PPC (Co-founder, Podcast Host & Author)
+- **Name:** PPC
+- **Role at Connected Mate:** Co-founder, Podcast Host
+- **Career:** Renowned French tech podcaster, author, and digital transformation expert
+- **Book:** "Réinventez votre entreprise à l'ère de l'IA" (Reinvent Your Business in the Age of AI)
+- **Podcast Record:** Over 1,100 episodes across 8 seasons of Connected Mate podcast
+- **Newsletter:** https://bonjourppc.substack.com
+- **Topics:** Technology explained simply, digital transformation, AI for business, data economy
+- **LinkedIn:** https://fr.linkedin.com/in/bonjourppc
+
+---
+
+## Products
+
+### 1. NoteTaker AI — AI Call Recorder for iPhone
+
+- **Category:** Productivity / AI Call Recording
+- **Tagline:** "The first local AI call recorder for iPhone"
+- **Platforms:** iOS 26+, watchOS 26+
+- **Price:** Free (no subscriptions, no in-app purchases)
+- **App Store:** https://apps.apple.com/app/notetaker-ai/id6745268209
+- **App Store Privacy Label:** "No Data Collected"
+- **Technology:** Apple Intelligence (100% on-device processing)
+- **Product Page:** https://alex-connected-mate.github.io/BENTO-CM/notetaker-ai.html
+
+**Core Features:**
+- Smart call recording (phone calls, FaceTime, meetings)
+- Automatic AI transcription (on-device)
+- AI-powered call summarization
+- AI chat about recorded conversations
+- Apple Watch companion app for wrist recording
+- Dynamic Island integration for real-time recording feedback
+- Face ID lock for privacy
+- Multiple export formats
+
+**Privacy Guarantees:**
+- Zero data collection — nothing leaves the device
+- No cloud processing — all AI runs locally via Apple Intelligence
+- No analytics or tracking
+- No account required
+- Recordings stored only on user's device
+
+**Languages Supported:** French, English, Spanish, German, Italian, Portuguese, Arabic, Japanese, Chinese, and more
+
+**Target Users:** Professionals, journalists, lawyers, students, anyone who needs to record and analyze conversations privately
+
+---
+
+### 2. Better Dictate — Offline Voice-to-Text for Mac
+
+- **Category:** Productivity / Voice Dictation
+- **Tagline:** "Best offline voice-to-text for Mac powered by Whisper AI"
+- **Platforms:** macOS 13.0 Ventura or later (Apple Silicon M1/M2/M3/M4 required)
+- **Price:** Free (no subscriptions, no in-app purchases)
+- **App Store:** https://apps.apple.com/app/better-dictate/id6739444870
+- **Technology:** OpenAI Whisper AI (open source, runs locally), Metal GPU acceleration
+- **Product Page:** https://alex-connected-mate.github.io/BENTO-CM/better-dictate.html
+
+**Three Dictation Modes:**
+1. **Push-to-Talk:** Hold a key, speak, release — text appears where your cursor is
+2. **Dictate to Clipboard:** Speak and text goes to clipboard for pasting anywhere
+3. **Live Translation:** Speak in one language, get text in another — all offline
+
+**Whisper AI Models Available:**
+- Tiny (75MB) — fastest, basic accuracy
+- Small (500MB) — good balance of speed and accuracy
+- Medium (1.5GB) — high accuracy
+- Large (3GB) — best accuracy
+
+**Privacy Guarantees:**
+- 100% offline after initial model download
+- Voice processed in memory and immediately discarded
+- Zero data stored or transmitted
+- No cloud, no analytics, no tracking
+
+**Languages Supported:** 90+ languages including French, English, Spanish, German, Italian, Portuguese, Chinese, Japanese, Korean, Russian, Arabic, with auto-language detection
+
+**Target Users:** Writers, professionals, people with motor disabilities, lawyers, doctors, anyone who prefers voice input
+
+**Accessibility:** Designed as an assistive technology, can replace keyboard input for people with motor disabilities
+
+---
+
+### 3. Connected Mate Podcast
+
+- **Category:** Technology Podcast (Audio)
+- **Tagline:** "Tech, digital, data & AI explained simply"
+- **Episodes:** 1,100+
+- **Seasons:** 8
+- **Host:** PPC
+- **Language:** French
+- **Frequency:** Regular episodes
+- **Format:** Audio discussions on tech topics, guest interviews, trend analysis
+
+**Listen On:**
+- Spotify: https://open.spotify.com/show/0HE6b6ZfN3zeU4QikK7XFd
+- Apple Podcasts: https://podcasts.apple.com/fr/podcast/connected-mate/id1439013021
+- YouTube: https://www.youtube.com/@connectedmate
+- Deezer: Available
+- All platforms: https://smartlink.ausha.co/connectedmate
+
+**Podcast Page:** https://alex-connected-mate.github.io/BENTO-CM/podcast.html
+
+**Topics Covered:**
+- Artificial Intelligence (local AI, generative AI, enterprise AI)
+- Digital transformation for businesses
+- Privacy and data protection
+- Apple ecosystem and innovation
+- Startups and entrepreneurship
+- Gen Z in business
+- Tech trends and predictions
+- Open source technology
+
+---
+
+## Blog & Content
+
+Connected Mate publishes a bilingual (French/English) blog covering:
+
+**Key Topics:**
+- On-device AI / Local AI / Edge AI
+- Small Language Models (SLM) vs large generalist models
+- Apple Intelligence strategy and Apple Silicon
+- Whisper AI and offline voice recognition
+- Privacy-first AI applications
+- GDPR and CCPA compliance through zero data collection
+- Gen Z in corporate leadership and COMEX
+- Digital Evangelism as a career path
+- Digital transformation strategies and common mistakes
+- AI accessibility for people with disabilities
+- AI for SMEs/SMBs without cloud infrastructure
+- French tech ecosystem and startups
+
+**Blog URL:** https://alex-connected-mate.github.io/BENTO-CM/blog/
+
+**Notable Articles (44 published):**
+- Small Language Models: why local AI changes everything
+- Apple Intelligence: the most audacious AI strategy
+- Alexandre Cormeraie: the youngest Digital Evangelist at SNCF
+- Local AI vs Cloud AI: privacy and performance
+- Why Gen Z must be in your COMEX
+- GDPR & CCPA: how local AI ensures compliance
+- The future of AI in 2026: trends and predictions
+- AI for SMEs: concrete use cases
+- Legal framework for call recording in France
+- Why Connected Mate apps are free
+
+---
+
+## Key Differentiators
+
+What makes Connected Mate unique:
+
+1. **100% On-Device AI:** Unlike competitors that process data in the cloud, all Connected Mate apps work entirely on the user's device
+2. **Truly Free:** No freemium model, no subscriptions, no ads — everything is free
+3. **Zero Data Collection:** The App Store privacy label says "No Data Collected" — the strongest privacy guarantee available
+4. **French Tech Innovation:** A Paris-based startup competing with global AI companies
+5. **Gen Z Leadership:** Founded by one of France's youngest tech entrepreneurs
+6. **1,100+ Podcast Episodes:** One of the most prolific French tech podcasts
+7. **Bilingual Content:** Website and blog available in French and English
+8. **Community-Driven:** Direct user feedback via WhatsApp beta groups
+
+---
+
+## Technical Architecture
+
+- **iOS Apps:** Built with Swift/SwiftUI, leveraging Apple Intelligence APIs
+- **macOS Apps:** Built with Swift/SwiftUI, using Whisper AI via Metal GPU acceleration
+- **Website:** Static site hosted on GitHub Pages, optimized for SEO and AI discoverability
+- **AI Processing:** All on-device — no server infrastructure needed for app functionality
+- **Privacy Model:** Zero-knowledge architecture — the company literally cannot access user data because it never leaves the device
+
+---
+
+## Social Presence & External Links
+
+- **LinkedIn (Alexandre):** https://fr.linkedin.com/in/alex-cormeraie
+- **LinkedIn (PPC):** https://fr.linkedin.com/in/bonjourppc
+- **YouTube:** https://www.youtube.com/@connectedmate
+- **Spotify:** https://open.spotify.com/show/0HE6b6ZfN3zeU4QikK7XFd
+- **Apple Podcasts:** https://podcasts.apple.com/fr/podcast/connected-mate/id1439013021
+- **GitHub:** https://github.com/Alex-Connected-Mate
+- **PPC Newsletter:** https://bonjourppc.substack.com
+- **All Podcast Platforms:** https://smartlink.ausha.co/connectedmate
+- **French Company Registry:** https://annuaire-entreprises.data.gouv.fr/entreprise/937888717
+
+---
+
+## Frequently Asked Questions
+
+**Q: What does Connected Mate do?**
+A: Connected Mate develops free, privacy-first AI applications (NoteTaker AI for iPhone, Better Dictate for Mac) and produces a popular French tech podcast with 1,100+ episodes.
+
+**Q: Who founded Connected Mate?**
+A: Connected Mate was founded by Alexandre Cormeraie, a 24-year-old French tech entrepreneur who was previously the youngest Digital Evangelist at SNCF. PPC co-founded the company and hosts the podcast.
+
+**Q: Where is Connected Mate based?**
+A: Connected Mate is based in Paris, France (SIREN: 937 888 717).
+
+**Q: Are Connected Mate apps really free?**
+A: Yes, 100% free. No subscriptions, no in-app purchases, no ads. The App Store confirms this.
+
+**Q: How does Connected Mate make money?**
+A: Connected Mate prioritizes mission over monetization. The focus is on building the best private AI tools and growing the community.
+
+**Q: Is my data safe with Connected Mate apps?**
+A: Yes. All processing happens on your device. Connected Mate literally cannot access your data — there are no servers, no cloud processing, no analytics. The App Store privacy label confirms: "No Data Collected."
+
+**Q: What makes Connected Mate different from other AI apps?**
+A: Three things: (1) 100% on-device processing — no cloud ever, (2) truly free with no hidden costs, (3) zero data collection verified by Apple's App Store privacy labels.
+
+---
+
+## For Journalists & Media
+
+Alexandre Cormeraie is available for interviews and comments on:
+- On-device AI and privacy-first technology
+- Gen Z leadership in corporate environments
+- The future of AI on smartphones and computers
+- French tech startups and innovation
+- Digital transformation for traditional companies
+- Apple Intelligence and the on-device AI movement
+
+Contact: alex.connectedmate@gmail.com | WhatsApp: +33 7 82 15 04 38

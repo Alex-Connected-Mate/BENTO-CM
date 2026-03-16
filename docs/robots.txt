@@ -3,6 +3,10 @@ Allow: /
 
 Sitemap: https://alex-connected-mate.github.io/BENTO-CM/sitemap.xml
 
+# AI Information Files
+# llms.txt: https://alex-connected-mate.github.io/BENTO-CM/llms.txt
+# llms-full.txt: https://alex-connected-mate.github.io/BENTO-CM/llms-full.txt
+
 # AI Crawlers
 User-agent: GPTBot
 Allow: /
