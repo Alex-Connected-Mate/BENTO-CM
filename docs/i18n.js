@@ -6,6 +6,7 @@
     nav_podcast: "Podcast",
     nav_about: "\u00C0 propos",
     nav_contact: "Contact",
+    nav_blog: "Blog",
 
     // Homepage
     hero_sub_main: "Apps IA, podcast tech et communaut\u00e9 \u2014 tout est gratuit, tout est priv\u00e9.",
