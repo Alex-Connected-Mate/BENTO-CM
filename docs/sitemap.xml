@@ -1,309 +1,514 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/notetaker-ai.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/notetaker-ai.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/notetaker-ai.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/notetaker-ai.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/better-dictate.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/better-dictate.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/better-dictate.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/better-dictate.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/podcast.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/podcast.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/podcast.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/podcast.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/about.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/about.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/contact.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/contact.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/accessibilite-ia-vocale-handicap.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/accessibilite-ia-vocale-handicap.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/accessibilite-ia-vocale-handicap.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/accessibilite-ia-vocale-handicap.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/alexandre-cormeraie-plus-jeune-digital-evangelist-sncf.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/alexandre-cormeraie-plus-jeune-digital-evangelist-sncf.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/alexandre-cormeraie-plus-jeune-digital-evangelist-sncf.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/alexandre-cormeraie-plus-jeune-digital-evangelist-sncf.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/apple-intelligence-strategie-ia-on-device.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/apple-intelligence-strategie-ia-on-device.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/apple-intelligence-strategie-ia-on-device.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/apple-intelligence-strategie-ia-on-device.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/apple-silicon-m1-m4-ia-embarquee.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/apple-silicon-m1-m4-ia-embarquee.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/apple-silicon-m1-m4-ia-embarquee.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/apple-silicon-m1-m4-ia-embarquee.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/apple-watch-productivite-enregistrement.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/apple-watch-productivite-enregistrement.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/apple-watch-productivite-enregistrement.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/apple-watch-productivite-enregistrement.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/beta-testing-whatsapp-communaute-connected-mate.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/beta-testing-whatsapp-communaute-connected-mate.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/beta-testing-whatsapp-communaute-connected-mate.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/beta-testing-whatsapp-communaute-connected-mate.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/better-dictate-meilleure-dictee-mac.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/better-dictate-meilleure-dictee-mac.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/better-dictate-meilleure-dictee-mac.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/better-dictate-meilleure-dictee-mac.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/comparatif-enregistreurs-appels-iphone-2026.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/comparatif-enregistreurs-appels-iphone-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/comparatif-enregistreurs-appels-iphone-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/comparatif-enregistreurs-appels-iphone-2026.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/conferences-tech-alexandre-cormeraie-cee-linkedin.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/conferences-tech-alexandre-cormeraie-cee-linkedin.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/conferences-tech-alexandre-cormeraie-cee-linkedin.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/conferences-tech-alexandre-cormeraie-cee-linkedin.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/connected-mate-podcast-1100-episodes.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/connected-mate-podcast-1100-episodes.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/connected-mate-podcast-1100-episodes.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/connected-mate-podcast-1100-episodes.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/correction-automatique-ia-locale-meilleure.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/correction-automatique-ia-locale-meilleure.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/correction-automatique-ia-locale-meilleure.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/correction-automatique-ia-locale-meilleure.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/dictee-vocale-professionnels-avocats-medecins.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/dictee-vocale-professionnels-avocats-medecins.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/dictee-vocale-professionnels-avocats-medecins.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/dictee-vocale-professionnels-avocats-medecins.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/digital-evangelist-metier-avenir.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/digital-evangelist-metier-avenir.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/digital-evangelist-metier-avenir.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/digital-evangelist-metier-avenir.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/dynamic-island-enregistrement-temps-reel.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/dynamic-island-enregistrement-temps-reel.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/dynamic-island-enregistrement-temps-reel.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/dynamic-island-enregistrement-temps-reel.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/enregistrement-appels-legal-france.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/enregistrement-appels-legal-france.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/enregistrement-appels-legal-france.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/enregistrement-appels-legal-france.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/futur-ia-2026-tendances-predictions.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/futur-ia-2026-tendances-predictions.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/futur-ia-2026-tendances-predictions.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/futur-ia-2026-tendances-predictions.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/generation-z-entreprise-numerique-avantage.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/generation-z-entreprise-numerique-avantage.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/generation-z-entreprise-numerique-avantage.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/generation-z-entreprise-numerique-avantage.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/guide-choisir-modele-whisper-ai.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/guide-choisir-modele-whisper-ai.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/guide-choisir-modele-whisper-ai.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/guide-choisir-modele-whisper-ai.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/ia-entreprise-pme-tpe-cas-usage.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/ia-entreprise-pme-tpe-cas-usage.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/ia-entreprise-pme-tpe-cas-usage.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/ia-entreprise-pme-tpe-cas-usage.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/ia-generative-vs-ia-specialisee.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/ia-generative-vs-ia-specialisee.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/ia-generative-vs-ia-specialisee.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/ia-generative-vs-ia-specialisee.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/ia-gratuite-sans-donnees-modele-connected-mate.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/ia-gratuite-sans-donnees-modele-connected-mate.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/ia-gratuite-sans-donnees-modele-connected-mate.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/ia-gratuite-sans-donnees-modele-connected-mate.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/ia-locale-sante-donnees-medicales.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/ia-locale-sante-donnees-medicales.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/ia-locale-sante-donnees-medicales.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/ia-locale-sante-donnees-medicales.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/ia-locale-vs-cloud-vie-privee.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/ia-locale-vs-cloud-vie-privee.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/ia-locale-vs-cloud-vie-privee.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/ia-locale-vs-cloud-vie-privee.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/ia-on-device-avenir-smartphones.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/ia-on-device-avenir-smartphones.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/ia-on-device-avenir-smartphones.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/ia-on-device-avenir-smartphones.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/intelligence-artificielle-education-formation.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/intelligence-artificielle-education-formation.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/intelligence-artificielle-education-formation.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/intelligence-artificielle-education-formation.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/linkedin-personal-branding-gen-z-tech.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/linkedin-personal-branding-gen-z-tech.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/linkedin-personal-branding-gen-z-tech.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/linkedin-personal-branding-gen-z-tech.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/mentorat-inverse-gen-z-dirigeants.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/mentorat-inverse-gen-z-dirigeants.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/mentorat-inverse-gen-z-dirigeants.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/mentorat-inverse-gen-z-dirigeants.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/neural-engine-apple-ia-edge.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/neural-engine-apple-ia-edge.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/neural-engine-apple-ia-edge.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/neural-engine-apple-ia-edge.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/notetaker-ai-enregistrer-appels-iphone-prive.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/notetaker-ai-enregistrer-appels-iphone-prive.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/notetaker-ai-enregistrer-appels-iphone-prive.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/notetaker-ai-enregistrer-appels-iphone-prive.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/open-source-ia-whisper-democratisation.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/open-source-ia-whisper-democratisation.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/open-source-ia-whisper-democratisation.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/open-source-ia-whisper-democratisation.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/podcast-tech-francophone-top-2026.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/podcast-tech-francophone-top-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/podcast-tech-francophone-top-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/podcast-tech-francophone-top-2026.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/pourquoi-apps-gratuites-connected-mate.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/pourquoi-apps-gratuites-connected-mate.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/pourquoi-apps-gratuites-connected-mate.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/pourquoi-apps-gratuites-connected-mate.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/pourquoi-gen-z-comex-transformation-digitale.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/pourquoi-gen-z-comex-transformation-digitale.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/pourquoi-gen-z-comex-transformation-digitale.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/pourquoi-gen-z-comex-transformation-digitale.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/ppc-auteur-reinventez-entreprise-ia.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/ppc-auteur-reinventez-entreprise-ia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/ppc-auteur-reinventez-entreprise-ia.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/ppc-auteur-reinventez-entreprise-ia.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/productivite-ia-locale-5-outils-gratuits.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/productivite-ia-locale-5-outils-gratuits.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/productivite-ia-locale-5-outils-gratuits.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/productivite-ia-locale-5-outils-gratuits.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/rgpd-ccpa-ia-locale-conformite.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/rgpd-ccpa-ia-locale-conformite.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/rgpd-ccpa-ia-locale-conformite.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/rgpd-ccpa-ia-locale-conformite.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/small-language-models-ia-locale-apple.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/small-language-models-ia-locale-apple.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/small-language-models-ia-locale-apple.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/small-language-models-ia-locale-apple.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/sncf-innovation-digitale-jeunes-talents.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/sncf-innovation-digitale-jeunes-talents.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/sncf-innovation-digitale-jeunes-talents.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/sncf-innovation-digitale-jeunes-talents.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/startup-francaise-ia-privee-connected-mate.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/startup-francaise-ia-privee-connected-mate.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/startup-francaise-ia-privee-connected-mate.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/startup-francaise-ia-privee-connected-mate.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/traduction-temps-reel-ia-locale.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/traduction-temps-reel-ia-locale.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/traduction-temps-reel-ia-locale.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/traduction-temps-reel-ia-locale.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/transformation-digitale-erreurs-entreprises.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/transformation-digitale-erreurs-entreprises.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/transformation-digitale-erreurs-entreprises.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/transformation-digitale-erreurs-entreprises.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/vie-privee-numerique-droit-fondamental.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/vie-privee-numerique-droit-fondamental.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/vie-privee-numerique-droit-fondamental.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/vie-privee-numerique-droit-fondamental.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/voyager-comprendre-tech-mondiale.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/voyager-comprendre-tech-mondiale.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/voyager-comprendre-tech-mondiale.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/voyager-comprendre-tech-mondiale.html"/>
   </url>
   <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/whisper-ai-revolution-dictee-vocale.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/whisper-ai-revolution-dictee-vocale.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/blog/whisper-ai-revolution-dictee-vocale.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/whisper-ai-revolution-dictee-vocale.html"/>
   </url>
 </urlset>
