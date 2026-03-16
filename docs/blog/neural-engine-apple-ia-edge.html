@@ -28,26 +28,44 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">Connected Mate</a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open');this.setAttribute('aria-expanded',this.classList.contains('open'))">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="../index.html" data-i18n="nav_apps">Apps</a>
+        <a href="../podcast.html" data-i18n="nav_podcast">Podcast</a>
+        <a href="../about.html" data-i18n="nav_about" data-en="About">À propos</a>
+        <a href="../contact.html" data-i18n="nav_contact">Contact</a>
+      </div>
+    </div>
+  </nav>
   <main>
   <article class="blog-article" itemscope itemtype="https://schema.org/Article">
     <header class="blog-article-header">
-      <span class="blog-article-tag">IA & Tech</span>
-      <h1 itemprop="headline">Le Neural Engine d'Apple : l'IA en edge computing</h1>
-      <div class="blog-article-meta"><span>Par <a href="../about.html" itemprop="author">Alexandre Cormeraie</a></span><time datetime="2026-01-22" itemprop="datePublished">2026-01-22</time></div>
+      <span class="blog-article-tag" data-en="AI &amp; Tech">IA & Tech</span>
+      <h1 itemprop="headline" data-en="Apple's Neural Engine: AI in edge computing">Le Neural Engine d'Apple : l'IA en edge computing</h1>
+      <div class="blog-article-meta"><span data-en="By <a href='../about.html' itemprop='author'>Alexandre Cormeraie</a>">Par <a href="../about.html" itemprop="author">Alexandre Cormeraie</a></span><time datetime="2026-01-22" itemprop="datePublished">2026-01-22</time></div>
     </header>
     <div class="blog-article-body" itemprop="articleBody">
-      <p>Le <strong>Neural Engine</strong> est le composant le plus sous-estimé des puces Apple Silicon. C'est pourtant lui qui rend possible toute la révolution de l'<a href="apple-intelligence-strategie-ia-on-device.html">IA embarquée d'Apple</a>.</p>
-      <h2>Qu'est-ce que le Neural Engine ?</h2>
-      <p>C'est un processeur spécialisé dans les opérations de machine learning. Dédié uniquement à l'IA, il traite les modèles avec une <strong>efficacité énergétique</strong> que le CPU et le GPU ne peuvent pas égaler.</p>
-      <h2>Performance par génération</h2>
-      <ul><li><strong>M1</strong> — 16 cœurs Neural Engine, 11 TOPS</li><li><strong>M2</strong> — 16 cœurs, 15.8 TOPS</li><li><strong>M3</strong> — 16 cœurs, 18 TOPS</li><li><strong>M4</strong> — 16+ cœurs, 38 TOPS</li></ul>
-      <h2>Applications concrètes</h2>
-      <p><a href="../better-dictate.html">Better Dictate</a> exploite Metal GPU et le Neural Engine pour faire tourner Whisper AI avec un impact minimal sur la batterie. <a href="../notetaker-ai.html">NoteTaker AI</a> utilise le Neural Engine de l'iPhone pour Apple Intelligence.</p>
+      <p data-en="The <strong>Neural Engine</strong> is the most underestimated component of Apple Silicon chips. Yet it's what makes the entire <a href='apple-intelligence-strategie-ia-on-device.html'>Apple on-device AI</a> revolution possible.">Le <strong>Neural Engine</strong> est le composant le plus sous-estimé des puces Apple Silicon. C'est pourtant lui qui rend possible toute la révolution de l'<a href="apple-intelligence-strategie-ia-on-device.html">IA embarquée d'Apple</a>.</p>
+      <h2 data-en="What is the Neural Engine?">Qu'est-ce que le Neural Engine ?</h2>
+      <p data-en="It's a processor specialized in machine learning operations. Dedicated solely to AI, it processes models with an <strong>energy efficiency</strong> that the CPU and GPU cannot match.">C'est un processeur spécialisé dans les opérations de machine learning. Dédié uniquement à l'IA, il traite les modèles avec une <strong>efficacité énergétique</strong> que le CPU et le GPU ne peuvent pas égaler.</p>
+      <h2 data-en="Performance by generation">Performance par génération</h2>
+      <ul><li data-en="<strong>M1</strong> — 16 Neural Engine cores, 11 TOPS"><strong>M1</strong> — 16 cœurs Neural Engine, 11 TOPS</li><li data-en="<strong>M2</strong> — 16 cores, 15.8 TOPS"><strong>M2</strong> — 16 cœurs, 15.8 TOPS</li><li data-en="<strong>M3</strong> — 16 cores, 18 TOPS"><strong>M3</strong> — 16 cœurs, 18 TOPS</li><li data-en="<strong>M4</strong> — 16+ cores, 38 TOPS"><strong>M4</strong> — 16+ cœurs, 38 TOPS</li></ul>
+      <h2 data-en="Practical applications">Applications concrètes</h2>
+      <p data-en="<a href='../better-dictate.html'>Better Dictate</a> leverages Metal GPU and the Neural Engine to run Whisper AI with minimal battery impact. <a href='../notetaker-ai.html'>NoteTaker AI</a> uses the iPhone's Neural Engine for Apple Intelligence."><a href="../better-dictate.html">Better Dictate</a> exploite Metal GPU et le Neural Engine pour faire tourner Whisper AI avec un impact minimal sur la batterie. <a href="../notetaker-ai.html">NoteTaker AI</a> utilise le Neural Engine de l'iPhone pour Apple Intelligence.</p>
     </div>
   </article>
-  <section class="blog-related"><div class="container"><h2>Articles connexes</h2><div class="blog-related-grid"><a href="apple-silicon-m1-m4-ia-embarquee.html" class="blog-card"><h2>Apple Silicon M1-M4</h2><span class="hcard-arrow">&rarr;</span></a><a href="apple-intelligence-strategie-ia-on-device.html" class="blog-card"><h2>Apple Intelligence</h2><span class="hcard-arrow">&rarr;</span></a></div></div></section>
+  <section class="blog-related"><div class="container"><h2 data-en="Related Articles">Articles connexes</h2><div class="blog-related-grid"><a href="apple-silicon-m1-m4-ia-embarquee.html" class="blog-card"><h2>Apple Silicon M1-M4</h2><span class="hcard-arrow">&rarr;</span></a><a href="apple-intelligence-strategie-ia-on-device.html" class="blog-card"><h2>Apple Intelligence</h2><span class="hcard-arrow">&rarr;</span></a></div></div></section>
   </main>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p data-en="&copy; 2026 Connected Mate. All rights reserved.">&copy; 2026 Connected Mate. Tous droits réservés.</p>
     </div>
   </footer>
+  <script src="blog-i18n.js"></script>
 </body>
 </html>

@@ -45,69 +45,69 @@
         <span></span><span></span><span></span>
       </button>
       <div class="nav-links">
-        <a href="../index.html">Apps</a>
-        <a href="../podcast.html">Podcast</a>
-        <a href="../about.html">About</a>
-        <a href="../contact.html">Contact</a>
+        <a href="../index.html" data-i18n="nav_apps">Apps</a>
+        <a href="../podcast.html" data-i18n="nav_podcast">Podcast</a>
+        <a href="../about.html" data-i18n="nav_about" data-en="About">À propos</a>
+        <a href="../contact.html" data-i18n="nav_contact">Contact</a>
       </div>
     </div>
   </nav>
   <main>
   <article class="blog-article" itemscope itemtype="https://schema.org/Article">
     <header class="blog-article-header">
-      <span class="blog-article-tag">IA & Tech</span>
-      <h1 itemprop="headline">Small Language Models : pourquoi l'IA locale change tout</h1>
+      <span class="blog-article-tag" data-en="AI &amp; Tech">IA & Tech</span>
+      <h1 itemprop="headline" data-en="Small Language Models: why on-device AI changes everything">Small Language Models : pourquoi l'IA locale change tout</h1>
       <div class="blog-article-meta">
-        <span>Par <a href="../about.html" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Alexandre Cormeraie</span></a></span>
+        <span data-en="By <a href=&quot;../about.html&quot; itemprop=&quot;author&quot; itemscope itemtype=&quot;https://schema.org/Person&quot;><span itemprop=&quot;name&quot;>Alexandre Cormeraie</span></a>">Par <a href="../about.html" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Alexandre Cormeraie</span></a></span>
         <time datetime="2026-03-12" itemprop="datePublished">2026-03-12</time>
         <span>Connected Mate</span>
       </div>
     </header>
     <div class="blog-article-body" itemprop="articleBody">
-      <p>On parle beaucoup de GPT-4, Claude, Gemini — des <strong>modèles IA massifs</strong> qui tournent sur des data centers gigantesques. Mais une révolution silencieuse est en cours : celle des <strong>Small Language Models (SLM)</strong>, ces modèles compacts qui fonctionnent directement sur votre téléphone ou votre ordinateur.</p>
+      <p data-en="Everyone talks about GPT-4, Claude, Gemini — <strong>massive AI models</strong> running on gigantic data centers. But a quiet revolution is underway: that of <strong>Small Language Models (SLM)</strong>, compact models that run directly on your phone or computer.">On parle beaucoup de GPT-4, Claude, Gemini — des <strong>modèles IA massifs</strong> qui tournent sur des data centers gigantesques. Mais une révolution silencieuse est en cours : celle des <strong>Small Language Models (SLM)</strong>, ces modèles compacts qui fonctionnent directement sur votre téléphone ou votre ordinateur.</p>
 
-      <h2>Le mythe du « plus gros = meilleur »</h2>
-      <p>Les modèles généralistes avec des centaines de milliards de paramètres sont impressionnants. Mais pour <strong>90% des usages quotidiens</strong>, ils sont surdimensionnés. Quand vous avez besoin de :</p>
+      <h2 data-en="The &quot;bigger = better&quot; myth">Le mythe du « plus gros = meilleur »</h2>
+      <p data-en="Generalist models with hundreds of billions of parameters are impressive. But for <strong>90% of daily tasks</strong>, they are overkill. When you need to:">Les modèles généralistes avec des centaines de milliards de paramètres sont impressionnants. Mais pour <strong>90% des usages quotidiens</strong>, ils sont surdimensionnés. Quand vous avez besoin de :</p>
       <ul>
-        <li><strong>Corriger un texte</strong> — un modèle de 500 Mo suffit largement</li>
-        <li><strong>Transcrire de la voix</strong> — Whisper Small (~500 Mo) offre une précision remarquable</li>
-        <li><strong>Traduire un message</strong> — un modèle local le fait en millisecondes</li>
-        <li><strong>Résumer un appel</strong> — Apple Intelligence le fait on-device</li>
+        <li data-en="<strong>Correct a text</strong> — a 500 MB model is more than enough"><strong>Corriger un texte</strong> — un modèle de 500 Mo suffit largement</li>
+        <li data-en="<strong>Transcribe speech</strong> — Whisper Small (~500 MB) offers remarkable accuracy"><strong>Transcrire de la voix</strong> — Whisper Small (~500 Mo) offre une précision remarquable</li>
+        <li data-en="<strong>Translate a message</strong> — a local model does it in milliseconds"><strong>Traduire un message</strong> — un modèle local le fait en millisecondes</li>
+        <li data-en="<strong>Summarize a call</strong> — Apple Intelligence does it on-device"><strong>Résumer un appel</strong> — Apple Intelligence le fait on-device</li>
       </ul>
-      <p>Pourquoi envoyer vos données à un serveur distant quand un <strong>modèle local peut faire le travail instantanément, gratuitement, et sans compromettre votre vie privée</strong> ?</p>
+      <p data-en="Why send your data to a remote server when a <strong>local model can do the job instantly, for free, and without compromising your privacy</strong>?">Pourquoi envoyer vos données à un serveur distant quand un <strong>modèle local peut faire le travail instantanément, gratuitement, et sans compromettre votre vie privée</strong> ?</p>
 
-      <h2>Les vrais usages de l'IA locale</h2>
-      <p>Chez <a href="../index.html">Connected Mate</a>, nos applications sont la preuve que les SLM sont suffisants pour des produits exceptionnels :</p>
+      <h2 data-en="The real use cases for on-device AI">Les vrais usages de l'IA locale</h2>
+      <p data-en="At <a href=&quot;../index.html&quot;>Connected Mate</a>, our apps are proof that SLMs are sufficient for exceptional products:">Chez <a href="../index.html">Connected Mate</a>, nos applications sont la preuve que les SLM sont suffisants pour des produits exceptionnels :</p>
       <ul>
-        <li><strong><a href="../better-dictate.html">Better Dictate</a></strong> utilise Whisper AI en local pour la dictée vocale et la traduction en temps réel. Choix entre 4 tailles de modèle (75 Mo à 3 Go) selon vos besoins.</li>
-        <li><strong><a href="../notetaker-ai.html">NoteTaker AI</a></strong> exploite Apple Intelligence pour transcrire, résumer et analyser vos appels — le tout sur votre iPhone, sans connexion internet.</li>
+        <li data-en="<strong><a href=&quot;../better-dictate.html&quot;>Better Dictate</a></strong> uses Whisper AI locally for voice dictation and real-time translation. Choose from 4 model sizes (75 MB to 3 GB) based on your needs."><strong><a href="../better-dictate.html">Better Dictate</a></strong> utilise Whisper AI en local pour la dictée vocale et la traduction en temps réel. Choix entre 4 tailles de modèle (75 Mo à 3 Go) selon vos besoins.</li>
+        <li data-en="<strong><a href=&quot;../notetaker-ai.html&quot;>NoteTaker AI</a></strong> leverages Apple Intelligence to transcribe, summarize and analyze your calls — all on your iPhone, without an internet connection."><strong><a href="../notetaker-ai.html">NoteTaker AI</a></strong> exploite Apple Intelligence pour transcrire, résumer et analyser vos appels — le tout sur votre iPhone, sans connexion internet.</li>
       </ul>
 
-      <h2>La stratégie Apple : la plus intéressante du marché</h2>
-      <p>Pendant que Google et OpenAI investissent massivement dans le cloud, <strong>Apple a fait le pari inverse</strong> : tout sur l'appareil. Apple Intelligence repose sur des modèles compacts optimisés pour les puces Apple Silicon (M1-M4) et les Neural Engine des iPhone.</p>
-      <p>Cette stratégie est brillante pour trois raisons :</p>
+      <h2 data-en="Apple's strategy: the most compelling in the market">La stratégie Apple : la plus intéressante du marché</h2>
+      <p data-en="While Google and OpenAI invest heavily in the cloud, <strong>Apple has made the opposite bet</strong>: everything on-device. Apple Intelligence relies on compact models optimized for Apple Silicon chips (M1-M4) and the Neural Engine in iPhones.">Pendant que Google et OpenAI investissent massivement dans le cloud, <strong>Apple a fait le pari inverse</strong> : tout sur l'appareil. Apple Intelligence repose sur des modèles compacts optimisés pour les puces Apple Silicon (M1-M4) et les Neural Engine des iPhone.</p>
+      <p data-en="This strategy is brilliant for three reasons:">Cette stratégie est brillante pour trois raisons :</p>
       <ol>
-        <li><strong>Vie privée absolue</strong> — vos données ne quittent jamais votre appareil</li>
-        <li><strong>Pas de latence</strong> — pas besoin d'attendre une réponse serveur</li>
-        <li><strong>Fonctionne partout</strong> — en avion, dans le métro, sans WiFi</li>
+        <li data-en="<strong>Absolute privacy</strong> — your data never leaves your device"><strong>Vie privée absolue</strong> — vos données ne quittent jamais votre appareil</li>
+        <li data-en="<strong>No latency</strong> — no need to wait for a server response"><strong>Pas de latence</strong> — pas besoin d'attendre une réponse serveur</li>
+        <li data-en="<strong>Works everywhere</strong> — on a plane, in the subway, without WiFi"><strong>Fonctionne partout</strong> — en avion, dans le métro, sans WiFi</li>
       </ol>
 
-      <blockquote><p>« L'avenir de l'IA n'est pas dans le cloud. Il est dans votre poche. »</p></blockquote>
+      <blockquote><p data-en="&quot;The future of AI is not in the cloud. It's in your pocket.&quot;">« L'avenir de l'IA n'est pas dans le cloud. Il est dans votre poche. »</p></blockquote>
 
-      <h2>Small models, big impact</h2>
-      <p>Les Small Language Models ne sont pas une alternative au rabais. Ce sont des <strong>outils spécialisés, rapides, et respectueux de la vie privée</strong>. Pour la correction, la traduction, la transcription et l'analyse de texte, ils surpassent souvent les modèles généralistes en termes de vitesse et d'efficacité.</p>
+      <h2 data-en="Small models, big impact">Small models, big impact</h2>
+      <p data-en="Small Language Models are not a budget alternative. They are <strong>specialized, fast, and privacy-respecting tools</strong>. For correction, translation, transcription and text analysis, they often outperform generalist models in terms of speed and efficiency.">Les Small Language Models ne sont pas une alternative au rabais. Ce sont des <strong>outils spécialisés, rapides, et respectueux de la vie privée</strong>. Pour la correction, la traduction, la transcription et l'analyse de texte, ils surpassent souvent les modèles généralistes en termes de vitesse et d'efficacité.</p>
     </div>
   </article>
   <section class="blog-related">
     <div class="container">
-      <h2>Articles connexes</h2>
+      <h2 data-en="Related Articles">Articles connexes</h2>
       <div class="blog-related-grid">
         <a href="apple-intelligence-strategie-ia-on-device.html" class="blog-card">
-          <h2>Apple Intelligence : la stratégie IA la plus audacieuse</h2>
+          <h2 data-en="Apple Intelligence: the boldest AI strategy">Apple Intelligence : la stratégie IA la plus audacieuse</h2>
           <span class="hcard-arrow">&rarr;</span>
         </a>
         <a href="ia-locale-vs-cloud-vie-privee.html" class="blog-card">
-          <h2>IA locale vs cloud : vie privée et performance</h2>
+          <h2 data-en="On-device AI vs cloud: privacy and performance">IA locale vs cloud : vie privée et performance</h2>
           <span class="hcard-arrow">&rarr;</span>
         </a>
       </div>
@@ -116,17 +116,18 @@
   </main>
   <footer class="footer">
     <div class="container footer-inner">
-      <p>&copy; 2026 Connected Mate. Tous droits réservés.</p>
+      <p data-en="&copy; 2026 Connected Mate. All rights reserved.">&copy; 2026 Connected Mate. Tous droits réservés.</p>
       <nav class="footer-nav" aria-label="Footer navigation">
         <a href="../index.html">Apps</a>
         <a href="../notetaker-ai.html">NoteTaker AI</a>
         <a href="../better-dictate.html">Better Dictate</a>
         <a href="../podcast.html">Podcast</a>
-        <a href="../about.html">À propos</a>
+        <a href="../about.html" data-en="About">À propos</a>
         <a href="../contact.html">Contact</a>
       </nav>
       <p class="footer-hosted"><a href="https:\/\/github.com\/Alex-Connected-Mate\/BENTO-CM" target="_blank" rel="noopener" class="footer-github-link"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"\/><\/svg> <span data-i18n="footer_opensource">Open source on GitHub<\/span><\/a><\/p>
     </div>
   </footer>
+  <script src="blog-i18n.js"></script>
 </body>
 </html>

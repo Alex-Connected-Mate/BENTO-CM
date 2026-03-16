@@ -28,26 +28,44 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">Connected Mate</a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open');this.setAttribute('aria-expanded',this.classList.contains('open'))">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="../index.html" data-i18n="nav_apps">Apps</a>
+        <a href="../podcast.html" data-i18n="nav_podcast">Podcast</a>
+        <a href="../about.html" data-i18n="nav_about" data-en="About">À propos</a>
+        <a href="../contact.html" data-i18n="nav_contact">Contact</a>
+      </div>
+    </div>
+  </nav>
   <main>
   <article class="blog-article" itemscope itemtype="https://schema.org/Article">
     <header class="blog-article-header">
-      <span class="blog-article-tag">IA & Tech</span>
-      <h1 itemprop="headline">IA générative vs IA spécialisée : choisir le bon outil</h1>
-      <div class="blog-article-meta"><span>Par <a href="../about.html" itemprop="author">Alexandre Cormeraie</a></span><time datetime="2026-01-15" itemprop="datePublished">2026-01-15</time></div>
+      <span class="blog-article-tag" data-en="AI &amp; Tech">IA & Tech</span>
+      <h1 itemprop="headline" data-en="Generative AI vs specialized AI: choosing the right tool">IA générative vs IA spécialisée : choisir le bon outil</h1>
+      <div class="blog-article-meta"><span data-en="By <a href='../about.html' itemprop='author'>Alexandre Cormeraie</a>">Par <a href="../about.html" itemprop="author">Alexandre Cormeraie</a></span><time datetime="2026-01-15" itemprop="datePublished">2026-01-15</time></div>
     </header>
     <div class="blog-article-body" itemprop="articleBody">
-      <p>ChatGPT peut tout faire. Mais <strong>devrait-il tout faire ?</strong> La réponse est non. Pour beaucoup d'usages, une <a href="small-language-models-ia-locale-apple.html">IA spécialisée</a> est supérieure.</p>
-      <h2>IA générative : quand l'utiliser</h2>
-      <ul><li>Rédaction créative longue</li><li>Programmation et code</li><li>Analyse de documents complexes</li><li>Brainstorming et idéation</li></ul>
-      <h2>IA spécialisée : quand l'utiliser</h2>
-      <ul><li><strong>Transcription</strong> — Whisper AI (<a href="../better-dictate.html">Better Dictate</a>)</li><li><strong>Résumé d'appels</strong> — Apple Intelligence (<a href="../notetaker-ai.html">NoteTaker AI</a>)</li><li><strong>Correction</strong> — <a href="correction-automatique-ia-locale-meilleure.html">modèles locaux dédiés</a></li><li><strong>Traduction</strong> — <a href="traduction-temps-reel-ia-locale.html">modèles compacts en local</a></li></ul>
-      <h2>Le bon outil pour le bon usage</h2>
-      <p>Utiliser GPT-4 pour transcrire un appel, c'est comme prendre un avion pour traverser la rue. <strong>Les IA spécialisées sont plus rapides, plus précises, moins chères et plus respectueuses de la vie privée</strong> pour leurs domaines respectifs.</p>
+      <p data-en="ChatGPT can do everything. But <strong>should it do everything?</strong> The answer is no. For many use cases, a <a href='small-language-models-ia-locale-apple.html'>specialized AI</a> is superior.">ChatGPT peut tout faire. Mais <strong>devrait-il tout faire ?</strong> La réponse est non. Pour beaucoup d'usages, une <a href="small-language-models-ia-locale-apple.html">IA spécialisée</a> est supérieure.</p>
+      <h2 data-en="Generative AI: when to use it">IA générative : quand l'utiliser</h2>
+      <ul><li data-en="Long creative writing">Rédaction créative longue</li><li data-en="Programming and code">Programmation et code</li><li data-en="Complex document analysis">Analyse de documents complexes</li><li data-en="Brainstorming and ideation">Brainstorming et idéation</li></ul>
+      <h2 data-en="Specialized AI: when to use it">IA spécialisée : quand l'utiliser</h2>
+      <ul><li data-en="<strong>Transcription</strong> — Whisper AI (<a href='../better-dictate.html'>Better Dictate</a>)"><strong>Transcription</strong> — Whisper AI (<a href="../better-dictate.html">Better Dictate</a>)</li><li data-en="<strong>Call summaries</strong> — Apple Intelligence (<a href='../notetaker-ai.html'>NoteTaker AI</a>)"><strong>Résumé d'appels</strong> — Apple Intelligence (<a href="../notetaker-ai.html">NoteTaker AI</a>)</li><li data-en="<strong>Proofreading</strong> — <a href='correction-automatique-ia-locale-meilleure.html'>dedicated local models</a>"><strong>Correction</strong> — <a href="correction-automatique-ia-locale-meilleure.html">modèles locaux dédiés</a></li><li data-en="<strong>Translation</strong> — <a href='traduction-temps-reel-ia-locale.html'>compact local models</a>"><strong>Traduction</strong> — <a href="traduction-temps-reel-ia-locale.html">modèles compacts en local</a></li></ul>
+      <h2 data-en="The right tool for the right job">Le bon outil pour le bon usage</h2>
+      <p data-en="Using GPT-4 to transcribe a call is like taking a plane to cross the street. <strong>Specialized AIs are faster, more accurate, cheaper, and more privacy-friendly</strong> for their respective domains.">Utiliser GPT-4 pour transcrire un appel, c'est comme prendre un avion pour traverser la rue. <strong>Les IA spécialisées sont plus rapides, plus précises, moins chères et plus respectueuses de la vie privée</strong> pour leurs domaines respectifs.</p>
     </div>
   </article>
-  <section class="blog-related"><div class="container"><h2>Articles connexes</h2><div class="blog-related-grid"><a href="small-language-models-ia-locale-apple.html" class="blog-card"><h2>Small Language Models</h2><span class="hcard-arrow">&rarr;</span></a><a href="apple-intelligence-strategie-ia-on-device.html" class="blog-card"><h2>Apple Intelligence</h2><span class="hcard-arrow">&rarr;</span></a></div></div></section>
+  <section class="blog-related"><div class="container"><h2 data-en="Related Articles">Articles connexes</h2><div class="blog-related-grid"><a href="small-language-models-ia-locale-apple.html" class="blog-card"><h2>Small Language Models</h2><span class="hcard-arrow">&rarr;</span></a><a href="apple-intelligence-strategie-ia-on-device.html" class="blog-card"><h2>Apple Intelligence</h2><span class="hcard-arrow">&rarr;</span></a></div></div></section>
   </main>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p data-en="&copy; 2026 Connected Mate. All rights reserved.">&copy; 2026 Connected Mate. Tous droits réservés.</p>
     </div>
   </footer>
+  <script src="blog-i18n.js"></script>
 </body>
 </html>

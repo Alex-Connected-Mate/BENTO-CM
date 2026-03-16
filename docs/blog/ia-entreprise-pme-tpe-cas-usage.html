@@ -28,25 +28,43 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">Connected Mate</a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open');this.setAttribute('aria-expanded',this.classList.contains('open'))">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="../index.html" data-i18n="nav_apps">Apps</a>
+        <a href="../podcast.html" data-i18n="nav_podcast">Podcast</a>
+        <a href="../about.html" data-i18n="nav_about" data-en="About">À propos</a>
+        <a href="../contact.html" data-i18n="nav_contact">Contact</a>
+      </div>
+    </div>
+  </nav>
   <main>
   <article class="blog-article" itemscope itemtype="https://schema.org/Article">
     <header class="blog-article-header">
-      <span class="blog-article-tag">Stratégie</span>
-      <h1 itemprop="headline">IA pour les PME et TPE : cas d'usage concrets</h1>
-      <div class="blog-article-meta"><span>Par <a href="../about.html" itemprop="author">Alexandre Cormeraie</a></span><time datetime="2026-01-28" itemprop="datePublished">2026-01-28</time></div>
+      <span class="blog-article-tag" data-en="Strategy">Stratégie</span>
+      <h1 itemprop="headline" data-en="AI for SMBs and micro-businesses: concrete use cases">IA pour les PME et TPE : cas d'usage concrets</h1>
+      <div class="blog-article-meta"><span data-en="By <a href='../about.html' itemprop='author'>Alexandre Cormeraie</a>">Par <a href="../about.html" itemprop="author">Alexandre Cormeraie</a></span><time datetime="2026-01-28" itemprop="datePublished">2026-01-28</time></div>
     </header>
     <div class="blog-article-body" itemprop="articleBody">
-      <p>L'IA n'est pas réservée aux grandes entreprises. Les <strong>PME et TPE</strong> peuvent en tirer des bénéfices immédiats grâce aux <a href="small-language-models-ia-locale-apple.html">modèles locaux</a>.</p>
-      <h2>Cas d'usage concrets</h2>
-      <ul><li><strong>Transcription de réunions</strong> — avec <a href="../notetaker-ai.html">NoteTaker AI</a>, plus besoin de prendre des notes</li><li><strong>Dictée vocale</strong> — <a href="../better-dictate.html">Better Dictate</a> pour rédiger emails et rapports 3x plus vite</li><li><strong>Traduction</strong> — communiquer avec des clients internationaux sans outil cloud</li><li><strong>Correction</strong> — améliorer la qualité des écrits professionnels</li></ul>
-      <h2>Zéro coût, zéro infrastructure</h2>
-      <p>Pas besoin de serveur, d'abonnement ou d'expert IT. Les applications <a href="../index.html">Connected Mate</a> fonctionnent sur les appareils Apple que vous possédez déjà.</p>
-      <blockquote><p>« L'IA la plus utile pour une PME est celle qui ne coûte rien et qui fonctionne immédiatement. »</p></blockquote>
+      <p data-en="AI is not reserved for large companies. <strong>SMBs and micro-businesses</strong> can get immediate benefits from <a href='small-language-models-ia-locale-apple.html'>local models</a>.">L'IA n'est pas réservée aux grandes entreprises. Les <strong>PME et TPE</strong> peuvent en tirer des bénéfices immédiats grâce aux <a href="small-language-models-ia-locale-apple.html">modèles locaux</a>.</p>
+      <h2 data-en="Concrete use cases">Cas d'usage concrets</h2>
+      <ul><li data-en="<strong>Meeting transcription</strong> — with <a href='../notetaker-ai.html'>NoteTaker AI</a>, no more need to take notes"><strong>Transcription de réunions</strong> — avec <a href="../notetaker-ai.html">NoteTaker AI</a>, plus besoin de prendre des notes</li><li data-en="<strong>Voice dictation</strong> — <a href='../better-dictate.html'>Better Dictate</a> to write emails and reports 3x faster"><strong>Dictée vocale</strong> — <a href="../better-dictate.html">Better Dictate</a> pour rédiger emails et rapports 3x plus vite</li><li data-en="<strong>Translation</strong> — communicate with international clients without a cloud tool"><strong>Traduction</strong> — communiquer avec des clients internationaux sans outil cloud</li><li data-en="<strong>Proofreading</strong> — improve the quality of professional writing"><strong>Correction</strong> — améliorer la qualité des écrits professionnels</li></ul>
+      <h2 data-en="Zero cost, zero infrastructure">Zéro coût, zéro infrastructure</h2>
+      <p data-en="No need for a server, subscription, or IT expert. <a href='../index.html'>Connected Mate</a> applications run on the Apple devices you already own.">Pas besoin de serveur, d'abonnement ou d'expert IT. Les applications <a href="../index.html">Connected Mate</a> fonctionnent sur les appareils Apple que vous possédez déjà.</p>
+      <blockquote><p data-en="&laquo; The most useful AI for an SMB is the one that costs nothing and works immediately. &raquo;">« L'IA la plus utile pour une PME est celle qui ne coûte rien et qui fonctionne immédiatement. »</p></blockquote>
     </div>
   </article>
-  <section class="blog-related"><div class="container"><h2>Articles connexes</h2><div class="blog-related-grid"><a href="small-language-models-ia-locale-apple.html" class="blog-card"><h2>Small Language Models</h2><span class="hcard-arrow">&rarr;</span></a><a href="ia-gratuite-sans-donnees-modele-connected-mate.html" class="blog-card"><h2>Le modèle Connected Mate</h2><span class="hcard-arrow">&rarr;</span></a></div></div></section>
+  <section class="blog-related"><div class="container"><h2 data-en="Related Articles">Articles connexes</h2><div class="blog-related-grid"><a href="small-language-models-ia-locale-apple.html" class="blog-card"><h2>Small Language Models</h2><span class="hcard-arrow">&rarr;</span></a><a href="ia-gratuite-sans-donnees-modele-connected-mate.html" class="blog-card"><h2>Le modèle Connected Mate</h2><span class="hcard-arrow">&rarr;</span></a></div></div></section>
   </main>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p data-en="&copy; 2026 Connected Mate. All rights reserved.">&copy; 2026 Connected Mate. Tous droits réservés.</p>
     </div>
   </footer>
+  <script src="blog-i18n.js"></script>
 </body>
 </html>

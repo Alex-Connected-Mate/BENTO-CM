@@ -45,89 +45,90 @@
         <span></span><span></span><span></span>
       </button>
       <div class="nav-links">
-        <a href="../index.html">Apps</a>
-        <a href="../podcast.html">Podcast</a>
-        <a href="../about.html">About</a>
-        <a href="../contact.html">Contact</a>
+        <a href="../index.html" data-i18n="nav_apps">Apps</a>
+        <a href="../podcast.html" data-i18n="nav_podcast">Podcast</a>
+        <a href="../about.html" data-i18n="nav_about" data-en="About">À propos</a>
+        <a href="../contact.html" data-i18n="nav_contact">Contact</a>
       </div>
     </div>
   </nav>
   <main>
   <article class="blog-article" itemscope itemtype="https://schema.org/Article">
     <header class="blog-article-header">
-      <span class="blog-article-tag">IA & Tech</span>
-      <h1 itemprop="headline">IA locale vs IA cloud : vie privée et performance</h1>
+      <span class="blog-article-tag" data-en="AI &amp; Tech">IA & Tech</span>
+      <h1 itemprop="headline" data-en="On-device AI vs cloud AI: privacy and performance">IA locale vs IA cloud : vie privée et performance</h1>
       <div class="blog-article-meta">
-        <span>Par <a href="../about.html" itemprop="author">Alexandre Cormeraie</a></span>
+        <span data-en="By <a href=&quot;../about.html&quot; itemprop=&quot;author&quot;>Alexandre Cormeraie</a>">Par <a href="../about.html" itemprop="author">Alexandre Cormeraie</a></span>
         <time datetime="2026-03-09" itemprop="datePublished">2026-03-09</time>
       </div>
     </header>
     <div class="blog-article-body" itemprop="articleBody">
-      <p>Le débat fait rage dans l'industrie tech : faut-il envoyer ses données dans le cloud pour profiter de l'IA, ou peut-on tout faire en local ? La réponse est plus nuancée qu'on ne le pense — mais <strong>pour la majorité des usages quotidiens, le local gagne</strong> sur pratiquement tous les critères : vitesse, vie privée, coût et fiabilité.</p>
+      <p data-en="The debate rages in the tech industry: should you send your data to the cloud to benefit from AI, or can everything be done locally? The answer is more nuanced than you might think — but <strong>for the majority of everyday uses, local wins</strong> on virtually every criterion: speed, privacy, cost and reliability.">Le débat fait rage dans l'industrie tech : faut-il envoyer ses données dans le cloud pour profiter de l'IA, ou peut-on tout faire en local ? La réponse est plus nuancée qu'on ne le pense — mais <strong>pour la majorité des usages quotidiens, le local gagne</strong> sur pratiquement tous les critères : vitesse, vie privée, coût et fiabilité.</p>
 
-      <h2>Cloud : puissance brute, mais à quel prix ?</h2>
-      <p>Les modèles cloud (GPT-4, Claude, Gemini) sont incroyablement puissants pour des tâches complexes : rédaction longue, génération de code, raisonnement avancé, analyse de documents volumineux. Mais cette puissance a un coût, et pas seulement financier :</p>
+      <h2 data-en="Cloud: raw power, but at what cost?">Cloud : puissance brute, mais à quel prix ?</h2>
+      <p data-en="Cloud models (GPT-4, Claude, Gemini) are incredibly powerful for complex tasks: long-form writing, code generation, advanced reasoning, large document analysis. But this power comes at a cost, and not just a financial one:">Les modèles cloud (GPT-4, Claude, Gemini) sont incroyablement puissants pour des tâches complexes : rédaction longue, génération de code, raisonnement avancé, analyse de documents volumineux. Mais cette puissance a un coût, et pas seulement financier :</p>
       <ul>
-        <li><strong>Vie privée compromise</strong> — l'envoi de vos données à des serveurs tiers signifie que vos textes, votre voix et vos conversations transitent par des infrastructures que vous ne contrôlez pas</li>
-        <li><strong>Dépendance réseau</strong> — sans connexion internet, aucune fonctionnalité IA n'est disponible</li>
-        <li><strong>Coûts récurrents</strong> — des abonnements mensuels de 20 à 30 euros par mois, qui s'accumulent rapidement</li>
-        <li><strong>Latence variable</strong> — le temps de réponse dépend de votre connexion, de la charge des serveurs et de la distance géographique</li>
+        <li data-en="<strong>Compromised privacy</strong> — sending your data to third-party servers means your texts, voice and conversations pass through infrastructure you don't control"><strong>Vie privée compromise</strong> — l'envoi de vos données à des serveurs tiers signifie que vos textes, votre voix et vos conversations transitent par des infrastructures que vous ne contrôlez pas</li>
+        <li data-en="<strong>Network dependency</strong> — without an internet connection, no AI functionality is available"><strong>Dépendance réseau</strong> — sans connexion internet, aucune fonctionnalité IA n'est disponible</li>
+        <li data-en="<strong>Recurring costs</strong> — monthly subscriptions of 20 to 30 euros per month, which add up quickly"><strong>Coûts récurrents</strong> — des abonnements mensuels de 20 à 30 euros par mois, qui s'accumulent rapidement</li>
+        <li data-en="<strong>Variable latency</strong> — response time depends on your connection, server load and geographic distance"><strong>Latence variable</strong> — le temps de réponse dépend de votre connexion, de la charge des serveurs et de la distance géographique</li>
       </ul>
 
-      <h2>Comment circulent vos données avec le cloud</h2>
-      <p>Pour comprendre les enjeux de vie privée, il est essentiel de visualiser le parcours de vos données dans un modèle cloud. Quand vous dictez un texte ou enregistrez un appel via un service cloud, voici ce qui se passe :</p>
-      <p><strong>Votre appareil</strong> capture l'audio ou le texte, puis l'envoie via internet vers les <strong>serveurs du fournisseur</strong>. Là, vos données sont traitées par un modèle IA, potentiellement stockées temporairement (ou indéfiniment selon les politiques), et le résultat vous est renvoyé. À chaque étape, vos données sont exposées à des risques : interception réseau, accès par des employés, utilisation pour l'entraînement de modèles, ou fuite en cas de piratage.</p>
-      <p>Avec l'IA locale, ce parcours n'existe tout simplement pas. <strong>Vos données naissent et meurent sur votre appareil.</strong> Il n'y a rien à intercepter, rien à stocker, rien à fuiter.</p>
+      <h2 data-en="How your data travels with the cloud">Comment circulent vos données avec le cloud</h2>
+      <p data-en="To understand the privacy implications, it is essential to visualize the journey of your data in a cloud model. When you dictate text or record a call via a cloud service, here is what happens:">Pour comprendre les enjeux de vie privée, il est essentiel de visualiser le parcours de vos données dans un modèle cloud. Quand vous dictez un texte ou enregistrez un appel via un service cloud, voici ce qui se passe :</p>
+      <p data-en="<strong>Your device</strong> captures audio or text, then sends it over the internet to the <strong>provider's servers</strong>. There, your data is processed by an AI model, potentially stored temporarily (or indefinitely depending on policies), and the result is sent back to you. At each step, your data is exposed to risks: network interception, employee access, use for model training, or leaks in case of hacking."><strong>Votre appareil</strong> capture l'audio ou le texte, puis l'envoie via internet vers les <strong>serveurs du fournisseur</strong>. Là, vos données sont traitées par un modèle IA, potentiellement stockées temporairement (ou indéfiniment selon les politiques), et le résultat vous est renvoyé. À chaque étape, vos données sont exposées à des risques : interception réseau, accès par des employés, utilisation pour l'entraînement de modèles, ou fuite en cas de piratage.</p>
+      <p data-en="With on-device AI, this journey simply does not exist. <strong>Your data is born and dies on your device.</strong> There is nothing to intercept, nothing to store, nothing to leak.">Avec l'IA locale, ce parcours n'existe tout simplement pas. <strong>Vos données naissent et meurent sur votre appareil.</strong> Il n'y a rien à intercepter, rien à stocker, rien à fuiter.</p>
 
-      <h2>Local : rapide, privé, gratuit</h2>
-      <p>Pour la transcription, la <a href="correction-automatique-ia-locale-meilleure.html">correction</a>, la traduction et l'analyse de texte, les <a href="small-language-models-ia-locale-apple.html">modèles locaux</a> sont <strong>souvent supérieurs</strong> au cloud :</p>
+      <h2 data-en="Local: fast, private, free">Local : rapide, privé, gratuit</h2>
+      <p data-en="For transcription, <a href=&quot;correction-automatique-ia-locale-meilleure.html&quot;>correction</a>, translation and text analysis, <a href=&quot;small-language-models-ia-locale-apple.html&quot;>local models</a> are <strong>often superior</strong> to the cloud:">Pour la transcription, la <a href="correction-automatique-ia-locale-meilleure.html">correction</a>, la traduction et l'analyse de texte, les <a href="small-language-models-ia-locale-apple.html">modèles locaux</a> sont <strong>souvent supérieurs</strong> au cloud :</p>
       <ul>
-        <li><strong>Vitesse</strong> — réponse en millisecondes, pas en secondes. Le traitement est instantané car il n'y a aucun trajet réseau</li>
-        <li><strong>Vie privée</strong> — vos données ne quittent jamais votre appareil. Conformité <a href="vie-privee-numerique-droit-fondamental.html">RGPD</a> par conception</li>
-        <li><strong>Coût</strong> — gratuit, inclus dans votre appareil. Pas d'abonnement, pas de surprise sur la facture</li>
-        <li><strong>Fiabilité</strong> — fonctionne partout, même sans réseau. En avion, dans le métro, en zone rurale</li>
+        <li data-en="<strong>Speed</strong> — response in milliseconds, not seconds. Processing is instant because there is no network trip"><strong>Vitesse</strong> — réponse en millisecondes, pas en secondes. Le traitement est instantané car il n'y a aucun trajet réseau</li>
+        <li data-en="<strong>Privacy</strong> — your data never leaves your device. <a href=&quot;vie-privee-numerique-droit-fondamental.html&quot;>GDPR</a> compliant by design"><strong>Vie privée</strong> — vos données ne quittent jamais votre appareil. Conformité <a href="vie-privee-numerique-droit-fondamental.html">RGPD</a> par conception</li>
+        <li data-en="<strong>Cost</strong> — free, included in your device. No subscription, no surprise on your bill"><strong>Coût</strong> — gratuit, inclus dans votre appareil. Pas d'abonnement, pas de surprise sur la facture</li>
+        <li data-en="<strong>Reliability</strong> — works everywhere, even without a network. On a plane, in the subway, in rural areas"><strong>Fiabilité</strong> — fonctionne partout, même sans réseau. En avion, dans le métro, en zone rurale</li>
       </ul>
 
-      <h2>Comparatif détaillé : local vs cloud</h2>
-      <p>Pour les tâches courantes, voici comment les deux approches se comparent :</p>
+      <h2 data-en="Detailed comparison: local vs cloud">Comparatif détaillé : local vs cloud</h2>
+      <p data-en="For common tasks, here is how the two approaches compare:">Pour les tâches courantes, voici comment les deux approches se comparent :</p>
       <ul>
-        <li><strong>Transcription vocale</strong> — Local : moins de 10 ms de latence, précision comparable. Cloud : 200-500 ms de latence, précision légèrement supérieure sur les accents rares</li>
-        <li><strong>Correction de texte</strong> — Local : instantanée, avec dictionnaire personnalisé. Cloud : plus lente, vocabulaire plus large mais générique</li>
-        <li><strong>Résumé de texte</strong> — Local : efficace pour les textes courts à moyens. Cloud : meilleur pour les documents très longs</li>
-        <li><strong>Traduction</strong> — Local : rapide et fiable pour les langues courantes. Cloud : supérieur pour les langues rares ou les combinaisons inhabituelles</li>
+        <li data-en="<strong>Voice transcription</strong> — Local: less than 10 ms latency, comparable accuracy. Cloud: 200-500 ms latency, slightly better accuracy on rare accents"><strong>Transcription vocale</strong> — Local : moins de 10 ms de latence, précision comparable. Cloud : 200-500 ms de latence, précision légèrement supérieure sur les accents rares</li>
+        <li data-en="<strong>Text correction</strong> — Local: instant, with personalized dictionary. Cloud: slower, broader but generic vocabulary"><strong>Correction de texte</strong> — Local : instantanée, avec dictionnaire personnalisé. Cloud : plus lente, vocabulaire plus large mais générique</li>
+        <li data-en="<strong>Text summarization</strong> — Local: effective for short to medium texts. Cloud: better for very long documents"><strong>Résumé de texte</strong> — Local : efficace pour les textes courts à moyens. Cloud : meilleur pour les documents très longs</li>
+        <li data-en="<strong>Translation</strong> — Local: fast and reliable for common languages. Cloud: superior for rare languages or unusual combinations"><strong>Traduction</strong> — Local : rapide et fiable pour les langues courantes. Cloud : supérieur pour les langues rares ou les combinaisons inhabituelles</li>
       </ul>
 
-      <h2>Quand le cloud reste nécessaire</h2>
-      <p>Il serait malhonnête de prétendre que le local suffit pour tout. Certaines tâches nécessitent encore la puissance du cloud :</p>
+      <h2 data-en="When the cloud is still necessary">Quand le cloud reste nécessaire</h2>
+      <p data-en="It would be dishonest to claim that local is enough for everything. Some tasks still require the power of the cloud:">Il serait malhonnête de prétendre que le local suffit pour tout. Certaines tâches nécessitent encore la puissance du cloud :</p>
       <ul>
-        <li><strong>Génération de texte long</strong> — rédiger un article complet ou un rapport détaillé nécessite des modèles plus grands</li>
-        <li><strong>Raisonnement complexe</strong> — résoudre des problèmes mathématiques avancés ou écrire du code complexe</li>
-        <li><strong>Analyse de bases de connaissances massives</strong> — interroger des millions de documents dépasse les capacités locales</li>
-        <li><strong>Génération d'images</strong> — les modèles de génération d'images restent majoritairement cloud</li>
+        <li data-en="<strong>Long text generation</strong> — writing a full article or detailed report requires larger models"><strong>Génération de texte long</strong> — rédiger un article complet ou un rapport détaillé nécessite des modèles plus grands</li>
+        <li data-en="<strong>Complex reasoning</strong> — solving advanced math problems or writing complex code"><strong>Raisonnement complexe</strong> — résoudre des problèmes mathématiques avancés ou écrire du code complexe</li>
+        <li data-en="<strong>Massive knowledge base analysis</strong> — querying millions of documents exceeds local capabilities"><strong>Analyse de bases de connaissances massives</strong> — interroger des millions de documents dépasse les capacités locales</li>
+        <li data-en="<strong>Image generation</strong> — image generation models remain mostly cloud-based"><strong>Génération d'images</strong> — les modèles de génération d'images restent majoritairement cloud</li>
       </ul>
-      <p>L'approche idéale n'est pas de choisir exclusivement l'un ou l'autre, mais de <strong>traiter en local tout ce qui peut l'être</strong> et de ne recourir au cloud que pour les tâches qui le nécessitent vraiment. C'est exactement la stratégie d'<a href="apple-intelligence-strategie-ia-on-device.html">Apple Intelligence</a> avec Private Cloud Compute.</p>
+      <p data-en="The ideal approach is not to exclusively choose one or the other, but to <strong>process locally everything that can be</strong> and only resort to the cloud for tasks that truly require it. This is exactly the strategy of <a href=&quot;apple-intelligence-strategie-ia-on-device.html&quot;>Apple Intelligence</a> with Private Cloud Compute.">L'approche idéale n'est pas de choisir exclusivement l'un ou l'autre, mais de <strong>traiter en local tout ce qui peut l'être</strong> et de ne recourir au cloud que pour les tâches qui le nécessitent vraiment. C'est exactement la stratégie d'<a href="apple-intelligence-strategie-ia-on-device.html">Apple Intelligence</a> avec Private Cloud Compute.</p>
 
-      <h2>La preuve par l'usage</h2>
-      <p><a href="../better-dictate.html">Better Dictate</a> transcrit la voix en texte avec <a href="whisper-ai-revolution-dictee-vocale.html">Whisper AI</a> en local sur Mac — avec une précision comparable aux services cloud, une latence divisée par dix et un coût nul. <a href="../notetaker-ai.html">NoteTaker AI</a> <a href="notetaker-ai-enregistrer-appels-iphone-prive.html">analyse vos appels</a> avec Apple Intelligence sans jamais envoyer un seul octet sur internet.</p>
-      <p>Ces applications de <a href="../index.html">Connected Mate</a> prouvent au quotidien que pour les usages les plus courants de l'IA, le local n'est pas un compromis — c'est souvent la meilleure option.</p>
-      <blockquote><p>« La vraie innovation, ce n'est pas d'être plus puissant. C'est d'être aussi puissant tout en respectant la vie privée. »</p></blockquote>
+      <h2 data-en="Proof through usage">La preuve par l'usage</h2>
+      <p data-en="<a href=&quot;../better-dictate.html&quot;>Better Dictate</a> transcribes voice to text with <a href=&quot;whisper-ai-revolution-dictee-vocale.html&quot;>Whisper AI</a> locally on Mac — with accuracy comparable to cloud services, latency divided by ten and zero cost. <a href=&quot;../notetaker-ai.html&quot;>NoteTaker AI</a> <a href=&quot;notetaker-ai-enregistrer-appels-iphone-prive.html&quot;>analyzes your calls</a> with Apple Intelligence without ever sending a single byte over the internet."><a href="../better-dictate.html">Better Dictate</a> transcrit la voix en texte avec <a href="whisper-ai-revolution-dictee-vocale.html">Whisper AI</a> en local sur Mac — avec une précision comparable aux services cloud, une latence divisée par dix et un coût nul. <a href="../notetaker-ai.html">NoteTaker AI</a> <a href="notetaker-ai-enregistrer-appels-iphone-prive.html">analyse vos appels</a> avec Apple Intelligence sans jamais envoyer un seul octet sur internet.</p>
+      <p data-en="These <a href=&quot;../index.html&quot;>Connected Mate</a> applications prove daily that for the most common AI uses, local is not a compromise — it's often the best option.">Ces applications de <a href="../index.html">Connected Mate</a> prouvent au quotidien que pour les usages les plus courants de l'IA, le local n'est pas un compromis — c'est souvent la meilleure option.</p>
+      <blockquote><p data-en="&quot;True innovation is not about being more powerful. It's about being just as powerful while respecting privacy.&quot;">« La vraie innovation, ce n'est pas d'être plus puissant. C'est d'être aussi puissant tout en respectant la vie privée. »</p></blockquote>
     </div>
   </article>
   <section class="blog-related">
     <div class="container">
-      <h2>Articles connexes</h2>
+      <h2 data-en="Related Articles">Articles connexes</h2>
       <div class="blog-related-grid">
-        <a href="small-language-models-ia-locale-apple.html" class="blog-card"><h2>Small Language Models</h2><span class="hcard-arrow">&rarr;</span></a>
-        <a href="apple-intelligence-strategie-ia-on-device.html" class="blog-card"><h2>Apple Intelligence</h2><span class="hcard-arrow">&rarr;</span></a>
+        <a href="small-language-models-ia-locale-apple.html" class="blog-card"><h2 data-en="Small Language Models">Small Language Models</h2><span class="hcard-arrow">&rarr;</span></a>
+        <a href="apple-intelligence-strategie-ia-on-device.html" class="blog-card"><h2 data-en="Apple Intelligence">Apple Intelligence</h2><span class="hcard-arrow">&rarr;</span></a>
       </div>
     </div>
   </section>
   </main>
   <footer class="footer">
     <div class="container footer-inner">
-      <p>&copy; 2026 Connected Mate. Tous droits réservés.</p>
+      <p data-en="&copy; 2026 Connected Mate. All rights reserved.">&copy; 2026 Connected Mate. Tous droits réservés.</p>
       <p class="footer-hosted"><a href="https:\/\/github.com\/Alex-Connected-Mate\/BENTO-CM" target="_blank" rel="noopener" class="footer-github-link"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"\/><\/svg> <span data-i18n="footer_opensource">Open source on GitHub<\/span><\/a><\/p>
     </div>
   </footer>
+  <script src="blog-i18n.js"></script>
 </body>
 </html>

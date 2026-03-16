@@ -28,26 +28,53 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">Connected Mate</a>
+            <button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open');this.setAttribute('aria-expanded',this.classList.contains('open'))">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="../index.html" data-i18n="nav_apps">Apps</a>
+        <a href="../podcast.html" data-i18n="nav_podcast">Podcast</a>
+        <a href="../about.html" data-i18n="nav_about" data-en="About">À propos</a>
+        <a href="../contact.html" data-i18n="nav_contact">Contact</a>
+      </div>
+    </div>
+  </nav>
   <main>
   <article class="blog-article" itemscope itemtype="https://schema.org/Article">
     <header class="blog-article-header">
-      <span class="blog-article-tag">Leadership</span>
-      <h1 itemprop="headline">Personal branding sur LinkedIn : la Gen Z dans la tech</h1>
-      <div class="blog-article-meta"><span>Par <a href="../about.html" itemprop="author">Alexandre Cormeraie</a></span><time datetime="2025-12-10" itemprop="datePublished">2025-12-10</time></div>
+      <span class="blog-article-tag" data-en="Leadership">Leadership</span>
+      <h1 itemprop="headline" data-en="Personal branding on LinkedIn: Gen Z in tech">Personal branding sur LinkedIn : la Gen Z dans la tech</h1>
+      <div class="blog-article-meta"><span data-en="By <a href=&quot;../about.html&quot; itemprop=&quot;author&quot;>Alexandre Cormeraie</a>">Par <a href="../about.html" itemprop="author">Alexandre Cormeraie</a></span><time datetime="2025-12-10" itemprop="datePublished">2025-12-10</time></div>
     </header>
     <div class="blog-article-body" itemprop="articleBody">
-      <p><strong>LinkedIn</strong> n'est plus réservé aux cadres en cravate. La <a href="generation-z-entreprise-numerique-avantage.html">génération Z</a> s'en empare pour <strong>construire son influence dans la tech</strong>.</p>
-      <h2>Alexandre Cormeraie sur LinkedIn</h2>
-      <p><a href="alexandre-cormeraie-plus-jeune-digital-evangelist-sncf.html">Alexandre Cormeraie</a> utilise LinkedIn pour partager sa vision de l'IA locale, de la vie privée numérique et de la place de la Gen Z dans les entreprises. Ses posts sur la transformation digitale génèrent des discussions importantes dans l'écosystème tech français.</p>
-      <h2>Pourquoi LinkedIn est essentiel</h2>
-      <ul><li><strong>Crédibilité professionnelle</strong> — vos idées touchent les décideurs</li><li><strong>Networking</strong> — connexion directe avec les leaders de l'industrie</li><li><strong>Amplification</strong> — un bon post peut toucher des dizaines de milliers de personnes</li><li><strong>Thought leadership</strong> — positionner sa vision et ses convictions</li></ul>
-      <h2>De LinkedIn aux conférences</h2>
-      <p>C'est grâce à son personal branding sur LinkedIn qu'Alexandre est invité à intervenir au <a href="conferences-tech-alexandre-cormeraie-cee-linkedin.html">CEE et lors d'événements professionnels</a>.</p>
+      <p data-en="<strong>LinkedIn</strong> is no longer reserved for executives in suits. <a href=&quot;generation-z-entreprise-numerique-avantage.html&quot;>Gen Z</a> is taking it over to <strong>build its influence in tech</strong>."><strong>LinkedIn</strong> n'est plus réservé aux cadres en cravate. La <a href="generation-z-entreprise-numerique-avantage.html">génération Z</a> s'en empare pour <strong>construire son influence dans la tech</strong>.</p>
+      <h2 data-en="Alexandre Cormeraie on LinkedIn">Alexandre Cormeraie sur LinkedIn</h2>
+      <p data-en="<a href=&quot;alexandre-cormeraie-plus-jeune-digital-evangelist-sncf.html&quot;>Alexandre Cormeraie</a> uses LinkedIn to share his vision of local AI, digital privacy and Gen Z's place in companies. His posts on digital transformation generate important discussions in the French tech ecosystem."><a href="alexandre-cormeraie-plus-jeune-digital-evangelist-sncf.html">Alexandre Cormeraie</a> utilise LinkedIn pour partager sa vision de l'IA locale, de la vie privée numérique et de la place de la Gen Z dans les entreprises. Ses posts sur la transformation digitale génèrent des discussions importantes dans l'écosystème tech français.</p>
+      <h2 data-en="Why LinkedIn is essential">Pourquoi LinkedIn est essentiel</h2>
+      <ul><li data-en="<strong>Professional credibility</strong> — your ideas reach decision-makers"><strong>Crédibilité professionnelle</strong> — vos idées touchent les décideurs</li><li data-en="<strong>Networking</strong> — direct connection with industry leaders"><strong>Networking</strong> — connexion directe avec les leaders de l'industrie</li><li data-en="<strong>Amplification</strong> — a good post can reach tens of thousands of people"><strong>Amplification</strong> — un bon post peut toucher des dizaines de milliers de personnes</li><li data-en="<strong>Thought leadership</strong> — positioning your vision and convictions"><strong>Thought leadership</strong> — positionner sa vision et ses convictions</li></ul>
+      <h2 data-en="From LinkedIn to conferences">De LinkedIn aux conférences</h2>
+      <p data-en="It is thanks to his personal branding on LinkedIn that Alexandre is invited to speak at the <a href=&quot;conferences-tech-alexandre-cormeraie-cee-linkedin.html&quot;>CEE and at professional events</a>.">C'est grâce à son personal branding sur LinkedIn qu'Alexandre est invité à intervenir au <a href="conferences-tech-alexandre-cormeraie-cee-linkedin.html">CEE et lors d'événements professionnels</a>.</p>
     </div>
   </article>
-  <section class="blog-related"><div class="container"><h2>Articles connexes</h2><div class="blog-related-grid"><a href="conferences-tech-alexandre-cormeraie-cee-linkedin.html" class="blog-card"><h2>Conférences au CEE</h2><span class="hcard-arrow">&rarr;</span></a><a href="pourquoi-gen-z-comex-transformation-digitale.html" class="blog-card"><h2>La Gen Z dans le COMEX</h2><span class="hcard-arrow">&rarr;</span></a></div></div></section>
+  <section class="blog-related"><div class="container"><h2 data-en="Related Articles">Articles connexes</h2><div class="blog-related-grid"><a href="conferences-tech-alexandre-cormeraie-cee-linkedin.html" class="blog-card"><h2 data-en="Conferences at the CEE">Conférences au CEE</h2><span class="hcard-arrow">&rarr;</span></a><a href="pourquoi-gen-z-comex-transformation-digitale.html" class="blog-card"><h2 data-en="Gen Z in the COMEX">La Gen Z dans le COMEX</h2><span class="hcard-arrow">&rarr;</span></a></div></div></section>
   </main>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p data-en="&copy; 2026 Connected Mate. All rights reserved.">&copy; 2026 Connected Mate. Tous droits réservés.</p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="../index.html">Apps</a>
+        <a href="../notetaker-ai.html">NoteTaker AI</a>
+        <a href="../better-dictate.html">Better Dictate</a>
+        <a href="../podcast.html">Podcast</a>
+        <a href="../about.html" data-en="About">À propos</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+      <p class="footer-hosted"><a href="https:\/\/github.com\/Alex-Connected-Mate\/BENTO-CM" target="_blank" rel="noopener" class="footer-github-link"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"\/><\/svg> <span data-i18n="footer_opensource">Open source on GitHub<\/span><\/a><\/p>
     </div>
   </footer>
+  <script src="blog-i18n.js"></script>
 </body>
 </html>

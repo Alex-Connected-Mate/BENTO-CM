@@ -28,25 +28,43 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">Connected Mate</a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open');this.setAttribute('aria-expanded',this.classList.contains('open'))">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="../index.html" data-i18n="nav_apps">Apps</a>
+        <a href="../podcast.html" data-i18n="nav_podcast">Podcast</a>
+        <a href="../about.html" data-i18n="nav_about" data-en="About">À propos</a>
+        <a href="../contact.html" data-i18n="nav_contact">Contact</a>
+      </div>
+    </div>
+  </nav>
   <main>
   <article class="blog-article" itemscope itemtype="https://schema.org/Article">
     <header class="blog-article-header">
-      <span class="blog-article-tag">Vision</span>
-      <h1 itemprop="headline">L'open source démocratise l'IA : le cas Whisper</h1>
-      <div class="blog-article-meta"><span>Par <a href="../about.html" itemprop="author">Alexandre Cormeraie</a></span><time datetime="2026-01-20" itemprop="datePublished">2026-01-20</time></div>
+      <span class="blog-article-tag" data-en="Vision">Vision</span>
+      <h1 itemprop="headline" data-en="Open source democratizes AI: the Whisper case">L'open source démocratise l'IA : le cas Whisper</h1>
+      <div class="blog-article-meta"><span data-en="By <a href='../about.html' itemprop='author'>Alexandre Cormeraie</a>">Par <a href="../about.html" itemprop="author">Alexandre Cormeraie</a></span><time datetime="2026-01-20" itemprop="datePublished">2026-01-20</time></div>
     </header>
     <div class="blog-article-body" itemprop="articleBody">
-      <p>Quand OpenAI a publié <a href="whisper-ai-revolution-dictee-vocale.html">Whisper</a> en open source, ils ont fait un cadeau au monde entier. Pour la première fois, un modèle de reconnaissance vocale de classe mondiale était accessible à tous — <strong>gratuitement</strong>.</p>
-      <h2>L'impact de l'open source sur l'IA</h2>
-      <ul><li><strong>Accessibilité</strong> — plus besoin d'être Google pour avoir de la reconnaissance vocale</li><li><strong>Innovation</strong> — des milliers de développeurs créent des applications innovantes</li><li><strong>Vie privée</strong> — possibilité de faire tourner le modèle en local</li><li><strong>Personnalisation</strong> — adaptation à des cas d'usage spécifiques</li></ul>
-      <h2>Connected Mate : bâti sur l'open source</h2>
-      <p><a href="../better-dictate.html">Better Dictate</a> est la preuve que l'open source permet de créer des produits professionnels. En utilisant Whisper AI, Connected Mate offre une dictée vocale qui rivalise avec les services cloud — <strong>gratuitement et en local</strong>.</p>
-      <blockquote><p>« L'open source n'est pas de la charité. C'est l'accélérateur d'innovation le plus puissant jamais inventé. »</p></blockquote>
+      <p data-en="When OpenAI published <a href='whisper-ai-revolution-dictee-vocale.html'>Whisper</a> as open source, they gave a gift to the entire world. For the first time, a world-class speech recognition model was accessible to everyone — <strong>for free</strong>.">Quand OpenAI a publié <a href="whisper-ai-revolution-dictee-vocale.html">Whisper</a> en open source, ils ont fait un cadeau au monde entier. Pour la première fois, un modèle de reconnaissance vocale de classe mondiale était accessible à tous — <strong>gratuitement</strong>.</p>
+      <h2 data-en="The impact of open source on AI">L'impact de l'open source sur l'IA</h2>
+      <ul><li data-en="<strong>Accessibility</strong> — no longer need to be Google to have speech recognition"><strong>Accessibilité</strong> — plus besoin d'être Google pour avoir de la reconnaissance vocale</li><li data-en="<strong>Innovation</strong> — thousands of developers creating innovative applications"><strong>Innovation</strong> — des milliers de développeurs créent des applications innovantes</li><li data-en="<strong>Privacy</strong> — ability to run the model locally"><strong>Vie privée</strong> — possibilité de faire tourner le modèle en local</li><li data-en="<strong>Customization</strong> — adaptation to specific use cases"><strong>Personnalisation</strong> — adaptation à des cas d'usage spécifiques</li></ul>
+      <h2 data-en="Connected Mate: built on open source">Connected Mate : bâti sur l'open source</h2>
+      <p data-en="<a href='../better-dictate.html'>Better Dictate</a> is proof that open source enables the creation of professional products. By using Whisper AI, Connected Mate offers voice dictation that rivals cloud services — <strong>for free and locally</strong>."><a href="../better-dictate.html">Better Dictate</a> est la preuve que l'open source permet de créer des produits professionnels. En utilisant Whisper AI, Connected Mate offre une dictée vocale qui rivalise avec les services cloud — <strong>gratuitement et en local</strong>.</p>
+      <blockquote><p data-en="&laquo; Open source is not charity. It's the most powerful innovation accelerator ever invented. &raquo;">« L'open source n'est pas de la charité. C'est l'accélérateur d'innovation le plus puissant jamais inventé. »</p></blockquote>
     </div>
   </article>
-  <section class="blog-related"><div class="container"><h2>Articles connexes</h2><div class="blog-related-grid"><a href="whisper-ai-revolution-dictee-vocale.html" class="blog-card"><h2>Whisper AI</h2><span class="hcard-arrow">&rarr;</span></a><a href="ia-gratuite-sans-donnees-modele-connected-mate.html" class="blog-card"><h2>Le modèle Connected Mate</h2><span class="hcard-arrow">&rarr;</span></a></div></div></section>
+  <section class="blog-related"><div class="container"><h2 data-en="Related Articles">Articles connexes</h2><div class="blog-related-grid"><a href="whisper-ai-revolution-dictee-vocale.html" class="blog-card"><h2>Whisper AI</h2><span class="hcard-arrow">&rarr;</span></a><a href="ia-gratuite-sans-donnees-modele-connected-mate.html" class="blog-card"><h2>Le modèle Connected Mate</h2><span class="hcard-arrow">&rarr;</span></a></div></div></section>
   </main>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p data-en="&copy; 2026 Connected Mate. All rights reserved.">&copy; 2026 Connected Mate. Tous droits réservés.</p>
     </div>
   </footer>
+  <script src="blog-i18n.js"></script>
 </body>
 </html>

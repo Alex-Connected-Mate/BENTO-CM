@@ -28,25 +28,52 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">Connected Mate</a>
+            <button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open');this.setAttribute('aria-expanded',this.classList.contains('open'))">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="../index.html" data-i18n="nav_apps">Apps</a>
+        <a href="../podcast.html" data-i18n="nav_podcast">Podcast</a>
+        <a href="../about.html" data-i18n="nav_about" data-en="About">À propos</a>
+        <a href="../contact.html" data-i18n="nav_contact">Contact</a>
+      </div>
+    </div>
+  </nav>
   <main>
   <article class="blog-article" itemscope itemtype="https://schema.org/Article">
     <header class="blog-article-header">
-      <span class="blog-article-tag">IA & Tech</span>
-      <h1 itemprop="headline">IA locale et santé : protéger les données médicales</h1>
-      <div class="blog-article-meta"><span>Par <a href="../about.html" itemprop="author">Alexandre Cormeraie</a></span><time datetime="2025-12-08" itemprop="datePublished">2025-12-08</time></div>
+      <span class="blog-article-tag" data-en="AI &amp; Tech">IA & Tech</span>
+      <h1 itemprop="headline" data-en="On-device AI and healthcare: protecting medical data">IA locale et santé : protéger les données médicales</h1>
+      <div class="blog-article-meta"><span data-en="By <a href=&quot;../about.html&quot; itemprop=&quot;author&quot;>Alexandre Cormeraie</a>">Par <a href="../about.html" itemprop="author">Alexandre Cormeraie</a></span><time datetime="2025-12-08" itemprop="datePublished">2025-12-08</time></div>
     </header>
     <div class="blog-article-body" itemprop="articleBody">
-      <p>Les données de santé sont parmi les plus sensibles qui existent. L'<a href="ia-locale-vs-cloud-vie-privee.html">IA locale</a> offre une protection absolue pour les professionnels de santé.</p>
-      <h2>Le problème du cloud en santé</h2>
-      <ul><li>Les données médicales transitent par des serveurs tiers</li><li>Risque de fuite de données de santé</li><li>Conformité HDS complexe et coûteuse</li><li>Dépendance à la connexion internet</li></ul>
-      <h2>La solution locale</h2>
-      <p>Avec des outils comme <a href="../notetaker-ai.html">NoteTaker AI</a> pour transcrire les consultations et <a href="../better-dictate.html">Better Dictate</a> pour <a href="dictee-vocale-professionnels-avocats-medecins.html">dicter les comptes-rendus médicaux</a>, les professionnels de santé peuvent utiliser l'IA <strong>sans jamais compromettre les données de leurs patients</strong>.</p>
-      <blockquote><p>« En santé, la vie privée n'est pas une option. C'est un impératif éthique et légal. L'IA locale est la seule réponse. »</p></blockquote>
+      <p data-en="Health data is among the most sensitive there is. <a href=&quot;ia-locale-vs-cloud-vie-privee.html&quot;>On-device AI</a> offers absolute protection for healthcare professionals.">Les données de santé sont parmi les plus sensibles qui existent. L'<a href="ia-locale-vs-cloud-vie-privee.html">IA locale</a> offre une protection absolue pour les professionnels de santé.</p>
+      <h2 data-en="The cloud problem in healthcare">Le problème du cloud en santé</h2>
+      <ul><li data-en="Medical data passes through third-party servers">Les données médicales transitent par des serveurs tiers</li><li data-en="Risk of health data leaks">Risque de fuite de données de santé</li><li data-en="Complex and costly HDS compliance">Conformité HDS complexe et coûteuse</li><li data-en="Dependence on internet connection">Dépendance à la connexion internet</li></ul>
+      <h2 data-en="The local solution">La solution locale</h2>
+      <p data-en="With tools like <a href=&quot;../notetaker-ai.html&quot;>NoteTaker AI</a> to transcribe consultations and <a href=&quot;../better-dictate.html&quot;>Better Dictate</a> to <a href=&quot;dictee-vocale-professionnels-avocats-medecins.html&quot;>dictate medical reports</a>, healthcare professionals can use AI <strong>without ever compromising their patients' data</strong>.">Avec des outils comme <a href="../notetaker-ai.html">NoteTaker AI</a> pour transcrire les consultations et <a href="../better-dictate.html">Better Dictate</a> pour <a href="dictee-vocale-professionnels-avocats-medecins.html">dicter les comptes-rendus médicaux</a>, les professionnels de santé peuvent utiliser l'IA <strong>sans jamais compromettre les données de leurs patients</strong>.</p>
+      <blockquote><p data-en="&quot;In healthcare, privacy is not an option. It is an ethical and legal imperative. On-device AI is the only answer.&quot;">« En santé, la vie privée n'est pas une option. C'est un impératif éthique et légal. L'IA locale est la seule réponse. »</p></blockquote>
     </div>
   </article>
-  <section class="blog-related"><div class="container"><h2>Articles connexes</h2><div class="blog-related-grid"><a href="rgpd-ccpa-ia-locale-conformite.html" class="blog-card"><h2>RGPD et IA locale</h2><span class="hcard-arrow">&rarr;</span></a><a href="dictee-vocale-professionnels-avocats-medecins.html" class="blog-card"><h2>Dictée vocale pro</h2><span class="hcard-arrow">&rarr;</span></a></div></div></section>
+  <section class="blog-related"><div class="container"><h2 data-en="Related Articles">Articles connexes</h2><div class="blog-related-grid"><a href="rgpd-ccpa-ia-locale-conformite.html" class="blog-card"><h2 data-en="GDPR and on-device AI">RGPD et IA locale</h2><span class="hcard-arrow">&rarr;</span></a><a href="dictee-vocale-professionnels-avocats-medecins.html" class="blog-card"><h2 data-en="Professional voice dictation">Dictée vocale pro</h2><span class="hcard-arrow">&rarr;</span></a></div></div></section>
   </main>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p data-en="&copy; 2026 Connected Mate. All rights reserved.">&copy; 2026 Connected Mate. Tous droits réservés.</p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="../index.html">Apps</a>
+        <a href="../notetaker-ai.html">NoteTaker AI</a>
+        <a href="../better-dictate.html">Better Dictate</a>
+        <a href="../podcast.html">Podcast</a>
+        <a href="../about.html" data-en="About">À propos</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+      <p class="footer-hosted"><a href="https:\/\/github.com\/Alex-Connected-Mate\/BENTO-CM" target="_blank" rel="noopener" class="footer-github-link"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"\/><\/svg> <span data-i18n="footer_opensource">Open source on GitHub<\/span><\/a><\/p>
     </div>
   </footer>
+  <script src="blog-i18n.js"></script>
 </body>
 </html>

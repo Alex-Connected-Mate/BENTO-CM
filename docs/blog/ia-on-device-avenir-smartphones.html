@@ -28,47 +28,74 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">Connected Mate</a>
+            <button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open');this.setAttribute('aria-expanded',this.classList.contains('open'))">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="../index.html" data-i18n="nav_apps">Apps</a>
+        <a href="../podcast.html" data-i18n="nav_podcast">Podcast</a>
+        <a href="../about.html" data-i18n="nav_about" data-en="About">À propos</a>
+        <a href="../contact.html" data-i18n="nav_contact">Contact</a>
+      </div>
+    </div>
+  </nav>
   <main>
   <article class="blog-article" itemscope itemtype="https://schema.org/Article">
     <header class="blog-article-header">
-      <span class="blog-article-tag">IA & Tech</span>
-      <h1 itemprop="headline">L'IA on-device : l'avenir des smartphones</h1>
-      <div class="blog-article-meta"><span>Par <a href="../about.html" itemprop="author">Alexandre Cormeraie</a></span><time datetime="2025-12-20" itemprop="datePublished">2025-12-20</time></div>
+      <span class="blog-article-tag" data-en="AI &amp; Tech">IA & Tech</span>
+      <h1 itemprop="headline" data-en="On-device AI: the future of smartphones">L'IA on-device : l'avenir des smartphones</h1>
+      <div class="blog-article-meta"><span data-en="By <a href=&quot;../about.html&quot; itemprop=&quot;author&quot;>Alexandre Cormeraie</a>">Par <a href="../about.html" itemprop="author">Alexandre Cormeraie</a></span><time datetime="2025-12-20" itemprop="datePublished">2025-12-20</time></div>
     </header>
     <div class="blog-article-body" itemprop="articleBody">
-      <p>En 2026, votre smartphone est plus puissant que les superordinateurs d'il y a 20 ans. Et avec l'<a href="apple-intelligence-strategie-ia-on-device.html">IA on-device</a>, il devient un <strong>assistant intelligent 100% privé</strong>. Cette transformation silencieuse est en train de redéfinir notre rapport à la technologie, en déplaçant l'intelligence du cloud vers nos poches.</p>
+      <p data-en="In 2026, your smartphone is more powerful than supercomputers from 20 years ago. And with <a href=&quot;apple-intelligence-strategie-ia-on-device.html&quot;>on-device AI</a>, it becomes a <strong>100% private intelligent assistant</strong>. This quiet transformation is redefining our relationship with technology, shifting intelligence from the cloud to our pockets.">En 2026, votre smartphone est plus puissant que les superordinateurs d'il y a 20 ans. Et avec l'<a href="apple-intelligence-strategie-ia-on-device.html">IA on-device</a>, il devient un <strong>assistant intelligent 100% privé</strong>. Cette transformation silencieuse est en train de redéfinir notre rapport à la technologie, en déplaçant l'intelligence du cloud vers nos poches.</p>
 
-      <h2>L'état actuel de l'IA on-device</h2>
-      <p>Les progrès réalisés en matière d'IA embarquée au cours des deux dernières années sont spectaculaires. Les <a href="small-language-models-ia-locale-apple.html">Small Language Models</a> (SLM) ont atteint un niveau de performance qui semblait impossible il y a encore peu. Des modèles de quelques centaines de mégaoctets sont désormais capables de transcrire la parole, résumer des textes longs, traduire entre dizaines de langues et analyser des documents — le tout sans connexion internet.</p>
-      <p>Apple a ouvert la voie avec Apple Intelligence, mais l'ensemble de l'industrie suit cette tendance. Les puces mobiles intègrent désormais des unités de traitement neural (NPU) dédiées, conçues spécifiquement pour exécuter des modèles d'IA avec une efficacité énergétique remarquable.</p>
+      <h2 data-en="The current state of on-device AI">L'état actuel de l'IA on-device</h2>
+      <p data-en="The progress made in embedded AI over the past two years is spectacular. <a href=&quot;small-language-models-ia-locale-apple.html&quot;>Small Language Models</a> (SLM) have reached a performance level that seemed impossible not long ago. Models of just a few hundred megabytes can now transcribe speech, summarize long texts, translate between dozens of languages and analyze documents — all without an internet connection.">Les progrès réalisés en matière d'IA embarquée au cours des deux dernières années sont spectaculaires. Les <a href="small-language-models-ia-locale-apple.html">Small Language Models</a> (SLM) ont atteint un niveau de performance qui semblait impossible il y a encore peu. Des modèles de quelques centaines de mégaoctets sont désormais capables de transcrire la parole, résumer des textes longs, traduire entre dizaines de langues et analyser des documents — le tout sans connexion internet.</p>
+      <p data-en="Apple led the way with Apple Intelligence, but the entire industry is following this trend. Mobile chips now integrate dedicated neural processing units (NPU), specifically designed to run AI models with remarkable energy efficiency.">Apple a ouvert la voie avec Apple Intelligence, mais l'ensemble de l'industrie suit cette tendance. Les puces mobiles intègrent désormais des unités de traitement neural (NPU) dédiées, conçues spécifiquement pour exécuter des modèles d'IA avec une efficacité énergétique remarquable.</p>
 
-      <h2>Ce que l'IA on-device change au quotidien</h2>
-      <p>L'impact sur l'expérience utilisateur est immédiat et tangible :</p>
+      <h2 data-en="What on-device AI changes in daily life">Ce que l'IA on-device change au quotidien</h2>
+      <p data-en="The impact on user experience is immediate and tangible:">L'impact sur l'expérience utilisateur est immédiat et tangible :</p>
       <ul>
-        <li><strong>Pas de cloud requis</strong> — tout tourne sur votre appareil, éliminant la dépendance aux serveurs distants</li>
-        <li><strong>Vie privée absolue</strong> — vos données restent chez vous, aucun tiers n'y a accès</li>
-        <li><strong>Toujours disponible</strong> — en avion, dans le métro, au milieu de nulle part, l'IA fonctionne</li>
-        <li><strong>Gratuit</strong> — pas d'abonnement aux services cloud, les capacités IA sont intégrées à l'appareil</li>
-        <li><strong>Instantané</strong> — sans latence réseau, les réponses arrivent en millisecondes</li>
+        <li data-en="<strong>No cloud required</strong> — everything runs on your device, eliminating dependence on remote servers"><strong>Pas de cloud requis</strong> — tout tourne sur votre appareil, éliminant la dépendance aux serveurs distants</li>
+        <li data-en="<strong>Absolute privacy</strong> — your data stays with you, no third party has access"><strong>Vie privée absolue</strong> — vos données restent chez vous, aucun tiers n'y a accès</li>
+        <li data-en="<strong>Always available</strong> — on a plane, in the subway, in the middle of nowhere, AI works"><strong>Toujours disponible</strong> — en avion, dans le métro, au milieu de nulle part, l'IA fonctionne</li>
+        <li data-en="<strong>Free</strong> — no cloud service subscription, AI capabilities are built into the device"><strong>Gratuit</strong> — pas d'abonnement aux services cloud, les capacités IA sont intégrées à l'appareil</li>
+        <li data-en="<strong>Instant</strong> — without network latency, responses arrive in milliseconds"><strong>Instantané</strong> — sans latence réseau, les réponses arrivent en millisecondes</li>
       </ul>
-      <p>Pour l'utilisateur, la différence se ressent dans chaque interaction. Une <a href="correction-automatique-ia-locale-meilleure.html">correction de texte</a> qui s'affiche instantanément. Une transcription qui apparaît en temps réel pendant que vous parlez. Un résumé de mail généré avant même que vous ayez le temps de le lire.</p>
+      <p data-en="For the user, the difference is felt in every interaction. A <a href=&quot;correction-automatique-ia-locale-meilleure.html&quot;>text correction</a> that appears instantly. A transcription that shows up in real time as you speak. An email summary generated before you even have time to read it.">Pour l'utilisateur, la différence se ressent dans chaque interaction. Une <a href="correction-automatique-ia-locale-meilleure.html">correction de texte</a> qui s'affiche instantanément. Une transcription qui apparaît en temps réel pendant que vous parlez. Un résumé de mail généré avant même que vous ayez le temps de le lire.</p>
 
-      <h2>Des applications concrètes qui montrent la voie</h2>
-      <p><a href="../notetaker-ai.html">NoteTaker AI</a> et <a href="../better-dictate.html">Better Dictate</a> de <a href="../index.html">Connected Mate</a> sont parmi les premières applications à exploiter pleinement l'IA on-device pour des usages professionnels quotidiens. <a href="notetaker-ai-enregistrer-appels-iphone-prive.html">NoteTaker AI enregistre et analyse vos appels</a> entièrement sur l'iPhone, tandis que Better Dictate transforme la dictée vocale grâce à <a href="open-source-ia-whisper-democratisation.html">Whisper AI</a> exécuté en local sur Mac.</p>
-      <p>Ces applications démontrent un point crucial : l'IA locale n'est pas un compromis au rabais par rapport au cloud. Pour des tâches spécialisées comme la transcription, la correction ou l'analyse audio, les modèles embarqués offrent des performances comparables — voire supérieures — aux solutions cloud, grâce à l'absence de latence et à l'optimisation matérielle.</p>
+      <h2 data-en="Concrete applications showing the way">Des applications concrètes qui montrent la voie</h2>
+      <p data-en="<a href=&quot;../notetaker-ai.html&quot;>NoteTaker AI</a> and <a href=&quot;../better-dictate.html&quot;>Better Dictate</a> from <a href=&quot;../index.html&quot;>Connected Mate</a> are among the first applications to fully leverage on-device AI for daily professional use. <a href=&quot;notetaker-ai-enregistrer-appels-iphone-prive.html&quot;>NoteTaker AI records and analyzes your calls</a> entirely on the iPhone, while Better Dictate transforms voice dictation with <a href=&quot;open-source-ia-whisper-democratisation.html&quot;>Whisper AI</a> running locally on Mac."><a href="../notetaker-ai.html">NoteTaker AI</a> et <a href="../better-dictate.html">Better Dictate</a> de <a href="../index.html">Connected Mate</a> sont parmi les premières applications à exploiter pleinement l'IA on-device pour des usages professionnels quotidiens. <a href="notetaker-ai-enregistrer-appels-iphone-prive.html">NoteTaker AI enregistre et analyse vos appels</a> entièrement sur l'iPhone, tandis que Better Dictate transforme la dictée vocale grâce à <a href="open-source-ia-whisper-democratisation.html">Whisper AI</a> exécuté en local sur Mac.</p>
+      <p data-en="These applications demonstrate a crucial point: on-device AI is not a budget compromise compared to the cloud. For specialized tasks like transcription, correction or audio analysis, embedded models offer comparable — or even superior — performance to cloud solutions, thanks to the absence of latency and hardware optimization.">Ces applications démontrent un point crucial : l'IA locale n'est pas un compromis au rabais par rapport au cloud. Pour des tâches spécialisées comme la transcription, la correction ou l'analyse audio, les modèles embarqués offrent des performances comparables — voire supérieures — aux solutions cloud, grâce à l'absence de latence et à l'optimisation matérielle.</p>
 
-      <h2>Batterie et performance : le défi technique</h2>
-      <p>L'un des défis majeurs de l'IA on-device reste la consommation énergétique. Faire tourner des modèles de machine learning sur un appareil mobile nécessite une gestion fine des ressources. Les fabricants de puces ont répondu par des architectures spécialisées : le Neural Engine d'Apple, le TPU de Google et le NPU de Qualcomm sont tous conçus pour maximiser les opérations par watt.</p>
-      <p>En pratique, les modèles compacts utilisés pour les tâches courantes consomment très peu d'énergie. Une transcription de 10 minutes avec Whisper AI en local consomme moins de batterie qu'un envoi des mêmes données vers un serveur cloud suivi de l'attente de la réponse. L'efficacité énergétique est un argument souvent sous-estimé en faveur du traitement local.</p>
+      <h2 data-en="Battery and performance: the technical challenge">Batterie et performance : le défi technique</h2>
+      <p data-en="One of the major challenges of on-device AI remains energy consumption. Running machine learning models on a mobile device requires fine resource management. Chip manufacturers have responded with specialized architectures: Apple's Neural Engine, Google's TPU and Qualcomm's NPU are all designed to maximize operations per watt.">L'un des défis majeurs de l'IA on-device reste la consommation énergétique. Faire tourner des modèles de machine learning sur un appareil mobile nécessite une gestion fine des ressources. Les fabricants de puces ont répondu par des architectures spécialisées : le Neural Engine d'Apple, le TPU de Google et le NPU de Qualcomm sont tous conçus pour maximiser les opérations par watt.</p>
+      <p data-en="In practice, compact models used for common tasks consume very little energy. A 10-minute transcription with Whisper AI locally consumes less battery than sending the same data to a cloud server and waiting for the response. Energy efficiency is an often underestimated argument in favor of local processing.">En pratique, les modèles compacts utilisés pour les tâches courantes consomment très peu d'énergie. Une transcription de 10 minutes avec Whisper AI en local consomme moins de batterie qu'un envoi des mêmes données vers un serveur cloud suivi de l'attente de la réponse. L'efficacité énergétique est un argument souvent sous-estimé en faveur du traitement local.</p>
 
-      <h2>L'horizon 2027-2030</h2>
-      <p>Les modèles vont continuer à se compacter grâce aux techniques de quantification et de distillation. Les puces vont continuer à progresser, avec des NPU toujours plus puissants intégrés à chaque génération. D'ici 2030, <strong>la majorité des tâches IA courantes se feront en local</strong>, rendant le cloud optionnel pour la plupart des utilisateurs.</p>
-      <p>Les <a href="futur-ia-2026-tendances-predictions.html">tendances actuelles</a> indiquent clairement la direction : des modèles plus petits, plus spécialisés, plus efficaces, exécutés au plus près de l'utilisateur. Le smartphone ne sera plus simplement un terminal connecté au cloud — il sera lui-même le centre d'intelligence, capable de comprendre, analyser et agir de manière autonome sur vos données, en toute <a href="ia-locale-vs-cloud-vie-privee.html">confidentialité</a>.</p>
+      <h2 data-en="The 2027-2030 horizon">L'horizon 2027-2030</h2>
+      <p data-en="Models will continue to shrink thanks to quantization and distillation techniques. Chips will continue to advance, with ever more powerful NPUs integrated into each generation. By 2030, <strong>the majority of common AI tasks will be done locally</strong>, making the cloud optional for most users.">Les modèles vont continuer à se compacter grâce aux techniques de quantification et de distillation. Les puces vont continuer à progresser, avec des NPU toujours plus puissants intégrés à chaque génération. D'ici 2030, <strong>la majorité des tâches IA courantes se feront en local</strong>, rendant le cloud optionnel pour la plupart des utilisateurs.</p>
+      <p data-en="<a href=&quot;futur-ia-2026-tendances-predictions.html&quot;>Current trends</a> clearly indicate the direction: smaller, more specialized, more efficient models, running as close to the user as possible. The smartphone will no longer simply be a terminal connected to the cloud — it will itself be the intelligence center, capable of understanding, analyzing and acting autonomously on your data, in complete <a href=&quot;ia-locale-vs-cloud-vie-privee.html&quot;>confidentiality</a>.">Les <a href="futur-ia-2026-tendances-predictions.html">tendances actuelles</a> indiquent clairement la direction : des modèles plus petits, plus spécialisés, plus efficaces, exécutés au plus près de l'utilisateur. Le smartphone ne sera plus simplement un terminal connecté au cloud — il sera lui-même le centre d'intelligence, capable de comprendre, analyser et agir de manière autonome sur vos données, en toute <a href="ia-locale-vs-cloud-vie-privee.html">confidentialité</a>.</p>
     </div>
   </article>
-  <section class="blog-related"><div class="container"><h2>Articles connexes</h2><div class="blog-related-grid"><a href="apple-intelligence-strategie-ia-on-device.html" class="blog-card"><h2>Apple Intelligence</h2><span class="hcard-arrow">&rarr;</span></a><a href="small-language-models-ia-locale-apple.html" class="blog-card"><h2>Small Language Models</h2><span class="hcard-arrow">&rarr;</span></a></div></div></section>
+  <section class="blog-related"><div class="container"><h2 data-en="Related Articles">Articles connexes</h2><div class="blog-related-grid"><a href="apple-intelligence-strategie-ia-on-device.html" class="blog-card"><h2>Apple Intelligence</h2><span class="hcard-arrow">&rarr;</span></a><a href="small-language-models-ia-locale-apple.html" class="blog-card"><h2>Small Language Models</h2><span class="hcard-arrow">&rarr;</span></a></div></div></section>
   </main>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p data-en="&copy; 2026 Connected Mate. All rights reserved.">&copy; 2026 Connected Mate. Tous droits réservés.</p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="../index.html">Apps</a>
+        <a href="../notetaker-ai.html">NoteTaker AI</a>
+        <a href="../better-dictate.html">Better Dictate</a>
+        <a href="../podcast.html">Podcast</a>
+        <a href="../about.html" data-en="About">À propos</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+      <p class="footer-hosted"><a href="https:\/\/github.com\/Alex-Connected-Mate\/BENTO-CM" target="_blank" rel="noopener" class="footer-github-link"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"\/><\/svg> <span data-i18n="footer_opensource">Open source on GitHub<\/span><\/a><\/p>
     </div>
   </footer>
+  <script src="blog-i18n.js"></script>
 </body>
 </html>

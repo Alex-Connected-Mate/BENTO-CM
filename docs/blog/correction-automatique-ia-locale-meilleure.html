@@ -45,57 +45,57 @@
         <span></span><span></span><span></span>
       </button>
       <div class="nav-links">
-        <a href="../index.html">Apps</a>
-        <a href="../podcast.html">Podcast</a>
-        <a href="../about.html">About</a>
-        <a href="../contact.html">Contact</a>
+        <a href="../index.html" data-i18n="nav_apps">Apps</a>
+        <a href="../podcast.html" data-i18n="nav_podcast">Podcast</a>
+        <a href="../about.html" data-i18n="nav_about" data-en="About">À propos</a>
+        <a href="../contact.html" data-i18n="nav_contact">Contact</a>
       </div>
     </div>
   </nav>
   <main>
   <article class="blog-article" itemscope itemtype="https://schema.org/Article">
     <header class="blog-article-header">
-      <span class="blog-article-tag">IA & Tech</span>
-      <h1 itemprop="headline">Correction automatique par IA locale : plus rapide, plus précise</h1>
+      <span class="blog-article-tag" data-en="AI & Tech">IA & Tech</span>
+      <h1 itemprop="headline" data-en="Local AI autocorrect: faster, more accurate">Correction automatique par IA locale : plus rapide, plus précise</h1>
       <div class="blog-article-meta">
-        <span>Par <a href="../about.html" itemprop="author">Alexandre Cormeraie</a></span>
+        <span data-en="By <a href='../about.html' itemprop='author'>Alexandre Cormeraie</a>">Par <a href="../about.html" itemprop="author">Alexandre Cormeraie</a></span>
         <time datetime="2026-02-15" itemprop="datePublished">2026-02-15</time>
       </div>
     </header>
     <div class="blog-article-body" itemprop="articleBody">
-      <p>La <strong>correction automatique</strong> est l'un des usages les plus courants de l'IA au quotidien. Chaque message, chaque email, chaque document passe par un correcteur. Et c'est précisément l'un des domaines où les <a href="small-language-models-ia-locale-apple.html">modèles locaux</a> surpassent le cloud de manière significative. La raison est simple : pour la correction, la vitesse compte autant que la précision.</p>
+      <p data-en="<strong>Autocorrect</strong> is one of the most common everyday uses of AI. Every message, every email, every document goes through a spell checker. And this is precisely one of the areas where <a href='small-language-models-ia-locale-apple.html'>local models</a> significantly outperform the cloud. The reason is simple: for corrections, speed matters as much as accuracy.">La <strong>correction automatique</strong> est l'un des usages les plus courants de l'IA au quotidien. Chaque message, chaque email, chaque document passe par un correcteur. Et c'est précisément l'un des domaines où les <a href="small-language-models-ia-locale-apple.html">modèles locaux</a> surpassent le cloud de manière significative. La raison est simple : pour la correction, la vitesse compte autant que la précision.</p>
 
-      <h2>Pourquoi le traitement local est plus rapide pour les corrections</h2>
-      <p>La correction de texte est une tâche qui exige une réactivité immédiate. Chaque mot tapé doit être analysé en temps réel, chaque suggestion doit apparaître instantanément. C'est précisément ce que l'IA locale excelle à faire :</p>
+      <h2 data-en="Why local processing is faster for corrections">Pourquoi le traitement local est plus rapide pour les corrections</h2>
+      <p data-en="Text correction is a task that requires immediate responsiveness. Every word typed must be analyzed in real time, every suggestion must appear instantly. This is precisely what local AI excels at:">La correction de texte est une tâche qui exige une réactivité immédiate. Chaque mot tapé doit être analysé en temps réel, chaque suggestion doit apparaître instantanément. C'est précisément ce que l'IA locale excelle à faire :</p>
       <ul>
-        <li><strong>Instantanéité</strong> — correction en temps réel, sans latence réseau. Le modèle tourne directement sur votre appareil</li>
-        <li><strong>Contexte personnel</strong> — le modèle local connaît votre dictionnaire personnalisé et vos habitudes d'écriture</li>
-        <li><strong>Vie privée</strong> — vos textes ne sont pas envoyés à un serveur tiers. Ce que vous écrivez reste sur votre appareil</li>
-        <li><strong>Disponibilité permanente</strong> — fonctionne même sans internet, dans un avion, dans le métro ou en zone blanche</li>
+        <li data-en="<strong>Instantaneity</strong> — real-time correction, with no network latency. The model runs directly on your device"><strong>Instantanéité</strong> — correction en temps réel, sans latence réseau. Le modèle tourne directement sur votre appareil</li>
+        <li data-en="<strong>Personal context</strong> — the local model knows your custom dictionary and writing habits"><strong>Contexte personnel</strong> — le modèle local connaît votre dictionnaire personnalisé et vos habitudes d'écriture</li>
+        <li data-en="<strong>Privacy</strong> — your texts are not sent to a third-party server. What you write stays on your device"><strong>Vie privée</strong> — vos textes ne sont pas envoyés à un serveur tiers. Ce que vous écrivez reste sur votre appareil</li>
+        <li data-en="<strong>Always available</strong> — works even without internet, on a plane, in the subway or in a dead zone"><strong>Disponibilité permanente</strong> — fonctionne même sans internet, dans un avion, dans le métro ou en zone blanche</li>
       </ul>
 
-      <h2>Le problème de la latence cloud</h2>
-      <p>Quand vous utilisez un correcteur basé sur le cloud, chaque mot que vous tapez est potentiellement envoyé à un serveur distant. Le trajet typique ressemble à ceci : votre texte quitte votre appareil, traverse le réseau, arrive sur un serveur, est traité par un modèle IA, puis le résultat fait le chemin inverse. Même dans les meilleures conditions, ce processus ajoute entre <strong>100 et 500 millisecondes</strong> de latence.</p>
-      <p>En comparaison, un modèle local traite la correction en <strong>moins de 10 millisecondes</strong>. Pour une tâche qui se répète à chaque mot, cette différence est massive. Elle se traduit par une expérience fluide versus une expérience saccadée, où les suggestions arrivent toujours avec un temps de retard.</p>
+      <h2 data-en="The cloud latency problem">Le problème de la latence cloud</h2>
+      <p data-en="When you use a cloud-based spell checker, every word you type is potentially sent to a remote server. The typical journey looks like this: your text leaves your device, crosses the network, arrives at a server, is processed by an AI model, then the result travels back. Even under the best conditions, this process adds between <strong>100 and 500 milliseconds</strong> of latency.">Quand vous utilisez un correcteur basé sur le cloud, chaque mot que vous tapez est potentiellement envoyé à un serveur distant. Le trajet typique ressemble à ceci : votre texte quitte votre appareil, traverse le réseau, arrive sur un serveur, est traité par un modèle IA, puis le résultat fait le chemin inverse. Même dans les meilleures conditions, ce processus ajoute entre <strong>100 et 500 millisecondes</strong> de latence.</p>
+      <p data-en="In comparison, a local model processes corrections in <strong>under 10 milliseconds</strong>. For a task that repeats with every word, this difference is massive. It translates into a smooth experience versus a choppy one, where suggestions always arrive with a delay.">En comparaison, un modèle local traite la correction en <strong>moins de 10 millisecondes</strong>. Pour une tâche qui se répète à chaque mot, cette différence est massive. Elle se traduit par une expérience fluide versus une expérience saccadée, où les suggestions arrivent toujours avec un temps de retard.</p>
 
-      <h2>Comment Whisper AI transforme la dictée vocale</h2>
-      <p>La dictée vocale est un cas d'usage particulièrement pertinent pour l'IA locale. <a href="whisper-ai-revolution-dictee-vocale.html">Whisper AI</a>, le modèle de reconnaissance vocale développé par OpenAI et disponible en <a href="open-source-ia-whisper-democratisation.html">open source</a>, peut être exécuté entièrement en local sur un Mac ou un iPhone.</p>
-      <p>Le fonctionnement est direct : vous parlez, le modèle Whisper convertit votre voix en texte sur votre appareil, puis un second modèle applique les corrections grammaticales et orthographiques. Tout se passe localement, en quelques millisecondes, sans qu'un seul mot ne quitte votre machine. La précision est comparable aux meilleurs services cloud, mais avec la garantie que vos paroles restent privées.</p>
+      <h2 data-en="How Whisper AI transforms voice dictation">Comment Whisper AI transforme la dictée vocale</h2>
+      <p data-en="Voice dictation is a particularly relevant use case for local AI. <a href='whisper-ai-revolution-dictee-vocale.html'>Whisper AI</a>, the speech recognition model developed by OpenAI and available as <a href='open-source-ia-whisper-democratisation.html'>open source</a>, can be run entirely locally on a Mac or iPhone.">La dictée vocale est un cas d'usage particulièrement pertinent pour l'IA locale. <a href="whisper-ai-revolution-dictee-vocale.html">Whisper AI</a>, le modèle de reconnaissance vocale développé par OpenAI et disponible en <a href="open-source-ia-whisper-democratisation.html">open source</a>, peut être exécuté entièrement en local sur un Mac ou un iPhone.</p>
+      <p data-en="The process is straightforward: you speak, the Whisper model converts your voice to text on your device, then a second model applies grammar and spelling corrections. Everything happens locally, in a few milliseconds, without a single word leaving your machine. The accuracy is comparable to the best cloud services, but with the guarantee that your words remain private.">Le fonctionnement est direct : vous parlez, le modèle Whisper convertit votre voix en texte sur votre appareil, puis un second modèle applique les corrections grammaticales et orthographiques. Tout se passe localement, en quelques millisecondes, sans qu'un seul mot ne quitte votre machine. La précision est comparable aux meilleurs services cloud, mais avec la garantie que vos paroles restent privées.</p>
 
-      <h2>Le support multilingue : un atout local</h2>
-      <p>L'un des avantages souvent méconnus de l'IA locale pour la correction est sa capacité multilingue. Les modèles comme Whisper supportent des dizaines de langues nativement. Pour les utilisateurs qui écrivent en plusieurs langues — français, anglais, espagnol, allemand — le modèle local détecte automatiquement la langue et applique les corrections appropriées.</p>
-      <p>Cette capacité est particulièrement précieuse dans un contexte professionnel international. Un consultant qui rédige des mails en français le matin et en anglais l'après-midi bénéficie d'une correction transparente et continue, sans avoir à changer de mode ou de service.</p>
+      <h2 data-en="Multilingual support: a local advantage">Le support multilingue : un atout local</h2>
+      <p data-en="One of the often overlooked advantages of local AI for correction is its multilingual capability. Models like Whisper natively support dozens of languages. For users who write in multiple languages — French, English, Spanish, German — the local model automatically detects the language and applies the appropriate corrections.">L'un des avantages souvent méconnus de l'IA locale pour la correction est sa capacité multilingue. Les modèles comme Whisper supportent des dizaines de langues nativement. Pour les utilisateurs qui écrivent en plusieurs langues — français, anglais, espagnol, allemand — le modèle local détecte automatiquement la langue et applique les corrections appropriées.</p>
+      <p data-en="This capability is particularly valuable in an international professional context. A consultant who writes emails in French in the morning and in English in the afternoon benefits from seamless and continuous correction, without having to switch modes or services.">Cette capacité est particulièrement précieuse dans un contexte professionnel international. Un consultant qui rédige des mails en français le matin et en anglais l'après-midi bénéficie d'une correction transparente et continue, sans avoir à changer de mode ou de service.</p>
 
-      <h2>Better Dictate : la correction intelligente en action</h2>
-      <p><a href="../better-dictate.html">Better Dictate</a> de <a href="../index.html">Connected Mate</a> illustre parfaitement cette approche. L'application intègre un <strong>dictionnaire personnalisé</strong> et un filtre de vulgarité. Vous pouvez ajouter vos termes techniques, noms propres et auto-corrections pour une précision maximale.</p>
-      <p>Contrairement aux correcteurs génériques, Better Dictate apprend de votre vocabulaire. Si vous travaillez dans le médical, le juridique ou la tech, vous ajoutez vos termes spécialisés une seule fois, et ils sont reconnus à chaque utilisation. Le tout sans qu'aucun de ces termes — potentiellement sensibles — ne soit envoyé sur un serveur distant.</p>
-      <p>Comme <a href="../notetaker-ai.html">NoteTaker AI</a> pour l'<a href="notetaker-ai-enregistrer-appels-iphone-prive.html">enregistrement d'appels</a>, Better Dictate prouve qu'il est possible de combiner performance, personnalisation et <a href="ia-locale-vs-cloud-vie-privee.html">respect total de la vie privée</a>.</p>
-      <blockquote><p>« Les meilleurs outils de correction ne sont pas les plus puissants. Ce sont ceux qui vous comprennent. »</p></blockquote>
+      <h2 data-en="Better Dictate: smart correction in action">Better Dictate : la correction intelligente en action</h2>
+      <p data-en="<a href='../better-dictate.html'>Better Dictate</a> from <a href='../index.html'>Connected Mate</a> perfectly illustrates this approach. The app integrates a <strong>custom dictionary</strong> and a profanity filter. You can add your technical terms, proper nouns and auto-corrections for maximum accuracy."><a href="../better-dictate.html">Better Dictate</a> de <a href="../index.html">Connected Mate</a> illustre parfaitement cette approche. L'application intègre un <strong>dictionnaire personnalisé</strong> et un filtre de vulgarité. Vous pouvez ajouter vos termes techniques, noms propres et auto-corrections pour une précision maximale.</p>
+      <p data-en="Unlike generic spell checkers, Better Dictate learns from your vocabulary. If you work in medical, legal or tech fields, you add your specialized terms just once, and they are recognized every time. All without any of these terms — potentially sensitive — being sent to a remote server.">Contrairement aux correcteurs génériques, Better Dictate apprend de votre vocabulaire. Si vous travaillez dans le médical, le juridique ou la tech, vous ajoutez vos termes spécialisés une seule fois, et ils sont reconnus à chaque utilisation. Le tout sans qu'aucun de ces termes — potentiellement sensibles — ne soit envoyé sur un serveur distant.</p>
+      <p data-en="Like <a href='../notetaker-ai.html'>NoteTaker AI</a> for <a href='notetaker-ai-enregistrer-appels-iphone-prive.html'>call recording</a>, Better Dictate proves that it is possible to combine performance, personalization and <a href='ia-locale-vs-cloud-vie-privee.html'>complete privacy</a>.">Comme <a href="../notetaker-ai.html">NoteTaker AI</a> pour l'<a href="notetaker-ai-enregistrer-appels-iphone-prive.html">enregistrement d'appels</a>, Better Dictate prouve qu'il est possible de combiner performance, personnalisation et <a href="ia-locale-vs-cloud-vie-privee.html">respect total de la vie privée</a>.</p>
+      <blockquote><p data-en="&laquo; The best correction tools are not the most powerful. They are the ones that understand you. &raquo;">« Les meilleurs outils de correction ne sont pas les plus puissants. Ce sont ceux qui vous comprennent. »</p></blockquote>
     </div>
   </article>
   <section class="blog-related">
     <div class="container">
-      <h2>Articles connexes</h2>
+      <h2 data-en="Related Articles">Articles connexes</h2>
       <div class="blog-related-grid">
         <a href="small-language-models-ia-locale-apple.html" class="blog-card"><h2>Small Language Models</h2><span class="hcard-arrow">&rarr;</span></a>
         <a href="whisper-ai-revolution-dictee-vocale.html" class="blog-card"><h2>Whisper AI</h2><span class="hcard-arrow">&rarr;</span></a>
@@ -105,9 +105,10 @@
   </main>
   <footer class="footer">
     <div class="container footer-inner">
-      <p>&copy; 2026 Connected Mate. Tous droits réservés.</p>
+      <p data-en="&copy; 2026 Connected Mate. All rights reserved.">&copy; 2026 Connected Mate. Tous droits réservés.</p>
       <p class="footer-hosted"><a href="https:\/\/github.com\/Alex-Connected-Mate\/BENTO-CM" target="_blank" rel="noopener" class="footer-github-link"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"\/><\/svg> <span data-i18n="footer_opensource">Open source on GitHub<\/span><\/a><\/p>
     </div>
   </footer>
+  <script src="blog-i18n.js"></script>
 </body>
 </html>
