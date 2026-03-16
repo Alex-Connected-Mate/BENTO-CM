@@ -64,25 +64,53 @@
       </div>
     </header>
     <div class="blog-article-body" itemprop="articleBody">
-      <p>Le débat fait rage dans l'industrie tech : faut-il envoyer ses données dans le cloud pour profiter de l'IA, ou peut-on tout faire en local ? La réponse est plus nuancée qu'on ne le pense — mais <strong>pour la majorité des usages, le local gagne</strong>.</p>
+      <p>Le débat fait rage dans l'industrie tech : faut-il envoyer ses données dans le cloud pour profiter de l'IA, ou peut-on tout faire en local ? La réponse est plus nuancée qu'on ne le pense — mais <strong>pour la majorité des usages quotidiens, le local gagne</strong> sur pratiquement tous les critères : vitesse, vie privée, coût et fiabilité.</p>
+
       <h2>Cloud : puissance brute, mais à quel prix ?</h2>
-      <p>Les modèles cloud (GPT-4, Claude, Gemini) sont incroyablement puissants pour des tâches complexes : rédaction longue, code, raisonnement avancé. Mais ils impliquent :</p>
+      <p>Les modèles cloud (GPT-4, Claude, Gemini) sont incroyablement puissants pour des tâches complexes : rédaction longue, génération de code, raisonnement avancé, analyse de documents volumineux. Mais cette puissance a un coût, et pas seulement financier :</p>
       <ul>
-        <li>L'envoi de vos données à des serveurs tiers</li>
-        <li>Une dépendance à la connexion internet</li>
-        <li>Des abonnements mensuels (20-30€/mois)</li>
-        <li>Une latence variable selon le réseau</li>
+        <li><strong>Vie privée compromise</strong> — l'envoi de vos données à des serveurs tiers signifie que vos textes, votre voix et vos conversations transitent par des infrastructures que vous ne contrôlez pas</li>
+        <li><strong>Dépendance réseau</strong> — sans connexion internet, aucune fonctionnalité IA n'est disponible</li>
+        <li><strong>Coûts récurrents</strong> — des abonnements mensuels de 20 à 30 euros par mois, qui s'accumulent rapidement</li>
+        <li><strong>Latence variable</strong> — le temps de réponse dépend de votre connexion, de la charge des serveurs et de la distance géographique</li>
       </ul>
+
+      <h2>Comment circulent vos données avec le cloud</h2>
+      <p>Pour comprendre les enjeux de vie privée, il est essentiel de visualiser le parcours de vos données dans un modèle cloud. Quand vous dictez un texte ou enregistrez un appel via un service cloud, voici ce qui se passe :</p>
+      <p><strong>Votre appareil</strong> capture l'audio ou le texte, puis l'envoie via internet vers les <strong>serveurs du fournisseur</strong>. Là, vos données sont traitées par un modèle IA, potentiellement stockées temporairement (ou indéfiniment selon les politiques), et le résultat vous est renvoyé. À chaque étape, vos données sont exposées à des risques : interception réseau, accès par des employés, utilisation pour l'entraînement de modèles, ou fuite en cas de piratage.</p>
+      <p>Avec l'IA locale, ce parcours n'existe tout simplement pas. <strong>Vos données naissent et meurent sur votre appareil.</strong> Il n'y a rien à intercepter, rien à stocker, rien à fuiter.</p>
+
       <h2>Local : rapide, privé, gratuit</h2>
-      <p>Pour la transcription, la correction, la traduction et l'analyse de texte, les modèles locaux sont <strong>souvent supérieurs</strong> :</p>
+      <p>Pour la transcription, la <a href="correction-automatique-ia-locale-meilleure.html">correction</a>, la traduction et l'analyse de texte, les <a href="small-language-models-ia-locale-apple.html">modèles locaux</a> sont <strong>souvent supérieurs</strong> au cloud :</p>
       <ul>
-        <li><strong>Vitesse</strong> — réponse en millisecondes, pas en secondes</li>
-        <li><strong>Vie privée</strong> — vos données ne quittent jamais votre appareil</li>
-        <li><strong>Coût</strong> — gratuit, inclus dans votre appareil</li>
-        <li><strong>Fiabilité</strong> — fonctionne partout, même sans réseau</li>
+        <li><strong>Vitesse</strong> — réponse en millisecondes, pas en secondes. Le traitement est instantané car il n'y a aucun trajet réseau</li>
+        <li><strong>Vie privée</strong> — vos données ne quittent jamais votre appareil. Conformité <a href="vie-privee-numerique-droit-fondamental.html">RGPD</a> par conception</li>
+        <li><strong>Coût</strong> — gratuit, inclus dans votre appareil. Pas d'abonnement, pas de surprise sur la facture</li>
+        <li><strong>Fiabilité</strong> — fonctionne partout, même sans réseau. En avion, dans le métro, en zone rurale</li>
       </ul>
+
+      <h2>Comparatif détaillé : local vs cloud</h2>
+      <p>Pour les tâches courantes, voici comment les deux approches se comparent :</p>
+      <ul>
+        <li><strong>Transcription vocale</strong> — Local : moins de 10 ms de latence, précision comparable. Cloud : 200-500 ms de latence, précision légèrement supérieure sur les accents rares</li>
+        <li><strong>Correction de texte</strong> — Local : instantanée, avec dictionnaire personnalisé. Cloud : plus lente, vocabulaire plus large mais générique</li>
+        <li><strong>Résumé de texte</strong> — Local : efficace pour les textes courts à moyens. Cloud : meilleur pour les documents très longs</li>
+        <li><strong>Traduction</strong> — Local : rapide et fiable pour les langues courantes. Cloud : supérieur pour les langues rares ou les combinaisons inhabituelles</li>
+      </ul>
+
+      <h2>Quand le cloud reste nécessaire</h2>
+      <p>Il serait malhonnête de prétendre que le local suffit pour tout. Certaines tâches nécessitent encore la puissance du cloud :</p>
+      <ul>
+        <li><strong>Génération de texte long</strong> — rédiger un article complet ou un rapport détaillé nécessite des modèles plus grands</li>
+        <li><strong>Raisonnement complexe</strong> — résoudre des problèmes mathématiques avancés ou écrire du code complexe</li>
+        <li><strong>Analyse de bases de connaissances massives</strong> — interroger des millions de documents dépasse les capacités locales</li>
+        <li><strong>Génération d'images</strong> — les modèles de génération d'images restent majoritairement cloud</li>
+      </ul>
+      <p>L'approche idéale n'est pas de choisir exclusivement l'un ou l'autre, mais de <strong>traiter en local tout ce qui peut l'être</strong> et de ne recourir au cloud que pour les tâches qui le nécessitent vraiment. C'est exactement la stratégie d'<a href="apple-intelligence-strategie-ia-on-device.html">Apple Intelligence</a> avec Private Cloud Compute.</p>
+
       <h2>La preuve par l'usage</h2>
-      <p><a href="../better-dictate.html">Better Dictate</a> transcrit la voix en texte avec Whisper AI en local sur Mac — avec une précision comparable aux services cloud. <a href="../notetaker-ai.html">NoteTaker AI</a> analyse vos appels avec Apple Intelligence sans jamais envoyer un seul octet sur internet.</p>
+      <p><a href="../better-dictate.html">Better Dictate</a> transcrit la voix en texte avec <a href="whisper-ai-revolution-dictee-vocale.html">Whisper AI</a> en local sur Mac — avec une précision comparable aux services cloud, une latence divisée par dix et un coût nul. <a href="../notetaker-ai.html">NoteTaker AI</a> <a href="notetaker-ai-enregistrer-appels-iphone-prive.html">analyse vos appels</a> avec Apple Intelligence sans jamais envoyer un seul octet sur internet.</p>
+      <p>Ces applications de <a href="../index.html">Connected Mate</a> prouvent au quotidien que pour les usages les plus courants de l'IA, le local n'est pas un compromis — c'est souvent la meilleure option.</p>
       <blockquote><p>« La vraie innovation, ce n'est pas d'être plus puissant. C'est d'être aussi puissant tout en respectant la vie privée. »</p></blockquote>
     </div>
   </article>
