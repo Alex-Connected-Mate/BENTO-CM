@@ -1,0 +1,16 @@
+{
+  "name": "Connected Mate",
+  "short_name": "CM",
+  "description": "AI Apps, Tech Podcast & Community. All free, all private.",
+  "start_url": "/BENTO-CM/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#050914",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -30,6 +30,10 @@
     "mainEntityOfPage": "https://alex-connected-mate.github.io/BENTO-CM/blog/notetaker-ai-enregistrer-appels-iphone-prive.html"
   }
   </script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="manifest" href="../manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
 </head>
@@ -37,6 +41,9 @@
   <nav class="navbar" aria-label="Main navigation">
     <div class="nav-container">
       <a href="../index.html" class="nav-logo">Connected Mate</a>
+            <button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open');this.setAttribute('aria-expanded',this.classList.contains('open'))">
+        <span></span><span></span><span></span>
+      </button>
       <div class="nav-links">
         <a href="../index.html">Apps</a>
         <a href="../podcast.html">Podcast</a>
@@ -57,18 +64,47 @@
       </div>
     </header>
     <div class="blog-article-body" itemprop="articleBody">
-      <p>Enregistrer un appel téléphonique sur iPhone a longtemps été un casse-tête. Les solutions existantes passent par des serveurs tiers, collectent vos données, ou nécessitent des abonnements coûteux. <strong><a href="../notetaker-ai.html">NoteTaker AI</a></strong> change la donne.</p>
-      <h2>Le premier enregistreur d'appels IA 100% local</h2>
-      <p>NoteTaker AI est le premier enregistreur pour iPhone qui fait <strong>tout sur votre appareil</strong> :</p>
+      <p>Enregistrer un appel téléphonique sur iPhone a longtemps été un casse-tête. Les solutions existantes passent par des serveurs tiers, collectent vos données, ou nécessitent des abonnements coûteux. <strong><a href="../notetaker-ai.html">NoteTaker AI</a></strong> change la donne en proposant le premier enregistreur d'appels pour iPhone qui fonctionne entièrement en local, sans jamais envoyer la moindre donnée sur internet.</p>
+
+      <h2>Comment fonctionne NoteTaker AI</h2>
+      <p>NoteTaker AI repose sur une architecture entièrement <strong>on-device</strong>. Concrètement, cela signifie que chaque étape du processus — de l'enregistrement audio à l'analyse par intelligence artificielle — se déroule directement sur votre iPhone ou votre Apple Watch, sans aucune connexion à un serveur distant.</p>
+      <p>L'application exploite la puissance d'<a href="apple-intelligence-strategie-ia-on-device.html">Apple Intelligence</a> et des puces Apple Silicon pour effectuer le traitement en temps réel. Le Neural Engine intégré aux iPhone récents permet d'exécuter des modèles d'IA compacts avec une efficacité remarquable, offrant des performances comparables aux solutions cloud tout en préservant votre vie privée.</p>
+      <p>Le flux de travail est simple : vous lancez un enregistrement en un tap, l'audio est capturé localement, puis les modèles IA embarqués prennent le relais pour transcrire, résumer et analyser le contenu. Tout se passe en quelques secondes, sans latence réseau.</p>
+
+      <h2>Les fonctionnalités clés</h2>
+      <p>NoteTaker AI est bien plus qu'un simple enregistreur. C'est un véritable assistant de productivité audio :</p>
       <ul>
-        <li><strong>Enregistrement</strong> — un tap depuis l'iPhone ou l'Apple Watch</li>
-        <li><strong>Transcription</strong> — automatique, multilingue, hors ligne</li>
-        <li><strong>Résumé IA</strong> — les points clés extraits automatiquement</li>
-        <li><strong>Chat IA</strong> — posez des questions sur vos enregistrements</li>
+        <li><strong>Enregistrement instantané</strong> — un tap depuis l'iPhone ou l'Apple Watch pour capturer n'importe quel appel ou conversation</li>
+        <li><strong>Transcription automatique</strong> — conversion audio-texte multilingue, fonctionnant même hors ligne grâce aux <a href="small-language-models-ia-locale-apple.html">modèles embarqués</a></li>
+        <li><strong>Résumé IA intelligent</strong> — les points clés, décisions et actions sont extraits automatiquement de chaque enregistrement</li>
+        <li><strong>Chat IA contextuel</strong> — posez des questions sur vos enregistrements et obtenez des réponses précises basées sur le contenu</li>
+        <li><strong>Compatibilité Apple Watch</strong> — lancez et contrôlez vos enregistrements directement depuis votre poignet, idéal en réunion</li>
+        <li><strong>Organisation automatique</strong> — vos enregistrements sont classés chronologiquement avec des métadonnées exploitables</li>
       </ul>
-      <h2>Zéro donnée collectée</h2>
-      <p>La politique est simple et radicale : <strong>aucune donnée ne quitte votre iPhone</strong>. Pas de cloud, pas de serveur, pas d'analytics. Le label App Store confirme : « No Data Collected ».</p>
-      <p>C'est la philosophie de <a href="../index.html">Connected Mate</a> : l'IA doit être privée, accessible et gratuite.</p>
+
+      <h2>Vie privée : l'avantage décisif face aux concurrents</h2>
+      <p>La majorité des enregistreurs d'appels sur le marché fonctionnent selon un modèle cloud : votre audio est envoyé sur des serveurs distants pour être traité. Cela pose des problèmes majeurs :</p>
+      <ul>
+        <li>Vos conversations passent par des serveurs que vous ne contrôlez pas</li>
+        <li>Des employés tiers peuvent potentiellement accéder à vos enregistrements</li>
+        <li>Les données peuvent être utilisées pour entraîner des modèles IA sans votre consentement</li>
+        <li>En cas de fuite de données, vos conversations personnelles ou professionnelles sont exposées</li>
+      </ul>
+      <p>Avec NoteTaker AI, la politique est simple et radicale : <strong>aucune donnée ne quitte votre iPhone</strong>. Pas de cloud, pas de serveur, pas d'analytics. Le label App Store confirme : « No Data Collected ». C'est la conformité <a href="vie-privee-numerique-droit-fondamental.html">RGPD</a> par conception — il n'y a tout simplement rien à déclarer puisqu'aucune donnée n'est collectée.</p>
+
+      <h2>Des cas d'usage concrets</h2>
+      <p>NoteTaker AI répond à des besoins professionnels et personnels variés :</p>
+      <ul>
+        <li><strong>Journalistes</strong> — enregistrez vos interviews en toute confidentialité, obtenez une transcription instantanée et retrouvez les citations clés grâce au chat IA</li>
+        <li><strong>Professionnels</strong> — ne perdez plus jamais un détail important d'un appel client ou d'une réunion. Le résumé IA extrait les décisions et les prochaines étapes</li>
+        <li><strong>Étudiants</strong> — enregistrez vos cours et conférences, puis interrogez l'IA pour retrouver des informations spécifiques lors de vos révisions</li>
+        <li><strong>Avocats et médecins</strong> — pour les professions soumises au secret professionnel, le traitement 100% local garantit que les échanges sensibles restent strictement confidentiels</li>
+        <li><strong>Entrepreneurs</strong> — gardez une trace de chaque pitch, chaque négociation, chaque brainstorming, sans dépendre d'un service tiers</li>
+      </ul>
+
+      <h2>La philosophie Connected Mate</h2>
+      <p>NoteTaker AI incarne la vision de <a href="../index.html">Connected Mate</a> : l'IA doit être privée, accessible et gratuite. Comme <a href="../better-dictate.html">Better Dictate</a>, qui applique les mêmes principes à la <a href="correction-automatique-ia-locale-meilleure.html">dictée vocale</a>, NoteTaker AI prouve qu'il est possible de créer des outils puissants sans compromettre la vie privée de ses utilisateurs.</p>
+      <p>Dans un monde où chaque interaction est potentiellement monétisée, choisir des outils qui respectent vos données n'est pas un compromis — c'est une exigence.</p>
       <blockquote><p>« Vos conversations sont vos données les plus sensibles. Elles méritent la meilleure protection possible : ne jamais quitter votre appareil. »</p></blockquote>
     </div>
   </article>
@@ -86,6 +122,7 @@
     <div class="container footer-inner">
       <p>&copy; 2026 Connected Mate. Tous droits réservés.</p>
       <nav class="footer-nav" aria-label="Footer navigation"><a href="../index.html">Apps</a><a href="../notetaker-ai.html">NoteTaker AI</a><a href="../better-dictate.html">Better Dictate</a><a href="../podcast.html">Podcast</a><a href="index.html">Blog</a><a href="../about.html">À propos</a><a href="../contact.html">Contact</a></nav>
+      <p class="footer-hosted"><a href="https:\/\/github.com\/Alex-Connected-Mate\/BENTO-CM" target="_blank" rel="noopener" class="footer-github-link"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"\/><\/svg> <span data-i18n="footer_opensource">Open source on GitHub<\/span><\/a><\/p>
     </div>
   </footer>
 </body>

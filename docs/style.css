@@ -319,6 +319,40 @@ body {
   font-weight: 600;
 }
 
+/* ─── Hamburger toggle (mobile) ─── */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 110;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-toggle.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav-toggle.open span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.nav-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
 /* ═══════ HERO (index) ═══════ */
 .hero {
   text-align: center;
@@ -685,6 +719,32 @@ body {
 .footer a:hover {
   color: var(--text);
   opacity: 1;
+}
+
+.footer-hosted {
+  width: 100%;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.footer-github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  opacity: 0.7;
+}
+
+.footer-github-link:hover {
+  color: var(--text);
+  opacity: 1;
+}
+
+.footer-github-link svg {
+  flex-shrink: 0;
 }
 
 /* ═══════ APP DETAIL — HERO ═══════ */
@@ -1150,6 +1210,11 @@ body {
 .apps-row .hcard {
   flex: 1;
   min-width: 0;
+}
+
+/* Podcast card spans full width in the 2-col grid */
+.hcard-r2-wide {
+  grid-column: 1 / -1;
 }
 
 /* Staggered fade-in */
@@ -2054,6 +2119,15 @@ body {
   transform: translateX(4px);
 }
 
+/* Staggered blog card animations */
+.blog-card:nth-child(1) { animation: cardUp 0.5s ease-out 0.05s both; }
+.blog-card:nth-child(2) { animation: cardUp 0.5s ease-out 0.1s both; }
+.blog-card:nth-child(3) { animation: cardUp 0.5s ease-out 0.15s both; }
+.blog-card:nth-child(4) { animation: cardUp 0.5s ease-out 0.2s both; }
+.blog-card:nth-child(5) { animation: cardUp 0.5s ease-out 0.25s both; }
+.blog-card:nth-child(6) { animation: cardUp 0.5s ease-out 0.3s both; }
+.blog-card:nth-child(n+7) { animation: cardUp 0.5s ease-out 0.35s both; }
+
 /* Blog article page */
 .blog-article {
   max-width: 720px;
@@ -2205,11 +2279,14 @@ body {
 
 /* Blog filter tags */
 .blog-filters {
+  margin-bottom: 32px;
+}
+
+.blog-filter-tags {
   display: flex;
   gap: 6px;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 32px;
 }
 
 .blog-filter-tag {
@@ -2392,6 +2469,37 @@ body {
 }
 
 @media (max-width: 768px) {
+  /* Mobile hamburger nav */
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+    flex-direction: column;
+    padding: 12px 24px 16px;
+    gap: 2px;
+    animation: slideDown 0.3s ease-out both;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 10px 14px;
+    font-size: 0.88rem;
+    border-radius: var(--radius-sm);
+  }
+
   .hero h1 { font-size: 1.5rem; }
   .hero-sub { font-size: 0.8rem; }
   .apps-grid { grid-template-columns: 1fr; }
@@ -2411,7 +2519,6 @@ body {
   .podcast-stats { gap: 24px; }
   .stat-number { font-size: 1.5rem; }
   .footer-inner { flex-direction: column; text-align: center; }
-  .nav-links { gap: 2px; }
   #privacy-policy { padding: 24px 20px; }
 }
 

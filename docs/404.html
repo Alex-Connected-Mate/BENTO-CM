@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page not found — Connected Mate</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#050914">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/BENTO-CM/favicon.svg">
+  <link rel="stylesheet" href="/BENTO-CM/style.css">
+  <style>
+    .error-page {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 24px;
+    }
+    .error-code {
+      font-size: 6rem;
+      font-weight: 800;
+      letter-spacing: -4px;
+      line-height: 1;
+      color: var(--text);
+      margin-bottom: 16px;
+      animation: fadeInUp 0.6s ease-out both;
+    }
+    .error-message {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      margin-bottom: 8px;
+      animation: fadeInUp 0.6s ease-out 0.1s both;
+    }
+    .error-sub {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      animation: fadeInUp 0.6s ease-out 0.15s both;
+    }
+    .error-links {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      animation: fadeInUp 0.6s ease-out 0.2s both;
+    }
+    .error-links a {
+      padding: 10px 20px;
+      border-radius: var(--radius-sm);
+      font-size: 0.82rem;
+      font-weight: 600;
+      transition: all 0.25s ease;
+      opacity: 1;
+    }
+    .error-link-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+    .error-link-primary:hover {
+      opacity: 1;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(31,31,31,0.2);
+    }
+    .error-link-secondary {
+      background: var(--bg-secondary);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .error-link-secondary:hover {
+      opacity: 1;
+      background: var(--border);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="/BENTO-CM/" class="nav-logo">Connected Mate</a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open');this.setAttribute('aria-expanded',this.classList.contains('open'))">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="/BENTO-CM/" data-i18n="nav_apps">Apps</a>
+        <a href="/BENTO-CM/podcast.html" data-i18n="nav_podcast">Podcast</a>
+        <a href="/BENTO-CM/blog/" data-i18n="nav_blog">Blog</a>
+        <a href="/BENTO-CM/about.html" data-i18n="nav_about">About</a>
+        <a href="/BENTO-CM/contact.html" data-i18n="nav_contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="error-page">
+      <div>
+        <div class="error-code">404</div>
+        <p class="error-message">This page doesn't exist.</p>
+        <p class="error-sub">The page you're looking for has been moved, deleted, or never existed.</p>
+        <div class="error-links">
+          <a href="/BENTO-CM/" class="error-link-primary">Back to home</a>
+          <a href="/BENTO-CM/blog/" class="error-link-secondary">Read the blog</a>
+          <a href="/BENTO-CM/contact.html" class="error-link-secondary">Contact us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Connected Mate. <span data-i18n="footer_rights">All rights reserved.</span></p>
+    </div>
+  </footer>
+
+  <script src="/BENTO-CM/i18n.js"></script>
+</body>
+</html>

@@ -263,7 +263,8 @@
     sticky_install_mac: "T\u00e9l\u00e9charger sur le Mac App Store",
 
     // Footer
-    footer_rights: "Tous droits r\u00e9serv\u00e9s."
+    footer_rights: "Tous droits r\u00e9serv\u00e9s.",
+    footer_opensource: "Open source sur GitHub"
   };
 
   function translate() {
