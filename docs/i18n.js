@@ -264,7 +264,86 @@
 
     // Footer
     footer_rights: "Tous droits r\u00e9serv\u00e9s.",
-    footer_opensource: "Open source sur GitHub"
+    footer_opensource: "Open source sur GitHub",
+
+    // About page — simplified cards
+    about_alex_short: "Responsable IA & Innovation chez SNCF Voyageurs. 1er GenZ Digital Evangelist. Cr\u00e9ateur de NoteTaker AI et Better Dictate \u2014 des apps IA 100 % priv\u00e9es et gratuites. Conf\u00e9rencier (Laval Virtual, Sorbonne).",
+    about_ppc_short: "Chief Digital Evangelist chez Groupe BPCE. Animateur du podcast Connected Mate (1 100+ \u00e9pisodes). Auteur de 3 livres. Conf\u00e9rencier & MC. Newsletter #UpToDate \u2014 4 400+ abonn\u00e9s.",
+    about_see_profile: "Voir le profil complet \u2192",
+
+    // Alex page
+    alex_hero_sub: "Co-fondateur & D\u00e9veloppeur \u2014 Connected Mate",
+    alex_bio: "Responsable IA & Innovation pour TGV Europe chez SNCF Voyageurs, Alexandre est le 1er GenZ Digital Evangelist de la SNCF. Il fa\u00e7onne le parcours digital \u00e0 bord du TGV Inou\u00ef, porte l'IA, l'agilit\u00e9, la r\u00e9alit\u00e9 augment\u00e9e et les concepts next-gen aupr\u00e8s du top management et des comit\u00e9s ex\u00e9cutifs, en cr\u00e9ant des ponts entre g\u00e9n\u00e9rations.",
+    alex_sncf_title: "Projets SNCF Voyageurs",
+    alex_sncf_desc: "Cr\u00e9ateur de l'app TGV INOUI Experience sur Apple Vision Pro \u2014 une des premi\u00e8res applications AR d'un op\u00e9rateur ferroviaire europ\u00e9en, permettant de d\u00e9couvrir le futur TGV-M en immersion. Il travaille sur les interfaces agentiques (Agentic UI) o\u00f9 les voyageurs interagiront avec les services digitaux via l'IA g\u00e9n\u00e9rative, et exp\u00e9rimente les casques VR/AR \u00e0 bord des trains \u00e0 320 km/h.",
+    alex_apps_title: "D\u00e9veloppeur d'apps IA",
+    alex_app_notetaker: "Premier enregistreur d'appels IA 100 % local pour iPhone. Transcription, analyse IA, r\u00e9sum\u00e9 automatique \u2014 tout sur l'appareil. Gratuit, priv\u00e9, sans collecte de donn\u00e9es.",
+    alex_app_dictate: "Dict\u00e9e vocale hors ligne pour Mac, propuls\u00e9e par Whisper AI. Votre voix ne quitte jamais votre ordinateur. Gratuit et open source.",
+    alex_speaker_title: "Conf\u00e9rencier",
+    alex_speaker_desc: "Intervenant r\u00e9gulier sur les sujets d'innovation, d'IA et de transformation digitale. Il a pris la parole \u00e0 Laval Virtual (innovation prospective TGV Inou\u00ef), Talents for the Planet (\u00ab Quels impacts de l'IA sur l'avenir du travail ? \u00bb, 6 000+ visiteurs) et \u00e0 la Sorbonne (d\u00e9bat sur l'IA et l'\u00e9ducation, f\u00e9vrier 2026).",
+    alex_background_title: "Parcours",
+    alex_education_title: "Formation",
+    alex_edu_1: "Master \u2014 Web School Factory (2018\u20132023)",
+    alex_edu_2: "Semestre international \u2014 RMIT University, Melbourne",
+    alex_other_title: "Engagement",
+    alex_other_1: "Caporal-chef & Sapeur-Pompier volontaire \u2014 SDIS 77",
+    alex_other_2: "Vision : \u00ab Un jour, nous aurons le meilleur \u00e9cosyst\u00e8me tech de France. \u00bb",
+    alex_links_title: "Retrouvez Alexandre",
+
+    // PPC page
+    ppc_hero_sub: "Co-fondateur \u2014 Connected Mate | Chief Digital Evangelist \u2014 Groupe BPCE",
+    ppc_bio: "Chief Digital Evangelist chez Groupe BPCE (2e groupe bancaire fran\u00e7ais), PPC accompagne la transformation digitale et data du groupe depuis plus de 20 ans. Sa devise : \u00ab Je rends simple ce qui est complexe. \u00bb",
+    ppc_career_title: "Parcours",
+    ppc_career_early: "Publicit\u00e9 & Marketing",
+    ppc_career_brands: "Clients : American Express, BMW, SNCF, Virgin Megastore, IBM Europe",
+    ppc_career_banking: "Banque & Digital",
+    ppc_career_bpce_1: "Head of Digital Marketing \u2014 Caisse d'\u00c9pargne",
+    ppc_career_bpce_2: "Directeur de l'Innovation \u2014 Groupe BPCE",
+    ppc_career_bpce_3: "Chief Digital Evangelist \u2014 Groupe BPCE (depuis 2017)",
+    ppc_career_opendata: "Pilote de l'initiative Open Data \u2014 1er groupe bancaire fran\u00e7ais",
+    ppc_podcast_title: "Podcast Connected Mate",
+    ppc_podcast_desc: "Plus de 1 100 \u00e9pisodes sur 8 saisons depuis 2018. Chaque \u00e9pisode d\u00e9crypte un sujet tech, digital, data ou IA avec une simplicit\u00e9 remarquable. Disponible sur Spotify, Apple Podcasts, Deezer, Amazon Music et toutes les plateformes majeures.",
+    ppc_podcast_other: "PPC anime \u00e9galement \u00ab Le Web3 Caf\u00e9 \u00bb et \u00ab Le digital pour tous \u00bb.",
+    ppc_author_title: "Auteur",
+    ppc_book_latest: "Dernier livre (oct. 2025)",
+    ppc_book_latest_desc: "\u00ab R\u00e9inventez votre entreprise \u00e0 l'\u00e8re de l'IA \u00bb \u2014 Pr\u00e9fac\u00e9 par Serge Papin (ancien PDG de Syst\u00e8me U). Approche manag\u00e9riale et culturelle : l'IA comme catalyseur de transformation, pas comme simple outil technique. \u00c9ditions Kawa.",
+    ppc_book_golive: "Go Live",
+    ppc_book_golive_desc: "\u00ab Go Live : Periscope et Facebook Live mode d'emploi \u00bb \u2014 Co-\u00e9crit avec Beno\u00eet Descary et Damien Douani, pr\u00e9face de David Abiker. \u00c9ditions Kawa.",
+    ppc_speaker_title: "Conf\u00e9rencier & MC",
+    ppc_speaker_desc: "Conf\u00e9rencier et Master of Ceremonies reconnu, PPC intervient dans des \u00e9v\u00e9nements majeurs : Intelligence Marketing Day, #GEN (Grand Est Num\u00e9rique), WebCampDay, Paris Radio Show, Inbound Marketing France, Les Sommets du Digital.",
+    ppc_speaker_quote: "\u00ab Un subtil m\u00e9lange de provocation, d'intelligence et de prospective \u2014 un activateur de curiosit\u00e9 et d'innovation. \u00bb",
+    ppc_newsletter_title: "Newsletter #UpToDate / 100% IA",
+    ppc_newsletter_desc: "Sa newsletter Substack rassemble plus de 4 400 abonn\u00e9s actifs et compte plus de 354 \u00e9ditions. Chaque num\u00e9ro couvre environ 5 sujets IA, une revue de presse et un AMA. Lanc\u00e9e en juin 2020, elle est devenue une r\u00e9f\u00e9rence dans la veille IA francophone.",
+    ppc_media_title: "M\u00e9dias & Vid\u00e9o",
+    ppc_media_video: "Production vid\u00e9o",
+    ppc_media_pdv: "\u00ab Pour De Vrai \u00bb \u2014 s\u00e9rie vid\u00e9o avec J\u00e9r\u00f4me Bonaldi",
+    ppc_media_succes: "\u00ab Les Vid\u00e9os du Succ\u00e8s \u00bb \u2014 15 millions+ de vues sur YouTube",
+    ppc_media_periscope: "Pionnier du live streaming \u2014 40 000+ abonn\u00e9s sur Periscope",
+    ppc_media_other_title: "Autres",
+    ppc_media_coach: "Coach de dirigeants et personnalit\u00e9s sur les r\u00e9seaux sociaux",
+    ppc_media_patent: "D\u00e9tenteur d'un brevet sur la technologie des cartes \u00e0 puce",
+    ppc_education_title: "Formation",
+    ppc_edu_1: "Master Marketing \u2014 OMNES Education (1985\u20131988)",
+    ppc_edu_2: "Bachelor of Science \u2014 UCLA (1987) \u2014 Communication, Marketing, Nouvelles Technologies",
+    ppc_edu_3: "Certified Scrum Product Owner (CSPO) \u2014 Scrum Alliance (2016)",
+    ppc_edu_4: "Executive Short Certificate Data for Managers \u2014 HEC Paris (2021)",
+    ppc_expertise_title: "Domaines d'expertise",
+    ppc_exp_ai: "IA g\u00e9n\u00e9rative & Strat\u00e9gie IA",
+    ppc_exp_digital: "Transformation digitale",
+    ppc_exp_data: "Data Strategy & Open Data",
+    ppc_links_title: "Retrouvez PPC",
+
+    // Section scrollbar
+    scroll_speaker: "Conf\u00e9rences",
+    scroll_background: "Parcours",
+    scroll_career: "Carri\u00e8re",
+    scroll_author: "Auteur",
+    scroll_media: "M\u00e9dias",
+    scroll_education: "Formation",
+    scroll_expertise: "Expertise",
+
+    // Podcast Ausha button
+    podcast_all_episodes: "Tous les \u00e9pisodes"
   };
 
   function translate() {
