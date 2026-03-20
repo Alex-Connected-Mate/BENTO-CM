@@ -130,7 +130,7 @@
   </nav>
 
   <main id="main-content">
-  <section class="app-hero app-hero-purple">
+  <section class="app-hero app-hero-purple" id="scroll-hero">
     <div class="container">
       <div class="app-hero-inner">
         <div class="app-hero-text">
@@ -269,7 +269,7 @@
     </div>
   </div>
 
-  <section class="community-section reveal">
+  <section class="community-section reveal" id="scroll-community">
     <div class="container">
       <div class="community-card">
         <div class="community-badge" data-i18n="community_badge">Beta Program</div>
@@ -283,7 +283,7 @@
     </div>
   </section>
 
-  <section class="contact-teaser reveal">
+  <section class="contact-teaser reveal" id="scroll-contact">
     <div class="container">
       <h2 data-i18n="bd_cta_title">Interested in Better Dictate?</h2>
       <p data-i18n="bd_cta_sub">Contact us to learn more.</p>
@@ -331,6 +331,40 @@
     </div>
   </div>
 
+  <!-- Custom Section Scrollbar -->
+  <nav class="section-scrollbar" id="sectionScrollbar" aria-label="Page sections">
+    <div class="section-scrollbar-track">
+      <a href="#scroll-hero" class="section-scrollbar-item active" data-section="scroll-hero">
+        <span class="section-scrollbar-dot"></span>
+        <span class="section-scrollbar-label">Better Dictate</span>
+      </a>
+      <a href="#modes" class="section-scrollbar-item" data-section="modes">
+        <span class="section-scrollbar-dot"></span>
+        <span class="section-scrollbar-label" data-i18n="nav_modes">Modes</span>
+      </a>
+      <a href="#features" class="section-scrollbar-item" data-section="features">
+        <span class="section-scrollbar-dot"></span>
+        <span class="section-scrollbar-label" data-i18n="nav_features">Features</span>
+      </a>
+      <a href="#languages" class="section-scrollbar-item" data-section="languages">
+        <span class="section-scrollbar-dot"></span>
+        <span class="section-scrollbar-label" data-i18n="nav_languages">Languages</span>
+      </a>
+      <a href="#requirements" class="section-scrollbar-item" data-section="requirements">
+        <span class="section-scrollbar-dot"></span>
+        <span class="section-scrollbar-label" data-i18n="nav_requirements">Requirements</span>
+      </a>
+      <a href="#privacy-policy" class="section-scrollbar-item" data-section="privacy-policy">
+        <span class="section-scrollbar-dot"></span>
+        <span class="section-scrollbar-label" data-i18n="nav_privacy">Privacy</span>
+      </a>
+      <a href="#scroll-community" class="section-scrollbar-item" data-section="scroll-community">
+        <span class="section-scrollbar-dot"></span>
+        <span class="section-scrollbar-label">Beta</span>
+      </a>
+    </div>
+  </nav>
+
   <script src="i18n.js" defer></script>
   <script>
     var reveals = document.querySelectorAll('.reveal');
@@ -342,6 +376,37 @@
     function highlightNav() { var s = window.scrollY + 120, a = -1; sections.forEach(function(sec, i) { if (sec.offsetTop <= s) a = i; }); navLinks.forEach(function(l, i) { if (i === a) l.classList.add('active-link'); else l.classList.remove('active-link'); }); }
     window.addEventListener('scroll', highlightNav);
     window.addEventListener('load', highlightNav);
+
+    // Section scrollbar
+    (function() {
+      var scrollbar = document.getElementById('sectionScrollbar');
+      var items = scrollbar.querySelectorAll('.section-scrollbar-item');
+      var sects = [];
+      items.forEach(function(item) {
+        var id = item.getAttribute('data-section');
+        var el = document.getElementById(id);
+        if (el) sects.push({ id: id, el: el, item: item });
+      });
+      var ticking = false;
+      function updateActive() {
+        var winH = window.innerHeight;
+        var docH = document.documentElement.scrollHeight;
+        var activeIdx = 0;
+        if ((window.scrollY || window.pageYOffset) + winH >= docH - 50) { activeIdx = sects.length - 1; }
+        else { for (var i = sects.length - 1; i >= 0; i--) { if (sects[i].el.getBoundingClientRect().top <= winH * 0.4) { activeIdx = i; break; } } }
+        items.forEach(function(item) { item.classList.remove('active'); });
+        sects[activeIdx].item.classList.add('active');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() { if (!ticking) { ticking = true; requestAnimationFrame(updateActive); } });
+      updateActive();
+      var hideTimer;
+      function showScrollbar() { scrollbar.classList.add('visible'); clearTimeout(hideTimer); hideTimer = setTimeout(function() { scrollbar.classList.remove('visible'); }, 1500); }
+      window.addEventListener('scroll', showScrollbar);
+      scrollbar.addEventListener('mouseenter', function() { clearTimeout(hideTimer); scrollbar.classList.add('visible', 'hover'); });
+      scrollbar.addEventListener('mouseleave', function() { scrollbar.classList.remove('hover'); hideTimer = setTimeout(function() { scrollbar.classList.remove('visible'); }, 1000); });
+      setTimeout(function() { showScrollbar(); }, 500);
+    })();
   </script>
 </body>
 </html>

@@ -148,7 +148,7 @@
 
   <main id="main-content">
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero" id="scroll-hero">
     <div class="container">
       <h1 data-i18n="about_title">About Connected Mate</h1>
       <p class="hero-sub" data-i18n="about_sub">Building private AI tools and decrypting technology — for everyone.</p>
@@ -156,7 +156,7 @@
   </section>
 
   <!-- MISSION -->
-  <section class="about-mission-section reveal">
+  <section class="about-mission-section reveal" id="scroll-mission">
     <div class="container">
       <div class="about-mission-card">
         <h2 data-i18n="about_mission_title">Our Mission</h2>
@@ -166,7 +166,7 @@
   </section>
 
   <!-- WHAT WE DO -->
-  <section class="about-activities-section reveal">
+  <section class="about-activities-section reveal" id="scroll-activities">
     <div class="container">
       <h2 class="section-title" data-i18n="about_what_we_do">What We Do</h2>
       <div class="about-activities-grid">
@@ -196,7 +196,7 @@
   </section>
 
   <!-- TEAM -->
-  <section class="apps-section reveal">
+  <section class="apps-section reveal" id="scroll-founders">
     <div class="container">
       <h2 class="section-title" data-i18n="about_team_title">Les fondateurs</h2>
 
@@ -293,7 +293,7 @@
   </section>
 
   <!-- COMPANY INFO -->
-  <section class="info-section reveal">
+  <section class="info-section reveal" id="scroll-company">
     <div class="container">
       <h2 data-i18n="about_company_title">The Company</h2>
       <div class="info-columns">
@@ -322,7 +322,7 @@
   </section>
 
   <!-- CTA -->
-  <section class="contact-teaser reveal">
+  <section class="contact-teaser reveal" id="scroll-contact">
     <div class="container">
       <h2 data-i18n="teaser_title">Have a question? A project?</h2>
       <p data-i18n="teaser_sub">Reach out to us via WhatsApp or email.</p>
@@ -353,6 +353,36 @@
     </div>
   </footer>
 
+  <!-- Custom Section Scrollbar -->
+  <nav class="section-scrollbar" id="sectionScrollbar" aria-label="Page sections">
+    <div class="section-scrollbar-track">
+      <a href="#scroll-hero" class="section-scrollbar-item active" data-section="scroll-hero">
+        <span class="section-scrollbar-dot"></span>
+        <span class="section-scrollbar-label" data-i18n="scroll_about">About</span>
+      </a>
+      <a href="#scroll-mission" class="section-scrollbar-item" data-section="scroll-mission">
+        <span class="section-scrollbar-dot"></span>
+        <span class="section-scrollbar-label" data-i18n="scroll_mission">Mission</span>
+      </a>
+      <a href="#scroll-activities" class="section-scrollbar-item" data-section="scroll-activities">
+        <span class="section-scrollbar-dot"></span>
+        <span class="section-scrollbar-label" data-i18n="scroll_activities">Activities</span>
+      </a>
+      <a href="#scroll-founders" class="section-scrollbar-item" data-section="scroll-founders">
+        <span class="section-scrollbar-dot"></span>
+        <span class="section-scrollbar-label" data-i18n="scroll_founders">Founders</span>
+      </a>
+      <a href="#scroll-company" class="section-scrollbar-item" data-section="scroll-company">
+        <span class="section-scrollbar-dot"></span>
+        <span class="section-scrollbar-label" data-i18n="scroll_company">Company</span>
+      </a>
+      <a href="#scroll-contact" class="section-scrollbar-item" data-section="scroll-contact">
+        <span class="section-scrollbar-dot"></span>
+        <span class="section-scrollbar-label" data-i18n="scroll_contact">Contact</span>
+      </a>
+    </div>
+  </nav>
+
   <script src="i18n.js" defer></script>
   <script>
     var reveals = document.querySelectorAll('.reveal');
@@ -364,6 +394,77 @@
     }
     window.addEventListener('scroll', checkReveal);
     window.addEventListener('load', checkReveal);
+
+    // Section scrollbar — track active section
+    (function() {
+      var scrollbar = document.getElementById('sectionScrollbar');
+      var items = scrollbar.querySelectorAll('.section-scrollbar-item');
+      var sections = [];
+      items.forEach(function(item) {
+        var id = item.getAttribute('data-section');
+        var el = document.getElementById(id);
+        if (el) sections.push({ id: id, el: el, item: item });
+      });
+
+      var ticking = false;
+      function updateActive() {
+        var scrollY = window.scrollY || window.pageYOffset;
+        var winH = window.innerHeight;
+        var docH = document.documentElement.scrollHeight;
+        var activeIdx = 0;
+
+        // If near bottom, activate last section
+        if (scrollY + winH >= docH - 50) {
+          activeIdx = sections.length - 1;
+        } else {
+          for (var i = sections.length - 1; i >= 0; i--) {
+            var rect = sections[i].el.getBoundingClientRect();
+            if (rect.top <= winH * 0.4) {
+              activeIdx = i;
+              break;
+            }
+          }
+        }
+
+        items.forEach(function(item) { item.classList.remove('active'); });
+        sections[activeIdx].item.classList.add('active');
+        ticking = false;
+      }
+
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          ticking = true;
+          requestAnimationFrame(updateActive);
+        }
+      });
+      updateActive();
+
+      // Show/hide scrollbar based on scroll position
+      var lastScrollY = 0;
+      var hideTimer;
+      function showScrollbar() {
+        scrollbar.classList.add('visible');
+        clearTimeout(hideTimer);
+        hideTimer = setTimeout(function() {
+          scrollbar.classList.remove('visible');
+        }, 1500);
+      }
+
+      window.addEventListener('scroll', showScrollbar);
+      scrollbar.addEventListener('mouseenter', function() {
+        clearTimeout(hideTimer);
+        scrollbar.classList.add('visible', 'hover');
+      });
+      scrollbar.addEventListener('mouseleave', function() {
+        scrollbar.classList.remove('hover');
+        hideTimer = setTimeout(function() {
+          scrollbar.classList.remove('visible');
+        }, 1000);
+      });
+
+      // Show on load briefly
+      setTimeout(function() { showScrollbar(); }, 500);
+    })();
   </script>
 
 </body>

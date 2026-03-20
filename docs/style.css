@@ -2761,4 +2761,137 @@ body {
       rgba(255, 255, 255, 0) 100%
     );
   }
+
+  /* Section scrollbar dark mode */
+  .section-scrollbar-track {
+    background: rgba(30, 30, 40, 0.85);
+    border-color: rgba(255, 255, 255, 0.08);
+  }
+  .section-scrollbar-dot {
+    background: rgba(255, 255, 255, 0.25);
+  }
+  .section-scrollbar-label {
+    color: rgba(255, 255, 255, 0.45);
+  }
+  .section-scrollbar-item.active .section-scrollbar-dot {
+    background: #fff;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+  }
+  .section-scrollbar-item.active .section-scrollbar-label {
+    color: #fff;
+  }
+  .section-scrollbar-item:hover .section-scrollbar-label {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+/* ═══════ CUSTOM SECTION SCROLLBAR ═══════ */
+
+.section-scrollbar {
+  position: fixed;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.section-scrollbar.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.section-scrollbar.hover {
+  opacity: 1;
+}
+
+.section-scrollbar-track {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  padding: 10px 8px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.section-scrollbar-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-direction: row-reverse;
+}
+
+.section-scrollbar-item:hover {
+  opacity: 1;
+}
+
+.section-scrollbar-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.section-scrollbar-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  max-width: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+/* Show labels on hover */
+.section-scrollbar.hover .section-scrollbar-label,
+.section-scrollbar-item.active .section-scrollbar-label {
+  max-width: 120px;
+  opacity: 1;
+}
+
+/* Active state */
+.section-scrollbar-item.active .section-scrollbar-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--text);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.section-scrollbar-item.active .section-scrollbar-label {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Hover on individual items */
+.section-scrollbar-item:hover .section-scrollbar-dot {
+  background: var(--text-secondary);
+  width: 7px;
+  height: 7px;
+}
+
+.section-scrollbar.hover .section-scrollbar-item:hover .section-scrollbar-label {
+  color: var(--text);
+}
+
+/* Hide on mobile */
+@media (max-width: 768px) {
+  .section-scrollbar {
+    display: none;
+  }
 }

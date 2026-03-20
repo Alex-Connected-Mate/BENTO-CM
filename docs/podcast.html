@@ -70,7 +70,7 @@
 
   <main id="main-content">
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero" id="scroll-hero">
     <div class="container">
       <h1 data-i18n="podcast_title">Connected Mate Podcast</h1>
       <p class="hero-sub" data-i18n="podcast_sub">Tech, digital, data & AI — explained simply. 1,100+ episodes across 8 seasons decrypting technology, its challenges, codes, and opportunities.</p>
@@ -78,7 +78,7 @@
   </section>
 
   <!-- STATS -->
-  <section class="podcast-stats-section reveal">
+  <section class="podcast-stats-section reveal" id="scroll-stats">
     <div class="container">
       <div class="podcast-stats-grid">
         <div class="stat-card">
@@ -98,7 +98,7 @@
   </section>
 
   <!-- HOST -->
-  <section class="podcast-host-section reveal">
+  <section class="podcast-host-section reveal" id="scroll-host">
     <div class="container">
       <div class="podcast-host-card">
         <div class="podcast-host-avatar" style="margin-bottom:16px;">
@@ -125,7 +125,7 @@
   </section>
 
   <!-- TOPICS -->
-  <section class="podcast-topics-section reveal">
+  <section class="podcast-topics-section reveal" id="scroll-topics">
     <div class="container">
       <h2 class="section-title" data-i18n="podcast_about_title">About the Show</h2>
       <div class="podcast-topics-grid">
@@ -170,7 +170,7 @@
   </section>
 
   <!-- LISTEN ON -->
-  <section class="apps-section reveal">
+  <section class="apps-section reveal" id="scroll-listen">
     <div class="container">
       <h2 class="section-title" data-i18n="podcast_listen_on">Listen On</h2>
       <div class="platforms-grid">
@@ -235,7 +235,7 @@
   </section>
 
   <!-- LATEST EPISODE -->
-  <section class="community-section reveal">
+  <section class="community-section reveal" id="scroll-latest">
     <div class="container">
       <div class="community-card">
         <div class="community-badge" data-i18n="podcast_latest_badge">Latest Episode</div>
@@ -265,6 +265,36 @@
     </div>
   </footer>
 
+  <!-- Custom Section Scrollbar -->
+  <nav class="section-scrollbar" id="sectionScrollbar" aria-label="Page sections">
+    <div class="section-scrollbar-track">
+      <a href="#scroll-hero" class="section-scrollbar-item active" data-section="scroll-hero">
+        <span class="section-scrollbar-dot"></span>
+        <span class="section-scrollbar-label" data-i18n="scroll_podcast">Podcast</span>
+      </a>
+      <a href="#scroll-stats" class="section-scrollbar-item" data-section="scroll-stats">
+        <span class="section-scrollbar-dot"></span>
+        <span class="section-scrollbar-label" data-i18n="scroll_stats">Stats</span>
+      </a>
+      <a href="#scroll-host" class="section-scrollbar-item" data-section="scroll-host">
+        <span class="section-scrollbar-dot"></span>
+        <span class="section-scrollbar-label" data-i18n="scroll_host">Host</span>
+      </a>
+      <a href="#scroll-topics" class="section-scrollbar-item" data-section="scroll-topics">
+        <span class="section-scrollbar-dot"></span>
+        <span class="section-scrollbar-label" data-i18n="scroll_topics">Topics</span>
+      </a>
+      <a href="#scroll-listen" class="section-scrollbar-item" data-section="scroll-listen">
+        <span class="section-scrollbar-dot"></span>
+        <span class="section-scrollbar-label" data-i18n="scroll_listen">Listen</span>
+      </a>
+      <a href="#scroll-latest" class="section-scrollbar-item" data-section="scroll-latest">
+        <span class="section-scrollbar-dot"></span>
+        <span class="section-scrollbar-label" data-i18n="scroll_latest">Latest</span>
+      </a>
+    </div>
+  </nav>
+
   <script src="i18n.js" defer></script>
   <script>
     var reveals = document.querySelectorAll('.reveal');
@@ -276,6 +306,65 @@
     }
     window.addEventListener('scroll', checkReveal);
     window.addEventListener('load', checkReveal);
+
+    // Section scrollbar — track active section
+    (function() {
+      var scrollbar = document.getElementById('sectionScrollbar');
+      var items = scrollbar.querySelectorAll('.section-scrollbar-item');
+      var sections = [];
+      items.forEach(function(item) {
+        var id = item.getAttribute('data-section');
+        var el = document.getElementById(id);
+        if (el) sections.push({ id: id, el: el, item: item });
+      });
+
+      var ticking = false;
+      function updateActive() {
+        var scrollY = window.scrollY || window.pageYOffset;
+        var winH = window.innerHeight;
+        var docH = document.documentElement.scrollHeight;
+        var activeIdx = 0;
+
+        if (scrollY + winH >= docH - 50) {
+          activeIdx = sections.length - 1;
+        } else {
+          for (var i = sections.length - 1; i >= 0; i--) {
+            var rect = sections[i].el.getBoundingClientRect();
+            if (rect.top <= winH * 0.4) {
+              activeIdx = i;
+              break;
+            }
+          }
+        }
+
+        items.forEach(function(item) { item.classList.remove('active'); });
+        sections[activeIdx].item.classList.add('active');
+        ticking = false;
+      }
+
+      window.addEventListener('scroll', function() {
+        if (!ticking) { ticking = true; requestAnimationFrame(updateActive); }
+      });
+      updateActive();
+
+      var hideTimer;
+      function showScrollbar() {
+        scrollbar.classList.add('visible');
+        clearTimeout(hideTimer);
+        hideTimer = setTimeout(function() { scrollbar.classList.remove('visible'); }, 1500);
+      }
+
+      window.addEventListener('scroll', showScrollbar);
+      scrollbar.addEventListener('mouseenter', function() {
+        clearTimeout(hideTimer);
+        scrollbar.classList.add('visible', 'hover');
+      });
+      scrollbar.addEventListener('mouseleave', function() {
+        scrollbar.classList.remove('hover');
+        hideTimer = setTimeout(function() { scrollbar.classList.remove('visible'); }, 1000);
+      });
+      setTimeout(function() { showScrollbar(); }, 500);
+    })();
   </script>
 
 </body>
