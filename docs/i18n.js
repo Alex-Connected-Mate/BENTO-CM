@@ -334,6 +334,18 @@
     ppc_links_title: "Retrouvez PPC",
 
     // Section scrollbar
+    scroll_about: "\u00c0 propos",
+    scroll_mission: "Mission",
+    scroll_activities: "Activit\u00e9s",
+    scroll_founders: "Fondateurs",
+    scroll_company: "Entreprise",
+    scroll_contact: "Contact",
+    scroll_podcast: "Podcast",
+    scroll_stats: "Chiffres",
+    scroll_host: "Animateur",
+    scroll_topics: "Th\u00e8mes",
+    scroll_listen: "\u00c9couter",
+    scroll_latest: "Dernier",
     scroll_speaker: "Conf\u00e9rences",
     scroll_background: "Parcours",
     scroll_career: "Carri\u00e8re",

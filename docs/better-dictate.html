@@ -380,32 +380,21 @@
     // Section scrollbar
     (function() {
       var scrollbar = document.getElementById('sectionScrollbar');
+      if (!scrollbar) return;
       var items = scrollbar.querySelectorAll('.section-scrollbar-item');
       var sects = [];
-      items.forEach(function(item) {
-        var id = item.getAttribute('data-section');
-        var el = document.getElementById(id);
-        if (el) sects.push({ id: id, el: el, item: item });
-      });
+      items.forEach(function(item) { var el = document.getElementById(item.getAttribute('data-section')); if (el) sects.push({ el: el, item: item }); });
       var ticking = false;
-      function updateActive() {
-        var winH = window.innerHeight;
-        var docH = document.documentElement.scrollHeight;
-        var activeIdx = 0;
-        if ((window.scrollY || window.pageYOffset) + winH >= docH - 50) { activeIdx = sects.length - 1; }
-        else { for (var i = sects.length - 1; i >= 0; i--) { if (sects[i].el.getBoundingClientRect().top <= winH * 0.4) { activeIdx = i; break; } } }
+      function update() {
+        var winH = window.innerHeight, docH = document.documentElement.scrollHeight, idx = 0;
+        if ((window.scrollY || 0) + winH >= docH - 50) idx = sects.length - 1;
+        else { for (var i = sects.length - 1; i >= 0; i--) { if (sects[i].el.getBoundingClientRect().top <= winH * 0.4) { idx = i; break; } } }
         items.forEach(function(item) { item.classList.remove('active'); });
-        sects[activeIdx].item.classList.add('active');
+        sects[idx].item.classList.add('active');
         ticking = false;
       }
-      window.addEventListener('scroll', function() { if (!ticking) { ticking = true; requestAnimationFrame(updateActive); } });
-      updateActive();
-      var hideTimer;
-      function showScrollbar() { scrollbar.classList.add('visible'); clearTimeout(hideTimer); hideTimer = setTimeout(function() { scrollbar.classList.remove('visible'); }, 1500); }
-      window.addEventListener('scroll', showScrollbar);
-      scrollbar.addEventListener('mouseenter', function() { clearTimeout(hideTimer); scrollbar.classList.add('visible', 'hover'); });
-      scrollbar.addEventListener('mouseleave', function() { scrollbar.classList.remove('hover'); hideTimer = setTimeout(function() { scrollbar.classList.remove('visible'); }, 1000); });
-      setTimeout(function() { showScrollbar(); }, 500);
+      window.addEventListener('scroll', function() { if (!ticking) { ticking = true; requestAnimationFrame(update); } });
+      update();
     })();
   </script>
 </body>
