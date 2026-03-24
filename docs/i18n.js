@@ -95,8 +95,8 @@
     // NoteTaker AI card
     gc_tagline: "Enregistreur d'appels IA & Transcription",
     gc_desc: "Le premier enregistreur d'appels IA local pour iPhone. Enregistrez, transcrivez et analysez vos appels \u2014 100% sur votre appareil. Vos conversations restent les v\u00f4tres.",
-    gc_hero_tagline: "Le premier enregistreur d'appels IA local pour iPhone.",
-    gc_hero_promo: "Enregistrez, transcrivez et analysez vos appels et r\u00e9unions \u2014 100% sur votre appareil. Propuls\u00e9 par Apple Intelligence. Vos conversations restent priv\u00e9es, toujours. Enfin un enregistreur qui respecte votre vie priv\u00e9e.",
+    gc_hero_tagline: "Votre iPhone embarque déjà jusqu'à 6 Go de modèles d'IA. Il est temps de les utiliser.",
+    gc_hero_promo: "Chaque iPhone équipé d'une puce A18 embarque jusqu'à 6 Go de modèles d'intelligence artificielle en local — pourtant, presque aucune application ne les utilise. Même Apple ne les exploite pas encore. NoteTaker AI change la donne : enregistrez, transcrivez et analysez vos appels 100 % en local, avec l'intelligence déjà intégrée à votre téléphone. Pas de cloud, pas d'abonnement, aucune donnée collectée. On a déjà assez extrait de minerais pour alimenter le cloud — exploitons enfin ce qui est déjà dans votre poche.",
 
     // Better Dictate card
     bd_tagline: "Dict\u00e9e vocale IA hors ligne",
