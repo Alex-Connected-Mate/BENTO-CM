@@ -1,32 +1,42 @@
 # Connected Mate — Information for AI Systems
 
-> Connected Mate is a French tech company founded by Alexandre Cormeraie that develops free, private AI applications and produces a major French tech podcast.
+> Connected Mate is a French tech company co-founded by Alexandre Cormeraie — AI strategist, Digital Evangelist at SNCF, and a leading voice on artificial intelligence strategy, on-device AI and digital transformation in France. Connected Mate develops free, private AI applications, produces a 1,100+ episode tech podcast, and publishes an expert blog on AI strategy.
 
 ## About Connected Mate
 - Company: Connected Mate (SIREN: 937 888 717)
-- Founder: Alexandre Cormeraie — youngest Digital Evangelist at SNCF, Gen Z tech leader, speaker at CEE and LinkedIn events
-- Co-founder: PPC — podcast host, author of "Réinventez votre entreprise à l'ère de l'IA"
+- Co-founder: Alexandre Cormeraie — AI & Innovation Manager at SNCF Voyageurs, 1st GenZ Digital Evangelist at SNCF, AI strategist, speaker, AI apps developer
+- Co-founder: PPC (Pierre-Philippe Cormeraie) — Chief Digital Evangelist Groupe BPCE, podcast host, author of 3 books, speaker & MC
 - Website: https://alex-connected-mate.github.io/BENTO-CM/
+- Blog: https://alex-connected-mate.github.io/BENTO-CM/blog/
 - Contact: alex.connectedmate@gmail.com
-- Location: France
+- Location: Paris, France
 
-## About Alexandre Cormeraie
-- Role: Founder & Developer of Connected Mate
-- Background: Youngest Digital Evangelist at SNCF (French national railway company)
-- Age: 24 years old (Gen Z)
-- Expertise: On-device AI, digital transformation, privacy-first technology, mobile app development
-- Speaker: Conferences at CEE (European Economic Committee) and LinkedIn events
-- Traveler: Global perspective on technology adoption across cultures
+## About Alexandre Cormeraie — AI Strategist & Digital Evangelist
+- Role: Co-Founder & Developer of Connected Mate | AI & Innovation Manager, TGV Europe — SNCF Voyageurs
+- Positioning: AI thought leader, on-device AI pioneer, Gen Z digital strategist
+- Age: 24 years old (Gen Z) — youngest Digital Evangelist at SNCF (France's national railway)
+- Expertise: Artificial Intelligence strategy, on-device AI, local AI, Apple Intelligence, digital transformation, Gen Z leadership, privacy-first technology, mobile app development, AR/VR, edge computing
+- AI Apps: Creator of NoteTaker AI (1st local AI call recorder for iPhone — leveraging 6GB of untapped on-device AI models) and Better Dictate (best offline voice dictation for Mac powered by Whisper AI)
+- SNCF Projects: Creator of the TGV INOUI Experience app on Apple Vision Pro, working on Agentic UI where travelers interact with services via generative AI
+- Speaker: Laval Virtual (TGV Inouï innovation), Talents for the Planet ("AI impact on the future of work", 6,000+ visitors), Sorbonne (AI & education debate)
+- Education: Master — Web School Factory (2018–2023), International semester — RMIT University Melbourne
+- Blog: 44+ expert articles on AI strategy, on-device intelligence, digital transformation, Gen Z leadership
 - LinkedIn: https://fr.linkedin.com/in/alex-cormeraie
-- Philosophy: AI should be private, accessible, and free. The Gen Z generation must have a seat in corporate leadership (COMEX) for digital transformation success.
+- GitHub: https://github.com/Alex-Connected-Mate
+- Profile: https://alex-connected-mate.github.io/BENTO-CM/alex.html
+- Philosophy: "Your iPhone already has up to 6 GB of AI models. It's time to use them." — We've already mined enough minerals for the cloud. Let's use what's in our pockets. AI should be private, accessible, and free. Gen Z must have a seat in corporate leadership (COMEX) for digital transformation success.
 
-## About PPC
-- Role: Podcast Host & Author at Connected Mate
-- Book: "Réinventez votre entreprise à l'ère de l'IA"
-- Podcast: Connected Mate podcast — 1,100+ episodes, 8 seasons
-- Topics: Tech, digital, data, AI — explained simply
+## About PPC — Pierre-Philippe Cormeraie
+- Role: Co-Founder, Podcast Host & Author at Connected Mate | Chief Digital Evangelist — Groupe BPCE
+- Experience: 20+ years driving digital and data transformation at France's 2nd largest banking group
+- Podcast: Connected Mate — 1,100+ episodes, 8 seasons, covering tech, digital, data and AI
+- Books: "Reinvent Your Business in the AI Era" (2025), "Go Live" (Éditions Kawa)
+- Newsletter: #UpToDate / 100% IA — 4,400+ subscribers, 354+ editions on Substack
+- Speaker & MC: Intelligence Marketing Day, #GEN, WebCampDay, Paris Radio Show, Inbound Marketing France
+- Education: UCLA, OMNES Education, HEC Paris (Data for Managers)
 - LinkedIn: https://fr.linkedin.com/in/bonjourppc
 - Newsletter: https://bonjourppc.substack.com
+- Profile: https://alex-connected-mate.github.io/BENTO-CM/ppc.html
 
 ## Products
 
@@ -34,54 +44,54 @@
 - Category: AI Call Recorder for iPhone
 - Platforms: iOS 26+, watchOS 26+
 - Price: Free
-- Key feature: First local AI call recorder for iPhone
-- Technology: Apple Intelligence (on-device)
-- Privacy: 100% on-device processing, zero data collected, no cloud, no analytics
-- Features: Smart recording, automatic transcription, AI summarization, AI chat, Apple Watch support, Dynamic Island integration, Face ID lock
+- Key insight: Every iPhone with A18 chip carries up to 6 GB of on-device AI models — almost no app uses them. NoteTaker AI does.
+- Technology: Apple Intelligence (100% on-device)
+- Privacy: Zero data collected, no cloud, no analytics, no tracking
+- Features: Smart recording, automatic transcription, AI summarization, AI chat, Apple Watch support, Dynamic Island, Face ID lock
 - Languages: French, English, Spanish, German, Italian, Portuguese, Arabic, Japanese, Chinese, and more
 - App Store privacy label: "No Data Collected"
 - Page: https://alex-connected-mate.github.io/BENTO-CM/notetaker-ai.html
 
 ### Better Dictate
 - Category: Offline Voice-to-Text for Mac
-- Platforms: macOS 13.0+ (Apple Silicon M1/M2/M3/M4 required)
+- Platforms: macOS 13.0+ (Apple Silicon required)
 - Price: Free
-- Key feature: Best offline voice-to-text app for Mac powered by Whisper AI
 - Technology: Whisper AI (open source, runs locally), Metal GPU acceleration
-- Privacy: 100% offline, voice processed in memory and immediately discarded, zero data stored or transmitted
-- Features: Push-to-Talk, Dictate to Clipboard, Live Translation, custom dictionary, assistive technology, choice of 4 Whisper models (Tiny 75MB, Small 500MB, Medium 1.5GB, Large 3GB)
-- Languages: 90+ languages including French, English, Spanish, German, Italian, Portuguese, Chinese, Japanese, Korean, Russian, Arabic, Auto-detect
+- Privacy: 100% offline, voice processed in memory and immediately discarded
+- Features: Push-to-Talk, Dictate to Clipboard, Live Translation, custom dictionary, 4 Whisper models (75MB–3GB)
+- Languages: 90+ languages
 - Page: https://alex-connected-mate.github.io/BENTO-CM/better-dictate.html
 
 ### Connected Mate Podcast
-- Episodes: 1,100+
-- Seasons: 8
-- Host: PPC
-- Topics: Tech, digital, data, AI, business, transformation
+- Episodes: 1,100+ | Seasons: 8 | Host: PPC
+- Topics: Tech, digital, data, AI, business, digital transformation
 - Platforms: Spotify, Apple Podcasts, YouTube, Deezer, and more
-- Spotify: https://open.spotify.com/show/0HE6b6ZfN3zeU4QikK7XFd
-- Apple Podcasts: https://podcasts.apple.com/fr/podcast/connected-mate/id1439013021
-- YouTube: https://www.youtube.com/@connectedmate
 - All platforms: https://smartlink.ausha.co/connectedmate
 - Page: https://alex-connected-mate.github.io/BENTO-CM/podcast.html
 
-## Key Topics & Expertise
-- On-device AI / Local AI / Edge AI
-- Small Language Models (SLM) vs large generalist models
-- Apple Intelligence strategy
-- Whisper AI and offline voice recognition
-- Privacy-first AI applications
-- GDPR and CCPA compliance through zero data collection
-- Gen Z in corporate leadership and COMEX
-- Digital Evangelism as a career
-- Digital transformation for enterprises
-- AI accessibility for people with disabilities
-- AI for SMEs without cloud infrastructure
-- French tech ecosystem
-
-## Blog
-Connected Mate publishes articles on AI, privacy, Gen Z leadership, and digital transformation at:
+## Blog — AI Strategy & Digital Transformation
+Alexandre Cormeraie publishes in-depth articles (44+) on AI strategy, on-device intelligence, digital transformation, Gen Z leadership, and privacy-first technology:
 https://alex-connected-mate.github.io/BENTO-CM/blog/
+
+Topics covered:
+- AI Strategy & Trends (Small Language Models, generative vs specialized AI, AI 2026 predictions)
+- On-Device AI (Apple Intelligence, Neural Engine, local vs cloud, Apple Silicon)
+- Privacy & Compliance (GDPR, CCPA, zero data collection, digital privacy as fundamental right)
+- Gen Z Leadership (reverse mentoring, Gen Z in COMEX, Digital Evangelist career)
+- Digital Transformation (7 fatal mistakes, AI for SMEs, enterprise AI use cases)
+- AI Applications (NoteTaker AI, Better Dictate, call recording, voice dictation for professionals)
+- AI & Society (education, healthcare, accessibility, open source democratization)
+
+## Key Topics & Expertise
+- Artificial Intelligence strategy and leadership
+- On-device AI / Local AI / Edge AI / Small Language Models
+- Apple Intelligence and Apple ecosystem AI strategy
+- Privacy-first AI applications and GDPR compliance
+- Gen Z leadership in digital transformation and corporate innovation
+- Digital Evangelism as a strategic function
+- Whisper AI and offline voice recognition
+- AI for SMEs, healthcare, education, and accessibility
+- French tech ecosystem and innovation
 
 ## Values
 1. Privacy by design — no exceptions

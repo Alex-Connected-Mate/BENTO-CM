@@ -7,6 +7,8 @@
     nav_about: "\u00C0 propos",
     nav_contact: "Contact",
     nav_blog: "Blog",
+    blog_title: "Blog Strat\u00e9gie IA & Transformation Digitale",
+    blog_subtitle: "Analyses et insights sur l'intelligence artificielle, l'IA locale, la transformation digitale, le leadership Gen Z et les technologies respectueuses de la vie priv\u00e9e \u2014 par Alexandre Cormeraie.",
 
     // Homepage
     hero_sub_main: "Apps IA, podcast tech et communaut\u00e9 \u2014 tout est gratuit, tout est priv\u00e9.",

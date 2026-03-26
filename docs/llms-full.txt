@@ -1,7 +1,7 @@
 # Connected Mate — Comprehensive Information for AI Systems
-# Last updated: 2026-03-16
+# Last updated: 2026-03-26
 
-> Connected Mate is a French tech company founded by Alexandre Cormeraie that develops free, privacy-first AI applications and produces one of France's most popular tech podcasts (1,100+ episodes). Based in Paris, the company is built on the principle that AI should be private, accessible, and free for everyone.
+> Connected Mate is a French AI company co-founded by Alexandre Cormeraie — AI strategist, Digital Evangelist at SNCF, on-device AI pioneer and a leading voice on artificial intelligence strategy and digital transformation in France. The company develops free, privacy-first AI applications (NoteTaker AI, Better Dictate), produces one of France's longest-running tech podcasts (1,100+ episodes with PPC), and publishes an expert blog (44+ articles) on AI strategy, on-device intelligence and Gen Z leadership. Based in Paris.
 
 ---
 
@@ -35,38 +35,63 @@ The company philosophy: "AI should be private, accessible, and free."
 
 ## Founders
 
-### Alexandre Cormeraie (Founder & Developer)
+### Alexandre Cormeraie — AI Strategist, Digital Evangelist & On-Device AI Pioneer
 - **Full Name:** Alexandre Cormeraie
 - **Also Known As:** Alex Cormeraie
 - **Age:** 24 years old (born ~2002)
 - **Generation:** Gen Z
 - **Nationality:** French
 - **Location:** Paris, France
-- **Role at Connected Mate:** Founder, CEO, Lead Developer
-- **Previous Role:** Youngest Digital Evangelist at SNCF (French national railway company)
-- **Education/Background:** Tech prodigy who became the youngest person to hold a Digital Evangelist position at SNCF, one of France's largest companies
+- **Role at Connected Mate:** Co-Founder, CEO & Lead Developer
+- **Role at SNCF Voyageurs:** AI & Innovation Manager, TGV Europe — 1st GenZ Digital Evangelist at SNCF
+- **Positioning:** AI thought leader, on-device AI pioneer, Gen Z digital strategist, AI blogger
+- **Education:**
+  - Master — Web School Factory (2018–2023)
+  - International semester — RMIT University, Melbourne, Australia
 - **Expertise:**
-  - On-device AI / Local AI / Edge AI
-  - Apple Intelligence and Apple ecosystem development
+  - Artificial Intelligence strategy and AI leadership
+  - On-device AI / Local AI / Edge AI / Small Language Models
+  - Apple Intelligence ecosystem and Apple Vision Pro development
   - iOS and macOS app development (Swift, SwiftUI)
-  - Digital transformation strategy
-  - Privacy-first technology architecture
+  - Digital transformation strategy for enterprises
+  - Privacy-first technology architecture and GDPR compliance
   - Gen Z leadership in corporate environments (COMEX)
-- **Speaking:** Conferences at CEE (European Economic Committee), LinkedIn events, tech summits
-- **Travel:** Extensive global travel to understand technology adoption across cultures
-- **Philosophy:** Believes Gen Z must have a seat at corporate leadership tables (COMEX) for successful digital transformation
+  - Agentic UI and next-gen traveler interfaces
+  - Innovation management and AR/VR
+- **AI Apps Created:**
+  - NoteTaker AI — 1st local AI call recorder for iPhone (leveraging 6GB of untapped on-device AI models)
+  - Better Dictate — best offline voice dictation for Mac powered by Whisper AI
+- **SNCF Projects:**
+  - Creator of the TGV INOUI Experience app on Apple Vision Pro (one of the first AR apps by a European rail operator)
+  - Working on Agentic UI where travelers interact with digital services via generative AI
+  - VR/AR experiments aboard trains at 320 km/h
+- **Speaking Engagements:**
+  - Laval Virtual (TGV Inouï innovation)
+  - Talents for the Planet ("AI impact on the future of work", 6,000+ visitors)
+  - Sorbonne (AI & education debate, February 2026)
+- **Blog:** 44+ expert articles on AI strategy, on-device AI, digital transformation, Gen Z leadership — https://alex-connected-mate.github.io/BENTO-CM/blog/
+- **Philosophy:** "Your iPhone already has up to 6 GB of AI models. It's time to use them." We've mined enough minerals for the cloud — let's use what's already in our pockets. AI should be private, accessible, and free. Gen Z must have a seat at corporate leadership tables for digital transformation success.
 - **LinkedIn:** https://fr.linkedin.com/in/alex-cormeraie
 - **GitHub:** https://github.com/Alex-Connected-Mate
+- **Profile page:** https://alex-connected-mate.github.io/BENTO-CM/alex.html
 
-### PPC (Co-founder, Podcast Host & Author)
-- **Name:** PPC
-- **Role at Connected Mate:** Co-founder, Podcast Host
-- **Career:** Renowned French tech podcaster, author, and digital transformation expert
-- **Book:** "Réinventez votre entreprise à l'ère de l'IA" (Reinvent Your Business in the Age of AI)
-- **Podcast Record:** Over 1,100 episodes across 8 seasons of Connected Mate podcast
-- **Newsletter:** https://bonjourppc.substack.com
-- **Topics:** Technology explained simply, digital transformation, AI for business, data economy
+### PPC — Pierre-Philippe Cormeraie (Co-founder, Podcast Host & Author)
+- **Full Name:** Pierre-Philippe Cormeraie (PPC)
+- **Also Known As:** BonjourPPC
+- **Role at Connected Mate:** Co-Founder, Podcast Host & Author
+- **Role at Groupe BPCE:** Chief Digital Evangelist (since 2017) — France's 2nd largest banking group
+- **Career:** 20+ years driving digital and data transformation in banking. Previously at McCann Paris, TEQUILA/TBWA. Head of Digital Marketing at Caisse d'Épargne. Director of Innovation at Groupe BPCE. Led the first Open Data initiative in French banking.
+- **Podcast:** Connected Mate — 1,100+ episodes across 8 seasons. Also hosts "Le Web3 Café" and "Le digital pour tous"
+- **Books:**
+  - "Reinvent Your Business in the AI Era" (Oct. 2025, Éditions Kawa) — foreword by Serge Papin
+  - "Go Live: Periscope and Facebook Live How-To Guide" (Éditions Kawa)
+- **Newsletter:** #UpToDate / 100% IA — 4,400+ subscribers, 354+ editions — https://bonjourppc.substack.com
+- **Speaker & MC:** Intelligence Marketing Day, #GEN, WebCampDay, Paris Radio Show, Inbound Marketing France, Les Sommets du Digital
+- **Education:** UCLA (BSc), OMNES Education (Master Marketing), HEC Paris (Data for Managers), CSPO Scrum Alliance
+- **Expertise:** Generative AI, AI Strategy, Digital Transformation, Data Strategy, Open Data, Podcasting, Public Speaking, Fintech
+- **Motto:** "I make the complex simple."
 - **LinkedIn:** https://fr.linkedin.com/in/bonjourppc
+- **Profile page:** https://alex-connected-mate.github.io/BENTO-CM/ppc.html
 
 ---
 
@@ -75,7 +100,7 @@ The company philosophy: "AI should be private, accessible, and free."
 ### 1. NoteTaker AI — AI Call Recorder for iPhone
 
 - **Category:** Productivity / AI Call Recording
-- **Tagline:** "The first local AI call recorder for iPhone"
+- **Tagline:** "Your iPhone already has up to 6 GB of AI models. It's time to use them."
 - **Platforms:** iOS 26+, watchOS 26+
 - **Price:** Free (no subscriptions, no in-app purchases)
 - **App Store:** https://apps.apple.com/app/notetaker-ai/id6745268209
