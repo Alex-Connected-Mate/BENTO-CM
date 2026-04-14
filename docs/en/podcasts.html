@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Podcasts — Connected Mate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700;800&display=swap" as="style">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div id="page-loader" style="position:fixed;top:0;left:0;right:0;height:2px;background:var(--text);transform-origin:left;transform:scaleX(0);z-index:99999;transition:transform 400ms cubic-bezier(0.05,0.7,0.1,1);"></div>
+<script>
+(function(){
+  var loader = document.getElementById('page-loader');
+  if (!loader) return;
+  loader.style.transform = 'scaleX(0.3)';
+  window.addEventListener('load', function() {
+    loader.style.transform = 'scaleX(1)';
+    setTimeout(function() { loader.style.opacity = '0'; }, 300);
+    setTimeout(function() { loader.remove(); }, 700);
+  });
+})();
+</script>
+<div class="page-shell">
+
+  <!-- ASCII Canvas Background -->
+  <canvas id="ascii-canvas" style="position:absolute;top:0;left:0;width:100%;z-index:-1;pointer-events:none;"></canvas>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-bar">
+        <a href="../index.html" class="logo">
+          Connected Mate
+        </a>
+        <div class="nav-links">
+          <a href="../index.html">Applications</a>
+          <a href="../better-dictate.html">Better Dictate</a>
+          <a href="../notetaker-ai.html">NoteTaker AI</a>
+          <a href="podcasts.html" class="active">Podcasts</a>
+          <a href="../contact.html">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <a href="../podcasts.html" class="pill-button secondary" style="padding:0.45rem 0.75rem;font-size:0.72rem;">FR</a>
+          <a href="https://wa.me/33782150438?text=Hello%2C%20I%27m%20contacting%20you%20via%20Connected%20Mate!" class="pill-button whatsapp" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO — PODCAST -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-copy blur-in" style="max-width:42rem;">
+          <div class="hero-badge blur-in">PODCAST &middot; 100+ EPISODES</div>
+          <h1 class="hero-title blur-in delay-1" style="font-size:clamp(1.8rem,4vw,3rem);">
+            The Connected Mate<br>Podcast
+          </h1>
+          <p class="hero-subtitle blur-in delay-2">
+            Conversations with the brightest minds in tech, innovation, and business. Available on every platform.
+          </p>
+          <div class="hero-cta blur-in delay-3">
+            <div class="hero-cta-actions">
+              <a href="https://smartlink.ausha.co/connectedmate" class="pill-button primary" target="_blank" rel="noopener">
+                Listen now &rarr;
+              </a>
+              <a href="https://www.youtube.com/@ConnectedMate" class="pill-button secondary" target="_blank" rel="noopener">
+                Watch on YouTube
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLATFORMS SECTION -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">Listen to the podcast</span>
+            <h2 class="section-title">All platforms</h2>
+          </div>
+          <p class="section-meta">Audio &middot; Video<br>Everywhere</p>
+        </div>
+        <div class="cs-grid">
+
+          <!-- Apple Podcasts -->
+          <a href="https://podcasts.apple.com/fr/podcast/connected-mate/id1439013021" class="cs-card" target="_blank" rel="noopener">
+            <div class="cs-card-icon" style="width:auto;height:auto;margin-bottom:0.75rem;">
+              <img src="../apple-podcasts-badge.svg" alt="Apple Podcasts" style="width:auto;height:32px;max-width:120px;border-radius:4px;object-fit:contain;display:block;" loading="lazy" decoding="async">
+            </div>
+            <span class="cs-card-category">Audio &middot; iOS &middot; Mac</span>
+            <h3 class="cs-card-title">Apple Podcasts</h3>
+            <p class="cs-card-desc">Listen to Connected Mate on Apple Podcasts. Subscribe to never miss an episode.</p>
+            <div class="cs-card-cta">
+              <span class="cs-cta-label">Listen</span>
+              <span class="cs-cta-arrow">Open &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Spotify -->
+          <a href="https://open.spotify.com/show/0HE6b6ZfN3zeU4QikK7XFd" class="cs-card" target="_blank" rel="noopener">
+            <div class="cs-card-icon">
+              <img src="../spotify-icon.png" alt="Spotify" style="width:48px;height:48px;border-radius:10px;object-fit:contain;" loading="lazy" decoding="async">
+            </div>
+            <span class="cs-card-category">Audio &middot; Streaming</span>
+            <h3 class="cs-card-title">Spotify</h3>
+            <p class="cs-card-desc">Find all our episodes on Spotify. Follow the podcast to get notified of new episodes.</p>
+            <div class="cs-card-cta">
+              <span class="cs-cta-label">Listen</span>
+              <span class="cs-cta-arrow">Open &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Deezer -->
+          <a href="https://www.deezer.com/show/377322" class="cs-card" target="_blank" rel="noopener">
+            <div class="cs-card-icon" style="width:auto;height:auto;margin-bottom:0.75rem;">
+              <img src="../deezer-icon.svg" alt="Deezer" style="width:auto;height:32px;max-width:120px;border-radius:4px;object-fit:contain;display:block;" loading="lazy" decoding="async">
+            </div>
+            <span class="cs-card-category">Audio &middot; Streaming</span>
+            <h3 class="cs-card-title">Deezer</h3>
+            <p class="cs-card-desc">Listen to the Connected Mate podcast on Deezer. Available for free streaming.</p>
+            <div class="cs-card-cta">
+              <span class="cs-cta-label">Listen</span>
+              <span class="cs-cta-arrow">Open &rarr;</span>
+            </div>
+          </a>
+
+          <!-- All Episodes -->
+          <a href="https://smartlink.ausha.co/connectedmate" class="cs-card" target="_blank" rel="noopener">
+            <div class="cs-card-icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="64" height="64" rx="14" fill="#1a1a2e"/>
+                <circle cx="32" cy="30" r="12" stroke="#FF6B6B" stroke-width="2.5" fill="none"/>
+                <polygon points="29,24 29,36 40,30" fill="#FF6B6B"/>
+              </svg>
+            </div>
+            <span class="cs-card-category">All episodes</span>
+            <h3 class="cs-card-title">All Episodes</h3>
+            <p class="cs-card-desc">Browse the complete catalogue of our episodes on Ausha. Listen, share and subscribe.</p>
+            <div class="cs-card-cta">
+              <span class="cs-cta-label">Browse</span>
+              <span class="cs-cta-arrow">View all &rarr;</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- YOUTUBE SECTION -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">Video</span>
+            <h2 class="section-title">YouTube</h2>
+          </div>
+        </div>
+        <a href="https://www.youtube.com/@ConnectedMate" class="cs-card" target="_blank" rel="noopener" style="max-width:680px;">
+          <div class="cs-card-icon">
+            <img src="../youtube-play-icon.svg" alt="YouTube" style="width:48px;height:48px;border-radius:10px;object-fit:contain;" loading="lazy" decoding="async">
+          </div>
+          <span class="cs-card-category">Video &middot; YouTube</span>
+          <h3 class="cs-card-title">YouTube — Connected Mate</h3>
+          <p class="cs-card-desc">Watch our video episodes on YouTube. Subscribe to the channel so you never miss a thing.</p>
+          <div class="cs-card-cta">
+            <span class="cs-cta-label">Watch</span>
+            <span class="cs-cta-arrow">Open &rarr;</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- BOTTOM CTA -->
+    <section class="section bottom-cta">
+      <div class="container">
+        <div class="cta-panel" style="padding:1.25rem 1.5rem;">
+          <span class="section-kicker">Get in touch</span>
+          <h2 class="section-title" style="font-size:clamp(1.2rem,2.5vw,1.6rem);">Question? Project?</h2>
+          <p class="section-copy" style="color:#aaaaaf;margin-bottom:1.25rem">
+            Reach out via WhatsApp or email. Fast response guaranteed.
+          </p>
+          <div class="cta-actions">
+            <a href="https://wa.me/33782150438?text=Hello%2C%20I%27m%20contacting%20you%20via%20Connected%20Mate!" class="pill-button whatsapp" target="_blank" rel="noopener" style="width:100%">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp &rarr;
+            </a>
+            <a href="../contact.html" class="pill-button" style="width:100%;background:var(--surface-strong);color:var(--text);border:1px solid var(--line-strong);">
+              Write to us &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-row">
+        <span>&copy; 2026 Connected Mate by <a href="mailto:alex.connectedmate@gmail.com">Alexandre Cormeraie</a></span>
+        <div class="footer-links">
+          <a href="../better-dictate.html">Better Dictate</a>
+          <a href="../notetaker-ai.html">NoteTaker AI</a>
+          <a href="podcasts.html">Podcasts</a>
+          <a href="../contact.html">Contact</a>
+          <a href="legal.html">Legal</a>
+          <span class="system-tag">[ PRIVACY FIRST ]</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- ASCII Canvas Animation -->
+<script src="../ascii-canvas.js"></script>
+
+</body>
+</html>

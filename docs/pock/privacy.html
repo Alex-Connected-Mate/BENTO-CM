@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pock — Politique de confidentialite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700;800&display=swap" as="style">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div id="page-loader" style="position:fixed;top:0;left:0;right:0;height:2px;background:var(--text);transform-origin:left;transform:scaleX(0);z-index:99999;transition:transform 400ms cubic-bezier(0.05,0.7,0.1,1);"></div>
+<script>(function(){var l=document.getElementById('page-loader');if(!l)return;l.style.transform='scaleX(0.3)';window.addEventListener('load',function(){l.style.transform='scaleX(1)';setTimeout(function(){l.style.opacity='0';},300);setTimeout(function(){l.remove();},700);});})();</script>
+
+<div class="page-shell">
+  <canvas id="ascii-canvas" style="position:absolute;top:0;left:0;width:100%;z-index:-1;pointer-events:none;"></canvas>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-bar">
+        <a href="../index.html" class="logo">Connected Mate</a>
+        <div class="nav-links">
+          <a href="../index.html">Applications</a>
+          <a href="../pock.html">Pock</a>
+          <a href="../legal.html">Legal</a>
+          <a href="../contact.html">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <a href="../en/pock/privacy.html" class="pill-button secondary" style="padding:0.3rem 0.65rem;font-size:0.7rem;">EN</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" style="padding-top:clamp(2rem,4vw,3rem);">
+      <div class="container" style="max-width:720px;">
+        <a href="../pock.html" class="back-link">Retour a Pock</a>
+
+        <div class="article-header">
+          <h1 style="font-family:var(--font-mono);font-size:clamp(1.3rem,3vw,2rem);font-weight:700;letter-spacing:-0.03em;margin-bottom:0.5rem;">Politique de Confidentialite — Pock</h1>
+          <p style="color:var(--text-soft);font-family:var(--font-mono);font-size:0.75rem;letter-spacing:0.04em;">Derniere mise a jour : Janvier 2026</p>
+        </div>
+
+        <div class="article-content" style="max-width:100%;">
+          <p>Connected Mate ("nous", "notre") a developpe l'application Pock ("l'Application") en tant qu'application commerciale avec des achats integres optionnels. Cette page a pour but d'informer les utilisateurs de notre politique en matiere de collecte, d'utilisation et de divulgation des informations personnelles.</p>
+
+          <h2>1. Donnees collectees</h2>
+          <p><strong>Pock ne collecte aucune donnee personnelle.</strong></p>
+          <p>Toutes les informations financieres que vous saisissez dans l'application (montants, noms de comptes, objectifs, revenus, charges) sont stockees exclusivement sur votre appareil (iPhone, iPad, Apple Watch). Aucune de ces donnees n'est transmise a nos serveurs ou a des tiers.</p>
+
+          <h2>2. Stockage des donnees</h2>
+          <p>Les donnees sont stockees localement sur votre appareil via :</p>
+          <ul>
+            <li>Le stockage local de l'application (UserDefaults, SwiftData)</li>
+            <li>Les App Groups pour la synchronisation entre l'application principale, les widgets et l'Apple Watch</li>
+          </ul>
+          <p>Si vous utilisez iCloud, vos donnees peuvent etre synchronisees entre vos appareils Apple via le stockage iCloud prive d'Apple. Dans ce cas, les donnees sont chiffrees et gerees par Apple conformement a leur propre politique de confidentialite.</p>
+
+          <h2>3. Donnees de paiement</h2>
+          <p>Les achats integres (abonnement Pock Premium) sont traites exclusivement par Apple via l'App Store. Nous n'avons pas acces a vos informations de paiement (carte bancaire, identifiant Apple, etc.).</p>
+
+          <h2>4. Services tiers</h2>
+          <p>Pock utilise un seul service externe :</p>
+          <ul>
+            <li><strong>API Frankfurter (Banque Centrale Europeenne)</strong> : Pour obtenir les taux de change des devises. Cette API ne recoit aucune donnee personnelle de votre part. Seule une requete anonyme est envoyee pour obtenir les taux du jour.</li>
+          </ul>
+
+          <h2>5. Cookies et trackers</h2>
+          <p>Pock n'utilise aucun cookie, aucun tracker, aucun outil d'analyse (pas de Google Analytics, pas de Firebase, pas de Mixpanel, etc.). Nous ne suivons pas votre utilisation de l'application.</p>
+
+          <h2>6. Partage de donnees</h2>
+          <p>Nous ne partageons, ne vendons et ne louons aucune donnee personnelle a des tiers. Nous n'avons tout simplement pas de donnees a partager puisque tout reste sur votre appareil.</p>
+
+          <h2>7. Securite</h2>
+          <p>Bien que nous ne stockions aucune donnee sur nos serveurs, nous prenons la securite de vos donnees locales au serieux :</p>
+          <ul>
+            <li>Possibilite de proteger l'application par mot de passe</li>
+            <li>Support de Face ID et Touch ID</li>
+            <li>Floutage des montants pour la discretion</li>
+          </ul>
+
+          <h2>8. Droits des utilisateurs</h2>
+          <p>Puisque vos donnees sont stockees localement, vous avez un controle total :</p>
+          <ul>
+            <li><strong>Acces</strong> : Toutes vos donnees sont visibles dans l'application</li>
+            <li><strong>Modification</strong> : Vous pouvez modifier toutes vos donnees a tout moment</li>
+            <li><strong>Suppression</strong> : Vous pouvez supprimer toutes vos donnees via Reglages > Reinitialiser les donnees, ou en desinstallant l'application</li>
+            <li><strong>Portabilite</strong> : Vous pouvez exporter vos donnees en PDF (fonctionnalite Premium)</li>
+          </ul>
+
+          <h2>9. Enfants</h2>
+          <p>Pock n'est pas destinee aux enfants de moins de 13 ans. Nous ne collectons pas sciemment de donnees de mineurs.</p>
+
+          <h2>10. Modifications de cette politique</h2>
+          <p>Nous nous reservons le droit de modifier cette politique de confidentialite. Les modifications seront publiees sur cette page avec une date de mise a jour.</p>
+
+          <h2>11. Contact</h2>
+          <p>Pour toute question concernant cette politique de confidentialite :</p>
+          <ul>
+            <li>Email : <a href="mailto:support@connectedmate.fr">support@connectedmate.fr</a></li>
+            <li>Site web : <a href="https://connectedmate.fr">https://connectedmate.fr</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-row">
+        <span>&copy; 2026 Connected Mate SAS &middot; Tous droits reserves</span>
+        <div class="footer-links">
+          <a href="../index.html">Accueil</a>
+          <a href="../pock.html">Pock</a>
+          <a href="terms.html">CGU Pock</a>
+          <a href="../legal.html">Mentions legales</a>
+          <span class="system-tag">[ PRIVACY FIRST ]</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="../ascii-canvas.js"></script>
+</body>
+</html>

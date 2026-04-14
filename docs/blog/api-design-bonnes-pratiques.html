@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Design : les bonnes pratiques en 2026 — Connected Mate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700;800&display=swap" as="style">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div id="page-loader" style="position:fixed;top:0;left:0;right:0;height:2px;background:var(--text);transform-origin:left;transform:scaleX(0);z-index:99999;transition:transform 400ms cubic-bezier(0.05,0.7,0.1,1);"></div>
+<script>
+(function(){
+  var loader = document.getElementById('page-loader');
+  if (!loader) return;
+  loader.style.transform = 'scaleX(0.3)';
+  window.addEventListener('load', function() {
+    loader.style.transform = 'scaleX(1)';
+    setTimeout(function() { loader.style.opacity = '0'; }, 300);
+    setTimeout(function() { loader.remove(); }, 700);
+  });
+})();
+</script>
+<div class="page-shell">
+
+  <!-- ASCII Canvas Background -->
+  <canvas id="ascii-canvas" style="position:absolute;top:0;left:0;width:100%;z-index:-1;pointer-events:none;"></canvas>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-bar">
+        <a href="../index.html" class="logo">
+          Connected Mate
+        </a>
+        <div class="nav-links">
+          <a href="../index.html">Applications</a>
+          <a href="../better-dictate.html">Keynotes</a>
+          <a href="../notetaker-ai.html">Podcasts</a>
+          <a href="../blog.html" class="active">Blog</a>
+          <a href="../contact.html">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <a href="../en/blog.html" class="pill-button secondary">EN</a>
+          <a href="https://wa.me/33782150438?text=Bonjour%2C%20je%20vous%20contacte%20via%20Connected%20Mate%20!" class="pill-button whatsapp" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <div class="article-header">
+        <a href="../blog.html" class="article-back">&larr; Retour au blog</a>
+        <h1>API Design : les bonnes pratiques en 2026</h1>
+        <div class="article-meta">
+          <span class="article-meta-tag">Developpement</span>
+          <span class="article-meta-item"><strong>Thomas Petit</strong></span>
+          <span class="article-meta-item">12 jan 2026</span>
+          <span class="article-meta-item">6 min de lecture</span>
+        </div>
+      </div>
+
+      <div class="article-content">
+
+        <p>Les API sont le tissu conjonctif du logiciel moderne. Elles connectent les services, permettent l'interoperabilite et definissent les contrats entre equipes. Une API bien conçue accelere le developpement, facilite l'integration et reduit les couts de maintenance. Une API mal conçue genere de la dette technique pour des annees. Voici les regles essentielles pour concevoir des API solides en 2026.</p>
+
+        <h2>Choisir le bon paradigme</h2>
+
+        <p>REST reste le standard par defaut pour les API publiques et les architectures simples. Sa familiarite, la richesse de son ecosysteme et sa compatibilite universelle en font un choix sur pour la majorite des cas d'usage. Si votre API expose des ressources CRUD avec des relations simples, REST est probablement le bon choix.</p>
+
+        <p>GraphQL excelle lorsque les clients ont des besoins de donnees varies et imprevisibles. Les applications mobiles, les dashboards complexes et les architectures BFF (Backend For Frontend) beneficient particulierement de la flexibilite de GraphQL. Mais cette flexibilite a un cout : la complexite du serveur, la difficulte du caching et les risques de requetes abusives.</p>
+
+        <p>gRPC est le choix naturel pour la communication inter-services dans une architecture microservices. Son protocole binaire base sur HTTP/2, ses performances superieures et son systeme de typage fort via Protocol Buffers en font un outil redoutable pour les communications internes a haut debit. En revanche, il est moins adapte aux API publiques consommees par des navigateurs.</p>
+
+        <p>Ne choisissez pas un paradigme par mode. Evaluez vos besoins reels : qui sont les consommateurs de votre API ? Quels sont les patterns d'acces aux donnees ? Quelles sont vos contraintes de performance ? La reponse a ces questions determine le bon choix, pas le dernier article de blog a la mode.</p>
+
+        <h2>Coherence avant tout</h2>
+
+        <p>La coherence est la qualite la plus importante d'une API. Un developpeur qui comprend un endpoint doit pouvoir deviner le comportement de tous les autres. Cela implique des conventions strictes et appliquees uniformement : nommage des ressources, format des reponses, gestion des erreurs, pagination, filtrage.</p>
+
+        <p>Adoptez un style guide d'API et faites-le respecter par des outils automatises. Les linters d'API comme Spectral verifient la conformite de vos specifications OpenAPI avec vos regles internes. Integrez ces verifications dans votre pipeline CI : une API non conforme ne devrait pas etre deployee.</p>
+
+        <p>La coherence s'applique aussi aux codes de retour HTTP. Utilisez 200 pour le succes, 201 pour la creation, 204 pour une suppression sans contenu, 400 pour une erreur client, 401 pour un probleme d'authentification, 403 pour un probleme d'autorisation, 404 pour une ressource introuvable, 429 pour le rate limiting, 500 pour une erreur serveur. Chaque code a un sens precis : respectez-le.</p>
+
+        <h2>Versioning strategique</h2>
+
+        <p>Toute API publiee est un contrat. Modifier ce contrat sans precaution casse les clients existants. Le versioning est la solution, mais il doit etre pense des la conception, pas ajoute en urgence quand le premier breaking change survient.</p>
+
+        <p>Privilegiez le versioning par URL (/v1/users, /v2/users) pour les API REST publiques. C'est la methode la plus explicite et la plus facile a comprendre pour les consommateurs. Le versioning par header (Accept: application/vnd.api+json; version=2) est plus elegant mais moins visible et plus sujet aux erreurs d'integration.</p>
+
+        <p>Minimisez le nombre de versions actives simultanement. Chaque version est un cout de maintenance. Definissez une politique de deprecation claire : annoncez la fin de vie d'une version au moins six mois a l'avance, communiquez regulierement, et fournissez un guide de migration detaille. Une version maintenue eternellement est un boulet technique.</p>
+
+        <h2>Documentation comme produit</h2>
+
+        <p>La documentation de votre API est son interface utilisateur. Si elle est mauvaise, personne ne voudra utiliser votre API, meme si elle est techniquement excellente. Traitez la documentation comme un produit a part entiere : testez-la avec de vrais utilisateurs, iterez dessus, mesurez son efficacite.</p>
+
+        <p>Generez la documentation a partir de la specification OpenAPI ou du schema GraphQL. Cela garantit que la documentation reste synchronisee avec l'implementation. Ajoutez des exemples de requetes et de reponses pour chaque endpoint, avec des scenarios realistes. Un developpeur doit pouvoir copier-coller un exemple et obtenir un resultat fonctionnel.</p>
+
+        <p>Proposez un environnement sandbox ou les developpeurs peuvent tester l'API sans risque. Un "Try it" interactif dans la documentation reduit le time-to-first-call de maniere spectaculaire. Les API les plus adoptees au monde (Stripe, Twilio) ont compris cette verite : la developer experience commence par la documentation.</p>
+
+        <h2>Securite des le design</h2>
+
+        <p>La securite d'une API ne se rajoute pas apres coup. Elle se pense des la conception. Chaque endpoint doit avoir un modele de menace : qui peut y acceder, avec quelles permissions, quelles donnees sont exposees, quels sont les risques d'abus ?</p>
+
+        <p>Implementez l'authentification avec OAuth 2.0 et les JWT pour les API publiques. Utilisez des scopes granulaires pour limiter les permissions de chaque token. Appliquez le principe du moindre privilege : un client ne doit avoir acces qu'aux ressources dont il a besoin, rien de plus.</p>
+
+        <p>Mettez en place du rate limiting sur tous les endpoints. Sans limite, un seul client peut saturer votre infrastructure. Definissez des quotas par client, par endpoint et par fenetre temporelle. Retournez des headers clairs (X-RateLimit-Limit, X-RateLimit-Remaining, Retry-After) pour que les clients puissent gerer les limites de maniere elegante.</p>
+
+        <p>Validez rigoureusement toutes les entrees. L'injection SQL, le XSS et les attaques par deserialization restent des menaces reelles. Utilisez des schemas de validation (JSON Schema, zod, io-ts) pour verifier la structure et le type de chaque parametre. Rejetez tout ce qui ne correspond pas au contrat : la tolerantite aux entrees invalides est une source inepuisable de bugs de securite.</p>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-row">
+        <span>&copy; 2026 Connected Mate by <a href="mailto:alex.connectedmate@gmail.com">Alexandre Cormeraie</a></span>
+        <div class="footer-links">
+          <a href="../index.html">Applications</a>
+          <a href="../blog.html">Blog</a>
+          <a href="../contact.html">Contact</a>
+          <a href="../legal.html">Mentions legales</a>
+          <span class="system-tag">[ PRIVACY FIRST ]</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script src="../ascii-canvas.js"></script>
+</body>
+</html>

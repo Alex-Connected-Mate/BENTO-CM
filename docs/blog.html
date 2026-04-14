@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Connected Mate</title>
+  <meta name="description" content="Articles sur l'IA, la tech, la cybersecurite et l'innovation par l'equipe Connected Mate. Analyses et retours d'experience.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700;800&display=swap" as="style">
+<link rel="stylesheet" href="style.css">
+  <style>
+    /* ── Blog Page Overrides ── */
+
+    /* Hero */
+    .blog-hero {
+      padding: clamp(2rem, 4vw, 3rem) 0 clamp(1.5rem, 3vw, 2rem);
+    }
+    .blog-hero-inner {
+      max-width: 42rem;
+    }
+    .blog-hero-title {
+      font-family: var(--font-mono);
+      font-size: clamp(2rem, 4.5vw, 3rem);
+      font-weight: 800;
+      letter-spacing: -0.05em;
+      line-height: 0.92;
+      margin-bottom: 0.75rem;
+      color: var(--text);
+    }
+    .blog-hero-subtitle {
+      max-width: 36rem;
+      color: var(--text-muted);
+      font-size: clamp(0.85rem, 1.2vw, 0.95rem);
+      line-height: 1.7;
+    }
+
+    /* Featured Article (Editorial Card) */
+    .blog-featured {
+      margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+    }
+    .blog-featured-card {
+      display: block;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--text);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem 1.5rem;
+      text-decoration: none;
+      color: inherit;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    .blog-featured-card:hover {
+      box-shadow: 0 8px 24px rgba(10,10,11,0.08);
+      transform: translateY(-2px);
+    }
+    .blog-featured-tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.2rem 0.6rem;
+      border-radius: 100px;
+      background: var(--surface-soft, #f5f5f5);
+      border: 1px solid var(--line);
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      width: fit-content;
+      margin-bottom: 0.5rem;
+    }
+    .blog-featured-title {
+      font-family: var(--font-mono);
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      color: var(--text);
+      margin-bottom: 0.35rem;
+    }
+    .blog-featured-excerpt {
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      line-height: 1.6;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 0.5rem;
+    }
+    .blog-featured-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.5rem;
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--text-soft);
+      letter-spacing: 0.02em;
+    }
+    .blog-featured-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: 0.01em;
+      transition: gap 0.2s ease;
+    }
+    .blog-featured-card:hover .blog-featured-cta {
+      gap: 0.65rem;
+    }
+
+    /* Grid Section */
+    .blog-grid-section {
+      padding-bottom: var(--section-gap);
+    }
+    .blog-grid-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--line-strong);
+    }
+    .blog-grid-header-title {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    .blog-grid-header-count {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      color: var(--text-soft);
+    }
+
+    /* Redesigned Blog Cards */
+    .blog-grid-2col {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+    }
+    .blog-card-v2 {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.2s, box-shadow 0.25s, transform 0.25s ease;
+    }
+    .blog-card-v2:hover {
+      border-color: var(--line-strong);
+      box-shadow: var(--shadow);
+      transform: translateY(-4px);
+    }
+    .blog-card-v2-tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.3rem 0.7rem;
+      border-radius: 100px;
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      width: fit-content;
+      margin-bottom: 1rem;
+    }
+    .blog-card-v2-tag.tag-work    { background: #e8f5e9; color: #1b5e20; }
+    .blog-card-v2-tag.tag-green   { background: #e0f2f1; color: #00695c; }
+    .blog-card-v2-tag.tag-cyber   { background: #e3f2fd; color: #1565c0; }
+    .blog-card-v2-tag.tag-product { background: #f3e5f5; color: #6a1b9a; }
+    .blog-card-v2-tag.tag-dev     { background: #eceff1; color: #37474f; }
+
+    .blog-card-v2-title {
+      font-family: var(--font-mono);
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.35;
+      margin-bottom: 0.75rem;
+      color: var(--text);
+    }
+    .blog-card-v2-excerpt {
+      color: var(--text-muted);
+      font-size: 0.8125rem;
+      line-height: 1.7;
+      flex: 1;
+      margin-bottom: 1.5rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .blog-card-v2-bottom {
+      border-top: 1px solid var(--line);
+      padding-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .blog-card-v2-author {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .blog-card-v2-author .author-initials {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--surface-soft);
+      border: 1px solid var(--line);
+      display: grid;
+      place-items: center;
+      font-family: var(--font-mono);
+      font-size: 0.55rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+      flex-shrink: 0;
+    }
+    .blog-card-v2-author-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+    .blog-card-v2-author-name {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: 0.02em;
+    }
+    .blog-card-v2-date-time {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      color: var(--text-soft);
+      letter-spacing: 0.04em;
+    }
+    .blog-card-v2-read {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: 0.02em;
+      transition: color 0.2s;
+    }
+    .blog-card-v2:hover .blog-card-v2-read {
+      color: var(--text);
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .blog-grid-2col {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 640px) {
+      .blog-grid-2col {
+        grid-template-columns: 1fr;
+        max-width: 28rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div id="page-loader" style="position:fixed;top:0;left:0;right:0;height:2px;background:var(--text);transform-origin:left;transform:scaleX(0);z-index:99999;transition:transform 400ms cubic-bezier(0.05,0.7,0.1,1);"></div>
+<script>
+(function(){
+  var loader = document.getElementById('page-loader');
+  if (!loader) return;
+  loader.style.transform = 'scaleX(0.3)';
+  window.addEventListener('load', function() {
+    loader.style.transform = 'scaleX(1)';
+    setTimeout(function() { loader.style.opacity = '0'; }, 300);
+    setTimeout(function() { loader.remove(); }, 700);
+  });
+})();
+</script>
+<div class="page-shell">
+
+  <!-- ASCII Canvas Background -->
+  <canvas id="ascii-canvas" style="position:absolute;top:0;left:0;width:100%;z-index:-1;pointer-events:none;"></canvas>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-bar">
+        <a href="index.html" class="logo">
+          Connected Mate
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Applications</a>
+          <a href="keynotes.html">Keynotes</a>
+          <a href="podcasts.html">Podcasts</a>
+          <a href="blog.html" class="active">Blog</a>
+          <a href="about.html">A propos</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <a href="en/blog.html" class="pill-button secondary" style="padding:0.5rem 0.85rem;font-size:0.75rem;">EN</a>
+          <a href="https://wa.me/33782150438?text=Bonjour%2C%20je%20vous%20contacte%20via%20Connected%20Mate%20!" class="pill-button whatsapp" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="blog-hero">
+      <div class="container">
+        <div class="blog-hero-inner">
+          <span class="section-kicker blur-in">Analyses &amp; retours d'experience</span>
+          <h1 class="blog-hero-title blur-in">Blog</h1>
+          <p class="blog-hero-subtitle blur-in">
+            Articles sur l'IA, la tech, la cybersecurite et l'innovation par l'equipe Connected Mate.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED ARTICLE -->
+    <section class="blog-featured">
+      <div class="container">
+        <a href="blog/ia-generative-entreprise.html" class="blog-featured-card blur-in">
+          <span class="blog-featured-tag">Intelligence Artificielle</span>
+          <h2 class="blog-featured-title">L'IA generative en entreprise : par ou commencer ?</h2>
+          <p class="blog-featured-excerpt">
+            Un guide pragmatique pour lancer vos premiers projets d'IA generative sans vous perdre dans le battage mediatique. De l'identification des cas d'usage a la mesure du ROI.
+          </p>
+          <div class="blog-featured-meta">
+            <span>Alexandre Martin</span>
+            <span>&middot;</span>
+            <span>15 fev 2026</span>
+            <span>&middot;</span>
+            <span>5 min</span>
+          </div>
+          <span class="blog-featured-cta">Lire l'article &rarr;</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ARTICLES GRID -->
+    <section class="blog-grid-section">
+      <div class="container">
+        <div class="blog-grid-header">
+          <span class="blog-grid-header-title">Tous les articles</span>
+          <span class="blog-grid-header-count">05 articles</span>
+        </div>
+
+        <div class="blog-grid-2col">
+
+          <!-- Article 2 -->
+          <a href="blog/travail-hybride-2026.html" class="blog-card-v2 blur-in">
+            <span class="blog-card-v2-tag tag-work">Futur du travail</span>
+            <h2 class="blog-card-v2-title">Travail hybride en 2026 : les lecons apprises</h2>
+            <p class="blog-card-v2-excerpt">
+              Quatre ans de recul sur le travail hybride. Ce qui fonctionne, ce qui a echoue, et les pratiques qui font la difference entre une equipe performante et une equipe fragmentee.
+            </p>
+            <div class="blog-card-v2-bottom">
+              <div class="blog-card-v2-author">
+                <div class="author-initials">SD</div>
+                <div class="blog-card-v2-author-info">
+                  <span class="blog-card-v2-author-name">Sophie Durand</span>
+                  <span class="blog-card-v2-date-time">10 fev 2026 &middot; 6 min</span>
+                </div>
+              </div>
+              <span class="blog-card-v2-read">Lire &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Article 3 -->
+          <a href="blog/green-it-guide-pratique.html" class="blog-card-v2 blur-in">
+            <span class="blog-card-v2-tag tag-green">Green IT</span>
+            <h2 class="blog-card-v2-title">Green IT : reduire l'empreinte carbone de votre SI</h2>
+            <p class="blog-card-v2-excerpt">
+              Des actions concretes pour diminuer l'impact environnemental de votre systeme d'information. Du materiel au cloud, chaque levier compte.
+            </p>
+            <div class="blog-card-v2-bottom">
+              <div class="blog-card-v2-author">
+                <div class="author-initials">CM</div>
+                <div class="blog-card-v2-author-info">
+                  <span class="blog-card-v2-author-name">Claire Morel</span>
+                  <span class="blog-card-v2-date-time">5 fev 2026 &middot; 4 min</span>
+                </div>
+              </div>
+              <span class="blog-card-v2-read">Lire &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Article 4 -->
+          <a href="blog/cybersecurite-pme.html" class="blog-card-v2 blur-in">
+            <span class="blog-card-v2-tag tag-cyber">Cybersecurite</span>
+            <h2 class="blog-card-v2-title">Cybersecurite pour les PME : l'essentiel</h2>
+            <p class="blog-card-v2-excerpt">
+              Les cinq piliers fondamentaux pour proteger votre PME des cybermenaces les plus courantes, sans budget astronomique ni equipe dediee.
+            </p>
+            <div class="blog-card-v2-bottom">
+              <div class="blog-card-v2-author">
+                <div class="author-initials">KB</div>
+                <div class="blog-card-v2-author-info">
+                  <span class="blog-card-v2-author-name">Karim Benali</span>
+                  <span class="blog-card-v2-date-time">28 jan 2026 &middot; 5 min</span>
+                </div>
+              </div>
+              <span class="blog-card-v2-read">Lire &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Article 5 -->
+          <a href="blog/product-management-ia.html" class="blog-card-v2 blur-in">
+            <span class="blog-card-v2-tag tag-product">Product</span>
+            <h2 class="blog-card-v2-title">Comment l'IA transforme le Product Management</h2>
+            <p class="blog-card-v2-excerpt">
+              De l'analyse des retours utilisateurs a la prediction du churn, l'IA redefinit le quotidien du Product Manager. Tour d'horizon des cas d'usage concrets.
+            </p>
+            <div class="blog-card-v2-bottom">
+              <div class="blog-card-v2-author">
+                <div class="author-initials">ML</div>
+                <div class="blog-card-v2-author-info">
+                  <span class="blog-card-v2-author-name">Marc Lefevre</span>
+                  <span class="blog-card-v2-date-time">20 jan 2026 &middot; 5 min</span>
+                </div>
+              </div>
+              <span class="blog-card-v2-read">Lire &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Article 6 -->
+          <a href="blog/api-design-bonnes-pratiques.html" class="blog-card-v2 blur-in">
+            <span class="blog-card-v2-tag tag-dev">Developpement</span>
+            <h2 class="blog-card-v2-title">API Design : les bonnes pratiques en 2026</h2>
+            <p class="blog-card-v2-excerpt">
+              REST, GraphQL ou gRPC ? Versioning, documentation, securite : les regles incontournables pour concevoir des API robustes et agreables a utiliser.
+            </p>
+            <div class="blog-card-v2-bottom">
+              <div class="blog-card-v2-author">
+                <div class="author-initials">TP</div>
+                <div class="blog-card-v2-author-info">
+                  <span class="blog-card-v2-author-name">Thomas Petit</span>
+                  <span class="blog-card-v2-date-time">12 jan 2026 &middot; 6 min</span>
+                </div>
+              </div>
+              <span class="blog-card-v2-read">Lire &rarr;</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BOTTOM CTA -->
+    <section class="section bottom-cta">
+      <div class="container">
+        <div class="cta-panel">
+          <span class="section-kicker">Contactez-nous</span>
+          <h2 class="section-title">Une question ? Un projet ?</h2>
+          <p class="section-copy" style="color:#aaaaaf;margin-bottom:1.5rem">
+            Contactez-nous par WhatsApp ou par email. Reponse rapide garantie.
+          </p>
+          <div class="cta-actions">
+            <a href="https://wa.me/33782150438?text=Bonjour%2C%20je%20vous%20contacte%20via%20Connected%20Mate%20!" class="pill-button whatsapp" target="_blank" rel="noopener" style="width:100%">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp &rarr;
+            </a>
+            <a href="contact.html" class="pill-button secondary" style="width:100%">
+              Nous ecrire &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-row">
+        <span>&copy; 2026 Connected Mate by <a href="mailto:alex.connectedmate@gmail.com">Alexandre Cormeraie</a></span>
+        <div class="footer-links">
+          <a href="index.html">Applications</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+          <a href="legal.html">Mentions legales</a>
+          <span class="system-tag">[ PRIVACY FIRST ]</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script src="ascii-canvas.js"></script>
+</body>
+</html>

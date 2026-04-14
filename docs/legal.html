@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentions legales — Connected Mate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700;800&display=swap" as="style">
+<link rel="stylesheet" href="style.css">
+  <style>
+    /* ── Legal Tabs ── */
+    .legal-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid var(--line-strong);
+      padding-bottom: 0.75rem;
+    }
+    .legal-tab {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.45rem 0.85rem;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      font-size: 0.8125rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .legal-tab:hover {
+      color: var(--text);
+      border-color: var(--line-strong);
+      background: var(--surface-strong);
+    }
+    .legal-tab.active {
+      background: var(--text);
+      color: var(--bg);
+      border-color: var(--text);
+    }
+    .legal-content {
+      display: none;
+    }
+    .legal-content.active {
+      display: block;
+      animation: legalFadeIn 0.35s ease forwards;
+    }
+    @keyframes legalFadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .legal-block {
+      max-width: 800px;
+    }
+    .legal-block h2 {
+      font-family: var(--font-mono);
+      font-size: clamp(1.2rem, 2.5vw, 1.75rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      color: var(--text);
+    }
+    .legal-block h3 {
+      font-family: var(--font-mono);
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--text);
+    }
+    .legal-block p,
+    .legal-block li {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      line-height: 1.75;
+      margin-bottom: 0.5rem;
+    }
+    .legal-block ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 1rem;
+    }
+    .legal-block ul li::before {
+      content: "—";
+      color: var(--text);
+      font-weight: 700;
+      margin-right: 0.6rem;
+    }
+    .legal-block a {
+      color: var(--text);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      transition: color 0.2s;
+    }
+    .legal-block a:hover {
+      color: var(--text);
+    }
+    .legal-block .legal-info-grid {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      gap: 0.4rem 1.5rem;
+      margin: 1rem 0 1.5rem;
+      font-size: 0.875rem;
+    }
+    .legal-block .legal-info-grid dt {
+      font-family: var(--font-mono);
+      font-weight: 600;
+      color: var(--text);
+      font-size: 0.8125rem;
+      letter-spacing: 0.02em;
+    }
+    .legal-block .legal-info-grid dd {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+    .legal-update {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--line);
+      color: var(--text-soft);
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      letter-spacing: 0.06em;
+    }
+    .legal-hero {
+      padding: 2rem 0 1.5rem;
+    }
+    .legal-hero h1 {
+      font-family: var(--font-mono);
+      font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      line-height: 0.95;
+      margin-bottom: 0.75rem;
+    }
+    .legal-hero p {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      max-width: 600px;
+      line-height: 1.65;
+    }
+  </style>
+</head>
+<body>
+<div id="page-loader" style="position:fixed;top:0;left:0;right:0;height:2px;background:var(--text);transform-origin:left;transform:scaleX(0);z-index:99999;transition:transform 400ms cubic-bezier(0.05,0.7,0.1,1);"></div>
+<script>
+(function(){
+  var loader = document.getElementById('page-loader');
+  if (!loader) return;
+  loader.style.transform = 'scaleX(0.3)';
+  window.addEventListener('load', function() {
+    loader.style.transform = 'scaleX(1)';
+    setTimeout(function() { loader.style.opacity = '0'; }, 300);
+    setTimeout(function() { loader.remove(); }, 700);
+  });
+})();
+</script>
+<div class="page-shell">
+
+  <!-- ASCII Canvas Background -->
+  <canvas id="ascii-canvas" style="position:absolute;top:0;left:0;width:100%;z-index:-1;pointer-events:none;"></canvas>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-bar">
+        <a href="index.html" class="logo">
+          Connected Mate
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Applications</a>
+          <a href="better-dictate.html">Better Dictate</a>
+          <a href="notetaker-ai.html">NoteTaker AI</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <a href="https://wa.me/33782150438?text=Bonjour%2C%20je%20vous%20contacte%20via%20Connected%20Mate%20!" class="pill-button whatsapp" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- LEGAL HERO -->
+    <section class="legal-hero blur-in">
+      <div class="container">
+        <span class="section-kicker">Informations legales</span>
+        <h1>Mentions legales &amp; politiques</h1>
+        <p>Transparence, conformite RGPD et protection de vos donnees. Toutes les informations legales relatives a Connected Mate SAS.</p>
+      </div>
+    </section>
+
+    <!-- LEGAL CONTENT -->
+    <section class="section blur-in delay-1">
+      <div class="container">
+
+        <!-- Tabs -->
+        <div class="legal-tabs">
+          <button class="legal-tab active" data-tab="mentions">Mentions legales</button>
+          <button class="legal-tab" data-tab="cgu">CGU</button>
+          <button class="legal-tab" data-tab="confidentialite">Politique de confidentialite</button>
+          <button class="legal-tab" data-tab="cgv">CGV</button>
+        </div>
+
+        <!-- Tab 1: Mentions legales -->
+        <div class="legal-content active" id="tab-mentions">
+          <div class="legal-block">
+            <h2>Mentions legales</h2>
+
+            <h3>Editeur du site</h3>
+            <dl class="legal-info-grid">
+              <dt>Raison sociale</dt>
+              <dd>CONNECTED MATE SAS</dd>
+              <dt>Capital social</dt>
+              <dd>100 &euro;</dd>
+              <dt>SIREN</dt>
+              <dd>937 888 717</dd>
+              <dt>SIRET</dt>
+              <dd>937 888 717 00017</dd>
+              <dt>Siege social</dt>
+              <dd>74 avenue du General Leclerc, 75014 Paris, France</dd>
+              <dt>Activite</dt>
+              <dd>Conseil pour les affaires et autres conseils de gestion (NAF 70.22Z)</dd>
+              <dt>Date de creation</dt>
+              <dd>26 novembre 2024</dd>
+              <dt>Contact</dt>
+              <dd><a href="mailto:legal@connectedmate.com">legal@connectedmate.com</a></dd>
+            </dl>
+
+            <h3>Hebergement</h3>
+            <p>Le site est heberge par Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, Etats-Unis.</p>
+
+            <h3>Propriete intellectuelle</h3>
+            <p>L'ensemble des contenus presents sur ce site (textes, images, logos, code source, design) sont la propriete exclusive de CONNECTED MATE SAS ou de ses partenaires. Toute reproduction, representation, modification, publication ou adaptation de tout ou partie des elements du site, quel que soit le moyen ou le procede utilise, est interdite sans autorisation ecrite prealable de CONNECTED MATE SAS.</p>
+
+            <h3>Contact</h3>
+            <p>Pour toute question relative aux mentions legales, vous pouvez nous contacter a l'adresse <a href="mailto:legal@connectedmate.com">legal@connectedmate.com</a>.</p>
+          </div>
+        </div>
+
+        <!-- Tab 2: CGU -->
+        <div class="legal-content" id="tab-cgu">
+          <div class="legal-block">
+            <h2>Conditions Generales d'Utilisation</h2>
+
+            <h3>1. Objet</h3>
+            <p>Les presentes Conditions Generales d'Utilisation (CGU) ont pour objet de definir les modalites et conditions d'utilisation du site web connectedmate.com et des services proposes par CONNECTED MATE SAS. En accedant au site, l'utilisateur accepte sans reserve les presentes CGU.</p>
+
+            <h3>2. Acces au site</h3>
+            <p>L'acces au site est gratuit. Les frais d'acces et d'utilisation du reseau de telecommunications sont a la charge de l'utilisateur, selon les modalites fixees par son fournisseur d'acces a internet. CONNECTED MATE SAS se reserve le droit de suspendre ou d'interrompre l'acces au site a tout moment, notamment pour des raisons de maintenance.</p>
+
+            <h3>3. Utilisation des services</h3>
+            <p>L'utilisateur s'engage a utiliser le site et les services conformement a leur destination et aux presentes CGU. Il s'interdit notamment de :</p>
+            <ul>
+              <li>Utiliser le site a des fins illicites ou contraires aux presentes CGU</li>
+              <li>Porter atteinte aux droits de propriete intellectuelle de CONNECTED MATE SAS</li>
+              <li>Tenter d'acceder a des zones non autorisees du site ou de ses systemes informatiques</li>
+              <li>Transmettre des virus ou tout autre code malveillant</li>
+            </ul>
+
+            <h3>4. Comptes utilisateurs</h3>
+            <p>Certains services peuvent necessiter la creation d'un compte utilisateur. L'utilisateur est responsable de la confidentialite de ses identifiants de connexion et de toutes les activites realisees sous son compte. Il s'engage a informer immediatement CONNECTED MATE SAS en cas d'utilisation non autorisee de son compte.</p>
+
+            <h3>5. Responsabilite</h3>
+            <p>CONNECTED MATE SAS s'efforce de fournir des informations exactes et a jour sur le site. Toutefois, elle ne saurait etre tenue responsable des erreurs, omissions, ou des resultats obtenus suite a l'utilisation de ces informations. Le site et les services sont fournis "en l'etat". CONNECTED MATE SAS ne garantit pas l'absence d'interruption ou d'erreur dans le fonctionnement du site.</p>
+
+            <h3>6. Modification des CGU</h3>
+            <p>CONNECTED MATE SAS se reserve le droit de modifier les presentes CGU a tout moment. Les modifications entrent en vigueur des leur publication sur le site. L'utilisateur est invite a consulter regulierement cette page. La poursuite de l'utilisation du site apres modification vaut acceptation des nouvelles CGU.</p>
+          </div>
+        </div>
+
+        <!-- Tab 3: Politique de confidentialite -->
+        <div class="legal-content" id="tab-confidentialite">
+          <div class="legal-block">
+            <h2>Politique de confidentialite</h2>
+
+            <h3>1. Donnees collectees</h3>
+            <p>Dans le cadre de l'utilisation de nos services, nous sommes susceptibles de collecter les donnees personnelles suivantes :</p>
+            <ul>
+              <li>Nom et prenom</li>
+              <li>Adresse email</li>
+              <li>Numero de telephone</li>
+              <li>Adresse IP</li>
+              <li>Donnees d'utilisation et de navigation</li>
+            </ul>
+
+            <h3>2. Finalites du traitement</h3>
+            <p>Les donnees collectees sont utilisees pour les finalites suivantes :</p>
+            <ul>
+              <li>Creation et gestion de votre compte utilisateur</li>
+              <li>Fourniture et amelioration de nos services</li>
+              <li>Communication relative a nos services (mises a jour, support)</li>
+              <li>Analyse et statistiques d'utilisation</li>
+              <li>Respect de nos obligations legales et reglementaires</li>
+            </ul>
+
+            <h3>3. Base legale du traitement</h3>
+            <p>Le traitement de vos donnees personnelles repose sur les bases legales suivantes :</p>
+            <ul>
+              <li>Votre consentement explicite</li>
+              <li>L'execution d'un contrat auquel vous etes partie</li>
+              <li>L'interet legitime de CONNECTED MATE SAS</li>
+            </ul>
+
+            <h3>4. Duree de conservation</h3>
+            <p>Vos donnees personnelles sont conservees pour une duree maximale de 3 ans a compter de votre derniere interaction avec nos services, sauf obligation legale de conservation plus longue.</p>
+
+            <h3>5. Vos droits (RGPD)</h3>
+            <p>Conformement au Reglement General sur la Protection des Donnees (RGPD), vous disposez des droits suivants :</p>
+            <ul>
+              <li>Droit d'acces a vos donnees personnelles</li>
+              <li>Droit de rectification des donnees inexactes ou incompletes</li>
+              <li>Droit a l'effacement de vos donnees ("droit a l'oubli")</li>
+              <li>Droit a la limitation du traitement</li>
+              <li>Droit a la portabilite de vos donnees</li>
+              <li>Droit d'opposition au traitement de vos donnees</li>
+            </ul>
+            <p>Pour exercer ces droits, contactez notre Delegue a la Protection des Donnees : <a href="mailto:dpo@connectedmate.com">dpo@connectedmate.com</a>.</p>
+            <p>Vous disposez egalement du droit d'introduire une reclamation aupres de la CNIL (Commission Nationale de l'Informatique et des Libertes).</p>
+
+            <h3>6. Cookies</h3>
+            <p>Le site utilise des cookies techniques necessaires a son bon fonctionnement. Des cookies d'analyse peuvent etre utilises pour mesurer la frequentation du site. Vous pouvez configurer votre navigateur pour refuser les cookies ou etre alerte lors de leur envoi.</p>
+
+            <h3>7. Transferts de donnees</h3>
+            <p>Le site etant heberge par Vercel Inc. aux Etats-Unis, certaines donnees peuvent faire l'objet d'un transfert hors de l'Union Europeenne. Ces transferts sont encadres par des garanties appropriees conformement au RGPD (clauses contractuelles types).</p>
+          </div>
+        </div>
+
+        <!-- Tab 4: CGV -->
+        <div class="legal-content" id="tab-cgv">
+          <div class="legal-block">
+            <h2>Conditions Generales de Vente</h2>
+
+            <h3>1. Services proposes</h3>
+            <p>CONNECTED MATE SAS propose des services de conseil en gestion, ainsi que des applications logicielles (Better Dictate, NoteTaker AI) et des services associes. La description detaillee des services est disponible sur les pages dediees du site.</p>
+
+            <h3>2. Tarifs et paiement</h3>
+            <p>Les tarifs des services sont indiques en euros (EUR) toutes taxes comprises (TTC). CONNECTED MATE SAS se reserve le droit de modifier ses tarifs a tout moment, les services etant factures sur la base des tarifs en vigueur au moment de la commande.</p>
+            <p>Le paiement est effectue en ligne par carte bancaire via la plateforme securisee Stripe. Le paiement est exigible au moment de la commande.</p>
+
+            <h3>3. Droit de retractation</h3>
+            <p>Conformement aux articles L.221-18 et suivants du Code de la consommation, le consommateur dispose d'un delai de 14 jours calendaires a compter de la conclusion du contrat pour exercer son droit de retractation, sans avoir a justifier de motifs ni a payer de penalites.</p>
+            <p>Pour exercer ce droit, il suffit d'adresser une demande par email a <a href="mailto:legal@connectedmate.com">legal@connectedmate.com</a> avant l'expiration du delai.</p>
+
+            <h3>4. Resiliation</h3>
+            <p>L'utilisateur peut resilier son abonnement ou ses services a tout moment depuis son espace personnel ou en contactant le support. La resiliation prend effet a la fin de la periode en cours. Aucun remboursement partiel n'est effectue pour la periode entamee, sauf exercice du droit de retractation.</p>
+
+            <h3>5. Droit applicable et juridiction</h3>
+            <p>Les presentes CGV sont soumises au droit francais. En cas de litige relatif a l'interpretation ou a l'execution des presentes, et apres tentative de resolution amiable, competence est attribuee aux tribunaux competents de Paris, France.</p>
+          </div>
+        </div>
+
+        <p class="legal-update">Derniere mise a jour : fevrier 2026</p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-row">
+        <span>&copy; 2026 Connected Mate by <a href="mailto:alex.connectedmate@gmail.com">Alexandre Cormeraie</a></span>
+        <div class="footer-links">
+          <a href="index.html">Applications</a>
+          <a href="better-dictate.html">Better Dictate</a>
+          <a href="notetaker-ai.html">NoteTaker AI</a>
+          <a href="contact.html">Contact</a>
+          <a href="legal.html">Mentions legales</a>
+          <span class="system-tag">[ PRIVACY FIRST ]</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- ASCII Canvas Animation -->
+<script src="ascii-canvas.js"></script>
+
+<!-- Tab Switching -->
+<script>
+(function() {
+  var tabs = document.querySelectorAll('.legal-tab');
+  var contents = document.querySelectorAll('.legal-content');
+
+  tabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      var target = this.getAttribute('data-tab');
+
+      // Remove active from all tabs
+      tabs.forEach(function(t) { t.classList.remove('active'); });
+      // Remove active from all content
+      contents.forEach(function(c) { c.classList.remove('active'); });
+
+      // Activate clicked tab and matching content
+      this.classList.add('active');
+      var el = document.getElementById('tab-' + target);
+      if (el) el.classList.add('active');
+    });
+  });
+})();
+</script>
+
+</body>
+</html>

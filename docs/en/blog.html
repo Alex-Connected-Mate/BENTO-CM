@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Connected Mate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700;800&display=swap" as="style">
+<link rel="stylesheet" href="../style.css">
+  <style>
+    /* ── Blog Page — Premium Editorial Layout ── */
+
+    .blog-hero {
+      padding: clamp(2rem, 4vw, 3rem) 0 clamp(1.5rem, 3vw, 2rem);
+    }
+
+    .blog-hero-inner {
+      max-width: 720px;
+    }
+
+    .blog-hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 1.25rem;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text);
+    }
+
+    .blog-hero-kicker::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--text);
+      box-shadow: 0 0 8px rgba(10,10,11,0.45);
+    }
+
+    .blog-hero-title {
+      font-family: var(--font-mono);
+      font-size: clamp(2rem, 4.5vw, 3rem);
+      font-weight: 800;
+      letter-spacing: -0.05em;
+      line-height: 0.92;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+    }
+
+    .blog-hero-subtitle {
+      max-width: 540px;
+      color: var(--text-muted);
+      font-size: clamp(0.85rem, 1.2vw, 0.95rem);
+      line-height: 1.7;
+      letter-spacing: -0.01em;
+    }
+
+    /* ── Featured Article — Editorial Card ── */
+    .blog-featured {
+      margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+    }
+
+    .blog-featured-card {
+      display: block;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--text);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem 1.5rem;
+      text-decoration: none;
+      color: inherit;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .blog-featured-card:hover {
+      box-shadow: 0 8px 24px rgba(10,10,11,0.08);
+      transform: translateY(-2px);
+    }
+
+    .blog-featured-tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.2rem 0.6rem;
+      border-radius: 100px;
+      background: var(--surface-soft, #f5f5f5);
+      border: 1px solid var(--line);
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      width: fit-content;
+      margin-bottom: 0.5rem;
+    }
+
+    .blog-featured-title {
+      font-family: var(--font-mono);
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      color: var(--text);
+      margin-bottom: 0.35rem;
+    }
+
+    .blog-featured-excerpt {
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      line-height: 1.6;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 0.5rem;
+    }
+
+    .blog-featured-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.5rem;
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--text-soft);
+      letter-spacing: 0.02em;
+    }
+
+    .blog-featured-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: 0.01em;
+      transition: gap 0.2s ease;
+    }
+
+    .blog-featured-card:hover .blog-featured-cta {
+      gap: 0.65rem;
+    }
+
+    /* ── Article Grid ── */
+    .blog-articles-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+      margin-bottom: clamp(2rem, 4vw, 3rem);
+    }
+
+    .blog-article-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.3s ease, border-color 0.25s ease;
+      position: relative;
+    }
+
+    .blog-article-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 24px 60px rgba(10,10,11,0.1);
+      border-color: var(--line-strong);
+    }
+
+    .blog-article-tag {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      padding: 0.25rem 0.6rem;
+      border-radius: 100px;
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .blog-article-tag--ai       { background: rgba(10,10,11,0.06); color: var(--text-muted); border: 1px solid var(--line); }
+    .blog-article-tag--work     { background: rgba(10,132,255,0.08); color: #0a84ff; border: 1px solid rgba(10,132,255,0.15); }
+    .blog-article-tag--green    { background: rgba(52,199,89,0.1); color: #1e8a45; border: 1px solid rgba(52,199,89,0.2); }
+    .blog-article-tag--cyber    { background: rgba(100,100,120,0.1); color: #6b6b80; border: 1px solid rgba(100,100,120,0.18); }
+    .blog-article-tag--product  { background: rgba(10,132,255,0.08); color: #3a8fd4; border: 1px solid rgba(10,132,255,0.15); }
+    .blog-article-tag--dev      { background: rgba(10,10,11,0.06); color: var(--text-muted); border: 1px solid var(--line); }
+
+    .blog-article-title {
+      font-family: var(--font-mono);
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      line-height: 1.3;
+      color: var(--text);
+      margin-bottom: 0.65rem;
+    }
+
+    .blog-article-excerpt {
+      color: var(--text-muted);
+      font-size: 0.8125rem;
+      line-height: 1.75;
+      flex: 1;
+      margin-bottom: 1.5rem;
+    }
+
+    .blog-article-footer {
+      border-top: 1px solid var(--line);
+      padding-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .blog-article-author {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .blog-article-avatar {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--surface-dark);
+      display: grid;
+      place-items: center;
+      font-family: var(--font-mono);
+      font-size: 0.55rem;
+      font-weight: 700;
+      color: rgba(255,255,255,0.8);
+      flex-shrink: 0;
+    }
+
+    .blog-article-author-details {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      line-height: 1.45;
+    }
+
+    .blog-article-author-name {
+      color: var(--text);
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+
+    .blog-article-author-meta {
+      color: var(--text-soft);
+      letter-spacing: 0.03em;
+    }
+
+    .blog-article-read {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: -0.01em;
+      transition: color 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .blog-article-card:hover .blog-article-read {
+      color: var(--text);
+    }
+
+    /* ── Divider ── */
+    .blog-divider {
+      border: none;
+      border-top: 1px solid var(--line);
+      margin: 0 0 clamp(2rem, 4vw, 3rem);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 900px) {
+      .blog-articles-grid {
+        grid-template-columns: 1fr;
+        max-width: 36rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div id="page-loader" style="position:fixed;top:0;left:0;right:0;height:2px;background:var(--text);transform-origin:left;transform:scaleX(0);z-index:99999;transition:transform 400ms cubic-bezier(0.05,0.7,0.1,1);"></div>
+<script>
+(function(){
+  var loader = document.getElementById('page-loader');
+  if (!loader) return;
+  loader.style.transform = 'scaleX(0.3)';
+  window.addEventListener('load', function() {
+    loader.style.transform = 'scaleX(1)';
+    setTimeout(function() { loader.style.opacity = '0'; }, 300);
+    setTimeout(function() { loader.remove(); }, 700);
+  });
+})();
+</script>
+<div class="page-shell">
+
+  <!-- ASCII Canvas Background -->
+  <canvas id="ascii-canvas" style="position:absolute;top:0;left:0;width:100%;z-index:-1;pointer-events:none;"></canvas>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-bar">
+        <a href="index.html" class="logo">
+          Connected Mate
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Applications</a>
+          <a href="keynotes.html">Keynotes</a>
+          <a href="podcasts.html">Podcasts</a>
+          <a href="blog.html" class="active">Blog</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <a href="../blog.html" class="pill-button secondary" style="padding:0.5rem 0.85rem;font-size:0.75rem;">FR</a>
+          <a href="https://wa.me/33782150438?text=Hello%2C%20I%20am%20contacting%20you%20via%20Connected%20Mate!" class="pill-button whatsapp" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="blog-hero blur-in">
+      <div class="container">
+        <div class="blog-hero-inner">
+          <span class="blog-hero-kicker">Analysis &amp; insights</span>
+          <h1 class="blog-hero-title">Blog</h1>
+          <p class="blog-hero-subtitle">Articles on AI, tech, cybersecurity and innovation by the Connected Mate team.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED ARTICLE -->
+    <section class="blog-featured blur-in delay-1">
+      <div class="container">
+        <a href="blog/generative-ai-business.html" class="blog-featured-card">
+          <span class="blog-featured-tag">AI</span>
+          <h2 class="blog-featured-title">Generative AI in Business: Where to Start?</h2>
+          <p class="blog-featured-excerpt">A practical guide for organizations looking to harness generative AI. Identify use cases, prototype fast, and measure ROI without getting lost in the hype.</p>
+          <div class="blog-featured-meta">
+            <span>Alexandre Martin</span>
+            <span>&middot;</span>
+            <span>Feb 15, 2026</span>
+            <span>&middot;</span>
+            <span>5 min</span>
+          </div>
+          <span class="blog-featured-cta">Read article &rarr;</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ARTICLES GRID -->
+    <section class="section blur-in delay-2" style="padding-top:clamp(2.5rem,5vw,4rem);">
+      <div class="container">
+        <hr class="blog-divider">
+
+        <div class="blog-articles-grid">
+
+          <!-- Article 2 -->
+          <a href="blog/hybrid-work-2026.html" class="blog-article-card">
+            <span class="blog-article-tag blog-article-tag--work">Future of Work</span>
+            <h3 class="blog-article-title">Hybrid Work in 2026: Lessons Learned</h3>
+            <p class="blog-article-excerpt">Four years in, the dust has settled. Here is what the best teams actually do differently when it comes to remote, async-first, and trust-based collaboration.</p>
+            <div class="blog-article-footer">
+              <div class="blog-article-author">
+                <div class="blog-article-avatar">SD</div>
+                <div class="blog-article-author-details">
+                  <div class="blog-article-author-name">Sophie Durand</div>
+                  <div class="blog-article-author-meta">Feb 10, 2026 &middot; 6 min</div>
+                </div>
+              </div>
+              <span class="blog-article-read">Read &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Article 3 -->
+          <a href="blog/green-it-guide.html" class="blog-article-card">
+            <span class="blog-article-tag blog-article-tag--green">Green IT</span>
+            <h3 class="blog-article-title">Green IT: Reducing Your IT Carbon Footprint</h3>
+            <p class="blog-article-excerpt">Concrete strategies for IT teams committed to sustainability -- from extending hardware lifespans to eco-designing digital products.</p>
+            <div class="blog-article-footer">
+              <div class="blog-article-author">
+                <div class="blog-article-avatar">CM</div>
+                <div class="blog-article-author-details">
+                  <div class="blog-article-author-name">Claire Morel</div>
+                  <div class="blog-article-author-meta">Feb 5, 2026 &middot; 4 min</div>
+                </div>
+              </div>
+              <span class="blog-article-read">Read &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Article 4 -->
+          <a href="blog/cybersecurity-sme.html" class="blog-article-card">
+            <span class="blog-article-tag blog-article-tag--cyber">Cybersecurity</span>
+            <h3 class="blog-article-title">Cybersecurity for SMEs: The Essentials</h3>
+            <p class="blog-article-excerpt">You don't need a massive budget to protect your business. These five fundamentals form the baseline every small and mid-sized company should implement now.</p>
+            <div class="blog-article-footer">
+              <div class="blog-article-author">
+                <div class="blog-article-avatar">KB</div>
+                <div class="blog-article-author-details">
+                  <div class="blog-article-author-name">Karim Benali</div>
+                  <div class="blog-article-author-meta">Jan 28, 2026 &middot; 5 min</div>
+                </div>
+              </div>
+              <span class="blog-article-read">Read &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Article 5 -->
+          <a href="blog/product-management-ai.html" class="blog-article-card">
+            <span class="blog-article-tag blog-article-tag--product">Product</span>
+            <h3 class="blog-article-title">How AI Transforms Product Management</h3>
+            <p class="blog-article-excerpt">From feedback analysis to churn prediction, AI is redefining how product managers make decisions. A look at the five shifts reshaping the discipline.</p>
+            <div class="blog-article-footer">
+              <div class="blog-article-author">
+                <div class="blog-article-avatar">ML</div>
+                <div class="blog-article-author-details">
+                  <div class="blog-article-author-name">Marc Lefevre</div>
+                  <div class="blog-article-author-meta">Jan 20, 2026 &middot; 5 min</div>
+                </div>
+              </div>
+              <span class="blog-article-read">Read &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Article 6 -->
+          <a href="blog/api-design-best-practices.html" class="blog-article-card">
+            <span class="blog-article-tag blog-article-tag--dev">Development</span>
+            <h3 class="blog-article-title">API Design: Best Practices in 2026</h3>
+            <p class="blog-article-excerpt">APIs are contracts. In 2026, the bar is higher than ever. Here is what top engineering teams get right when it comes to paradigms, versioning, and security.</p>
+            <div class="blog-article-footer">
+              <div class="blog-article-author">
+                <div class="blog-article-avatar">TP</div>
+                <div class="blog-article-author-details">
+                  <div class="blog-article-author-name">Thomas Petit</div>
+                  <div class="blog-article-author-meta">Jan 12, 2026 &middot; 6 min</div>
+                </div>
+              </div>
+              <span class="blog-article-read">Read &rarr;</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BOTTOM CTA -->
+    <section class="section bottom-cta blur-in delay-3">
+      <div class="container">
+        <div class="cta-panel">
+          <span class="section-kicker">Get in touch</span>
+          <h2 class="section-title">Have a question? A project?</h2>
+          <p class="section-copy" style="color:#aaaaaf;margin-bottom:1.5rem">
+            Reach out via WhatsApp or email. Fast response guaranteed.
+          </p>
+          <div class="cta-actions">
+            <a href="https://wa.me/33782150438?text=Hello%2C%20I%20am%20contacting%20you%20via%20Connected%20Mate!" class="pill-button whatsapp" target="_blank" rel="noopener" style="width:100%">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp &rarr;
+            </a>
+            <a href="contact.html" class="pill-button secondary" style="width:100%">
+              Write to us &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-row">
+        <span>&copy; 2026 Connected Mate by <a href="mailto:alex.connectedmate@gmail.com">Alexandre Cormeraie</a></span>
+        <div class="footer-links">
+          <a href="index.html">Applications</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+          <a href="legal.html">Legal</a>
+          <span class="system-tag">[ PRIVACY FIRST ]</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script src="../ascii-canvas.js"></script>
+</body>
+</html>
