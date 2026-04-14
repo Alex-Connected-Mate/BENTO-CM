@@ -4,150 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mentions legales — Connected Mate</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700;800&display=swap" as="style">
-<link rel="stylesheet" href="style.css">
-  <style>
-    /* ── Legal Tabs ── */
-    .legal-tabs {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-bottom: 1.5rem;
-      border-bottom: 1px solid var(--line-strong);
-      padding-bottom: 0.75rem;
-    }
-    .legal-tab {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      padding: 0.45rem 0.85rem;
-      border-radius: 8px;
-      border: 1px solid var(--line);
-      background: var(--surface);
-      color: var(--text-muted);
-      font-family: var(--font-mono);
-      font-size: 0.8125rem;
-      font-weight: 600;
-      letter-spacing: 0.02em;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
-    .legal-tab:hover {
-      color: var(--text);
-      border-color: var(--line-strong);
-      background: var(--surface-strong);
-    }
-    .legal-tab.active {
-      background: var(--text);
-      color: var(--bg);
-      border-color: var(--text);
-    }
-    .legal-content {
-      display: none;
-    }
-    .legal-content.active {
-      display: block;
-      animation: legalFadeIn 0.35s ease forwards;
-    }
-    @keyframes legalFadeIn {
-      from { opacity: 0; transform: translateY(6px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .legal-block {
-      max-width: 800px;
-    }
-    .legal-block h2 {
-      font-family: var(--font-mono);
-      font-size: clamp(1.2rem, 2.5vw, 1.75rem);
-      font-weight: 700;
-      letter-spacing: -0.03em;
-      line-height: 1.1;
-      margin-bottom: 1.5rem;
-      color: var(--text);
-    }
-    .legal-block h3 {
-      font-family: var(--font-mono);
-      font-size: 0.9rem;
-      font-weight: 700;
-      letter-spacing: -0.01em;
-      margin-top: 1.5rem;
-      margin-bottom: 0.5rem;
-      color: var(--text);
-    }
-    .legal-block p,
-    .legal-block li {
-      color: var(--text-muted);
-      font-size: 0.9rem;
-      line-height: 1.75;
-      margin-bottom: 0.5rem;
-    }
-    .legal-block ul {
-      list-style: none;
-      padding-left: 0;
-      margin-bottom: 1rem;
-    }
-    .legal-block ul li::before {
-      content: "—";
-      color: var(--text);
-      font-weight: 700;
-      margin-right: 0.6rem;
-    }
-    .legal-block a {
-      color: var(--text);
-      text-decoration: underline;
-      text-underline-offset: 2px;
-      transition: color 0.2s;
-    }
-    .legal-block a:hover {
-      color: var(--text);
-    }
-    .legal-block .legal-info-grid {
-      display: grid;
-      grid-template-columns: max-content 1fr;
-      gap: 0.4rem 1.5rem;
-      margin: 1rem 0 1.5rem;
-      font-size: 0.875rem;
-    }
-    .legal-block .legal-info-grid dt {
-      font-family: var(--font-mono);
-      font-weight: 600;
-      color: var(--text);
-      font-size: 0.8125rem;
-      letter-spacing: 0.02em;
-    }
-    .legal-block .legal-info-grid dd {
-      color: var(--text-muted);
-      font-size: 0.875rem;
-    }
-    .legal-update {
-      margin-top: 3rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid var(--line);
-      color: var(--text-soft);
-      font-family: var(--font-mono);
-      font-size: 0.76rem;
-      letter-spacing: 0.06em;
-    }
-    .legal-hero {
-      padding: 2rem 0 1.5rem;
-    }
-    .legal-hero h1 {
-      font-family: var(--font-mono);
-      font-size: clamp(1.5rem, 3.5vw, 2.5rem);
-      font-weight: 700;
-      letter-spacing: -0.04em;
-      line-height: 0.95;
-      margin-bottom: 0.75rem;
-    }
-    .legal-hero p {
-      color: var(--text-muted);
-      font-size: 0.875rem;
-      max-width: 600px;
-      line-height: 1.65;
-    }
-  </style>
+  <!-- CM-SEO-META -->
+  <meta name="description" content="Mentions legales, CGU, politique de confidentialite et CGV de Connected Mate SAS.">
+  <meta name="keywords" content="mentions legales, CGU, CGV, politique de confidentialite, Connected Mate SAS">
+  <meta name="author" content="Connected Mate">
+  <link rel="canonical" href="https://alex-connected-mate.github.io/BENTO-CM/legal.html">
+  <link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/legal.html">
+  <link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/legal.html">
+  <link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/legal.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alex-connected-mate.github.io/BENTO-CM/legal.html">
+  <meta property="og:title" content="Mentions legales | Connected Mate">
+  <meta property="og:description" content="Mentions legales, CGU, politique de confidentialite et CGV de Connected Mate SAS.">
+  <meta property="og:image" content="https://alex-connected-mate.github.io/BENTO-CM/og-image.png">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Connected Mate">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mentions legales | Connected Mate">
+  <meta name="twitter:description" content="Mentions legales, CGU, politique de confidentialite et CGV de Connected Mate SAS.">
+  <meta name="twitter:image" content="https://alex-connected-mate.github.io/BENTO-CM/og-image.png">
+  <meta name="theme-color" content="#0a0a0b">
+  <meta name="apple-mobile-web-app-title" content="Connected Mate">
+  <meta name="apple-mobile-web-app-capable" content="yes">
 </head>
 <body>
 <div id="page-loader" style="position:fixed;top:0;left:0;right:0;height:2px;background:var(--text);transform-origin:left;transform:scaleX(0);z-index:99999;transition:transform 400ms cubic-bezier(0.05,0.7,0.1,1);"></div>
@@ -171,7 +49,7 @@
   <!-- HEADER -->
     <header class="site-header">
     <div class="container">
-      <nav class="nav-bar">
+      <nav class="nav-bar" aria-label="Navigation principale">
         <a href="index.html" class="logo">Connected Mate</a>
         <div class="nav-links">
           <a href="apps.html">Applications</a>
@@ -229,7 +107,7 @@
               <dt>SIRET</dt>
               <dd>937 888 717 00017</dd>
               <dt>Siege social</dt>
-              <dd>74 avenue du General Leclerc, 75014 Paris, France</dd>
+              <dd><address style="display:inline;font-style:normal;">74 avenue du General Leclerc, 75014 Paris, France</address></dd>
               <dt>Activite</dt>
               <dd>Conseil pour les affaires et autres conseils de gestion (NAF 70.22Z)</dd>
               <dt>Date de creation</dt>

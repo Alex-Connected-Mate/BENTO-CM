@@ -4,328 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog — Connected Mate</title>
-  <meta name="description" content="Articles sur l'IA, la tech, la cybersecurite et l'innovation par l'equipe Connected Mate. Analyses et retours d'experience.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700;800&display=swap" as="style">
-<link rel="stylesheet" href="style.css">
-  <style>
-    /* ── Blog Page Overrides ── */
-
-    /* Hero */
-    .blog-hero {
-      padding: clamp(2rem, 4vw, 3rem) 0 clamp(1.5rem, 3vw, 2rem);
-    }
-    .blog-hero-inner {
-      max-width: 42rem;
-    }
-    .blog-hero-title {
-      font-family: var(--font-mono);
-      font-size: clamp(2rem, 4.5vw, 3rem);
-      font-weight: 800;
-      letter-spacing: -0.05em;
-      line-height: 0.92;
-      margin-bottom: 0.75rem;
-      color: var(--text);
-    }
-    .blog-hero-subtitle {
-      max-width: 36rem;
-      color: var(--text-muted);
-      font-size: clamp(0.85rem, 1.2vw, 0.95rem);
-      line-height: 1.7;
-    }
-
-    /* Featured Article v2 — Editorial Rail */
-    .blog-featured-v2 {
-      margin-bottom: clamp(2rem, 4vw, 3rem);
-    }
-    .blog-featured-link {
-      display: grid;
-      grid-template-columns: 120px 1fr;
-      gap: 2rem;
-      padding: 1.75rem 2rem;
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      text-decoration: none;
-      color: inherit;
-      position: relative;
-      overflow: hidden;
-      transition: all 400ms cubic-bezier(0.2, 0, 0, 1);
-    }
-    .blog-featured-link::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: linear-gradient(90deg, var(--text) 0%, var(--text) 30%, transparent 100%);
-    }
-    .blog-featured-link:hover {
-      border-color: var(--text);
-      box-shadow: 0 20px 50px rgba(10,10,11,0.08);
-      transform: translateY(-2px);
-    }
-    .blog-featured-rail {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding-right: 1.5rem;
-      border-right: 1px solid var(--line);
-      min-height: 120px;
-    }
-    .blog-featured-num {
-      font-family: var(--font-mono);
-      font-size: 3rem;
-      font-weight: 800;
-      color: var(--text);
-      letter-spacing: -0.05em;
-      line-height: 0.9;
-    }
-    .blog-featured-rail-label {
-      font-family: var(--font-mono);
-      font-size: 0.6rem;
-      font-weight: 700;
-      color: var(--text-soft);
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      writing-mode: horizontal-tb;
-    }
-    .blog-featured-body {
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-    .blog-featured-meta-top {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
-    .blog-featured-tag {
-      display: inline-block;
-      font-family: var(--font-mono);
-      font-size: 0.6rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 0.3rem 0.65rem;
-      border-radius: 4px;
-      background: var(--surface-soft);
-      color: var(--text);
-      border: 1px solid var(--line);
-    }
-    .blog-featured-time {
-      font-family: var(--font-mono);
-      font-size: 0.62rem;
-      font-weight: 600;
-      color: var(--text-soft);
-      letter-spacing: 0.1em;
-    }
-    .blog-featured-title {
-      font-family: var(--font-mono);
-      font-size: clamp(1.1rem, 2.2vw, 1.6rem);
-      font-weight: 700;
-      letter-spacing: -0.03em;
-      line-height: 1.15;
-      color: var(--text);
-      margin: 0;
-    }
-    .blog-featured-excerpt {
-      color: var(--text-muted);
-      font-size: 0.85rem;
-      line-height: 1.65;
-      margin: 0;
-      max-width: 52rem;
-    }
-    .blog-featured-meta-bottom {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      margin-top: 0.25rem;
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      color: var(--text-soft);
-      flex-wrap: wrap;
-    }
-    .blog-featured-sep { color: var(--text-soft); opacity: 0.5; }
-    .blog-featured-cta {
-      margin-left: auto;
-      color: var(--text);
-      font-weight: 700;
-      font-size: 0.72rem;
-      letter-spacing: 0.02em;
-    }
-    .blog-featured-link:hover .blog-featured-cta {
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
-    @media (max-width: 720px) {
-      .blog-featured-link { grid-template-columns: 1fr; padding: 1.25rem; gap: 1rem; }
-      .blog-featured-rail { flex-direction: row; align-items: center; border-right: none; border-bottom: 1px solid var(--line); padding: 0 0 0.75rem 0; min-height: auto; gap: 1rem; }
-      .blog-featured-num { font-size: 1.5rem; }
-      .blog-featured-meta-bottom { font-size: 0.65rem; }
-      .blog-featured-cta { margin-left: 0; }
-    }
-
-    /* Grid Section */
-    .blog-grid-section {
-      padding-bottom: var(--section-gap);
-    }
-    .blog-grid-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      gap: 2rem;
-      margin-bottom: 2rem;
-      padding-bottom: 1rem;
-      border-bottom: 1px solid var(--line-strong);
-    }
-    .blog-grid-header-title {
-      font-family: var(--font-mono);
-      font-size: 0.78rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-    }
-    .blog-grid-header-count {
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      letter-spacing: 0.06em;
-      color: var(--text-soft);
-    }
-
-    /* Redesigned Blog Cards */
-    .blog-grid-2col {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1.25rem;
-    }
-    .blog-card-v2 {
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: var(--radius-lg);
-      padding: 1.75rem;
-      display: flex;
-      flex-direction: column;
-      text-decoration: none;
-      color: inherit;
-      transition: border-color 0.2s, box-shadow 0.25s, transform 0.25s ease;
-    }
-    .blog-card-v2:hover {
-      border-color: var(--line-strong);
-      box-shadow: var(--shadow);
-      transform: translateY(-4px);
-    }
-    .blog-card-v2-tag {
-      display: inline-flex;
-      align-items: center;
-      padding: 0.3rem 0.7rem;
-      border-radius: 100px;
-      font-family: var(--font-mono);
-      font-size: 0.62rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      width: fit-content;
-      margin-bottom: 1rem;
-    }
-    .blog-card-v2-tag.tag-work    { background: #e8f5e9; color: #1b5e20; }
-    .blog-card-v2-tag.tag-green   { background: #e0f2f1; color: #00695c; }
-    .blog-card-v2-tag.tag-cyber   { background: #e3f2fd; color: #1565c0; }
-    .blog-card-v2-tag.tag-product { background: #f3e5f5; color: #6a1b9a; }
-    .blog-card-v2-tag.tag-dev     { background: #eceff1; color: #37474f; }
-
-    .blog-card-v2-title {
-      font-family: var(--font-mono);
-      font-size: 1.05rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      line-height: 1.35;
-      margin-bottom: 0.75rem;
-      color: var(--text);
-    }
-    .blog-card-v2-excerpt {
-      color: var(--text-muted);
-      font-size: 0.8125rem;
-      line-height: 1.7;
-      flex: 1;
-      margin-bottom: 1.5rem;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-    .blog-card-v2-bottom {
-      border-top: 1px solid var(--line);
-      padding-top: 1rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .blog-card-v2-author {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    .blog-card-v2-author .author-initials {
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      background: var(--surface-soft);
-      border: 1px solid var(--line);
-      display: grid;
-      place-items: center;
-      font-family: var(--font-mono);
-      font-size: 0.55rem;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      color: var(--text-muted);
-      flex-shrink: 0;
-    }
-    .blog-card-v2-author-info {
-      display: flex;
-      flex-direction: column;
-      gap: 0.15rem;
-    }
-    .blog-card-v2-author-name {
-      font-family: var(--font-mono);
-      font-size: 0.7rem;
-      font-weight: 600;
-      color: var(--text);
-      letter-spacing: 0.02em;
-    }
-    .blog-card-v2-date-time {
-      font-family: var(--font-mono);
-      font-size: 0.62rem;
-      color: var(--text-soft);
-      letter-spacing: 0.04em;
-    }
-    .blog-card-v2-read {
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      font-weight: 600;
-      color: var(--text);
-      letter-spacing: 0.02em;
-      transition: color 0.2s;
-    }
-    .blog-card-v2:hover .blog-card-v2-read {
-      color: var(--text);
-    }
-
-    /* Responsive */
-    @media (max-width: 900px) {
-      .blog-grid-2col {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-    @media (max-width: 640px) {
-      .blog-grid-2col {
-        grid-template-columns: 1fr;
-        max-width: 28rem;
-      }
-    }
-  </style>
+  <!-- CM-SEO-META -->
+  <meta name="description" content="Articles sur l'IA, la cybersecurite, le Green IT et l'innovation par Alex et PPC.">
+  <meta name="keywords" content="blog, IA, tech, innovation, cybersecurite, Green IT, product management">
+  <meta name="author" content="Connected Mate">
+  <link rel="canonical" href="https://alex-connected-mate.github.io/BENTO-CM/blog.html">
+  <link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog.html">
+  <link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/blog.html">
+  <link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alex-connected-mate.github.io/BENTO-CM/blog.html">
+  <meta property="og:title" content="Blog — IA, tech, innovation | Connected Mate">
+  <meta property="og:description" content="Articles sur l'IA, la cybersecurite, le Green IT et l'innovation par Alex et PPC.">
+  <meta property="og:image" content="https://alex-connected-mate.github.io/BENTO-CM/og-image.png">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Connected Mate">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog — IA, tech, innovation | Connected Mate">
+  <meta name="twitter:description" content="Articles sur l'IA, la cybersecurite, le Green IT et l'innovation par Alex et PPC.">
+  <meta name="twitter:image" content="https://alex-connected-mate.github.io/BENTO-CM/og-image.png">
+  <meta name="theme-color" content="#0a0a0b">
+  <meta name="apple-mobile-web-app-title" content="Connected Mate">
+  <meta name="apple-mobile-web-app-capable" content="yes">
 </head>
 <body>
 <div id="page-loader" style="position:fixed;top:0;left:0;right:0;height:2px;background:var(--text);transform-origin:left;transform:scaleX(0);z-index:99999;transition:transform 400ms cubic-bezier(0.05,0.7,0.1,1);"></div>
@@ -349,7 +49,7 @@
   <!-- HEADER -->
     <header class="site-header">
     <div class="container">
-      <nav class="nav-bar">
+      <nav class="nav-bar" aria-label="Navigation principale">
         <a href="index.html" class="logo">Connected Mate</a>
         <div class="nav-links">
           <a href="apps.html">Applications</a>
@@ -402,7 +102,7 @@
               <div class="blog-featured-meta-bottom">
                 <span>Alex</span>
                 <span class="blog-featured-sep">&middot;</span>
-                <span>15 fev 2026</span>
+                <span><time datetime="2026-02-15">15 fev 2026</time></span>
                 <span class="blog-featured-cta">Lire l'article &rarr;</span>
               </div>
             </div>
@@ -422,7 +122,7 @@
         <div class="blog-grid-2col">
 
           <!-- Article 2 -->
-          <a href="blog/travail-hybride-2026.html" class="blog-card-v2 blur-in">
+          <article class="blog-card-v2-wrap" style="display:contents;"><a href="blog/travail-hybride-2026.html" class="blog-card-v2 blur-in">
             <span class="blog-card-v2-tag tag-work">Futur du travail</span>
             <h2 class="blog-card-v2-title">Travail hybride en 2026 : les lecons apprises</h2>
             <p class="blog-card-v2-excerpt">
@@ -433,15 +133,15 @@
                 <div class="author-initials">P</div>
                 <div class="blog-card-v2-author-info">
                   <span class="blog-card-v2-author-name">PPC</span>
-                  <span class="blog-card-v2-date-time">10 fev 2026 &middot; 6 min</span>
+                  <span class="blog-card-v2-date-time"><time datetime="2026-02-10">10 fev 2026</time> &middot; 6 min</span>
                 </div>
               </div>
               <span class="blog-card-v2-read">Lire &rarr;</span>
             </div>
-          </a>
+          </a></article>
 
           <!-- Article 3 -->
-          <a href="blog/green-it-guide-pratique.html" class="blog-card-v2 blur-in">
+          <article class="blog-card-v2-wrap" style="display:contents;"><a href="blog/green-it-guide-pratique.html" class="blog-card-v2 blur-in">
             <span class="blog-card-v2-tag tag-green">Green IT</span>
             <h2 class="blog-card-v2-title">Green IT : reduire l'empreinte carbone de votre SI</h2>
             <p class="blog-card-v2-excerpt">
@@ -452,15 +152,15 @@
                 <div class="author-initials">A</div>
                 <div class="blog-card-v2-author-info">
                   <span class="blog-card-v2-author-name">Alex</span>
-                  <span class="blog-card-v2-date-time">5 fev 2026 &middot; 4 min</span>
+                  <span class="blog-card-v2-date-time"><time datetime="2026-02-05">5 fev 2026</time> &middot; 4 min</span>
                 </div>
               </div>
               <span class="blog-card-v2-read">Lire &rarr;</span>
             </div>
-          </a>
+          </a></article>
 
           <!-- Article 4 -->
-          <a href="blog/cybersecurite-pme.html" class="blog-card-v2 blur-in">
+          <article class="blog-card-v2-wrap" style="display:contents;"><a href="blog/cybersecurite-pme.html" class="blog-card-v2 blur-in">
             <span class="blog-card-v2-tag tag-cyber">Cybersecurite</span>
             <h2 class="blog-card-v2-title">Cybersecurite pour les PME : l'essentiel</h2>
             <p class="blog-card-v2-excerpt">
@@ -471,15 +171,15 @@
                 <div class="author-initials">P</div>
                 <div class="blog-card-v2-author-info">
                   <span class="blog-card-v2-author-name">PPC</span>
-                  <span class="blog-card-v2-date-time">28 jan 2026 &middot; 5 min</span>
+                  <span class="blog-card-v2-date-time"><time datetime="2026-01-28">28 jan 2026</time> &middot; 5 min</span>
                 </div>
               </div>
               <span class="blog-card-v2-read">Lire &rarr;</span>
             </div>
-          </a>
+          </a></article>
 
           <!-- Article 5 -->
-          <a href="blog/product-management-ia.html" class="blog-card-v2 blur-in">
+          <article class="blog-card-v2-wrap" style="display:contents;"><a href="blog/product-management-ia.html" class="blog-card-v2 blur-in">
             <span class="blog-card-v2-tag tag-product">Product</span>
             <h2 class="blog-card-v2-title">Comment l'IA transforme le Product Management</h2>
             <p class="blog-card-v2-excerpt">
@@ -490,15 +190,15 @@
                 <div class="author-initials">P</div>
                 <div class="blog-card-v2-author-info">
                   <span class="blog-card-v2-author-name">PPC</span>
-                  <span class="blog-card-v2-date-time">20 jan 2026 &middot; 5 min</span>
+                  <span class="blog-card-v2-date-time"><time datetime="2026-01-20">20 jan 2026</time> &middot; 5 min</span>
                 </div>
               </div>
               <span class="blog-card-v2-read">Lire &rarr;</span>
             </div>
-          </a>
+          </a></article>
 
           <!-- Article 6 -->
-          <a href="blog/api-design-bonnes-pratiques.html" class="blog-card-v2 blur-in">
+          <article class="blog-card-v2-wrap" style="display:contents;"><a href="blog/api-design-bonnes-pratiques.html" class="blog-card-v2 blur-in">
             <span class="blog-card-v2-tag tag-dev">Developpement</span>
             <h2 class="blog-card-v2-title">API Design : les bonnes pratiques en 2026</h2>
             <p class="blog-card-v2-excerpt">
@@ -509,12 +209,12 @@
                 <div class="author-initials">A</div>
                 <div class="blog-card-v2-author-info">
                   <span class="blog-card-v2-author-name">Alex</span>
-                  <span class="blog-card-v2-date-time">12 jan 2026 &middot; 6 min</span>
+                  <span class="blog-card-v2-date-time"><time datetime="2026-01-12">12 jan 2026</time> &middot; 6 min</span>
                 </div>
               </div>
               <span class="blog-card-v2-read">Lire &rarr;</span>
             </div>
-          </a>
+          </a></article>
 
         </div>
       </div>
@@ -563,5 +263,23 @@
 </div>
 
 <script src="ascii-canvas.js"></script>
+<!-- CM-SEO-JSONLD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "url": "https://alex-connected-mate.github.io/BENTO-CM/blog.html",
+  "name": "Connected Mate Blog",
+  "inLanguage": "fr",
+  "blogPost": [
+    {"@type": "BlogPosting", "headline": "L'IA generative en entreprise : par ou commencer ?", "url": "https://alex-connected-mate.github.io/BENTO-CM/blog/ia-generative-entreprise.html", "datePublished": "2026-02-15", "author": {"@type": "Person", "name": "Alex"}},
+    {"@type": "BlogPosting", "headline": "Travail hybride en 2026 : les lecons apprises", "url": "https://alex-connected-mate.github.io/BENTO-CM/blog/travail-hybride-2026.html", "datePublished": "2026-02-10", "author": {"@type": "Person", "name": "PPC"}},
+    {"@type": "BlogPosting", "headline": "Green IT : reduire l'empreinte carbone de votre SI", "url": "https://alex-connected-mate.github.io/BENTO-CM/blog/green-it-guide-pratique.html", "datePublished": "2026-02-05", "author": {"@type": "Person", "name": "Alex"}},
+    {"@type": "BlogPosting", "headline": "Cybersecurite pour les PME : l'essentiel", "url": "https://alex-connected-mate.github.io/BENTO-CM/blog/cybersecurite-pme.html", "datePublished": "2026-01-28", "author": {"@type": "Person", "name": "PPC"}},
+    {"@type": "BlogPosting", "headline": "Comment l'IA transforme le Product Management", "url": "https://alex-connected-mate.github.io/BENTO-CM/blog/product-management-ia.html", "datePublished": "2026-01-20", "author": {"@type": "Person", "name": "Alex"}},
+    {"@type": "BlogPosting", "headline": "API Design : les bonnes pratiques en 2026", "url": "https://alex-connected-mate.github.io/BENTO-CM/blog/api-design-bonnes-pratiques.html", "datePublished": "2026-01-15", "author": {"@type": "Person", "name": "PPC"}}
+  ]
+}
+</script>
 </body>
 </html>
