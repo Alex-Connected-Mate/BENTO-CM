@@ -333,3 +333,35 @@ if ('requestIdleCallback' in window) {
     setTimeout(function() { banner.remove(); }, 500);
   });
 })();
+
+// App Store hover reveal with delay
+(function() {
+  var wraps = document.querySelectorAll('.app-store-hover-wrap');
+  wraps.forEach(function(wrap) {
+    var timer;
+    var btn = wrap.querySelector('#app-store-btn');
+    if (!btn) return;
+
+    btn.addEventListener('mouseenter', function() {
+      timer = setTimeout(function() {
+        wrap.classList.add('hover-active');
+      }, 600); // 600ms hover delay before reveal
+    });
+
+    wrap.addEventListener('mouseleave', function(e) {
+      // Only cancel if leaving the whole wrap (btn + reveal)
+      if (!wrap.contains(e.relatedTarget)) {
+        clearTimeout(timer);
+        wrap.classList.remove('hover-active');
+      }
+    });
+
+    // Mobile tap support
+    btn.addEventListener('click', function(e) {
+      if (window.matchMedia('(hover: none)').matches) {
+        e.preventDefault();
+        wrap.classList.toggle('hover-active');
+      }
+    });
+  });
+})();

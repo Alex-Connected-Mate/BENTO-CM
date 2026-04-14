@@ -3034,3 +3034,112 @@ a, button, .pill-button, .cs-card, .phase-card, .blog-card, .feature-card {
   .wave-bar, .podcast-pulse, .timeline-fill { animation: none; }
   .wave-bar { transform: scaleY(0.7); }
 }
+
+/* ── Profile Pages ── */
+.profile-hero {
+  padding: clamp(1.5rem, 3vw, 2.5rem) 0 clamp(2rem, 4vw, 3rem);
+}
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--surface-dark);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-weight: 800;
+  font-size: 1.4rem;
+  letter-spacing: 0.02em;
+  flex-shrink: 0;
+}
+.profile-name {
+  font-family: var(--font-mono);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin: 0.5rem 0 0.75rem;
+}
+.profile-intro {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  max-width: 38rem;
+  margin: 0;
+}
+
+/* App Store hover reveal */
+.app-store-hover-wrap {
+  position: relative;
+}
+
+.hover-reveal {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  min-width: 280px;
+  background: var(--surface-dark);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+  opacity: 0;
+  transform: translateY(-6px);
+  pointer-events: none;
+  transition: opacity 300ms cubic-bezier(0.05, 0.7, 0.1, 1), transform 300ms cubic-bezier(0.05, 0.7, 0.1, 1);
+  z-index: 10;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.25);
+}
+
+.hover-reveal::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 20px;
+  width: 10px;
+  height: 10px;
+  background: var(--surface-dark);
+  border-left: 1px solid rgba(255,255,255,0.12);
+  border-top: 1px solid rgba(255,255,255,0.12);
+  transform: rotate(45deg);
+}
+
+.app-store-hover-wrap:hover .hover-reveal,
+.app-store-hover-wrap.hover-active .hover-reveal {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.hover-reveal-text {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.7);
+  margin: 0 0 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.hover-reveal .scratch-gift-container {
+  margin-top: 0;
+}
+
+/* On mobile/touch, the hover reveal works differently — tap to show */
+@media (hover: none) {
+  .app-store-hover-wrap .hover-reveal {
+    display: none;
+  }
+  .app-store-hover-wrap.hover-active .hover-reveal {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+}
