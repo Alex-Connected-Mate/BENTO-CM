@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
-  <g fill="#0a0a0b">
-    <circle cx="22" cy="30" r="12" fill="none" stroke="#0a0a0b" stroke-width="2"/>
-    <circle cx="22" cy="30" r="6"/>
-    <text x="44" y="38" font-family="IBM Plex Mono, monospace" font-size="18" font-weight="800" letter-spacing="-0.5">we are minds</text>
-  </g>
-</svg>
