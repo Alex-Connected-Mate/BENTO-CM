@@ -3546,9 +3546,9 @@ a, button, .pill-button, .cs-card, .phase-card, .blog-card, .feature-card {
   animation: trustScroll 42s linear infinite;
 }
 .trust-logo {
-  width: 200px;
-  height: 110px;
-  border-radius: 14px;
+  width: 140px;
+  height: 76px;
+  border-radius: 10px;
   overflow: hidden;
   flex-shrink: 0;
 }
