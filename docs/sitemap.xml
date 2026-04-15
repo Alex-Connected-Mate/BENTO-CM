@@ -22,6 +22,25 @@
   </url>
 
   <url>
+    <loc>https://alex-connected-mate.github.io/BENTO-CM/services.html</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/services.html"/>
+  </url>
+  <url>
+    <loc>https://alex-connected-mate.github.io/BENTO-CM/en/services.html</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/services.html"/>
+  </url>
+
+  <url>
     <loc>https://alex-connected-mate.github.io/BENTO-CM/apps.html</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <g fill="#0a0a0b">
+    <rect x="10" y="22" width="16" height="16" rx="3"/>
+    <text x="34" y="38" font-family="IBM Plex Mono, monospace" font-size="22" font-weight="800" letter-spacing="2">CEDEP</text>
+  </g>
+</svg>
