@@ -3541,43 +3541,23 @@ a, button, .pill-button, .cs-card, .phase-card, .blog-card, .feature-card {
 .trust-track {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1rem;
   width: max-content;
   animation: trustScroll 42s linear infinite;
 }
 .trust-logo {
-  width: 180px;
-  height: 90px;
+  width: 200px;
+  height: 110px;
   border-radius: 14px;
-  background: var(--surface-strong);
-  border: 1px solid var(--line);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.85rem 1rem;
   overflow: hidden;
   flex-shrink: 0;
-  transition: transform 220ms, border-color 220ms, box-shadow 220ms;
+  background: var(--surface-strong);
 }
 .trust-logo img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
-  filter: grayscale(100%);
-  opacity: 0.75;
-  transition: filter 220ms, opacity 220ms;
-}
-.trust-logo:hover {
-  transform: translateY(-2px);
-  border-color: var(--line-strong);
-  box-shadow: 0 12px 28px rgba(10,10,11,0.08);
-}
-.trust-logo:hover img {
-  filter: grayscale(0%);
-  opacity: 1;
 }
 @keyframes trustScroll {
   from { transform: translateX(0); }
