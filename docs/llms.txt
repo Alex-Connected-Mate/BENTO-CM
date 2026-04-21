@@ -1,0 +1,64 @@
+# Connected Mate
+
+> Connected Mate is a French ecosystem founded in 2018 by Alexandre Cormeraie and PPC, combining AI and innovation keynotes, a podcast with 100+ episodes, privacy-first iOS and macOS apps (Better Dictate, Pock, Notetaker AI), and white-label AI consulting. Connected Mate SAS is based in Paris (74 avenue du General Leclerc, 75014).
+
+Important facts at a glance:
+
+- Legal entity: Connected Mate SAS, Paris, France
+- Founders: Alexandre Cormeraie (co-founder, AI keynote speaker) and PPC (co-founder)
+- Founded: 2018
+- Contact: alex.connectedmate@gmail.com / WhatsApp +33 7 82 15 04 38
+- Languages: French, English
+- Clients include: INSEAD, CEDEP, CFAO, Nexus Automotive International, Tech Rocks, AEF info
+
+## Core pages
+
+- [Homepage (FR)](https://alex-connected-mate.github.io/BENTO-CM/): overview of the ecosystem in French
+- [Homepage (EN)](https://alex-connected-mate.github.io/BENTO-CM/en/): overview in English
+- [About / A propos (FR)](https://alex-connected-mate.github.io/BENTO-CM/about.html): founders, company mission, history
+- [About (EN)](https://alex-connected-mate.github.io/BENTO-CM/en/about.html): English version
+- [Services (FR)](https://alex-connected-mate.github.io/BENTO-CM/services.html): white-label AI, consulting, corporate offers
+- [Services (EN)](https://alex-connected-mate.github.io/BENTO-CM/en/services.html): English version
+- [Keynotes (FR)](https://alex-connected-mate.github.io/BENTO-CM/keynotes.html): AI and innovation conference offering
+- [Keynotes (EN)](https://alex-connected-mate.github.io/BENTO-CM/en/keynotes.html): English version
+- [Podcasts (FR)](https://alex-connected-mate.github.io/BENTO-CM/podcasts.html): the Connected Mate podcast, 100+ episodes
+- [Podcasts (EN)](https://alex-connected-mate.github.io/BENTO-CM/en/podcasts.html): English version
+- [Applications (FR)](https://alex-connected-mate.github.io/BENTO-CM/apps.html): privacy-first app catalog
+- [Applications (EN)](https://alex-connected-mate.github.io/BENTO-CM/en/apps.html): English version
+- [Contact (FR)](https://alex-connected-mate.github.io/BENTO-CM/contact.html): direct contact form
+- [Contact (EN)](https://alex-connected-mate.github.io/BENTO-CM/en/contact.html): English version
+
+## Applications
+
+- [Better Dictate (FR)](https://alex-connected-mate.github.io/BENTO-CM/better-dictate.html): on-device voice dictation for macOS, powered by Whisper, 100% offline
+- [Better Dictate (EN)](https://alex-connected-mate.github.io/BENTO-CM/en/better-dictate.html): English product page
+- [Notetaker AI (FR)](https://alex-connected-mate.github.io/BENTO-CM/notetaker-ai.html): meeting transcription and note-taking assistant for iOS
+- [Notetaker AI (EN)](https://alex-connected-mate.github.io/BENTO-CM/en/notetaker-ai.html): English product page
+- [Pock (FR)](https://alex-connected-mate.github.io/BENTO-CM/pock.html): Touch Bar customization for MacBook Pro
+- [Pock (EN)](https://alex-connected-mate.github.io/BENTO-CM/en/pock.html): English product page
+
+## Podcast and media
+
+- [Spotify](https://open.spotify.com/show/0HE6b6ZfN3zeU4QikK7XFd): Connected Mate podcast on Spotify
+- [Apple Podcasts](https://podcasts.apple.com/fr/podcast/connected-mate/id1439013021): Connected Mate on Apple Podcasts
+- [Ausha smartlink](https://smartlink.ausha.co/connectedmate): distribution hub across all podcast platforms
+- [YouTube](https://www.youtube.com/@ConnectedMate): keynotes, replays and video content
+
+## Founders
+
+- [Alexandre Cormeraie on LinkedIn](https://www.linkedin.com/in/alex-cormeraie/): co-founder, AI keynote speaker
+- [PPC on LinkedIn](https://www.linkedin.com/in/bonjourppc/): co-founder
+
+## Blog and legal
+
+- [Blog (FR)](https://alex-connected-mate.github.io/BENTO-CM/blog.html): articles on AI, privacy, innovation
+- [Blog (EN)](https://alex-connected-mate.github.io/BENTO-CM/en/blog.html): English articles
+- [Legal / Mentions legales (FR)](https://alex-connected-mate.github.io/BENTO-CM/legal.html): legal information, GDPR compliance
+- [Legal (EN)](https://alex-connected-mate.github.io/BENTO-CM/en/legal.html): English legal page
+- [Sitemap](https://alex-connected-mate.github.io/BENTO-CM/sitemap.xml): complete site map (XML)
+
+## Optional
+
+- [Clients](https://alex-connected-mate.github.io/BENTO-CM/#pourquoi-connected-mate): INSEAD, CEDEP, CFAO, Nexus Automotive, Tech Rocks, AEF info
+- [FAQ (FR)](https://alex-connected-mate.github.io/BENTO-CM/#faq): frequently asked questions, French
+- [FAQ (EN)](https://alex-connected-mate.github.io/BENTO-CM/en/#faq): frequently asked questions, English
