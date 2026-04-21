@@ -1048,6 +1048,7 @@ button, input, textarea { font: inherit; }
   height: 56px;
   border-radius: 12px;
   display: block;
+  object-fit: cover;
 }
 
 .app-hero-icon--purple img, .app-hero-icon--purple svg {
