@@ -753,6 +753,22 @@ button, input, textarea { font: inherit; }
   box-shadow: 0 8px 20px rgba(10,10,11,0.06);
 }
 
+/* ── Card head: icon + category pill, top-left, tilted icon ── */
+.cs-card-head {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.cs-card-head .cs-card-icon {
+  transform: rotate(-6deg);
+  transition: transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1);
+  flex-shrink: 0;
+}
+.cs-card:hover .cs-card-head .cs-card-icon {
+  transform: rotate(0deg) scale(1.04);
+}
+
 .cs-card-category {
   display: inline-block;
   font-family: var(--font-mono);
