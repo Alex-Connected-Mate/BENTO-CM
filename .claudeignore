@@ -1,0 +1,121 @@
+# Patrick Code - .claudeignore par defaut
+# Powered by TGV Europe
+# Reduit la consommation de tokens en empechant Patrick Code de lire ces chemins.
+
+# --- Dependances ---
+node_modules/
+bower_components/
+vendor/
+.venv/
+venv/
+env/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+
+# --- Builds / artefacts ---
+dist/
+build/
+out/
+.next/
+.nuxt/
+.svelte-kit/
+.turbo/
+.cache/
+.parcel-cache/
+target/
+bin/
+obj/
+coverage/
+htmlcov/
+.coverage
+*.pyc
+*.pyo
+*.class
+*.o
+*.a
+*.so
+*.dylib
+*.exe
+
+# --- Lock files (bruit) ---
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+bun.lock
+bun.lockb
+poetry.lock
+Pipfile.lock
+Cargo.lock
+composer.lock
+Gemfile.lock
+go.sum
+
+# --- Logs / temporaires ---
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+*.backup
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# --- VCS / IDE ---
+.git/
+.svn/
+.hg/
+.idea/
+.vscode/
+*.iml
+
+# --- Assets binaires (non-texte, inutile a Patrick Code) ---
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.ico
+*.bmp
+*.tiff
+*.psd
+*.ai
+*.pdf
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.mp3
+*.mp4
+*.mov
+*.wav
+*.woff
+*.woff2
+*.ttf
+*.eot
+*.otf
+
+# --- Secrets / env (securite SNCF) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+.secrets/
+credentials.json
+
+# --- Bases de donnees / caches locaux ---
+*.sqlite
+*.sqlite3
+*.db
+
+# --- Patrick Code (eviter self-ref) ---
+~/.claude-mem/
+.claude-mem/
