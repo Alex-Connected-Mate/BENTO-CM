@@ -2614,11 +2614,116 @@ button, input, textarea { font: inherit; }
 }
 .legal-content.active {
   display: block;
-  animation: legal-fade-in 0.35s cubic-bezier(0.2, 0.7, 0.1, 1);
+  animation: legal-fade-in 0.4s cubic-bezier(0.2, 0.7, 0.1, 1);
 }
 @keyframes legal-fade-in {
-  from { opacity: 0; transform: translateY(6px); }
+  from { opacity: 0; transform: translateY(10px); }
   to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Chapter opener (magazine-style) ── */
+.legal-chapter-opener {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: clamp(1.25rem, 4vw, 2.5rem);
+  align-items: stretch;
+  padding: clamp(2rem, 5vw, 3.5rem) 0 clamp(2.5rem, 5vw, 3.5rem);
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--line);
+  position: relative;
+}
+.legal-chapter-opener::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background: var(--text);
+}
+.legal-chapter-num {
+  font-family: var(--font-mono);
+  font-size: clamp(4.5rem, 12vw, 8.5rem);
+  font-weight: 800;
+  line-height: 0.85;
+  letter-spacing: -0.05em;
+  color: var(--text);
+  display: flex;
+  align-items: flex-start;
+  padding-top: 0.25rem;
+  font-variant-numeric: tabular-nums;
+}
+.legal-chapter-meta {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+.legal-chapter-kicker {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+  padding: 0.4rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 100px;
+  width: fit-content;
+  background: var(--surface-soft);
+}
+.legal-chapter-title {
+  font-family: var(--font-mono);
+  font-size: clamp(1.7rem, 4.5vw, 2.8rem);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+  margin: 0;
+  color: var(--text);
+}
+.legal-chapter-tagline {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin: 0.35rem 0 0;
+  max-width: 520px;
+}
+@media (max-width: 640px) {
+  .legal-chapter-opener {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .legal-chapter-num {
+    padding-top: 0;
+    line-height: 0.9;
+  }
+}
+
+/* ── Visually hidden (keep for AT/SEO, not shown) ── */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* ── Drop cap on first paragraph of each content block ── */
+.legal-block > p:first-of-type::first-letter {
+  font-family: var(--font-mono);
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 0.9;
+  float: left;
+  padding: 0.25rem 0.65rem 0 0;
+  margin-top: 0.2rem;
+  letter-spacing: -0.04em;
+  color: var(--text);
 }
 
 .legal-content h2 {
@@ -2648,34 +2753,54 @@ button, input, textarea { font: inherit; }
 
 .legal-block h3 {
   font-family: var(--font-mono);
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--text);
-  margin: 0 0 1rem;
-  letter-spacing: -0.01em;
-  line-height: 1.35;
+  margin: 0 0 1.25rem;
+  letter-spacing: -0.015em;
+  line-height: 1.3;
   display: flex;
-  align-items: baseline;
-  gap: 0.85rem;
+  align-items: center;
+  gap: 1rem;
   counter-increment: legal-h3;
 }
 .legal-block h3::before {
   content: counter(legal-h3, decimal-leading-zero);
   flex-shrink: 0;
-  font-size: 0.7rem;
-  font-weight: 700;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 800;
   letter-spacing: 0.06em;
-  color: var(--text-soft);
-  padding: 0.3rem 0.55rem;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  background: var(--surface-soft);
+  color: var(--text);
+  padding: 0.45rem 0.7rem;
+  background: var(--text);
+  color: var(--bg);
+  border-radius: 8px;
   line-height: 1;
-  min-width: 2.5rem;
+  min-width: 2.8rem;
   text-align: center;
+  box-shadow: 0 2px 8px rgba(10, 10, 11, 0.15);
 }
+/* Ornamental separator before each H3 (except the first) */
 .legal-block h3:not(:first-child) {
-  margin-top: 2rem;
+  margin-top: 2.75rem;
+  position: relative;
+  padding-top: 2.75rem;
+}
+.legal-block h3:not(:first-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    var(--line) 15%,
+    var(--line) 85%,
+    transparent 100%
+  );
 }
 
 .legal-block p {
