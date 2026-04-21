@@ -89,11 +89,23 @@
       <div class="container">
 
         <!-- Tabs -->
-        <div class="legal-tabs">
-          <button class="legal-tab active" data-tab="mentions">Mentions legales</button>
-          <button class="legal-tab" data-tab="cgu">CGU</button>
-          <button class="legal-tab" data-tab="confidentialite">Politique de confidentialite</button>
-          <button class="legal-tab" data-tab="cgv">CGV</button>
+        <div class="legal-tabs" role="tablist">
+          <button class="legal-tab active" role="tab" data-tab="mentions">
+            <svg class="legal-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2h9a1 1 0 0 1 .7.3l3 3a1 1 0 0 1 .3.7V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/><path d="M14 2v4a1 1 0 0 0 1 1h4"/><path d="M9 13h6M9 17h6M9 9h2"/></svg>
+            Mentions legales
+          </button>
+          <button class="legal-tab" role="tab" data-tab="cgu">
+            <svg class="legal-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+            CGU
+          </button>
+          <button class="legal-tab" role="tab" data-tab="confidentialite">
+            <svg class="legal-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l8 3v7c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V5l8-3z"/><path d="M9 12l2 2 4-4"/></svg>
+            Confidentialite
+          </button>
+          <button class="legal-tab" role="tab" data-tab="cgv">
+            <svg class="legal-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3h2l2 13h11l2-8H6"/><circle cx="9" cy="20" r="1.5"/><circle cx="17" cy="20" r="1.5"/></svg>
+            CGV
+          </button>
         </div>
 
         <!-- Tab 1: Mentions legales -->
@@ -137,13 +149,13 @@
           <div class="legal-block">
             <h2>Conditions Generales d'Utilisation</h2>
 
-            <h3>1. Objet</h3>
+            <h3>Objet</h3>
             <p>Les presentes Conditions Generales d'Utilisation (CGU) ont pour objet de definir les modalites et conditions d'utilisation du site web connectedmate.com et des services proposes par CONNECTED MATE SAS. En accedant au site, l'utilisateur accepte sans reserve les presentes CGU.</p>
 
-            <h3>2. Acces au site</h3>
+            <h3>Acces au site</h3>
             <p>L'acces au site est gratuit. Les frais d'acces et d'utilisation du reseau de telecommunications sont a la charge de l'utilisateur, selon les modalites fixees par son fournisseur d'acces a internet. CONNECTED MATE SAS se reserve le droit de suspendre ou d'interrompre l'acces au site a tout moment, notamment pour des raisons de maintenance.</p>
 
-            <h3>3. Utilisation des services</h3>
+            <h3>Utilisation des services</h3>
             <p>L'utilisateur s'engage a utiliser le site et les services conformement a leur destination et aux presentes CGU. Il s'interdit notamment de :</p>
             <ul>
               <li>Utiliser le site a des fins illicites ou contraires aux presentes CGU</li>
@@ -152,13 +164,13 @@
               <li>Transmettre des virus ou tout autre code malveillant</li>
             </ul>
 
-            <h3>4. Comptes utilisateurs</h3>
+            <h3>Comptes utilisateurs</h3>
             <p>Certains services peuvent necessiter la creation d'un compte utilisateur. L'utilisateur est responsable de la confidentialite de ses identifiants de connexion et de toutes les activites realisees sous son compte. Il s'engage a informer immediatement CONNECTED MATE SAS en cas d'utilisation non autorisee de son compte.</p>
 
-            <h3>5. Responsabilite</h3>
+            <h3>Responsabilite</h3>
             <p>CONNECTED MATE SAS s'efforce de fournir des informations exactes et a jour sur le site. Toutefois, elle ne saurait etre tenue responsable des erreurs, omissions, ou des resultats obtenus suite a l'utilisation de ces informations. Le site et les services sont fournis "en l'etat". CONNECTED MATE SAS ne garantit pas l'absence d'interruption ou d'erreur dans le fonctionnement du site.</p>
 
-            <h3>6. Modification des CGU</h3>
+            <h3>Modification des CGU</h3>
             <p>CONNECTED MATE SAS se reserve le droit de modifier les presentes CGU a tout moment. Les modifications entrent en vigueur des leur publication sur le site. L'utilisateur est invite a consulter regulierement cette page. La poursuite de l'utilisation du site apres modification vaut acceptation des nouvelles CGU.</p>
           </div>
         </div>
@@ -168,7 +180,7 @@
           <div class="legal-block">
             <h2>Politique de confidentialite</h2>
 
-            <h3>1. Donnees collectees</h3>
+            <h3>Donnees collectees</h3>
             <p>Dans le cadre de l'utilisation de nos services, nous sommes susceptibles de collecter les donnees personnelles suivantes :</p>
             <ul>
               <li>Nom et prenom</li>
@@ -178,7 +190,7 @@
               <li>Donnees d'utilisation et de navigation</li>
             </ul>
 
-            <h3>2. Finalites du traitement</h3>
+            <h3>Finalites du traitement</h3>
             <p>Les donnees collectees sont utilisees pour les finalites suivantes :</p>
             <ul>
               <li>Creation et gestion de votre compte utilisateur</li>
@@ -188,7 +200,7 @@
               <li>Respect de nos obligations legales et reglementaires</li>
             </ul>
 
-            <h3>3. Base legale du traitement</h3>
+            <h3>Base legale du traitement</h3>
             <p>Le traitement de vos donnees personnelles repose sur les bases legales suivantes :</p>
             <ul>
               <li>Votre consentement explicite</li>
@@ -196,10 +208,10 @@
               <li>L'interet legitime de CONNECTED MATE SAS</li>
             </ul>
 
-            <h3>4. Duree de conservation</h3>
+            <h3>Duree de conservation</h3>
             <p>Vos donnees personnelles sont conservees pour une duree maximale de 3 ans a compter de votre derniere interaction avec nos services, sauf obligation legale de conservation plus longue.</p>
 
-            <h3>5. Vos droits (RGPD)</h3>
+            <h3>Vos droits (RGPD)</h3>
             <p>Conformement au Reglement General sur la Protection des Donnees (RGPD), vous disposez des droits suivants :</p>
             <ul>
               <li>Droit d'acces a vos donnees personnelles</li>
@@ -212,10 +224,10 @@
             <p>Pour exercer ces droits, contactez notre Delegue a la Protection des Donnees : <a href="mailto:dpo@connectedmate.com">dpo@connectedmate.com</a>.</p>
             <p>Vous disposez egalement du droit d'introduire une reclamation aupres de la CNIL (Commission Nationale de l'Informatique et des Libertes).</p>
 
-            <h3>6. Cookies</h3>
+            <h3>Cookies</h3>
             <p>Le site utilise des cookies techniques necessaires a son bon fonctionnement. Des cookies d'analyse peuvent etre utilises pour mesurer la frequentation du site. Vous pouvez configurer votre navigateur pour refuser les cookies ou etre alerte lors de leur envoi.</p>
 
-            <h3>7. Transferts de donnees</h3>
+            <h3>Transferts de donnees</h3>
             <p>Le site etant heberge par Vercel Inc. aux Etats-Unis, certaines donnees peuvent faire l'objet d'un transfert hors de l'Union Europeenne. Ces transferts sont encadres par des garanties appropriees conformement au RGPD (clauses contractuelles types).</p>
           </div>
         </div>
@@ -225,21 +237,21 @@
           <div class="legal-block">
             <h2>Conditions Generales de Vente</h2>
 
-            <h3>1. Services proposes</h3>
+            <h3>Services proposes</h3>
             <p>CONNECTED MATE SAS propose des services de conseil en gestion, ainsi que des applications logicielles (Better Dictate, NoteTaker AI) et des services associes. La description detaillee des services est disponible sur les pages dediees du site.</p>
 
-            <h3>2. Tarifs et paiement</h3>
+            <h3>Tarifs et paiement</h3>
             <p>Les tarifs des services sont indiques en euros (EUR) toutes taxes comprises (TTC). CONNECTED MATE SAS se reserve le droit de modifier ses tarifs a tout moment, les services etant factures sur la base des tarifs en vigueur au moment de la commande.</p>
             <p>Le paiement est effectue en ligne par carte bancaire via la plateforme securisee Stripe. Le paiement est exigible au moment de la commande.</p>
 
-            <h3>3. Droit de retractation</h3>
+            <h3>Droit de retractation</h3>
             <p>Conformement aux articles L.221-18 et suivants du Code de la consommation, le consommateur dispose d'un delai de 14 jours calendaires a compter de la conclusion du contrat pour exercer son droit de retractation, sans avoir a justifier de motifs ni a payer de penalites.</p>
             <p>Pour exercer ce droit, il suffit d'adresser une demande par email a <a href="mailto:legal@connectedmate.com">legal@connectedmate.com</a> avant l'expiration du delai.</p>
 
-            <h3>4. Resiliation</h3>
+            <h3>Resiliation</h3>
             <p>L'utilisateur peut resilier son abonnement ou ses services a tout moment depuis son espace personnel ou en contactant le support. La resiliation prend effet a la fin de la periode en cours. Aucun remboursement partiel n'est effectue pour la periode entamee, sauf exercice du droit de retractation.</p>
 
-            <h3>5. Droit applicable et juridiction</h3>
+            <h3>Droit applicable et juridiction</h3>
             <p>Les presentes CGV sont soumises au droit francais. En cas de litige relatif a l'interpretation ou a l'execution des presentes, et apres tentative de resolution amiable, competence est attribuee aux tribunaux competents de Paris, France.</p>
           </div>
         </div>
