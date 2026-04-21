@@ -254,6 +254,93 @@
 
 <!-- ASCII Canvas Animation -->
 <script src="ascii-canvas.js"></script>
-
+<!-- CM-SEO-JSONLD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://alex-connected-mate.github.io/BENTO-CM/#organization",
+      "name": "Connected Mate",
+      "url": "https://alex-connected-mate.github.io/BENTO-CM/",
+      "logo": "https://alex-connected-mate.github.io/BENTO-CM/logo.png"
+    },
+    {
+      "@type": "PodcastSeries",
+      "@id": "https://alex-connected-mate.github.io/BENTO-CM/#podcast",
+      "name": "Connected Mate",
+      "description": "Podcast francophone sur la tech, l'IA et la culture numerique. Plus de 100 episodes avec entrepreneurs, chercheurs et innovateurs.",
+      "url": "https://smartlink.ausha.co/connectedmate",
+      "inLanguage": "fr-FR",
+      "author": {"@id": "https://alex-connected-mate.github.io/BENTO-CM/#organization"},
+      "publisher": {"@id": "https://alex-connected-mate.github.io/BENTO-CM/#organization"},
+      "sameAs": [
+        "https://open.spotify.com/show/0HE6b6ZfN3zeU4QikK7XFd",
+        "https://podcasts.apple.com/fr/podcast/connected-mate/id1439013021",
+        "https://www.youtube.com/@ConnectedMate"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://alex-connected-mate.github.io/BENTO-CM/podcasts.html#webpage",
+      "url": "https://alex-connected-mate.github.io/BENTO-CM/podcasts.html",
+      "name": "Podcast Connected Mate — 100+ episodes",
+      "description": "Page officielle du podcast Connected Mate : tous les episodes, plateformes d'ecoute.",
+      "inLanguage": "fr-FR",
+      "isPartOf": {"@id": "https://alex-connected-mate.github.io/BENTO-CM/#organization"},
+      "about": [{"@id": "https://alex-connected-mate.github.io/BENTO-CM/#podcast"}],
+      "mentions": [
+        {"@type": "Thing", "name": "Podcast", "sameAs": "https://fr.wikipedia.org/wiki/Podcasting"},
+        {"@type": "Organization", "name": "Spotify", "sameAs": "https://www.spotify.com/"},
+        {"@type": "Organization", "name": "Apple Podcasts", "sameAs": "https://www.apple.com/apple-podcasts/"}
+      ]
+    },
+    {
+      "@type": "Article",
+      "headline": "Le podcast Connected Mate",
+      "description": "Plus de 100 episodes sur la tech, l'IA et la culture numerique, disponibles sur toutes les plateformes.",
+      "inLanguage": "fr-FR",
+      "author": {"@id": "https://alex-connected-mate.github.io/BENTO-CM/#organization"},
+      "publisher": {"@id": "https://alex-connected-mate.github.io/BENTO-CM/#organization"},
+      "mainEntityOfPage": {"@id": "https://alex-connected-mate.github.io/BENTO-CM/podcasts.html#webpage"},
+      "datePublished": "2018-01-01",
+      "dateModified": "2026-04-21"
+    },
+    {
+      "@type": "ItemList",
+      "name": "Plateformes d'ecoute du podcast Connected Mate",
+      "itemListOrder": "https://schema.org/ItemListUnordered",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Spotify", "url": "https://open.spotify.com/show/0HE6b6ZfN3zeU4QikK7XFd"},
+        {"@type": "ListItem", "position": 2, "name": "Apple Podcasts", "url": "https://podcasts.apple.com/fr/podcast/connected-mate/id1439013021"},
+        {"@type": "ListItem", "position": 3, "name": "Deezer"},
+        {"@type": "ListItem", "position": 4, "name": "YouTube", "url": "https://www.youtube.com/@ConnectedMate"},
+        {"@type": "ListItem", "position": 5, "name": "Ausha smartlink", "url": "https://smartlink.ausha.co/connectedmate"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Combien d'episodes compte le podcast Connected Mate ?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Plus de 100 episodes sont disponibles, avec des entretiens d'entrepreneurs, chercheurs et innovateurs francophones depuis 2018."}
+        },
+        {
+          "@type": "Question",
+          "name": "Ou ecouter le podcast ?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Sur Spotify, Apple Podcasts, Deezer, YouTube et via smartlink.ausha.co/connectedmate."}
+        },
+        {
+          "@type": "Question",
+          "name": "Le podcast est-il gratuit ?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Oui, le podcast est entierement gratuit sur toutes les plateformes d'ecoute."}
+        }
+      ]
+    }
+  ]
+}
+</script>
 </body>
 </html>
