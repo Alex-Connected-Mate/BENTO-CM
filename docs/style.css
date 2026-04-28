@@ -4264,60 +4264,76 @@ a, button, .pill-button, .cs-card, .phase-card, .blog-card, .feature-card {
 }
 
 .spec-card {
-  background: var(--surface);
-  border: 1px solid var(--line);
+  position: relative;
+  background: var(--surface-strong);
+  border: 1px solid var(--line-strong);
   border-radius: var(--radius-lg);
-  padding: 1.75rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 1.4rem;
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
+  gap: 1.5rem;
+  box-shadow: 0 18px 40px rgba(10,10,11,0.08), 0 2px 0 rgba(255,255,255,0.6) inset;
+  overflow: hidden;
   transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
 }
 
+.spec-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(120% 60% at 0% 0%, rgba(46,209,88,0.08), transparent 60%),
+    radial-gradient(120% 60% at 100% 0%, rgba(10,132,255,0.06), transparent 60%);
+}
+
+.spec-card > * { position: relative; }
+
 .spec-card:hover {
-  border-color: var(--line-strong);
-  box-shadow: var(--shadow);
-  transform: translateY(-2px);
+  border-color: rgba(10,10,11,0.24);
+  box-shadow: 0 28px 60px rgba(10,10,11,0.12), 0 2px 0 rgba(255,255,255,0.6) inset;
+  transform: translateY(-3px);
 }
 
 .spec-card-head {
   display: flex;
   align-items: center;
-  gap: 0.9rem;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed var(--line);
 }
 
 .spec-card-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  background: var(--surface-strong);
-  border: 1px solid var(--line);
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #ffffff, #ececf2);
+  border: 1px solid var(--line-strong);
   display: grid;
   place-items: center;
   flex-shrink: 0;
   color: var(--text);
-  box-shadow: 0 8px 18px rgba(10,10,11,0.06);
+  box-shadow: 0 10px 22px rgba(10,10,11,0.1), inset 0 1px 0 #fff;
 }
 
 .spec-card-kicker {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-soft);
-  margin: 0 0 0.2rem;
+  margin: 0 0 0.3rem;
 }
 
 .spec-card-title {
-  font-family: var(--font-mono);
-  font-size: 1rem;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
   font-weight: 700;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   color: var(--text);
   margin: 0;
+  line-height: 1.15;
 }
 
 /* Checklist (privacy) */
@@ -4332,8 +4348,9 @@ a, button, .pill-button, .cs-card, .phase-card, .blog-card, .feature-card {
 
 .spec-checklist li {
   position: relative;
-  padding-left: 1.85rem;
-  font-size: 0.875rem;
+  padding-left: 1.95rem;
+  margin: 0;
+  font-size: 0.9rem;
   line-height: 1.5;
   color: var(--text);
 }
