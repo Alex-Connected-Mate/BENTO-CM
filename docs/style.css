@@ -4248,3 +4248,186 @@ a, button, .pill-button, .cs-card, .phase-card, .blog-card, .feature-card {
   body.nav-open { overflow: hidden; }
 }
 
+/* ═══════════════════════════════════════════════════════════
+   SPEC CARDS (Notetaker privacy + compatibility)
+   ═══════════════════════════════════════════════════════════ */
+
+.spec-section {
+  padding: clamp(2.5rem, 5vw, 4rem) 0;
+}
+
+.spec-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-top: 0;
+}
+
+.spec-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.spec-card:hover {
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+}
+
+.spec-card-head {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.spec-card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--surface-strong);
+  border: 1px solid var(--line);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  color: var(--text);
+  box-shadow: 0 8px 18px rgba(10,10,11,0.06);
+}
+
+.spec-card-kicker {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+  margin: 0 0 0.2rem;
+}
+
+.spec-card-title {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  margin: 0;
+}
+
+/* Checklist (privacy) */
+.spec-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.spec-checklist li {
+  position: relative;
+  padding-left: 1.85rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.spec-checklist li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--green);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3.5 8.5l3 3 6-6.5' stroke='white' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");
+  background-size: 16px 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 10px rgba(46,209,88,0.28);
+}
+
+.spec-tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.18rem 0.5rem;
+  margin-left: 0.15rem;
+  border-radius: 6px;
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  color: var(--text);
+  white-space: nowrap;
+}
+
+/* Spec rows (compatibility) */
+.spec-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.spec-row {
+  display: grid;
+  grid-template-columns: minmax(0, auto) 1fr;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.spec-row:first-child { padding-top: 0.25rem; }
+.spec-row:last-child { border-bottom: none; padding-bottom: 0.25rem; }
+
+.spec-row dt {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+  font-weight: 600;
+  margin: 0;
+}
+
+.spec-row dd {
+  margin: 0;
+  text-align: right;
+  font-size: 0.9rem;
+  color: var(--text);
+  font-weight: 500;
+  font-feature-settings: "tnum";
+}
+
+.spec-pill {
+  display: inline-flex;
+  align-items: center;
+  background: var(--green);
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  box-shadow: 0 6px 14px rgba(46,209,88,0.3);
+}
+
+@media (max-width: 767px) {
+  .spec-grid { grid-template-columns: 1fr; }
+  .spec-card { padding: 1.4rem; }
+  .spec-card-title { font-size: 0.95rem; }
+  .spec-row dt { font-size: 0.65rem; }
+  .spec-row dd { font-size: 0.85rem; }
+}
+
