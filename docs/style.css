@@ -4162,3 +4162,89 @@ a, button, .pill-button, .cs-card, .phase-card, .blog-card, .feature-card {
   }
 }
 
+/* ═══════════════════════════════════════════════════════════
+   HAMBURGER MOBILE NAV
+   ═══════════════════════════════════════════════════════════ */
+
+.nav-toggle {
+  display: none;
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: 0;
+  border: 1px solid var(--line-strong);
+  border-radius: 0.6rem;
+  background: var(--surface);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+  transition: background 0.2s, border-color 0.2s;
+}
+.nav-toggle:hover { background: var(--surface-strong); }
+.nav-toggle span {
+  display: block;
+  width: 18px;
+  height: 1.5px;
+  background: var(--text);
+  border-radius: 1px;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+.nav-toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(5.5px) rotate(45deg);
+}
+.nav-toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-5.5px) rotate(-45deg);
+}
+
+@media (max-width: 767px) {
+  .nav-toggle { display: inline-flex; }
+
+  .nav-bar {
+    grid-template-columns: 1fr auto;
+    grid-template-areas: none;
+    gap: 0.75rem;
+  }
+  .logo { grid-area: auto; justify-self: start; }
+  .nav-actions { grid-area: auto; justify-self: end; }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 0;
+    margin: 0;
+    padding: 0.25rem 1.25rem 1.25rem;
+    background: rgba(246,246,248,0.97);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--line);
+    font-size: 1rem;
+    transform: translateY(-8px);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.25s ease, opacity 0.2s ease;
+    box-shadow: 0 12px 24px rgba(10,10,11,0.06);
+  }
+  body.nav-open .nav-links {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .nav-links a {
+    padding: 0.95rem 0.25rem;
+    border-bottom: 1px solid var(--line);
+    width: 100%;
+  }
+  .nav-links a:last-child { border-bottom: none; }
+  .nav-links a::after { display: none; }
+  body.nav-open { overflow: hidden; }
+}
+

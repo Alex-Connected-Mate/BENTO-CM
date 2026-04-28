@@ -365,3 +365,35 @@ if ('requestIdleCallback' in window) {
     });
   });
 })();
+
+// Hamburger mobile menu
+(function() {
+  var toggle = document.querySelector('.nav-toggle');
+  var links = document.getElementById('primary-nav');
+  if (!toggle || !links) return;
+
+  function setOpen(open) {
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    document.body.classList.toggle('nav-open', open);
+  }
+
+  toggle.addEventListener('click', function() {
+    setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+  });
+
+  links.addEventListener('click', function(e) {
+    var t = e.target;
+    while (t && t !== links) {
+      if (t.tagName === 'A') { setOpen(false); return; }
+      t = t.parentNode;
+    }
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') setOpen(false);
+  });
+
+  window.addEventListener('resize', function() {
+    if (window.innerWidth >= 768) setOpen(false);
+  });
+})();
