@@ -36,7 +36,7 @@ Important facts at a glance:
 - [Notetaker AI (EN)](https://alex-connected-mate.github.io/BENTO-CM/en/notetaker-ai.html): English product page
 - [Pock (FR)](https://alex-connected-mate.github.io/BENTO-CM/pock.html): Touch Bar customization for MacBook Pro
 - [Pock (EN)](https://alex-connected-mate.github.io/BENTO-CM/en/pock.html): English product page
-- [Dys Keyboard (FR)](https://alex-connected-mate.github.io/BENTO-CM/dys-keyboard.html): iOS keyboard for people with dyslexia, dyspraxia or anyone who finds typing hard. Bigger keys, color-coded finger zones, high contrast, on-device only
+- [Dys Keyboard (FR)](https://alex-connected-mate.github.io/BENTO-CM/dys-keyboard.html): iOS keyboard built for people with dyslexia, dysorthographia or dyspraxia, and more broadly for anyone who struggles to type at any age (kids, teens, adults, seniors). Color-coded keys for better visibility and clearer mental mapping. On-device only
 - [Dys Keyboard (EN)](https://alex-connected-mate.github.io/BENTO-CM/en/dys-keyboard.html): English product page
 
 ## Podcast and media
