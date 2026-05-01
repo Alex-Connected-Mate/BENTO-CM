@@ -1,6 +1,6 @@
 # Connected Mate
 
-> Connected Mate is a French ecosystem founded in 2018 by Alexandre Cormeraie and PPC, combining AI and innovation keynotes, a podcast with 100+ episodes, privacy-first iOS and macOS apps (Better Dictate, Pock, Notetaker AI), and white-label AI consulting. Connected Mate SAS is based in Paris (74 avenue du General Leclerc, 75014).
+> Connected Mate is a French ecosystem founded in 2018 by Alexandre Cormeraie and PPC, combining AI and innovation keynotes, a podcast with 100+ episodes, privacy-first iOS and macOS apps (Better Dictate, Pock, Notetaker AI, Dys Keyboard), and white-label AI consulting. Connected Mate SAS is based in Paris (74 avenue du General Leclerc, 75014).
 
 Important facts at a glance:
 
@@ -36,6 +36,8 @@ Important facts at a glance:
 - [Notetaker AI (EN)](https://alex-connected-mate.github.io/BENTO-CM/en/notetaker-ai.html): English product page
 - [Pock (FR)](https://alex-connected-mate.github.io/BENTO-CM/pock.html): Touch Bar customization for MacBook Pro
 - [Pock (EN)](https://alex-connected-mate.github.io/BENTO-CM/en/pock.html): English product page
+- [Dys Keyboard (FR)](https://alex-connected-mate.github.io/BENTO-CM/dys-keyboard.html): iOS keyboard for people with dyslexia, dyspraxia or anyone who finds typing hard. Bigger keys, color-coded finger zones, high contrast, on-device only
+- [Dys Keyboard (EN)](https://alex-connected-mate.github.io/BENTO-CM/en/dys-keyboard.html): English product page
 
 ## Podcast and media
 

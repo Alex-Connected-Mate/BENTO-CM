@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dys Keyboard — Le clavier pour ceux qui galerent a taper | Connected Mate</title>
+  <!-- CM-SEO-META -->
+  <meta name="description" content="Clavier iOS pour personnes dyslexiques, dyspraxiques, ou qui ont du mal a taper. Touches plus grandes, contrastes pousses, zones de doigts colorees. Aucune donnee ne quitte votre appareil.">
+  <meta name="keywords" content="Dys Keyboard, clavier dys, dyslexie, dyspraxie, accessibilite, iOS, clavier iPhone, WCAG, privacy">
+  <meta name="author" content="Connected Mate">
+  <link rel="canonical" href="https://alex-connected-mate.github.io/BENTO-CM/dys-keyboard.html">
+  <link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/dys-keyboard.html">
+  <link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/dys-keyboard.html">
+  <link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/dys-keyboard.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alex-connected-mate.github.io/BENTO-CM/dys-keyboard.html">
+  <meta property="og:title" content="Dys Keyboard — Le clavier pour ceux qui galerent a taper | Connected Mate">
+  <meta property="og:description" content="Clavier iOS pour personnes dyslexiques, dyspraxiques, ou qui ont du mal a taper. Touches plus grandes, contrastes pousses, zones de doigts colorees.">
+  <meta property="og:image" content="https://alex-connected-mate.github.io/BENTO-CM/dys-keyboard-icon.svg">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Connected Mate">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dys Keyboard — Le clavier pour ceux qui galerent a taper | Connected Mate">
+  <meta name="twitter:description" content="Clavier iOS pour personnes dyslexiques, dyspraxiques, ou qui ont du mal a taper.">
+  <meta name="twitter:image" content="https://alex-connected-mate.github.io/BENTO-CM/dys-keyboard-icon.svg">
+  <meta name="theme-color" content="#0a0a0b">
+  <meta name="apple-mobile-web-app-title" content="Connected Mate">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700;800&display=swap" as="style">
+  <link rel="stylesheet" href="style.css?v=20260428b">
+</head>
+<body>
+<div id="page-loader" style="position:fixed;top:0;left:0;right:0;height:2px;background:var(--text);transform-origin:left;transform:scaleX(0);z-index:99999;transition:transform 400ms cubic-bezier(0.05,0.7,0.1,1);"></div>
+<script>
+(function(){
+  var loader = document.getElementById('page-loader');
+  if (!loader) return;
+  loader.style.transform = 'scaleX(0.3)';
+  window.addEventListener('load', function() {
+    loader.style.transform = 'scaleX(1)';
+    setTimeout(function() { loader.style.opacity = '0'; }, 300);
+    setTimeout(function() { loader.remove(); }, 700);
+  });
+})();
+</script>
+<div class="page-shell">
+
+  <!-- ASCII Canvas Background -->
+  <canvas id="ascii-canvas" style="position:absolute;top:0;left:0;width:100%;z-index:-1;pointer-events:none;"></canvas>
+
+  <!-- HEADER -->
+    <header class="site-header">
+    <div class="container">
+      <nav class="nav-bar" aria-label="Navigation principale">
+        <a href="index.html" class="logo">Connected Mate</a>
+        <div class="nav-links" id="primary-nav">
+          <a href="services.html">Services</a>
+          <a href="apps.html" class="active">Applications</a>
+          <a href="keynotes.html">Keynotes</a>
+          <a href="podcasts.html">Podcasts</a>
+          <a href="blog.html">Blog</a>
+          <a href="about.html">A propos</a>
+        </div>
+        <div class="nav-actions">
+          <a href="en/dys-keyboard.html" class="pill-button secondary" style="padding:0.3rem 0.65rem;font-size:0.7rem;">EN</a>
+          <a href="contact.html" class="pill-button whatsapp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- APP HERO -->
+    <section class="app-hero blur-in">
+      <div class="container">
+        <div class="app-hero-inner" style="display:block;">
+          <div class="app-hero-text">
+            <div class="app-hero-name-row">
+              <div class="app-hero-icon app-hero-icon--coral">
+                <img src="dys-keyboard-icon.svg" alt="Dys Keyboard" loading="eager" decoding="async" width="56" height="56">
+              </div>
+              <h1>Dys Keyboard</h1>
+            </div>
+            <p class="tagline">Le clavier pour ceux qui galerent a taper.</p>
+            <p class="promo">Touches plus grandes. Contrastes pousses. Zones de doigts colorees. Pour les doigts qui hesitent &mdash; pas pour les pouces qui filent. Concu avec et pour les personnes dyslexiques, dyspraxiques, dysgraphiques.</p>
+            <div class="app-hero-actions" style="display:flex;flex-direction:column;gap:0.6rem;align-items:flex-start;">
+              <div style="display:flex;gap:0.6rem;flex-wrap:wrap;align-items:center;">
+                <a href="contact.html" class="pill-button app-store-btn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                  <span>Bientot sur l'App Store</span>
+                </a>
+                <a href="contact.html" class="pill-button outline-btn">Etre prevenu &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO IT'S FOR -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">Pour qui</span>
+            <h2 class="section-title">Concu pour les doigts qui hesitent</h2>
+          </div>
+          <p class="section-meta">iPhone &middot; iOS<br>Accessibilite par defaut</p>
+        </div>
+        <div class="audience-grid">
+          <div class="audience-card">
+            <span class="audience-emoji" aria-hidden="true">A</span>
+            <p>Personnes dyslexiques, dyspraxiques, dysgraphiques</p>
+          </div>
+          <div class="audience-card">
+            <span class="audience-emoji" aria-hidden="true">a</span>
+            <p>Enfants qui apprennent a taper</p>
+          </div>
+          <div class="audience-card">
+            <span class="audience-emoji" aria-hidden="true">o</span>
+            <p>Yeux qui fatiguent vite</p>
+          </div>
+          <div class="audience-card">
+            <span class="audience-emoji" aria-hidden="true">~</span>
+            <p>Doigts qui tremblent ou hesitent</p>
+          </div>
+          <div class="audience-card">
+            <span class="audience-emoji" aria-hidden="true">/</span>
+            <p>Toute personne qui trouve que les claviers vont trop vite</p>
+          </div>
+        </div>
+        <p class="audience-disclaimer">
+          Ce n'est pas une application medicale. Aucune promesse de soin, aucun diagnostic. Juste un clavier qui arrete de vous brusquer.
+        </p>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">06 fonctionnalites</span>
+            <h2 class="section-title">Ce que Dys change concretement</h2>
+          </div>
+          <p class="section-meta">Vue, frappe<br>Autocorrection</p>
+        </div>
+        <div class="phase-grid">
+          <div class="phase-card">
+            <div class="phase-head">
+              <span class="phase-badge">01</span>
+            </div>
+            <h3 class="phase-title">Touches qui respirent</h3>
+            <p class="phase-desc">Plus grandes, mieux espacees, contrastes eleves. Vous touchez ce que vous visez. Les erreurs de touche adjacente disparaissent.</p>
+          </div>
+          <div class="phase-card">
+            <div class="phase-head">
+              <span class="phase-badge">02</span>
+            </div>
+            <h3 class="phase-title">Zones de doigts colorees</h3>
+            <p class="phase-desc">Reapprendre a taper sans regarder ses mains. Chaque doigt a sa couleur, chaque groupe de touches sa zone. Une technique de reapprentissage eprouvee.</p>
+          </div>
+          <div class="phase-card">
+            <div class="phase-head">
+              <span class="phase-badge">03</span>
+            </div>
+            <h3 class="phase-title">Polices testees</h3>
+            <p class="phase-desc">Glyphes choisis pour reduire les confusions b/d, p/q, m/n. Empattements supprimes sur les caracteres ambigus, ouverture differenciee des "a/o".</p>
+          </div>
+          <div class="phase-card">
+            <div class="phase-head">
+              <span class="phase-badge">04</span>
+            </div>
+            <h3 class="phase-title">Autocorrection bienveillante</h3>
+            <p class="phase-desc">Elle propose, elle n'impose pas. Toujours en suggestion, jamais en force. Vous decidez. Vos mots difficiles ne quittent jamais l'appareil.</p>
+          </div>
+          <div class="phase-card">
+            <div class="phase-head">
+              <span class="phase-badge">05</span>
+            </div>
+            <h3 class="phase-title">Themes a contraste pousse</h3>
+            <p class="phase-desc">Six ambiances dont High Contrast (ratio AAA 7:1) et Dark, pensees pour les yeux fatigues. Chaque couleur testee WCAG AA minimum.</p>
+          </div>
+          <div class="phase-card phase-dark">
+            <div class="phase-head">
+              <span class="phase-badge">06</span>
+            </div>
+            <h3 class="phase-title">Pas de pression</h3>
+            <p class="phase-desc">Objectif quotidien a votre rythme. Series qui se debloquent. Aucun jugement, aucune notification anxiogene. Le clavier respecte votre tempo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRIVACY & ACCESSIBILITY -->
+    <section class="info-section spec-section">
+      <div class="container">
+        <div class="spec-grid">
+          <article class="spec-card">
+            <div class="spec-card-head">
+              <span class="spec-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15.5" r="1.4" fill="currentColor" stroke="none"/></svg>
+              </span>
+              <div>
+                <p class="spec-card-kicker">01 &mdash; Vie privee absolue</p>
+                <h3 class="spec-card-title">Dys ne lit jamais ce que vous tapez</h3>
+              </div>
+            </div>
+            <ul class="spec-checklist">
+              <li>Aucune donnee ne quitte votre appareil</li>
+              <li>Pas de telemetrie, pas de compte, pas de cloud</li>
+              <li>Apprentissage local : vos mots difficiles restent chez vous</li>
+              <li>Aucun appel reseau depuis l'extension clavier</li>
+              <li>Fonctionne integralement sans Acces complet iOS</li>
+              <li>Label App Store : <span class="spec-tag">No Data Collected</span></li>
+            </ul>
+          </article>
+
+          <article class="spec-card">
+            <div class="spec-card-head">
+              <span class="spec-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              </span>
+              <div>
+                <p class="spec-card-kicker">02 &mdash; Accessibilite</p>
+                <h3 class="spec-card-title">WCAG 2.2 niveau AA</h3>
+              </div>
+            </div>
+            <dl class="spec-list">
+              <div class="spec-row"><dt>Touches agrandies</dt><dd>+18% en moyenne</dd></div>
+              <div class="spec-row"><dt>Contraste minimum</dt><dd>4.5:1 (AA)</dd></div>
+              <div class="spec-row"><dt>Theme High Contrast</dt><dd>7:1 (AAA)</dd></div>
+              <div class="spec-row"><dt>Long-press</dt><dd>500 ms</dd></div>
+              <div class="spec-row"><dt>VoiceOver</dt><dd>Compatible</dd></div>
+              <div class="spec-row"><dt>Dynamic Type</dt><dd>Respecte</dd></div>
+              <div class="spec-row"><dt>Reduce Motion</dt><dd>Respecte</dd></div>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPATIBILITY -->
+    <section class="info-section spec-section" style="padding-top:0;">
+      <div class="container">
+        <div class="spec-grid">
+          <article class="spec-card">
+            <div class="spec-card-head">
+              <span class="spec-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10 5.5h4"/><circle cx="12" cy="18" r="0.8" fill="currentColor" stroke="none"/></svg>
+              </span>
+              <div>
+                <p class="spec-card-kicker">03 &mdash; Specifications</p>
+                <h3 class="spec-card-title">Compatibilite</h3>
+              </div>
+            </div>
+            <dl class="spec-list">
+              <div class="spec-row"><dt>iPhone</dt><dd>iOS 17+</dd></div>
+              <div class="spec-row"><dt>Dispositions</dt><dd>11 layouts</dd></div>
+              <div class="spec-row"><dt>Themes</dt><dd>6 ambiances</dd></div>
+              <div class="spec-row"><dt>Categorie</dt><dd>Productivite</dd></div>
+              <div class="spec-row"><dt>Age</dt><dd>4+</dd></div>
+              <div class="spec-row"><dt>Prix</dt><dd><span class="spec-pill">Gratuit</span></dd></div>
+            </dl>
+          </article>
+
+          <article class="spec-card">
+            <div class="spec-card-head">
+              <span class="spec-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V7l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+              </span>
+              <div>
+                <p class="spec-card-kicker">04 &mdash; Limites assumees</p>
+                <h3 class="spec-card-title">Outil de confort, pas medical</h3>
+              </div>
+            </div>
+            <ul class="spec-checklist">
+              <li>Pas un dispositif medical, pas un diagnostic</li>
+              <li>Ne remplace pas un orthophoniste ou ergotherapeute</li>
+              <li>Pensez a Dys comme un outil qui reduit les frictions</li>
+              <li>Concu avec des personnes dys, pour des personnes dys</li>
+              <li>Audit accessibilite disponible sur demande</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT CTA -->
+    <section class="section bottom-cta">
+      <div class="container">
+        <div class="cta-panel">
+          <span class="section-kicker">Bientot disponible</span>
+          <h2 class="section-title">Envie d'etre prevenu au lancement ?</h2>
+          <p class="section-copy" style="color:#aaaaaf;margin-bottom:1.5rem">
+            Ecrivez-nous : on vous previent des que Dys Keyboard arrive sur l'App Store.
+          </p>
+          <div class="cta-actions">
+            <a href="https://wa.me/33782150438?text=Bonjour%2C%20je%20veux%20etre%20prevenu%20du%20lancement%20de%20Dys%20Keyboard%20!" class="pill-button whatsapp" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp &rarr;
+            </a>
+            <a href="contact.html" class="pill-button secondary">
+              Nous ecrire &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-row">
+        <span>&copy; 2026 Connected Mate &mdash; Developpe par <a href="mailto:alex.connectedmate@gmail.com">Alexandre Cormeraie</a></span>
+        <div class="footer-links">
+          <a href="apps.html">Applications</a>
+          <a href="notetaker-ai.html">NoteTaker AI</a>
+          <a href="contact.html">Contact</a>
+          <a href="legal.html">Mentions legales</a>
+          <span class="system-tag">[ PRIVACY FIRST ]</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script src="ascii-canvas.js"></script>
+<!-- CM-SEO-JSONLD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Dys Keyboard",
+  "operatingSystem": "iOS",
+  "applicationCategory": "ProductivityApplication",
+  "applicationSubCategory": "Keyboard",
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"},
+  "publisher": {"@type": "Organization", "name": "Connected Mate"},
+  "description": "Clavier iOS pour personnes dyslexiques, dyspraxiques ou qui ont du mal a taper. Touches plus grandes, zones de doigts colorees, contrastes pousses, vie privee totale.",
+  "image": "https://alex-connected-mate.github.io/BENTO-CM/dys-keyboard-icon.svg",
+  "featureList": [
+    "11 dispositions de clavier",
+    "6 themes signature",
+    "Zones de doigts colorees",
+    "Autocorrection bienveillante",
+    "Aucune collecte de donnees"
+  ]
+}
+</script>
+</body>
+</html>
