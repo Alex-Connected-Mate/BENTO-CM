@@ -3442,69 +3442,64 @@ a, button, .pill-button, .cs-card, .phase-card, .blog-card, .feature-card {
   margin: 0;
 }
 
-/* App Store hover reveal */
+/* App Store + beta-access reveal — hidden by default,
+   expands horizontally on hover/focus, slotting between the
+   App Store button and the next button (e.g. "Nous ecrire") */
 .app-store-hover-wrap {
-  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
 }
 
 .hover-reveal {
-  position: absolute;
-  top: calc(100% + 0.5rem);
-  left: 0;
-  min-width: 280px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
   background: var(--surface-dark);
-  border: 1px solid rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.1);
   border-radius: 10px;
-  padding: 0.85rem 1rem;
+  padding: 0;
+  max-width: 0;
   opacity: 0;
-  transform: translateY(-6px);
+  overflow: hidden;
   pointer-events: none;
-  transition: opacity 300ms cubic-bezier(0.05, 0.7, 0.1, 1), transform 300ms cubic-bezier(0.05, 0.7, 0.1, 1);
-  z-index: 10;
-  box-shadow: 0 16px 40px rgba(0,0,0,0.25);
-}
-
-.hover-reveal::before {
-  content: '';
-  position: absolute;
-  top: -6px;
-  left: 20px;
-  width: 10px;
-  height: 10px;
-  background: var(--surface-dark);
-  border-left: 1px solid rgba(255,255,255,0.12);
-  border-top: 1px solid rgba(255,255,255,0.12);
-  transform: rotate(45deg);
+  transition: max-width 360ms cubic-bezier(0.05, 0.7, 0.1, 1),
+              padding 360ms cubic-bezier(0.05, 0.7, 0.1, 1),
+              opacity 220ms ease;
 }
 
 .app-store-hover-wrap:hover .hover-reveal,
-.app-store-hover-wrap.hover-active .hover-reveal {
+.app-store-hover-wrap:focus-within .hover-reveal {
+  max-width: 320px;
+  padding: 0.6rem 0.85rem;
   opacity: 1;
-  transform: translateY(0);
   pointer-events: auto;
 }
 
 .hover-reveal-text {
   font-family: var(--font-mono);
   font-size: 0.7rem;
-  color: rgba(255,255,255,0.7);
-  margin: 0 0 0.5rem;
+  color: rgba(255,255,255,0.65);
+  margin: 0;
   letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 .hover-reveal .scratch-gift-container {
   margin-top: 0;
 }
 
-/* On mobile/touch, the hover reveal works differently — tap to show */
+/* Touch devices have no real hover — show inline below the App Store button */
 @media (hover: none) {
-  .app-store-hover-wrap .hover-reveal {
-    display: none;
+  .app-store-hover-wrap {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .app-store-hover-wrap.hover-active .hover-reveal {
-    display: block;
+  .hover-reveal {
+    max-width: 320px;
+    padding: 0.6rem 0.85rem;
     opacity: 1;
-    transform: translateY(0);
     pointer-events: auto;
   }
 }
