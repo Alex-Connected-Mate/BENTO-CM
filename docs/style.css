@@ -1208,12 +1208,27 @@ button, input, textarea { font: inherit; }
 }
 
 /* ── Bottom CTA ── */
+.bottom-cta {
+  padding-top: clamp(2.5rem, 6vw, 4.5rem);
+}
+
 .bottom-cta .cta-panel {
-  padding: clamp(1.75rem, 4vw, 2.8rem);
-  background: var(--surface-dark);
+  position: relative;
+  overflow: hidden;
+  padding: clamp(2.25rem, 5vw, 3.5rem);
+  background: linear-gradient(155deg, #1c1c1e 0%, var(--surface-dark) 55%, #0a0a0b 100%);
   border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 8px;
+  border-radius: 16px;
   color: #ffffff;
+  box-shadow: 0 24px 60px -24px rgba(0,0,0,0.55);
+}
+
+.bottom-cta .cta-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(560px 220px at 8% 0%, rgba(255,255,255,0.08), transparent 70%);
+  pointer-events: none;
 }
 
 .bottom-cta .section-kicker,
