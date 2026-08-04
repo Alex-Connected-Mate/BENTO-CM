@@ -1210,23 +1210,95 @@ button, input, textarea { font: inherit; }
   line-height: 1.7;
 }
 
-/* ── Bottom CTA ── */
 .bottom-cta .cta-panel {
-  padding: clamp(1.75rem, 4vw, 2.8rem);
-  background: var(--surface-dark);
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: clamp(2rem, 5vw, 3.5rem);
+  padding: clamp(2.25rem, 5vw, 3.25rem) clamp(2.25rem, 5vw, 3.5rem);
+  background:
+    radial-gradient(560px 260px at 4% 0%, rgba(255,255,255,0.08), transparent 70%),
+    linear-gradient(155deg, #1c1c1e 0%, var(--surface-dark) 55%, #0a0a0b 100%);
   border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 8px;
+  border-radius: var(--radius-lg);
   color: #ffffff;
+  box-shadow: 0 24px 60px -24px rgba(0,0,0,0.55);
 }
 
-.bottom-cta .section-kicker,
+.bottom-cta .cta-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: radial-gradient(480px 260px at 0% 0%, rgba(0,0,0,0.55), transparent 75%);
+  pointer-events: none;
+}
+
+.bottom-cta .cta-panel::after {
+  content: "";
+  position: absolute;
+  top: clamp(1.5rem, 3vw, 2rem);
+  right: clamp(2.25rem, 5vw, 3.5rem);
+  width: 34px;
+  height: 34px;
+  border-top: 1px solid rgba(255,255,255,0.28);
+  border-right: 1px solid rgba(255,255,255,0.28);
+  pointer-events: none;
+}
+
+.bottom-cta .cta-panel-copy {
+  position: relative;
+  z-index: 1;
+}
+
+.bottom-cta .cta-panel-action {
+  position: relative;
+  z-index: 1;
+  padding-left: clamp(2rem, 5vw, 3.5rem);
+  border-left: 1px solid rgba(255,255,255,0.14);
+}
+
+.bottom-cta .section-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: #aaaaaf;
+}
+
+.bottom-cta .section-kicker::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 0 3px rgba(46,209,88,0.18);
+}
+
 .bottom-cta .section-copy {
   color: #aaaaaf;
+  max-width: 42ch;
 }
 
 .bottom-cta .section-title {
   max-width: 18ch;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+  .bottom-cta .cta-panel {
+    grid-template-columns: 1fr;
+  }
+  .bottom-cta .cta-panel-action {
+    padding-left: 0;
+    border-left: none;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255,255,255,0.14);
+  }
 }
 
 .bottom-cta .pill-button.whatsapp {
