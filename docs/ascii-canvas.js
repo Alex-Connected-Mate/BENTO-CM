@@ -394,6 +394,6 @@ if ('requestIdleCallback' in window) {
   });
 
   window.addEventListener('resize', function() {
-    if (window.innerWidth >= 768) setOpen(false);
+    if (window.innerWidth >= 1025) setOpen(false);
   });
 })();

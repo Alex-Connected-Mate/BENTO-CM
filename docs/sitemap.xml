@@ -3,439 +3,455 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/</loc>
-    <lastmod>2026-04-21</lastmod>
+    <loc>https://connectedmate.com/</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/"/>
   </url>
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/en/</loc>
-    <lastmod>2026-04-21</lastmod>
+    <loc>https://connectedmate.com/en/</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/"/>
   </url>
 
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/services.html</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://connectedmate.com/services.html</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/services.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/services.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/services.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/services.html"/>
   </url>
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/en/services.html</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://connectedmate.com/en/services.html</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/services.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/services.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/services.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/services.html"/>
   </url>
 
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/apps.html</loc>
+    <loc>https://connectedmate.com/apps.html</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/apps.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/apps.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/apps.html"/>
   </url>
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/en/apps.html</loc>
+    <loc>https://connectedmate.com/en/apps.html</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/apps.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/apps.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/apps.html"/>
-  </url>
-
-  <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/notetaker-ai.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/notetaker-ai.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/notetaker-ai.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/notetaker-ai.html"/>
-  </url>
-  <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/en/notetaker-ai.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/notetaker-ai.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/notetaker-ai.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/notetaker-ai.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/apps.html"/>
   </url>
 
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/dys-keyboard.html</loc>
+    <loc>https://connectedmate.com/notetaker-ai.html</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/notetaker-ai.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/notetaker-ai.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/notetaker-ai.html"/>
+  </url>
+  <url>
+    <loc>https://connectedmate.com/en/notetaker-ai.html</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/notetaker-ai.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/notetaker-ai.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/notetaker-ai.html"/>
+  </url>
+
+  <url>
+    <loc>https://connectedmate.com/dys-keyboard.html</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/dys-keyboard.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/dys-keyboard.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/dys-keyboard.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/dys-keyboard.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/dys-keyboard.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/dys-keyboard.html"/>
   </url>
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/en/dys-keyboard.html</loc>
+    <loc>https://connectedmate.com/en/dys-keyboard.html</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/dys-keyboard.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/dys-keyboard.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/dys-keyboard.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/dys-keyboard.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/dys-keyboard.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/dys-keyboard.html"/>
   </url>
 
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/pock.html</loc>
+    <loc>https://connectedmate.com/pock.html</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/pock.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/pock.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/pock.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/pock.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/pock.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/pock.html"/>
   </url>
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/en/pock.html</loc>
+    <loc>https://connectedmate.com/en/pock.html</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/pock.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/pock.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/pock.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/pock.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/pock.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/pock.html"/>
   </url>
 
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/better-dictate.html</loc>
+    <loc>https://connectedmate.com/better-dictate.html</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/better-dictate.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/better-dictate.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/better-dictate.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/better-dictate.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/better-dictate.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/better-dictate.html"/>
   </url>
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/en/better-dictate.html</loc>
+    <loc>https://connectedmate.com/en/better-dictate.html</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/better-dictate.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/better-dictate.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/better-dictate.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/better-dictate.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/better-dictate.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/better-dictate.html"/>
   </url>
 
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/keynotes.html</loc>
+    <loc>https://connectedmate.com/keynotes.html</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/keynotes.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/keynotes.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/keynotes.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/keynotes.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/keynotes.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/keynotes.html"/>
   </url>
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/en/keynotes.html</loc>
+    <loc>https://connectedmate.com/en/keynotes.html</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/keynotes.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/keynotes.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/keynotes.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/keynotes.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/keynotes.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/keynotes.html"/>
   </url>
 
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/podcasts.html</loc>
+    <loc>https://connectedmate.com/podcasts.html</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/podcasts.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/podcasts.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/podcasts.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/podcasts.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/podcasts.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/podcasts.html"/>
   </url>
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/en/podcasts.html</loc>
+    <loc>https://connectedmate.com/en/podcasts.html</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/podcasts.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/podcasts.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/podcasts.html"/>
-  </url>
-
-  <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/blog.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/blog.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog.html"/>
-  </url>
-  <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/en/blog.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/blog.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/podcasts.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/podcasts.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/podcasts.html"/>
   </url>
 
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/about.html</loc>
+    <loc>https://connectedmate.com/blog.html</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/blog.html"/>
+  </url>
+  <url>
+    <loc>https://connectedmate.com/en/blog.html</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/blog.html"/>
+  </url>
+
+  <url>
+    <loc>https://connectedmate.com/about.html</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/about.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/about.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/about.html"/>
   </url>
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/en/about.html</loc>
+    <loc>https://connectedmate.com/en/about.html</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/about.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/about.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/about.html"/>
   </url>
 
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/contact.html</loc>
-    <lastmod>2026-04-13</lastmod>
+    <loc>https://connectedmate.com/contact.html</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/contact.html"/>
   </url>
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/en/contact.html</loc>
-    <lastmod>2026-04-13</lastmod>
+    <loc>https://connectedmate.com/en/contact.html</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/contact.html"/>
   </url>
 
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/legal.html</loc>
+    <loc>https://connectedmate.com/legal.html</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/legal.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/legal.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/legal.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/legal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/legal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/legal.html"/>
   </url>
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/en/legal.html</loc>
+    <loc>https://connectedmate.com/en/legal.html</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/legal.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/legal.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/legal.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/legal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/legal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/legal.html"/>
   </url>
 
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/about/alex.html</loc>
+    <loc>https://connectedmate.com/about/alex.html</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/about/alex.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/about/alex.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/about/alex.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/about/alex.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/about/alex.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/about/alex.html"/>
   </url>
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/en/about/alex.html</loc>
+    <loc>https://connectedmate.com/en/about/alex.html</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/about/alex.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/about/alex.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/about/alex.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/about/alex.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/about/alex.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/about/alex.html"/>
   </url>
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/about/ppc.html</loc>
+    <loc>https://connectedmate.com/about/ppc.html</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/about/ppc.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/about/ppc.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/about/ppc.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/about/ppc.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/about/ppc.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/about/ppc.html"/>
   </url>
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/en/about/ppc.html</loc>
+    <loc>https://connectedmate.com/en/about/ppc.html</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/about/ppc.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/about/ppc.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/about/ppc.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/about/ppc.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/about/ppc.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/about/ppc.html"/>
   </url>
 
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/ia-generative-entreprise.html</loc>
+    <loc>https://connectedmate.com/blog/ia-generative-entreprise.html</loc>
     <lastmod>2026-02-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/ia-generative-entreprise.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/blog/generative-ai-business.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/ia-generative-entreprise.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/blog/ia-generative-entreprise.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/blog/generative-ai-business.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/blog/ia-generative-entreprise.html"/>
   </url>
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/en/blog/generative-ai-business.html</loc>
+    <loc>https://connectedmate.com/en/blog/generative-ai-business.html</loc>
     <lastmod>2026-02-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/ia-generative-entreprise.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/blog/generative-ai-business.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/ia-generative-entreprise.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/blog/ia-generative-entreprise.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/blog/generative-ai-business.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/blog/ia-generative-entreprise.html"/>
   </url>
 
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/travail-hybride-2026.html</loc>
+    <loc>https://connectedmate.com/blog/travail-hybride-2026.html</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/travail-hybride-2026.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/blog/hybrid-work-2026.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/travail-hybride-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/blog/travail-hybride-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/blog/hybrid-work-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/blog/travail-hybride-2026.html"/>
   </url>
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/en/blog/hybrid-work-2026.html</loc>
+    <loc>https://connectedmate.com/en/blog/hybrid-work-2026.html</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/travail-hybride-2026.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/blog/hybrid-work-2026.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/travail-hybride-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/blog/travail-hybride-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/blog/hybrid-work-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/blog/travail-hybride-2026.html"/>
   </url>
 
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/green-it-guide-pratique.html</loc>
+    <loc>https://connectedmate.com/blog/green-it-guide-pratique.html</loc>
     <lastmod>2026-02-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/green-it-guide-pratique.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/blog/green-it-guide.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/green-it-guide-pratique.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/blog/green-it-guide-pratique.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/blog/green-it-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/blog/green-it-guide-pratique.html"/>
   </url>
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/en/blog/green-it-guide.html</loc>
+    <loc>https://connectedmate.com/en/blog/green-it-guide.html</loc>
     <lastmod>2026-02-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/green-it-guide-pratique.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/blog/green-it-guide.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/green-it-guide-pratique.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/blog/green-it-guide-pratique.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/blog/green-it-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/blog/green-it-guide-pratique.html"/>
   </url>
 
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/cybersecurite-pme.html</loc>
+    <loc>https://connectedmate.com/blog/cybersecurite-pme.html</loc>
     <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/cybersecurite-pme.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/blog/cybersecurity-sme.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/cybersecurite-pme.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/blog/cybersecurite-pme.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/blog/cybersecurity-sme.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/blog/cybersecurite-pme.html"/>
   </url>
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/en/blog/cybersecurity-sme.html</loc>
+    <loc>https://connectedmate.com/en/blog/cybersecurity-sme.html</loc>
     <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/cybersecurite-pme.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/blog/cybersecurity-sme.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/cybersecurite-pme.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/blog/cybersecurite-pme.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/blog/cybersecurity-sme.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/blog/cybersecurite-pme.html"/>
   </url>
 
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/product-management-ia.html</loc>
+    <loc>https://connectedmate.com/blog/product-management-ia.html</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/product-management-ia.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/blog/product-management-ai.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/product-management-ia.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/blog/product-management-ia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/blog/product-management-ai.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/blog/product-management-ia.html"/>
   </url>
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/en/blog/product-management-ai.html</loc>
+    <loc>https://connectedmate.com/en/blog/product-management-ai.html</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/product-management-ia.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/blog/product-management-ai.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/product-management-ia.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/blog/product-management-ia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/blog/product-management-ai.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/blog/product-management-ia.html"/>
   </url>
 
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/blog/api-design-bonnes-pratiques.html</loc>
+    <loc>https://connectedmate.com/blog/api-design-bonnes-pratiques.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/api-design-bonnes-pratiques.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/blog/api-design-best-practices.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/api-design-bonnes-pratiques.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/blog/api-design-bonnes-pratiques.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/blog/api-design-best-practices.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/blog/api-design-bonnes-pratiques.html"/>
   </url>
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/en/blog/api-design-best-practices.html</loc>
+    <loc>https://connectedmate.com/en/blog/api-design-best-practices.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/blog/api-design-bonnes-pratiques.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/blog/api-design-best-practices.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/blog/api-design-bonnes-pratiques.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/blog/api-design-bonnes-pratiques.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/blog/api-design-best-practices.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/blog/api-design-bonnes-pratiques.html"/>
   </url>
 
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/pock/privacy.html</loc>
+    <loc>https://connectedmate.com/pock/privacy.html</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/pock/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/pock/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/pock/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/pock/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/pock/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/pock/privacy.html"/>
   </url>
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/en/pock/privacy.html</loc>
+    <loc>https://connectedmate.com/en/pock/privacy.html</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/pock/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/pock/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/pock/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/pock/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/pock/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/pock/privacy.html"/>
   </url>
 
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/pock/terms.html</loc>
+    <loc>https://connectedmate.com/pock/terms.html</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/pock/terms.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/pock/terms.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/pock/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/pock/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/pock/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/pock/terms.html"/>
   </url>
   <url>
-    <loc>https://alex-connected-mate.github.io/BENTO-CM/en/pock/terms.html</loc>
+    <loc>https://connectedmate.com/en/pock/terms.html</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alex-connected-mate.github.io/BENTO-CM/pock/terms.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alex-connected-mate.github.io/BENTO-CM/en/pock/terms.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alex-connected-mate.github.io/BENTO-CM/pock/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/pock/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/pock/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/pock/terms.html"/>
   </url>
 
+  <url>
+    <loc>https://connectedmate.com/formations.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/formations.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/formations.html"/>
+  </url>
+  <url>
+    <loc>https://connectedmate.com/en/formations.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/formations.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/formations.html"/>
+  </url>
 </urlset>

@@ -4641,7 +4641,7 @@ a, button, .pill-button, .cs-card, .phase-card, .blog-card, .feature-card {
   transform: translateY(-5.5px) rotate(-45deg);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .nav-toggle { display: inline-flex; }
 
   .nav-bar {
@@ -4657,6 +4657,8 @@ a, button, .pill-button, .cs-card, .phase-card, .blog-card, .feature-card {
     top: 100%;
     left: 0;
     right: 0;
+    max-height: calc(100dvh - 6rem);
+    overflow-y: auto;
     flex-direction: column;
     align-items: stretch;
     justify-content: flex-start;
@@ -4670,6 +4672,7 @@ a, button, .pill-button, .cs-card, .phase-card, .blog-card, .feature-card {
     font-size: 1rem;
     transform: translateY(-8px);
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
     transition: transform 0.25s ease, opacity 0.2s ease;
     box-shadow: 0 12px 24px rgba(10,10,11,0.06);
@@ -4677,6 +4680,7 @@ a, button, .pill-button, .cs-card, .phase-card, .blog-card, .feature-card {
   body.nav-open .nav-links {
     transform: translateY(0);
     opacity: 1;
+    visibility: visible;
     pointer-events: auto;
   }
   .nav-links a {
@@ -5249,3 +5253,17 @@ a, button, .pill-button, .cs-card, .phase-card, .blog-card, .feature-card {
   .blog-grid-header { flex-direction: column; align-items: flex-start; gap: 0.25rem; }
 }
 
+
+/* September 2026: accessibility and focus polish (site-wide). */
+a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+.pill-button { min-height: 44px; }
+.pill-button:focus-visible { outline: 2px solid var(--text); outline-offset: 4px; }
+.nav-links a { min-height: 44px; display: inline-flex; align-items: center; }
+.nav-toggle { min-width: 44px; min-height: 44px; }
+.skip-link { position: fixed; top: 1rem; left: 1rem; z-index: 1000; padding: .75rem 1rem; background: var(--text); color: var(--bg); transform: translateY(-200%); font-family: var(--font-mono); font-size: .8rem; }
+.skip-link:focus { transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}
+.footer-links a { display: inline-flex; align-items: center; min-height: 44px; }
