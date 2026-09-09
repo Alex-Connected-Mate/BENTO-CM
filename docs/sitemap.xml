@@ -1,457 +1,201 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
-  <url>
-    <loc>https://connectedmate.com/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/"/>
-  </url>
-  <url>
-    <loc>https://connectedmate.com/en/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/"/>
-  </url>
-
-  <url>
-    <loc>https://connectedmate.com/services.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/services.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/services.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/services.html"/>
-  </url>
-  <url>
-    <loc>https://connectedmate.com/en/services.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/services.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/services.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/services.html"/>
-  </url>
-
-  <url>
-    <loc>https://connectedmate.com/apps.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/apps.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/apps.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/apps.html"/>
-  </url>
-  <url>
-    <loc>https://connectedmate.com/en/apps.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/apps.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/apps.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/apps.html"/>
-  </url>
-
-  <url>
-    <loc>https://connectedmate.com/notetaker-ai.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/notetaker-ai.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/notetaker-ai.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/notetaker-ai.html"/>
-  </url>
-  <url>
-    <loc>https://connectedmate.com/en/notetaker-ai.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/notetaker-ai.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/notetaker-ai.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/notetaker-ai.html"/>
-  </url>
-
-  <url>
-    <loc>https://connectedmate.com/dys-keyboard.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/dys-keyboard.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/dys-keyboard.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/dys-keyboard.html"/>
-  </url>
-  <url>
-    <loc>https://connectedmate.com/en/dys-keyboard.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/dys-keyboard.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/dys-keyboard.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/dys-keyboard.html"/>
-  </url>
-
-  <url>
-    <loc>https://connectedmate.com/pock.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/pock.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/pock.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/pock.html"/>
-  </url>
-  <url>
-    <loc>https://connectedmate.com/en/pock.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/pock.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/pock.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/pock.html"/>
-  </url>
-
-  <url>
-    <loc>https://connectedmate.com/better-dictate.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/better-dictate.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/better-dictate.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/better-dictate.html"/>
-  </url>
-  <url>
-    <loc>https://connectedmate.com/en/better-dictate.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/better-dictate.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/better-dictate.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/better-dictate.html"/>
-  </url>
-
-  <url>
-    <loc>https://connectedmate.com/keynotes.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/keynotes.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/keynotes.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/keynotes.html"/>
-  </url>
-  <url>
-    <loc>https://connectedmate.com/en/keynotes.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/keynotes.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/keynotes.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/keynotes.html"/>
-  </url>
-
-  <url>
-    <loc>https://connectedmate.com/podcasts.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/podcasts.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/podcasts.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/podcasts.html"/>
-  </url>
-  <url>
-    <loc>https://connectedmate.com/en/podcasts.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/podcasts.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/podcasts.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/podcasts.html"/>
-  </url>
-
-  <url>
-    <loc>https://connectedmate.com/blog.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/blog.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/blog.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/blog.html"/>
-  </url>
-  <url>
-    <loc>https://connectedmate.com/en/blog.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/blog.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/blog.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/blog.html"/>
-  </url>
-
-  <url>
-    <loc>https://connectedmate.com/about.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/about.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/about.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/about.html"/>
-  </url>
-  <url>
-    <loc>https://connectedmate.com/en/about.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/about.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/about.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/about.html"/>
-  </url>
-
-  <url>
-    <loc>https://connectedmate.com/contact.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/contact.html"/>
-  </url>
-  <url>
-    <loc>https://connectedmate.com/en/contact.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/contact.html"/>
-  </url>
-
-  <url>
-    <loc>https://connectedmate.com/legal.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/legal.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/legal.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/legal.html"/>
-  </url>
-  <url>
-    <loc>https://connectedmate.com/en/legal.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/legal.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/legal.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/legal.html"/>
-  </url>
-
-  <url>
-    <loc>https://connectedmate.com/about/alex.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/about/alex.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/about/alex.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/about/alex.html"/>
-  </url>
-  <url>
-    <loc>https://connectedmate.com/en/about/alex.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/about/alex.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/about/alex.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/about/alex.html"/>
-  </url>
-  <url>
-    <loc>https://connectedmate.com/about/ppc.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/about/ppc.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/about/ppc.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/about/ppc.html"/>
-  </url>
-  <url>
-    <loc>https://connectedmate.com/en/about/ppc.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/about/ppc.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/about/ppc.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/about/ppc.html"/>
-  </url>
-
-  <url>
-    <loc>https://connectedmate.com/blog/ia-generative-entreprise.html</loc>
-    <lastmod>2026-02-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/blog/ia-generative-entreprise.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/blog/generative-ai-business.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/blog/ia-generative-entreprise.html"/>
-  </url>
-  <url>
-    <loc>https://connectedmate.com/en/blog/generative-ai-business.html</loc>
-    <lastmod>2026-02-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/blog/ia-generative-entreprise.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/blog/generative-ai-business.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/blog/ia-generative-entreprise.html"/>
-  </url>
-
-  <url>
-    <loc>https://connectedmate.com/blog/travail-hybride-2026.html</loc>
-    <lastmod>2026-02-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/blog/travail-hybride-2026.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/blog/hybrid-work-2026.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/blog/travail-hybride-2026.html"/>
-  </url>
-  <url>
-    <loc>https://connectedmate.com/en/blog/hybrid-work-2026.html</loc>
-    <lastmod>2026-02-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/blog/travail-hybride-2026.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/blog/hybrid-work-2026.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/blog/travail-hybride-2026.html"/>
-  </url>
-
-  <url>
-    <loc>https://connectedmate.com/blog/green-it-guide-pratique.html</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/blog/green-it-guide-pratique.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/blog/green-it-guide.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/blog/green-it-guide-pratique.html"/>
-  </url>
-  <url>
-    <loc>https://connectedmate.com/en/blog/green-it-guide.html</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/blog/green-it-guide-pratique.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/blog/green-it-guide.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/blog/green-it-guide-pratique.html"/>
-  </url>
-
-  <url>
-    <loc>https://connectedmate.com/blog/cybersecurite-pme.html</loc>
-    <lastmod>2026-01-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/blog/cybersecurite-pme.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/blog/cybersecurity-sme.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/blog/cybersecurite-pme.html"/>
-  </url>
-  <url>
-    <loc>https://connectedmate.com/en/blog/cybersecurity-sme.html</loc>
-    <lastmod>2026-01-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/blog/cybersecurite-pme.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/blog/cybersecurity-sme.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/blog/cybersecurite-pme.html"/>
-  </url>
-
-  <url>
-    <loc>https://connectedmate.com/blog/product-management-ia.html</loc>
-    <lastmod>2026-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/blog/product-management-ia.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/blog/product-management-ai.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/blog/product-management-ia.html"/>
-  </url>
-  <url>
-    <loc>https://connectedmate.com/en/blog/product-management-ai.html</loc>
-    <lastmod>2026-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/blog/product-management-ia.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/blog/product-management-ai.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/blog/product-management-ia.html"/>
-  </url>
-
-  <url>
-    <loc>https://connectedmate.com/blog/api-design-bonnes-pratiques.html</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/blog/api-design-bonnes-pratiques.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/blog/api-design-best-practices.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/blog/api-design-bonnes-pratiques.html"/>
-  </url>
-  <url>
-    <loc>https://connectedmate.com/en/blog/api-design-best-practices.html</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/blog/api-design-bonnes-pratiques.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/blog/api-design-best-practices.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/blog/api-design-bonnes-pratiques.html"/>
-  </url>
-
-  <url>
-    <loc>https://connectedmate.com/pock/privacy.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/pock/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/pock/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/pock/privacy.html"/>
-  </url>
-  <url>
-    <loc>https://connectedmate.com/en/pock/privacy.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/pock/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/pock/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/pock/privacy.html"/>
-  </url>
-
-  <url>
-    <loc>https://connectedmate.com/pock/terms.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/pock/terms.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/pock/terms.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/pock/terms.html"/>
-  </url>
-  <url>
-    <loc>https://connectedmate.com/en/pock/terms.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/pock/terms.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/pock/terms.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://connectedmate.com/pock/terms.html"/>
-  </url>
-
-  <url>
-    <loc>https://connectedmate.com/formations.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/formations.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/formations.html"/>
-  </url>
-  <url>
-    <loc>https://connectedmate.com/en/formations.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/formations.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/formations.html"/>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<url>
+<loc>https://connectedmate.com</loc>
+<lastmod>2026-09-09T23:09:34.596Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://connectedmate.com/fr</loc>
+<xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/fr" />
+<xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en" />
+<lastmod>2026-09-10T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://connectedmate.com/fr/apps</loc>
+<xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/fr/apps" />
+<xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/apps" />
+<lastmod>2026-09-01T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://connectedmate.com/fr/formations</loc>
+<xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/fr/formations" />
+<xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/training" />
+<lastmod>2026-09-10T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://connectedmate.com/fr/services</loc>
+<xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/fr/services" />
+<xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/services" />
+<lastmod>2026-09-10T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://connectedmate.com/fr/keynotes</loc>
+<xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/fr/keynotes" />
+<xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/keynotes" />
+<lastmod>2026-09-10T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://connectedmate.com/fr/podcast</loc>
+<xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/fr/podcast" />
+<xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/podcast" />
+<lastmod>2026-09-10T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://connectedmate.com/fr/a-propos</loc>
+<xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/fr/a-propos" />
+<xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/about" />
+<lastmod>2026-09-10T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://connectedmate.com/fr/contact</loc>
+<xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/fr/contact" />
+<xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/contact" />
+<lastmod>2026-09-10T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://connectedmate.com/fr/mentions-legales</loc>
+<xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/fr/mentions-legales" />
+<xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/legal" />
+<lastmod>2026-09-10T00:00:00.000Z</lastmod>
+<changefreq>yearly</changefreq>
+<priority>0.2</priority>
+</url>
+<url>
+<loc>https://connectedmate.com/fr/pock-confidentialite</loc>
+<xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/fr/pock-confidentialite" />
+<xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/pock-privacy" />
+<lastmod>2026-09-10T00:00:00.000Z</lastmod>
+<changefreq>yearly</changefreq>
+<priority>0.2</priority>
+</url>
+<url>
+<loc>https://connectedmate.com/fr/pock-cgu</loc>
+<xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/fr/pock-cgu" />
+<xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/pock-terms" />
+<lastmod>2026-09-10T00:00:00.000Z</lastmod>
+<changefreq>yearly</changefreq>
+<priority>0.2</priority>
+</url>
+<url>
+<loc>https://connectedmate.com/fr/dys-keyboard-confidentialite</loc>
+<xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/fr/dys-keyboard-confidentialite" />
+<xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/dys-keyboard-privacy" />
+<lastmod>2026-09-10T00:00:00.000Z</lastmod>
+<changefreq>yearly</changefreq>
+<priority>0.2</priority>
+</url>
+<url>
+<loc>https://connectedmate.com/en</loc>
+<xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/fr" />
+<xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en" />
+<lastmod>2026-09-10T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://connectedmate.com/en/apps</loc>
+<xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/fr/apps" />
+<xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/apps" />
+<lastmod>2026-09-01T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://connectedmate.com/en/training</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/training" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/fr/formations" />
+<lastmod>2026-09-10T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://connectedmate.com/en/services</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/services" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/fr/services" />
+<lastmod>2026-09-10T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://connectedmate.com/en/keynotes</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/keynotes" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/fr/keynotes" />
+<lastmod>2026-09-10T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://connectedmate.com/en/podcast</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/podcast" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/fr/podcast" />
+<lastmod>2026-09-10T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://connectedmate.com/en/about</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/about" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/fr/a-propos" />
+<lastmod>2026-09-10T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://connectedmate.com/en/contact</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/contact" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/fr/contact" />
+<lastmod>2026-09-10T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://connectedmate.com/en/legal</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/legal" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/fr/mentions-legales" />
+<lastmod>2026-09-10T00:00:00.000Z</lastmod>
+<changefreq>yearly</changefreq>
+<priority>0.2</priority>
+</url>
+<url>
+<loc>https://connectedmate.com/en/pock-privacy</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/pock-privacy" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/fr/pock-confidentialite" />
+<lastmod>2026-09-10T00:00:00.000Z</lastmod>
+<changefreq>yearly</changefreq>
+<priority>0.2</priority>
+</url>
+<url>
+<loc>https://connectedmate.com/en/pock-terms</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/pock-terms" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/fr/pock-cgu" />
+<lastmod>2026-09-10T00:00:00.000Z</lastmod>
+<changefreq>yearly</changefreq>
+<priority>0.2</priority>
+</url>
+<url>
+<loc>https://connectedmate.com/en/dys-keyboard-privacy</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://connectedmate.com/en/dys-keyboard-privacy" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://connectedmate.com/fr/dys-keyboard-confidentialite" />
+<lastmod>2026-09-10T00:00:00.000Z</lastmod>
+<changefreq>yearly</changefreq>
+<priority>0.2</priority>
+</url>
 </urlset>
